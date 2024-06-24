@@ -26,7 +26,7 @@ const getPlayerByEmail = async (email) => {
         {
             //Obtenemos todas las clases y devolvemos el array con ellas
             const classes = await classService.getAllClasses();
-            return { classes };
+            return { player, classes };
         }
 
         return {player};

@@ -37,7 +37,6 @@ const getPlayerByEmail = async (req, res) => {
     
     //La consulta devuelve un array
     if (data.player.length === 0) {
-      console.log("player vacio");
       return res
       .status(404)
       .send({ status: "NOT FOUND", 
