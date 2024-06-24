@@ -4,7 +4,8 @@ const Player = require('../models/playerModel');
 const getAllPlayers = async () => {  
     try
     {
-        const players = await Player.find();
+        
+        const players = await Player.find().exec();
         console.log(players);
         return players;
     }
@@ -14,10 +15,26 @@ const getAllPlayers = async () => {
     }
 };
 
+
+
+const getPlayerByEmail = async (email) => { 
+    try 
+    {
+        console.log("llega");
+        const player = await Player.find({email: email}).exec();     
+        return player;
+    } 
+    catch (error) 
+    {
+        throw error;
+    }
+};
+
 const getOnePlayer = async (playerId) => { 
     try 
     {
-        const player = await Player.findById(playerId);     
+        console.log(playerId);
+        const player = await Player.findById(playerId);  
         return player;
     } 
     catch (error) 
@@ -54,6 +71,7 @@ const updateOnePlayer = async (playerId, changes) => {
 
 module.exports = {
   getAllPlayers,
+  getPlayerByEmail,
   getOnePlayer,
   createNewPlayer,
   updateOnePlayer

@@ -18,6 +18,42 @@ const getAllPlayers = async (req, res) => {
 };
 
 
+const getPlayerByEmail = async (req, res) => {
+  const {params: { email }}  = req;
+
+  if (!email) {
+    return res
+      .status(400)
+      .send({
+        status: "FAILED",
+        data: { error: "Parameter ':email' can not be empty" },
+      });
+  }
+
+  try {
+    const player = await playerService.getPlayerByEmail(email);
+    
+    //La consulta devuelve un array
+    if (player.length === 0) {
+      console.log("player vacio");
+      return res
+      .status(404)
+      .send({ status: "FAILED", 
+              data: { error:  `Can't find player with the email '${email}'`} });
+    }
+
+    return res.send({ status: "OK", data: player });
+
+  } catch (error) {
+    res
+      .status(error?.status || 500)
+      .send({ status: "FAILED", 
+              message: "Error al realizar la petición:",
+              data: { error: error?.message || error } });
+  }
+};
+
+
 const getOnePlayer = async (req, res) => {
   const {params: { playerId }}  = req;
 
@@ -32,6 +68,7 @@ const getOnePlayer = async (req, res) => {
 
   try {
     const player = await playerService.getOnePlayer(playerId);
+    console.log(player)
     if (!player) {
       return res
       .status(404)
@@ -53,22 +90,6 @@ const getOnePlayer = async (req, res) => {
 
 const createNewPlayer = async (req, res) => {
   const { body } = req;
-  // if (
-  //   !body.name ||
-  //   !body.mode ||
-  //   !body.equipment 
-  // ) {
-  //   res
-  //     .status(400)
-  //     .send({
-  //       status: "FAILED",
-  //       data: {
-  //         error:
-  //           "One of the following keys is missing or is empty in request body: 'name', 'mode', 'equipment'",
-  //       },
-  //     });
-  //   return;
-  // }
 
   const newPlayer = {
     name: body.name,
@@ -131,6 +152,7 @@ const updateOnePlayer = async (req, res) => {
 module.exports = {
   getAllPlayers,
   getOnePlayer,
+  getPlayerByEmail,
   createNewPlayer,
   updateOnePlayer
 };
