@@ -31,18 +31,20 @@ const getPlayerByEmail = async (req, res) => {
   }
 
   try {
-    const player = await playerService.getPlayerByEmail(email);
+    const data = await playerService.getPlayerByEmail(email);
+
+    console.log(data);
     
     //La consulta devuelve un array
-    if (player.length === 0) {
+    if (data.player.length === 0) {
       console.log("player vacio");
       return res
       .status(404)
-      .send({ status: "FAILED", 
-              data: { error:  `Can't find player with the email '${email}'`} });
+      .send({ status: "NOT FOUND", 
+              data: data/*{ error:  `Can't find player with the email '${email}'`} */});
     }
 
-    return res.send({ status: "OK", data: player });
+    return res.send({ status: "OK", data: data });
 
   } catch (error) {
     res
@@ -93,8 +95,8 @@ const createNewPlayer = async (req, res) => {
 
   const newPlayer = {
     name: body.name,
-    mode: body.mode,
-    equipment: body.equipment
+    email: body.email,
+    image: body.image
   };
 
   try {
