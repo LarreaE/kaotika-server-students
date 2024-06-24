@@ -1,6 +1,6 @@
 
 const Player = require('../models/playerModel');
-const classService = require("../services/classService");
+const classService = require("./classService");
 
 const getAllPlayers = async () => {  
     try
@@ -21,13 +21,12 @@ const getAllPlayers = async () => {
 const getPlayerByEmail = async (email) => { 
     try
     {
-        console.log("llega");
         const player = await Player.find({email}).exec();  
         if (player.length === 0)   
         {
             //Obtenemos todas las clases y devolvemos el array con ellas
             const classes = await classService.getAllClasses();
-            return { player, classes };
+            return { classes };
         }
 
         return {player};
