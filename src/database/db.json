@@ -1,0 +1,50 @@
+{
+  "workouts": [
+    {
+      "id": "61dbae02-c147-4e28-863c-db7bd402b2d6",
+      "name": "Tommy V",
+      "mode": "For Time",
+      "equipment": [
+        "barbell",
+        "rope"
+      ],
+      "exercises": [
+        "21 thrusters",
+        "12 rope climbs, 15 ft",
+        "15 thrusters",
+        "9 rope climbs, 15 ft",
+        "9 thrusters",
+        "6 rope climbs, 15 ft"
+      ],
+      "createdAt": "4/20/2022, 2:21:56 PM",
+      "updatedAt": "4/20/2022, 2:21:56 PM",
+      "trainerTips": [
+        "Split the 21 thrusters as needed",
+        "Try to do the 9 and 6 thrusters unbroken",
+        "RX Weights: 115lb/75lb"
+      ]
+    },
+    {
+      "name": "Core Buster 143",
+      "mode": "AMRAP 2015",
+      "equipment": [
+        "rack",
+        "barbell",
+        "abmat"
+      ],
+      "exercises": [
+        "15 toes to bars",
+        "10 thrusters",
+        "30 abmat sit-ups"
+      ],
+      "trainerTips": [
+        "Split your toes to bars into two sets maximum",
+        "Go unbroken on the thrusters",
+        "Take the abmat sit-ups as a chance to normalize your breath"
+      ],
+      "id": "0c93ce89-cc6d-4397-93b4-ccce57c6484f",
+      "createdAt": "10/4/2022, 10:39:25 AM",
+      "updatedAt": "10/4/2022, 10:39:25 AM"
+    }
+  ]
+}
