@@ -3,8 +3,10 @@
 const express = require("express"); 
 const bodyParser = require("body-parser");
 const v1WorkoutRouter = require("./routes/workoutRoutes");
+const playerRouter = require("./routes/playerRoutes");
+
 const mongoose =  require ('mongoose');
-const mongodbRoute = 'mongodb+srv://oscar:tst_sr_0@cluster0.pynwe.mongodb.net/E4P1?retryWrites=true&w=majority';
+const mongodbRoute = 'mongodb+srv://oscar:tst_sr_0@cluster0.pynwe.mongodb.net/Kaotika?retryWrites=true&w=majority';
 
 
 const app = express(); 
@@ -15,6 +17,8 @@ app.use(bodyParser.json());
 
 //Load router into /api/v1
 app.use("/api/workouts", v1WorkoutRouter);
+app.use("/", playerRouter);
+
 
 async function start() {
     try 
