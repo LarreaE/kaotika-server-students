@@ -9,7 +9,7 @@ const playerSchema = new Schema({
    name: String,
    email: String,
    image: String,
-   class: String,
+   profile: String,
 
 });
 
