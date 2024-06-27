@@ -1,6 +1,6 @@
 
 const Player = require('../models/playerModel');
-const classService = require("./classService");
+const classService = require("./profileService");
 
 const getAllPlayers = async () => {  
     try

@@ -2,7 +2,7 @@ require('dotenv').config();
 const express = require("express"); 
 const bodyParser = require("body-parser");
 const playerRouter = require("./routes/playerRoutes");
-const classRouter = require("./routes/classRoutes");
+const profileRouter = require("./routes/profileRoutes");
 
 const mongoose =  require ('mongoose');
 const mongodbRoute = process.env.MONGODB_ROUTE;
@@ -16,7 +16,7 @@ app.use(bodyParser.json());
 
 //Load router into /api/v1
 app.use("/players", playerRouter);
-app.use("/classes", classRouter);
+app.use("/profiles", profileRouter);
 
 
 async function start() {

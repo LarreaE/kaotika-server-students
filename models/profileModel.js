@@ -4,20 +4,17 @@ const mongoose =  require('mongoose');
 // Usaremos los esquemas
 const { Schema } = mongoose;
 
+const AttributesSchema = new Schema({name: String, value: Number});
+
 // Creamos el objeto del esquema y sus atributos
-const classSchema = new Schema({
+const profileSchema = new Schema({
    name: String,
    description: String,
-   attributes: {
-        int: Number,
-        str: Number,
-        dex: Number,
-        con: Number
-   }
+   attributes: [AttributesSchema]
     
    
 
 });
 
 // Exportamos el modelo para usarlo en otros ficheros
-module.exports = mongoose.model('Class', classSchema);
+module.exports = mongoose.model('Profile', profileSchema);

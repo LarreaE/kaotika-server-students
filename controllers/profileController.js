@@ -1,13 +1,13 @@
 
-const classService = require("../services/classService");
+const profileService = require("../services/profileService");
 
-const getAllClasses = async (req, res) => {
+const getAllProfiles = async (req, res) => {
   try {
-    const allClasses = await classService.getAllClasses();
-    if (!allClasses) {
+    const allProfiles = await profileService.getAllProfiles();
+    if (!allProfiles) {
         res.status(404).send({message: 'No existen clases'});
     }
-    res.send({ status: "OK", data: allClasses });
+    res.send({ status: "OK", data: allProfiles });
   } catch (error) {
     res
       .status(error?.status || 500)
@@ -18,5 +18,5 @@ const getAllClasses = async (req, res) => {
 };
 
 module.exports = {
-    getAllClasses
+    getAllProfiles
 }
