@@ -3,7 +3,7 @@ const express = require("express");
 const bodyParser = require("body-parser");
 const playerRouter = require("./routes/playerRoutes");
 const profileRouter = require("./routes/profileRoutes");
-//const equipmentRouter = require("./routes/equipmentRoutes");
+const equipmentRouter = require("./routes/equipmentRoutes");
 
 const mongoose =  require ('mongoose');
 const mongodbRoute = process.env.MONGODB_ROUTE;
@@ -18,7 +18,7 @@ app.use(bodyParser.json());
 //Load router into /api/v1
 app.use("/players", playerRouter);
 app.use("/profiles", profileRouter);
-//app.use("/equipment", equipmentRouter);
+app.use("/equipment", equipmentRouter);
 
 
 async function start() {

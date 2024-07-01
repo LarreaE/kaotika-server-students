@@ -1,9 +1,20 @@
 // Cargamos el módulo de mongoose
 const mongoose =  require('mongoose');
-const Profile = require('./profileModel');
 
 // Usaremos los esquemas
 const { Schema } = mongoose;
+
+
+
+// Creamos el objeto del esquema y sus atributos
+const profileSchema = new Schema({
+   name: String,
+   description: String,
+   attributes: [{name: String, value: Number}]
+    
+   
+
+});
 
 // Creamos el objeto del esquema y sus atributos
 const equipmentSchema = new Schema({
@@ -19,5 +30,12 @@ const equipmentSchema = new Schema({
 });
 
 // Exportamos el modelo para usarlo en otros ficheros
-module.exports = mongoose.model('Equipment', equipmentSchema);
+
+const Equipment = mongoose.model('Equipment', equipmentSchema);
+const Profile1  = mongoose.model('Profile', profileSchema);
+   
+module.exports = {
+   //Equipment,
+  // Profile
+}
 
