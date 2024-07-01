@@ -1,0 +1,324 @@
+[
+    {
+        "name": "Scholar",
+        "description":"In silent libraries and secret laboratories, the Scholar spends his days immersed in knowledge. With a brilliant mind and insatiable curiosity, he seeks to understand the mysteries of the universe and unravel the secrets hidden in ancient texts. His intelligence is his greatest weapon, capable of solving complex puzzles and devising ingenious strategies. Though he does not excel in physical strength, his insight and wisdom make him an invaluable ally. The Scholar is a beacon of light in the darkness, guided by the desire for knowledge and truth.",
+        "image": "/images/scholar.jpg",
+        "attributes": [
+            {
+                "name": "Intelligence",
+                "description": "The intelligence controls the chance of success when using a potion",
+                "value": 5
+            },
+            {
+                "name": "Dexterity",
+                "description": "Manages the chance of success when using a melee weapon and the damage a missile weapon does",
+                "value": 50
+            },
+            {
+                "name": "Sanity",
+                "description": "Indicates the state of mental health of an adventurer. If the sanity is high, there will be less chance to make a fumble, and the fumble will be less critical. If the sanity is low, there will be a greater chance to make a fumble, and the fumble will be more critical",
+                "value": 5
+            },
+            {
+                "name": "Charisma",
+                "description": "Indicates the chance to attack first in the next round",
+                "value": 5
+            },
+            {
+                "name": "Constitution",
+                "description": "Indicates the number of Hit Points an adventurer starts with",
+                "value": 5
+            },
+            {
+                "name": "Strength",
+                "description": "Manages the chance of success when using a melee weapon, and the damage a melee weapon does",
+                "value": 5
+            }
+      
+        ]
+      
+    },
+
+    {
+        "name": "Pariah",
+        "description":"Expelled from society and condemned to wander alone, the Pariah is a figure marked by suffering and resilience. Despite his ostracism, he has developed an inner and physical strength that makes him a formidable adversary. His life on the margins of civilization has taught him to fend for himself, facing the dangers of the world with unyielding determination. Stripped of everything but his own will, the Pariah is a symbol of endurance and survival in a cruel and unforgiving world.",
+        "image": "/images/pariah.jpg",
+        "attributes": [
+            {
+                "name": "Intelligence",
+                "description": "The intelligence controls the chance of success when using a potion",
+                "value": 5
+            },
+            {
+                "name": "Dexterity",
+                "description": "Manages the chance of success when using a melee weapon and the damage a missile weapon does",
+                "value": 10
+            },
+            {
+                "name": "Sanity",
+                "description": "Indicates the state of mental health of an adventurer. If the sanity is high, there will be less chance to make a fumble, and the fumble will be less critical. If the sanity is low, there will be a greater chance to make a fumble, and the fumble will be more critical",
+                "value": 5
+            },
+            {
+                "name": "Charisma",
+                "description": "Indicates the chance to attack first in the next round",
+                "value": 5
+            },
+            {
+                "name": "Constitution",
+                "description": "Indicates the number of Hit Points an adventurer starts with",
+                "value": 5
+            },
+            {
+                "name": "Strength",
+                "description": "Manages the chance of success when using a melee weapon, and the damage a melee weapon does",
+                "value": 5
+            }
+      
+        ]
+      
+    },
+
+    {
+        "name": "Juggler",
+        "description":"In the center of the square, where the crowd gathers, the Juggler displays his art. His hands move with hypnotic grace, controlling objects with a precision that seems to defy the laws of physics. He is not only a master of entertainment but also a shrewd strategist. Every move is calculated, every trick a distraction that hides his true intentions. The Juggler is a master of deception, capable of slipping into the shadows and disappearing in the blink of an eye, leaving behind a trail of mystery and awe.",
+        "image": "/images/juggler.jpg",
+        "attributes": [
+            {
+                "name": "Intelligence",
+                "description": "The intelligence controls the chance of success when using a potion",
+                "value": 5
+            },
+            {
+                "name": "Dexterity",
+                "description": "Manages the chance of success when using a melee weapon and the damage a missile weapon does",
+                "value": 5
+            },
+            {
+                "name": "Sanity",
+                "description": "Indicates the state of mental health of an adventurer. If the sanity is high, there will be less chance to make a fumble, and the fumble will be less critical. If the sanity is low, there will be a greater chance to make a fumble, and the fumble will be more critical",
+                "value": 5
+            },
+            {
+                "name": "Charisma",
+                "description": "Indicates the chance to attack first in the next round",
+                "value": 20
+            },
+            {
+                "name": "Constitution",
+                "description": "Indicates the number of Hit Points an adventurer starts with",
+                "value": 5
+            },
+            {
+                "name": "Strength",
+                "description": "Manages the chance of success when using a melee weapon, and the damage a melee weapon does",
+                "value": 5
+            }
+      
+        ]
+      
+    },
+    {
+        "name": "Blasphemer",
+        "description":"The Blasphemer is a dark and provocative figure, known for challenging norms and questioning established beliefs. His words are like poison, capable of corrupting and destabilizing the faith of those who listen. Rejected by society and hunted for his heresy, the Blasphemer has developed impressive tenacity and cunning. With a sharp mind and a sharper tongue, he does not fear facing established powers and sowing doubt wherever he goes. He is an iconoclast, a destroyer of dogmas, and a bearer of uncomfortable truths.",
+        "image": "/images/blasphemer.jpg",
+        "attributes": [
+            {
+                "name": "Intelligence",
+                "description": "The intelligence controls the chance of success when using a potion",
+                "value": 5
+            },
+            {
+                "name": "Dexterity",
+                "description": "Manages the chance of success when using a melee weapon and the damage a missile weapon does",
+                "value": 5
+            },
+            {
+                "name": "Sanity",
+                "description": "Indicates the state of mental health of an adventurer. If the sanity is high, there will be less chance to make a fumble, and the fumble will be less critical. If the sanity is low, there will be a greater chance to make a fumble, and the fumble will be more critical",
+                "value": 5
+            },
+            {
+                "name": "Charisma",
+                "description": "Indicates the chance to attack first in the next round",
+                "value": 5
+            },
+            {
+                "name": "Constitution",
+                "description": "Indicates the number of Hit Points an adventurer starts with",
+                "value": 45
+            },
+            {
+                "name": "Strength",
+                "description": "Manages the chance of success when using a melee weapon, and the damage a melee weapon does",
+                "value": 5
+            }
+      
+        ]
+      
+    },
+
+    {
+        "name": "Embalmer",
+        "description":"XXXXXXX",
+        "image": "/images/embalmer.jpg",
+        "attributes": [
+            {
+                "name": "Intelligence",
+                "description": "The intelligence controls the chance of success when using a potion",
+                "value": 5
+            },
+            {
+                "name": "Dexterity",
+                "description": "Manages the chance of success when using a melee weapon and the damage a missile weapon does",
+                "value": 5
+            },
+            {
+                "name": "Sanity",
+                "description": "Indicates the state of mental health of an adventurer. If the sanity is high, there will be less chance to make a fumble, and the fumble will be less critical. If the sanity is low, there will be a greater chance to make a fumble, and the fumble will be more critical",
+                "value": 5
+            },
+            {
+                "name": "Charisma",
+                "description": "Indicates the chance to attack first in the next round",
+                "value": 5
+            },
+            {
+                "name": "Constitution",
+                "description": "Indicates the number of Hit Points an adventurer starts with",
+                "value": 35
+            },
+            {
+                "name": "Strength",
+                "description": "Manages the chance of success when using a melee weapon, and the damage a melee weapon does",
+                "value": 5
+            }
+      
+        ]
+      
+    },
+
+    {
+        "name": "Gossiper",
+        "description":"In every corner of the tavern and every market stall, the Gossiper weaves his web of words. With a sharp tongue and keen ear, he gathers and disseminates information with the skill of a master spy. His words can rally a crowd or destroy a reputation in minutes. No secret escapes his reach, and although his motives are often questionable, his knowledge is indisputable. The Gossiper is the master of rumor, a weaver of intrigues whose words have the power to change the destiny of kingdoms.",
+        "image": "/images/gossiper.jpg",
+        "attributes": [
+            {
+                "name": "Intelligence",
+                "description": "The intelligence controls the chance of success when using a potion",
+                "value": 5
+            },
+            {
+                "name": "Dexterity",
+                "description": "Manages the chance of success when using a melee weapon and the damage a missile weapon does",
+                "value": 5
+            },
+            {
+                "name": "Sanity",
+                "description": "Indicates the state of mental health of an adventurer. If the sanity is high, there will be less chance to make a fumble, and the fumble will be less critical. If the sanity is low, there will be a greater chance to make a fumble, and the fumble will be more critical",
+                "value": 5
+            },
+            {
+                "name": "Charisma",
+                "description": "Indicates the chance to attack first in the next round",
+                "value": 5
+            },
+            {
+                "name": "Constitution",
+                "description": "Indicates the number of Hit Points an adventurer starts with",
+                "value": 5
+            },
+            {
+                "name": "Strength",
+                "description": "Manages the chance of success when using a melee weapon, and the damage a melee weapon does",
+                "value": 5
+            }
+      
+        ]
+      
+    },
+
+    {
+        "name": "Bumbler",
+        "description":"XXXXX",
+        "image": "/images/bumbler.jpg",
+        "attributes": [
+            {
+                "name": "Intelligence",
+                "description": "The intelligence controls the chance of success when using a potion",
+                "value": 5
+            },
+            {
+                "name": "Dexterity",
+                "description": "Manages the chance of success when using a melee weapon and the damage a missile weapon does",
+                "value": 5
+            },
+            {
+                "name": "Sanity",
+                "description": "Indicates the state of mental health of an adventurer. If the sanity is high, there will be less chance to make a fumble, and the fumble will be less critical. If the sanity is low, there will be a greater chance to make a fumble, and the fumble will be more critical",
+                "value": 5
+            },
+            {
+                "name": "Charisma",
+                "description": "Indicates the chance to attack first in the next round",
+                "value": 5
+            },
+            {
+                "name": "Constitution",
+                "description": "Indicates the number of Hit Points an adventurer starts with",
+                "value": 5
+            },
+            {
+                "name": "Strength",
+                "description": "Manages the chance of success when using a melee weapon, and the damage a melee weapon does",
+                "value": 5
+            }
+      
+        ]
+      
+    },
+
+    {
+        "name": "Poet",
+        "description":"XXXXX",
+        "image": "/images/poet.jpg",
+        "attributes": [
+            {
+                "name": "Intelligence",
+                "description": "The intelligence controls the chance of success when using a potion",
+                "value": 5
+            },
+            {
+                "name": "Dexterity",
+                "description": "Manages the chance of success when using a melee weapon and the damage a missile weapon does",
+                "value": 5
+            },
+            {
+                "name": "Sanity",
+                "description": "Indicates the state of mental health of an adventurer. If the sanity is high, there will be less chance to make a fumble, and the fumble will be less critical. If the sanity is low, there will be a greater chance to make a fumble, and the fumble will be more critical",
+                "value": 5
+            },
+            {
+                "name": "Charisma",
+                "description": "Indicates the chance to attack first in the next round",
+                "value": 5
+            },
+            {
+                "name": "Constitution",
+                "description": "Indicates the number of Hit Points an adventurer starts with",
+                "value": 5
+            },
+            {
+                "name": "Strength",
+                "description": "Manages the chance of success when using a melee weapon, and the damage a melee weapon does",
+                "value": 5
+            }
+      
+        ]
+      
+    }
+
+
+
+
+]

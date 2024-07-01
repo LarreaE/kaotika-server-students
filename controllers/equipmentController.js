@@ -18,7 +18,7 @@ const getAllEquipment = async (req, res) => {
 };
 
 
-const getEquipmentByProfile = async (req, res) => {
+const getEquipmentByIdProfile = async (req, res) => {
   const {params: { profile }}  = req;
 
   if (!profile) {
@@ -31,7 +31,7 @@ const getEquipmentByProfile = async (req, res) => {
   }
 
   try {
-    const data = await equipmentService.getEquipmentByProfile(profile);
+    const data = await equipmentService.getEquipmentByIdProfile(profile);
 
     console.log(data);
     
@@ -56,5 +56,5 @@ const getEquipmentByProfile = async (req, res) => {
 
 module.exports = {
   getAllEquipment,
-  getEquipmentByProfile
+  getEquipmentByIdProfile
 }

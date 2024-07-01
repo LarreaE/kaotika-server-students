@@ -7,7 +7,7 @@ const getAllEquipment = async () => {
     {
         
         const equipments = await Equipment.find();
-        console.log(equipments);
+        //console.log(equipments);
         return equipments;
     }
     catch (error)
@@ -18,17 +18,28 @@ const getAllEquipment = async () => {
 
 
 
-const getEquipmentByProfile = async (profile) => { 
+const getEquipmentByIdProfile = async (id) => { 
     try
     {
+        console.log(id);
 
-        //const profileFound = await Profile.findOne({profile}).exec();
-        //console.log(profileFound);
+        //Obtenemos el equipo del perfil 
+        const equipment = await getAllEquipment();
 
-        const equipment = await Equipment.find().populate("profiles");
-        console.log(equipment) 
+        const profileEquipment = equipment.filter(item => 
+            item.profiles.some(profileId => profileId.equals(id))
+        );
 
-        return {equipment};
+        //Extraemos las armas
+        const weapons = profileEquipment.filter(item => item.type === "Weapon");
+        const artifacts = profileEquipment.filter(item => item.type === "artifact");
+        const armor = profileEquipment.filter(item => item.type === "armor");
+        const potions = profileEquipment.filter(item => item.type === "potion");
+
+        return {
+            weapons, artifacts, armor, potions
+        }
+        
     }
     catch (error) 
     {
@@ -41,6 +52,6 @@ const getEquipmentByProfile = async (profile) => {
 
 module.exports = {
     getAllEquipment,
-    getEquipmentByProfile
+    getEquipmentByIdProfile
   
 };

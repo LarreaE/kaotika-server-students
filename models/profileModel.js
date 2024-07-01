@@ -8,7 +8,8 @@ const { Schema } = mongoose;
 const profileSchema = new Schema({
    name: String,
    description: String,
-   attributes: [{name: String, value: Number}]
+   image: String,
+   attributes: [{name: String, description: String, value: Number}]
     
    
 

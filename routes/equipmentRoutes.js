@@ -5,6 +5,7 @@ const equipmentController = require("../controllers/equipmentController");
 
 
 router.get("/", equipmentController.getAllEquipment);
-router.get("/profile/:profile", equipmentController.getEquipmentByProfile);
+router.get("/profile/:profile", equipmentController.getEquipmentByIdProfile);
+
 
 module.exports = router;
