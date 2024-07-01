@@ -3,7 +3,7 @@ const Equipment = require('../models/equipmentModel');
 const profileService = require('../services/profileService');
 
 const mongoose =  require ('mongoose');
-const mongodbRoute = process.env.MONGODB_ROUTE;
+const mongodbRoute = 'mongodb+srv://oscar:tst_sr_0@cluster0.pynwe.mongodb.net/Kaotika?retryWrites=true&w=majority';
 
 //Willpower: Asignación de orden de turnos. Intervención mental en enemigos. Estado de salud mental.
 //Strength: Daño del arma. Mínimo para usar armas melee
@@ -42,10 +42,21 @@ const connectToDB = async() => {
 }
 
 
-// const clearEquipment = async() = {
-//     let deletedWorkout = await Equipment.findByIdAndRemove(remove);       
-//     return deletedWorkout;  
-// }
+const clearEquipment = async() => {
+
+    try
+    { 
+        await connectToDB();
+        let deletedWorkout = await Equipment.deleteMany();     
+        return deletedWorkout;
+    }
+    catch (error)
+    {
+        throw error;
+    }  
+}
+
+
 
 const createEquipment = async () => {
     try
@@ -53,6 +64,14 @@ const createEquipment = async () => {
         await connectToDB();
 
         const profiles = await profileService.getAllProfiles();
+
+        const scholarId       = profiles[Profiles.SCHOLAR]._id;
+        const pariahId        = profiles[Profiles.PARIAH]._id;
+        const jugglerId       = profiles[Profiles.JUGGLER]._id;
+        const blasphemerId    = profiles[Profiles.BLASPHEMER]._id;
+        const gossiperId      = profiles[Profiles.GOSSIPER]._id;
+        const beggarId        = profiles[Profiles.BEGGAR]._id;
+        const bumblerId       = profiles[Profiles.BUMBLER]._id;
 
 
         const weapon1 = new Equipment({
@@ -62,8 +81,16 @@ const createEquipment = async () => {
             effect: [
                 {
                     attribute: "dexterity",
-                    value:     ""
+                    value:     10
+                },
+                {
+                    attribute: "constitution",
+                    value:     -15
                 }
+
+            ],
+            profiles:[
+                jugglerId
             ]
 
         })
@@ -72,14 +99,34 @@ const createEquipment = async () => {
         const weapon2 = new Equipment({
             name: "Staff of Disgreace",
             type: "weapon",
-            image: "/images/equipment/weapons/staff_1.jpg"
+            image: "/images/equipment/weapons/staff_1.jpg",
+            effect: [
+                {
+                    attribute: "dexterity",
+                    value:     3
+                },
+                {
+                    attribute: "constitution",
+                    value:     -3
+                }
+
+            ],
+            profiles:[
+                pariahId
+            ]
 
         })
 
 
 
         const equipments = await Equipment.find();
-        //console.log(equipments);
+
+        let equipmentToInsert;
+        equipmentToInsert = new Equipment(weapon1);
+
+        const equipment = await equipmentToInsert.save();   
+        
+        console.log(equipment);
         return equipments;
     }
     catch (error)
@@ -87,3 +134,6 @@ const createEquipment = async () => {
         throw error;
     }
 };
+
+clearEquipment();
+//createEquipment();
