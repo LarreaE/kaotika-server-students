@@ -141,12 +141,12 @@
             {
                 "name": "Charisma",
                 "description": "Indicates the chance to attack first in the next round",
-                "value": 15
+                "value": 30
             },
             {
                 "name": "Constitution",
                 "description": "Indicates the number of Hit Points an adventurer starts with",
-                "value": 30
+                "value": 15
             },
             {
                 "name": "Strength",
