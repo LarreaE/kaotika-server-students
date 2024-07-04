@@ -1,3 +1,15 @@
+
+// INT, DEX, CON, CHA, STR: Min 5 - Max 30
+// INS: Min 10 - Max 45
+
+// RULES for INT, DEX, CON, CHA, STR.
+// 1 Primary attribute: 30 points
+// 1 or more non-representative attributes: 5 points
+// Remaining attributes: Min 10 - Max 25
+// Total points to distribute: 70 (excluding insanity)
+
+
+
 [
     {
         "name": "Scholar",
