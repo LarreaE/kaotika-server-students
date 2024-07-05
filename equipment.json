@@ -5,27 +5,6 @@
 
 [
     {
-        "name": "Pinching Yo-yo",
-        "description": "abc",
-        "type": "weapon",
-        "image": "/images/equipment/weapons/sword_1.jpg",
-        "effect": [
-            {
-                "attribute": "dexterity",
-                "value":     10
-            },
-            {
-                "attribute": "constitution",
-                "value":     -15
-            }
-
-        ],
-        "profiles":[
-            "jugglerId"
-        ]
-
-    },
-    {
         "name": "Robe 1",
         "description": "ABC",
         "type": "armor",
