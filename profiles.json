@@ -29,7 +29,7 @@
             {
                 "name": "Insanity",
                 "description": "Indicates the state of mental health of an adventurer. If the insanity is high, there will be more chance to make a fumble of a critical hit, and the resulting damage will be more critical. If the insanity is low, there will be less chance to make a fumble or a critical hit, and the resulting damage will be less critical",
-                "value": 35
+                "value": 25
             },
             {
                 "name": "Charisma",
@@ -109,7 +109,7 @@
             {
                 "name": "Insanity",
                 "description": "Indicates the state of mental health of an adventurer. If the insanity is high, there will be more chance to make a fumble of a critical hit, and the resulting damage will be more critical. If the insanity is low, there will be less chance to make a fumble or a critical hit, and the resulting damage will be less critical",
-                "value": 10
+                "value": 45
             },
             {
                 "name": "Charisma",
@@ -148,7 +148,7 @@
             {
                 "name": "Insanity",
                 "description": "Indicates the state of mental health of an adventurer. If the insanity is high, there will be more chance to make a fumble of a critical hit, and the resulting damage will be more critical. If the insanity is low, there will be less chance to make a fumble or a critical hit, and the resulting damage will be less critical",
-                "value": 25
+                "value": 35
             },
             {
                 "name": "Charisma",
@@ -188,7 +188,7 @@
             {
                 "name": "Insanity",
                 "description": "Indicates the state of mental health of an adventurer. If the insanity is high, there will be more chance to make a fumble of a critical hit, and the resulting damage will be more critical. If the insanity is low, there will be less chance to make a fumble or a critical hit, and the resulting damage will be less critical",
-                "value": 45
+                "value": 40
             },
             {
                 "name": "Charisma",
@@ -228,7 +228,7 @@
             {
                 "name": "Insanity",
                 "description": "Indicates the state of mental health of an adventurer. If the insanity is high, there will be more chance to make a fumble of a critical hit, and the resulting damage will be more critical. If the insanity is low, there will be less chance to make a fumble or a critical hit, and the resulting damage will be less critical",
-                "value": 40
+                "value": 10
             },
             {
                 "name": "Charisma",
