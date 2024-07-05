@@ -1,5 +1,6 @@
 
 const Equipment = require('../models/equipmentModel');
+const { schema } = require('../models/profileModel');
 const profileService = require('../services/profileService');
 
 const mongoose =  require ('mongoose');
@@ -19,10 +20,11 @@ const Profiles = {
     SCHOLAR:    0,
     PARIAH:     1,
     JUGGLER:    2,
-    BLASPHEMER: 3,
-    GOSSIPER:   4,
-    BEGGAR:     5,
-    BUMBLER:    6   
+    EMBALMER:   3,
+    BLASPHEMER: 4,
+    GOSSIPER:   5,
+    BUMBLER:    6,
+    POET:       7   
 }
 
 
@@ -68,10 +70,11 @@ const createEquipment = async () => {
         const scholarId       = profiles[Profiles.SCHOLAR]._id;
         const pariahId        = profiles[Profiles.PARIAH]._id;
         const jugglerId       = profiles[Profiles.JUGGLER]._id;
+        const embalmerId      = profiles[Profiles.EMBALMER]._id;
         const blasphemerId    = profiles[Profiles.BLASPHEMER]._id;
         const gossiperId      = profiles[Profiles.GOSSIPER]._id;
-        const beggarId        = profiles[Profiles.BEGGAR]._id;
         const bumblerId       = profiles[Profiles.BUMBLER]._id;
+        const poetId          = profiles[Profiles.POET]._id;
 
 
         const weapon1 = new Equipment({

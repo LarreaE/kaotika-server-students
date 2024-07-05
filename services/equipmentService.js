@@ -31,13 +31,22 @@ const getEquipmentByIdProfile = async (id) => {
         );
 
         //Extraemos las armas
-        const weapons = profileEquipment.filter(item => item.type === "Weapon");
+        const weapons = profileEquipment.filter(item => item.type === "weapon");
         const artifacts = profileEquipment.filter(item => item.type === "artifact");
         const armor = profileEquipment.filter(item => item.type === "armor");
-        const potions = profileEquipment.filter(item => item.type === "potion");
+        const healingPotions = profileEquipment.filter(item => item.type === "healing");
+        const antidotePotions = profileEquipment.filter(item => item.type === "antidote");
+        const enhancerPotions = profileEquipment.filter(item => item.type === "enhancer");
+
+        //const potions = profileEquipment.filter(item => item.type === "potion");
 
         return {
-            weapons, artifacts, armor, potions
+            weapons, 
+            artifacts, 
+            armor, 
+            healing_potions: healingPotions, 
+            antidote_potions: antidotePotions,
+            enhancer_potions: enhancerPotions
         }
         
     }
