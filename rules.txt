@@ -17,8 +17,46 @@ HP: 3*(CON + STR)
 ATT: STR - INS / 2. (Can be negative or positive)
 DEF: DEX + CON + INT/2
 RES MAGIC: INT + CHA
-CFP: INS
-BCFA: STR + INS
+CFP (critical or fumble probability): INS
+BCFA (base critical & fumble attack): STR + INS
+
+
+
+
+COMBAT
+------------
+
+%ATT: DEX + % WEAPON 
+%CRIT: CFP * DEX / 100 (Rounded up. Less or equal than)
+%FUMBLE: 100 - CFP * (100 - DEX) / 100 (Rounded up. Greater than)
+Normal damage: ATT + WEAPON DAMAGE - DEF(enemy). 
+
+If Normal damage <= 0, the enemy decreases ARMOR CON by 1. If ARMOR CON == 0 ARMOR BREAKS
+
+
+Critical damage: BCFE + WEAPON DAMAGE * multiplier (not affected by armor)
+
+Multiplier calculation
+----------------------
+
+                          %FUMBLE                100  
+                            |                     |
+---------------------------------------------------
+                            -   Fumble interval   -
+  Multiplier                |     |     |         |  
+                            1...  2...  3...      5         
+
+
+Multiplier value
+----------------
+
+1: If 1D100 roll > (%FUMBLE, %FUMBLE + .25*(100-%FUMBLE))
+2: If 1D100 roll > (%FUMBLE + .25*(100-%FUMBLE), %FUMBLE + .5*(100-%FUMBLE))
+3: If 1D100 roll > (%FUMBLE + .5*(100-%FUMBLE), 99)
+5: If 1D100 roll == 100 
+
+
+
 
 
 
