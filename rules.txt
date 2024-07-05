@@ -1,0 +1,23 @@
+ATTRIBUTES
+------------------
+
+CON: Max value: 40 (can be greater with potions or artifacts)
+DEX: Max value: 40 (can be greater with potions or artifacts)
+STR: No limit (can be greater with potions or artifacts)
+CHA: Max value: 50
+INT: Max value: 50 
+INS: Min: 10 max: 45 (can be greater with potions)
+
+
+
+MODIFIERS
+-----------------
+
+HP: 3*(CON + STR)
+ATT: STR - INS / 2. (Can be negative or positive)
+DEF: CON + CON + INT/2
+%CRIT: INS
+BCRIT: STR + INS
+RES MAGIC: INT + CHA
+
+
