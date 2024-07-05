@@ -10,14 +10,15 @@ INS: Min: 10 max: 45 (can be greater with potions)
 
 
 
-MODIFIERS
+DERIVED ATTRIBUTES
 -----------------
 
 HP: 3*(CON + STR)
 ATT: STR - INS / 2. (Can be negative or positive)
-DEF: CON + CON + INT/2
-%CRIT: INS
-BCRIT: STR + INS
+DEF: DEX + CON + INT/2
 RES MAGIC: INT + CHA
+CFP: INS
+BCFA: STR + INS
+
 
 
