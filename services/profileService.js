@@ -17,13 +17,13 @@ const getAllProfiles = async () => {
     {
      
         //const equipment = await Equipment.find().exec();
-        let profiles = await Profile.find().exec();
-        let weapons = await Weapon.find().exec();
-        let armors = await Armor.find().exec();
-        let artifacts = await Artifact.find().exec();
-        let healingPotions = await PotionHealing.find().exec();
-        let antidotes = await PotionAntidote.find().exec();
-        let enhancerPotions = await PotionEnhancer.find().exec();
+        const allProfiles = await Profile.find().exec();
+        const allWeapons = await Weapon.find().exec();
+        const allArmors = await Armor.find().exec();
+        const allArtifacts = await Artifact.find().exec();
+        const allHealingPotions = await PotionHealing.find().exec();
+        const allAntidotes = await PotionAntidote.find().exec();
+        const allEnhancerPotions = await PotionEnhancer.find().exec();
         
         //const equipment = await equipmentService.getAllEquipment();
 
@@ -62,34 +62,36 @@ const getAllProfiles = async () => {
     
         const returnProfiles = [];
 
-        for (let i = 0; i < profiles.length; ++i)
+        for (let i = 0; i < allProfiles.length; ++i)
         {
-            console.log(profiles[i].name);
+            console.log(allProfiles[i].name);
             console.log("-----------------------------------");
             
-            const profileId = profiles[i]._id;
+            const profileId = allProfiles[i]._id;
 
-            weapons = weapons.filter(item => 
+            const weapons = allWeapons.filter(item => 
                 item.profiles.some(id => id.equals(profileId))
             );
 
-            artifacts = artifacts.filter(item => 
+            //console.log(weapons);
+
+            const artifacts = allArtifacts.filter(item => 
                 item.profiles.some(id => id.equals(profileId))
             );
 
-            armors = armors.filter(item => 
+            const armors = allArmors.filter(item => 
                 item.profiles.some(id => id.equals(profileId))
             );
 
-            healingPotions = healingPotions.filter(item => 
+            const healingPotions = allHealingPotions.filter(item => 
                 item.profiles.some(id => id.equals(profileId))
             );
 
-            antidotePotions = antidotes.filter(item => 
+            const antidotePotions = allAntidotes.filter(item => 
                 item.profiles.some(id => id.equals(profileId))
             );
 
-            enhancerPotions = enhancerPotions.filter(item => 
+            const enhancerPotions = allEnhancerPotions.filter(item => 
                 item.profiles.some(id => id.equals(profileId))
             );
 
@@ -103,11 +105,11 @@ const getAllProfiles = async () => {
             // const enhancerPotions = equipmentByProfile.filter(item => item.type === "enhancer");
 
             const returnProfile = {
-                _id: profiles[i]._id,
-                name: profiles[i].name,
-                description: profiles[i].description,
-                image: profiles[i].image,
-                attributes: profiles[i].attributes,
+                _id: allProfiles[i]._id,
+                name: allProfiles[i].name,
+                description: allProfiles[i].description,
+                image: allProfiles[i].image,
+                attributes: allProfiles[i].attributes,
                 equipment: {    weapons, 
                                 artifacts, 
                                 armors, 

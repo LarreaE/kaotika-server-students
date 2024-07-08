@@ -37,30 +37,7 @@ const Profiles = {
     TOTAL_PROFILES: 8  
 }
 
-// const Equipment = {
-//     LIGHT_ARMOR_1:    0,
-//     LIGHT_ARMOR_2:     1,
-//     LIGHT_ARMOR_3:    2,
-//     HEAVY_ARMOR_1:   3,
-//     HEAVY_ARMOR_2: 4,
-//     HEAVY_ARMOR_3:   5,
-//     WEAPON_COMMON_1:    6,
-//     WEAPON_COMMON_2:       7, 
-//     WEAPON_SPECIAL:        8,
-//     ARTIFACT_1: WEAPON_SPECIAL + Profiles.TOTAL_PROFILES,
-//     ARTIFACT_2: WEAPON_SPECIAL + Profiles.TOTAL_PROFILES + 1,
-//     ARTIFACT_3: WEAPON_SPECIAL + Profiles.TOTAL_PROFILES + 2,
-//     POTION_HEALTH_1: ARTIFACT_3 + 1,
-//     POTION_HEALTH_2: ARTIFACT_3 + 2,
-//     POTION_HEALTH_3: ARTIFACT_3 + 3,
-    
 
-
-
-    
-
-
-// }
 
 
 

@@ -2,7 +2,6 @@
  
 
 
-
 [
     {
         "name": "Celestial Robe of the Archmage",
@@ -24,11 +23,11 @@
 
         ],
         "profiles":[
-            "6687c31b7a5ce485a0eed476",     
-            "6687c31b7a5ce485a0eed478",    
-            "6687c31b7a5ce485a0eed479",
-            "6687c31b7a5ce485a0eed47b",    
-            "6687c31b7a5ce485a0eed47d"  
+            scholarId,                     
+            jugglerId,                  
+            blasphemerId,
+            gossiperId,  
+            poetId  
         ]
 
     },
@@ -57,11 +56,11 @@
 
         ],
         "profiles":[
-            "6687c31b7a5ce485a0eed476",     
-            "6687c31b7a5ce485a0eed478",    
-            "6687c31b7a5ce485a0eed479",
-            "6687c31b7a5ce485a0eed47b",    
-            "6687c31b7a5ce485a0eed47d"  
+            scholarId,                     
+            jugglerId,                  
+            blasphemerId,
+            gossiperId,  
+            poetId    
         ]
 
     },
@@ -93,12 +92,12 @@
             }
 
         ],
-        "profiles":[
-            "6687c31b7a5ce485a0eed476",     
-            "6687c31b7a5ce485a0eed478",    
-            "6687c31b7a5ce485a0eed479",
-            "6687c31b7a5ce485a0eed47b",    
-            "6687c31b7a5ce485a0eed47d"  
+        "profiles":[ 
+            scholarId,                     
+            jugglerId,                  
+            blasphemerId,
+            gossiperId,  
+            poetId    
         ]
 
     },
@@ -135,9 +134,9 @@
 
         ],
         "profiles":[
-            "6687c31b7a5ce485a0eed477",   
-            "6687c31b7a5ce485a0eed47a",   
-            "6687c31b7a5ce485a0eed47c"    
+            pariahId,    
+            embalmerId,                
+            bumblerId     
         ]
 
     },
@@ -174,9 +173,9 @@
 
         ],
         "profiles":[
-            "6687c31b7a5ce485a0eed477",   
-            "6687c31b7a5ce485a0eed47a",   
-            "6687c31b7a5ce485a0eed47c"  
+            pariahId,    
+            embalmerId,                
+            bumblerId    
         ]
 
     },
@@ -217,9 +216,10 @@
 
         ],
         "profiles":[
-            "6687c31b7a5ce485a0eed477",   
-            "6687c31b7a5ce485a0eed47a",   
-            "6687c31b7a5ce485a0eed47c"   
+            pariahId,    
+            embalmerId,                
+            bumblerId  
+               
         ]
 
     },
@@ -238,22 +238,16 @@
 
 
         ],
-        "min_attr":[
-            {
-                "name": "Strength",
-                "value": 5
-            }
-
-        ],
+        "min_level": 1,
         "profiles":[
-            "6687c31b7a5ce485a0eed476",   
-            "6687c31b7a5ce485a0eed477",   
-            "6687c31b7a5ce485a0eed478",   
-            "6687c31b7a5ce485a0eed47a",  
-            "6687c31b7a5ce485a0eed479",
-            "6687c31b7a5ce485a0eed47b",  
-            "6687c31b7a5ce485a0eed47c",
-            "6687c31b7a5ce485a0eed47d" 
+            scholarId,   
+            pariahId,   
+            jugglerId,   
+            embalmerId,  
+            blasphemerId,
+            gossiperId,  
+            bumblerId,
+            poetId 
         ]
 
     },
@@ -272,22 +266,16 @@
 
 
         ],
-        "min_attr":[
-            {
-                "name": "Strength",
-                "value": 5
-            }
-
-        ],
+        "min_level": 1,
         "profiles":[
-            "6687c31b7a5ce485a0eed476",   
-            "6687c31b7a5ce485a0eed477",   
-            "6687c31b7a5ce485a0eed478",   
-            "6687c31b7a5ce485a0eed47a",  
-            "6687c31b7a5ce485a0eed479",
-            "6687c31b7a5ce485a0eed47b",  
-            "6687c31b7a5ce485a0eed47c",
-            "6687c31b7a5ce485a0eed47d" 
+            scholarId,   
+            pariahId,   
+            jugglerId,   
+            embalmerId,  
+            blasphemerId,
+            gossiperId,  
+            bumblerId,
+            poetId  
         ]
 
     },
@@ -314,24 +302,9 @@
 
 
         ],
-        "min_attr":[
-            {
-                "name": "Strength",
-                "value": 5
-            },
-            {
-                "name": "Intelligence",
-                "value": 10
-            },
-            {
-                "name": "Dexterity",
-                "value": 10
-            }
-
-
-        ],
+        "min_level": 1,
         "profiles":[
-            "6687c31b7a5ce485a0eed476"  
+            scholarId 
             
         ]
 
@@ -355,20 +328,9 @@
 
 
         ],
-        "min_attr":[
-            {
-                "name": "Strength",
-                "value": 20
-            },
-            {
-                "name": "Constitution",
-                "value": 10
-            }
-
-
-        ],
+        "min_level": 1,
         "profiles":[
-            "6687c31b7a5ce485a0eed477"  
+            pariahId  
             
         ]
 
@@ -396,19 +358,9 @@
 
 
         ],
-        "min_attr":[
-            {
-                "name":     "Strength",
-                "value":    5
-            },
-            {
-                "attribute": "Dexterity",
-                "value":     20
-            }
-
-        ],
+        "min_level": 1,
         "profiles":[
-            "6687c31b7a5ce485a0eed478"  
+            jugglerId 
             
         ]
 
@@ -432,19 +384,9 @@
 
 
         ],
-        "min_attr":[
-            {
-                "name":     "Strength",
-                "value":    10
-            },
-            {
-                "attribute": "Dexterity",
-                "value":     30
-            }
-
-        ],
+        "min_level": 1,
         "profiles":[
-            "6687c31b7a5ce485a0eed47a"  
+            embalmerId  
             
         ]
 
@@ -468,17 +410,7 @@
 
 
         ],
-        "min_attr":[
-            {
-                "name":     "Strength",
-                "value":    5
-            },
-            {
-                "name":     "Intelligence",
-                "value":    15
-            }
-
-        ],
+        "min_level": 1,
         "profiles":[
             blasphemerId  
             
@@ -545,21 +477,7 @@
 
 
         ],
-        "min_attr":[
-            {
-                "name":     "Strength",
-                "value":    20
-            },
-            {
-                "name":     "Constitution",
-                "value":    30
-            },
-            {
-                "name":     "Dexterity",
-                "value":    5
-            }
-
-        ],
+        "min_level": 1,
         "profiles":[
             bumblerId  
             
@@ -584,21 +502,8 @@
             }
 
         ],
-        "min_attr":[
-            {
-                "name":     "Strength",
-                "value":    5
-            },
-            {
-                "name":     "Charisma",
-                "value":    30
-            },
-            {
-                "name":     "Dexterity",
-                "value":    10
-            }
-
-        ],
+        "min_level": 1,
+        
         "profiles":[
             poetId  
             
@@ -618,7 +523,7 @@
             
                 {
                     "attribute": "Strength",
-                    "value_per_unit": 0.5  
+                    "value": 0.5  
                 }
 
         ],
@@ -663,7 +568,7 @@
             
                 {
                     "attribute": "Intelligence",
-                    "value_per_unit": 0.5  
+                    "value": 0.5  
                 }
 
         ],
@@ -708,7 +613,7 @@
             
                 {
                     "attribute": "Constitution",
-                    "value_per_unit": 0.5  
+                    "value": 0.5  
                 }
 
         ],
@@ -752,7 +657,8 @@
         "modifiers": [
             {
                 "attribute": "Hit points",
-                "value": 10
+                "value": 20,
+                
             }
 
         ],
@@ -785,7 +691,8 @@
         "modifiers": [
             {
                 "attribute": "Hit points",
-                "value": 20
+                "value": 40,
+                
             },
             {
                 "attribute": "Intelligence",
@@ -823,7 +730,7 @@
         "modifiers": [
             {
                 "attribute": "Hit points",
-                "value": 50
+                "value": 70
             },
             {
                 "attribute": "Intelligence",
@@ -858,10 +765,7 @@
         "type": "antidote",
         "image": "/images/equipment/artifacts/potion_4.jpg",
         
-        "recovery_effect": 
-        {
-            "id": 1234
-        },
+        "recovery_effect": scholarId,
         "min_attr":[
             {
                 "name":     "Intelligence",
@@ -888,11 +792,7 @@
         "type": "antidote",
         "image": "/images/equipment/artifacts/potion_4.jpg",
         
-        "recovery_effect": 
-        {
-            "id": 1234
-        }
-        ,
+        "recovery_effect": scholarId,
         "min_attr":[
             {
                 "name":     "Intelligence",
@@ -919,10 +819,7 @@
         "type": "antidote",
         "image": "/images/equipment/artifacts/potion_4.jpg",
         
-        "recovery_effect": 
-        {
-            "id": 1234
-        },
+        "recovery_effect": scholarId,
         "min_attr":[
             {
                 "name":     "Intelligence",
@@ -1048,10 +945,4 @@
 
     }
     
-
-
-
-   
-    
-
 ]
