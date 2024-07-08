@@ -6,7 +6,7 @@ const getAllEquipment = async () => {
     try
     {
         
-        const equipments = await Equipment.find();
+        const equipments = await Equipment.find().exec();
         //console.log(equipments);
         return equipments;
     }

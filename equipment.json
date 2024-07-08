@@ -341,7 +341,7 @@
         "description": "ABC",
         "type": "weapon",
         "image": "/images/equipment/weapons/sword_4.jpg",
-        "damage": "5D12",
+        "damage": "4D12+3",
         "base_percentage": 5,
         "modifiers": [
             {
@@ -399,7 +399,7 @@
         "min_attr":[
             {
                 "name":     "Strength",
-                "value":    10
+                "value":    5
             },
             {
                 "attribute": "Dexterity",
@@ -439,7 +439,7 @@
             },
             {
                 "attribute": "Dexterity",
-                "value":     40
+                "value":     30
             }
 
         ],
@@ -475,7 +475,7 @@
             },
             {
                 "name":     "Intelligence",
-                "value":    25
+                "value":    15
             }
 
         ],
@@ -490,7 +490,7 @@
         "description": "ABC",
         "type": "weapon",
         "image": "/images/equipment/weapons/sword_5.jpg",
-        "damage": "5D12+4",
+        "damage": "3D12+4",
         "base_percentage": 5,
         "modifiers": [
             {
@@ -516,11 +516,11 @@
             },
             {
                 "name":     "Constitution",
-                "value":    15
+                "value":    5
             },
             {
                 "name":     "Dexterity",
-                "value":    15
+                "value":    10
             }
 
         ],
@@ -535,16 +535,12 @@
         "description": "ABC",
         "type": "weapon",
         "image": "/images/equipment/weapons/sword_5.jpg",
-        "damage": "1D8+2",
+        "damage": "3D8+2",
         "base_percentage": 5,
         "modifiers": [
             {
                 "attribute": "Strength",
-                "value":     -5
-            },
-            {
-                "attribute": "Dexterity",
-                "value":     25
+                "value":     -12
             }
 
 
@@ -552,15 +548,15 @@
         "min_attr":[
             {
                 "name":     "Strength",
-                "value":    5
+                "value":    20
             },
             {
                 "name":     "Constitution",
-                "value":    35
+                "value":    30
             },
             {
                 "name":     "Dexterity",
-                "value":    10
+                "value":    5
             }
 
         ],
@@ -591,11 +587,11 @@
         "min_attr":[
             {
                 "name":     "Strength",
-                "value":    10
+                "value":    5
             },
             {
                 "name":     "Charisma",
-                "value":    35
+                "value":    30
             },
             {
                 "name":     "Dexterity",
@@ -756,8 +752,7 @@
         "modifiers": [
             {
                 "attribute": "Hit points",
-                "value": 50,
-                "limited_by_max": true
+                "value": 10
             }
 
         ],
@@ -790,8 +785,7 @@
         "modifiers": [
             {
                 "attribute": "Hit points",
-                "value": 100,
-                "limited_by_max": true
+                "value": 20
             },
             {
                 "attribute": "Intelligence",
@@ -829,8 +823,7 @@
         "modifiers": [
             {
                 "attribute": "Hit points",
-                "value": 200,
-                "limited_by_max": false
+                "value": 50
             },
             {
                 "attribute": "Intelligence",
@@ -865,13 +858,10 @@
         "type": "antidote",
         "image": "/images/equipment/artifacts/potion_4.jpg",
         
-        "illness": [
-            {
-                "name": "Reduce Dexterity",
-                "type": "Potion"
-            }
-            
-        ],
+        "recovery_effect": 
+        {
+            "id": 1234
+        },
         "min_attr":[
             {
                 "name":     "Intelligence",
@@ -898,13 +888,11 @@
         "type": "antidote",
         "image": "/images/equipment/artifacts/potion_4.jpg",
         
-        "illness": [
-            {
-                "name": "Reduce Intelligence",
-                "type": "Potion"
-            }
-            
-        ],
+        "recovery_effect": 
+        {
+            "id": 1234
+        }
+        ,
         "min_attr":[
             {
                 "name":     "Intelligence",
@@ -931,13 +919,10 @@
         "type": "antidote",
         "image": "/images/equipment/artifacts/potion_4.jpg",
         
-        "illness": [
-            {
-                "name": "Reduce Strength",
-                "type": "Potion"
-            }
-            
-        ],
+        "recovery_effect": 
+        {
+            "id": 1234
+        },
         "min_attr":[
             {
                 "name":     "Intelligence",
