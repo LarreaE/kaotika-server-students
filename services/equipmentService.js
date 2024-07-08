@@ -43,7 +43,7 @@ const getEquipmentByIdProfile = async (id) => {
         return {
             weapons, 
             artifacts, 
-            armor, 
+            armors, 
             healing_potions: healingPotions, 
             antidote_potions: antidotePotions,
             enhancer_potions: enhancerPotions

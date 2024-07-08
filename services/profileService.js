@@ -1,7 +1,13 @@
 
 const Profile = require('../models/profileModel'); 
 //const Equipment = require('../models/equipmentModel'); 
-const equipmentService = require('./equipmentService');
+//const equipmentService = require('./equipmentService');
+const Weapon = require('../models/weaponModel');
+const Armor = require('../models/armorModel');
+const Artifact = require('../models/artifactModel');
+const PotionHealing = require('../models/potionHealingModel');
+const PotionAntidote = require('../models/potionAntidoteModel');
+const PotionEnhancer = require('../models/potionEnhancerModel');
 
 
 
@@ -11,8 +17,15 @@ const getAllProfiles = async () => {
     {
      
         //const equipment = await Equipment.find().exec();
-        const profiles = await Profile.find().exec();
-        const equipment = await equipmentService.getAllEquipment();
+        let profiles = await Profile.find().exec();
+        let weapons = await Weapon.find().exec();
+        let armors = await Armor.find().exec();
+        let artifacts = await Artifact.find().exec();
+        let healingPotions = await PotionHealing.find().exec();
+        let antidotes = await PotionAntidote.find().exec();
+        let enhancerPotions = await PotionEnhancer.find().exec();
+        
+        //const equipment = await equipmentService.getAllEquipment();
 
 
 
@@ -56,16 +69,38 @@ const getAllProfiles = async () => {
             
             const profileId = profiles[i]._id;
 
-            const equipmentByProfile = equipment.filter(item => 
+            weapons = weapons.filter(item => 
                 item.profiles.some(id => id.equals(profileId))
             );
 
-            const weapons = equipmentByProfile.filter(item => item.type === "weapon");
-            const artifacts = equipmentByProfile.filter(item => item.type === "artifact");
-            const armor = equipmentByProfile.filter(item => item.type === "armor");
-            const healingPotions = equipmentByProfile.filter(item => item.type === "healing");
-            const antidotePotions = equipmentByProfile.filter(item => item.type === "antidote");
-            const enhancerPotions = equipmentByProfile.filter(item => item.type === "enhancer");
+            artifacts = artifacts.filter(item => 
+                item.profiles.some(id => id.equals(profileId))
+            );
+
+            armors = armors.filter(item => 
+                item.profiles.some(id => id.equals(profileId))
+            );
+
+            healingPotions = healingPotions.filter(item => 
+                item.profiles.some(id => id.equals(profileId))
+            );
+
+            antidotePotions = antidotes.filter(item => 
+                item.profiles.some(id => id.equals(profileId))
+            );
+
+            enhancerPotions = enhancerPotions.filter(item => 
+                item.profiles.some(id => id.equals(profileId))
+            );
+
+
+
+            // const weapons = equipmentByProfile.filter(item => item.type === "weapon");
+            // const artifacts = equipmentByProfile.filter(item => item.type === "artifact");
+            // const armors = equipmentByProfile.filter(item => item.type === "armor");
+            // const healingPotions = equipmentByProfile.filter(item => item.type === "healing");
+            // const antidotePotions = equipmentByProfile.filter(item => item.type === "antidote");
+            // const enhancerPotions = equipmentByProfile.filter(item => item.type === "enhancer");
 
             const returnProfile = {
                 _id: profiles[i]._id,
@@ -75,7 +110,7 @@ const getAllProfiles = async () => {
                 attributes: profiles[i].attributes,
                 equipment: {    weapons, 
                                 artifacts, 
-                                armor, 
+                                armors, 
                                 healing_potions: healingPotions, 
                                 antidote_potions: antidotePotions,
                                 enhancer_potions: enhancerPotions

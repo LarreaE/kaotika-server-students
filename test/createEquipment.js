@@ -1,5 +1,13 @@
 
 const Equipment = require('../models/equipmentModel');
+const Weapon = require('../models/weaponModel');
+const Armor = require('../models/armorModel');
+const Artifact = require('../models/artifactModel');
+const PotionHealing = require('../models/potionHealingModel');
+const PotionAntidote = require('../models/potionAntidoteModel');
+const PotionEnhancer = require('../models/potionEnhancerModel');
+
+
 const { schema } = require('../models/profileModel');
 const profileService = require('../services/profileService');
 
@@ -82,7 +90,16 @@ const clearEquipment = async() => {
     try
     { 
         //await connectToDB();
-        let deletedWorkout = await Equipment.deleteMany();     
+
+        let deletedWorkout = [];
+
+        await Armor.deleteMany(); 
+        await Weapon.deleteMany(); 
+        await PotionAntidote.deleteMany(); 
+        await PotionEnhancer.deleteMany(); 
+        await PotionHealing.deleteMany(); 
+        await Artifact.deleteMany(); 
+            
         return deletedWorkout;
     }
     catch (error)
@@ -120,9 +137,50 @@ const createEquipment = async () => {
         for (let i = 0; i < data.length; ++i)
         {
             const item = data[i];
-            const newItem = new Equipment(item);
+            const type = item.type;
+            let newItem;
+            if (type === "weapon")
+            {
+                newItem = new Weapon(item);
+                console.log("Entra");
+            }
+            else if (type === "armor")
+            {
+                newItem = new Armor(item);
+                console.log("Entra");
+            }
+            else if (type === "artifact")
+            {
+                newItem = new Artifact(item);
+                console.log("Entra");
+            }
+            else if (type === "healing")
+            {
+                newItem = new PotionHealing(item);
+                console.log("Entra");
+            }
+            else if (type === "antidote")
+            {
+                newItem = new PotionAntidote(item);
+       
+            }
+            else if (type === "enhancer")
+            {
+                newItem = new PotionEnhancer(item);
+                
+            }
+            else
+            {
+                throw new Error ("Equipment type not valid")
+            }
+
+
+        
+                
+
+
             const equipment = await newItem.save();
-            console.log(equipment);
+            //console.log(equipment);
 
         }
 
@@ -802,8 +860,8 @@ function getEquipment(scholarId, pariahId, jugglerId, embalmerId, blasphemerId, 
             "modifiers": [
                 {
                     "attribute": "Hit points",
-                    "value": 50,
-                    "limited_by_max": true
+                    "value": 20,
+                    
                 }
 
             ],
@@ -836,8 +894,8 @@ function getEquipment(scholarId, pariahId, jugglerId, embalmerId, blasphemerId, 
             "modifiers": [
                 {
                     "attribute": "Hit points",
-                    "value": 100,
-                    "limited_by_max": true
+                    "value": 40,
+                    
                 },
                 {
                     "attribute": "Intelligence",
@@ -875,8 +933,7 @@ function getEquipment(scholarId, pariahId, jugglerId, embalmerId, blasphemerId, 
             "modifiers": [
                 {
                     "attribute": "Hit points",
-                    "value": 200,
-                    "limited_by_max": false
+                    "value": 70
                 },
                 {
                     "attribute": "Intelligence",
@@ -911,13 +968,7 @@ function getEquipment(scholarId, pariahId, jugglerId, embalmerId, blasphemerId, 
             "type": "antidote",
             "image": "/images/equipment/artifacts/potion_4.jpg",
             
-            "illness": [
-                {
-                    "name": "Reduce Dexterity",
-                    "type": "Potion"
-                }
-                
-            ],
+            "recovery_effect": scholarId,
             "min_attr":[
                 {
                     "name":     "Intelligence",
@@ -944,13 +995,7 @@ function getEquipment(scholarId, pariahId, jugglerId, embalmerId, blasphemerId, 
             "type": "antidote",
             "image": "/images/equipment/artifacts/potion_4.jpg",
             
-            "illness": [
-                {
-                    "name": "Reduce Intelligence",
-                    "type": "Potion"
-                }
-                
-            ],
+            "recovery_effect": scholarId,
             "min_attr":[
                 {
                     "name":     "Intelligence",
@@ -977,13 +1022,7 @@ function getEquipment(scholarId, pariahId, jugglerId, embalmerId, blasphemerId, 
             "type": "antidote",
             "image": "/images/equipment/artifacts/potion_4.jpg",
             
-            "illness": [
-                {
-                    "name": "Reduce Strength",
-                    "type": "Potion"
-                }
-                
-            ],
+            "recovery_effect": scholarId,
             "min_attr":[
                 {
                     "name":     "Intelligence",
