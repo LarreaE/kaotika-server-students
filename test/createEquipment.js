@@ -1,5 +1,5 @@
 
-const Equipment = require('../models/equipmentModel');
+//const Equipment = require('../models/equipmentModel');
 const Weapon = require('../models/weaponModel');
 const Armor = require('../models/armorModel');
 const Artifact = require('../models/artifactModel');
