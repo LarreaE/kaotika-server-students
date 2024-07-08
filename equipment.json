@@ -57,11 +57,11 @@
 
         ],
         "profiles":[
-            scholarId,     
-            jugglerId,    
-            blasphemerId,
-            gossiperId,    
-            poetId  
+            "6687c31b7a5ce485a0eed476",     
+            "6687c31b7a5ce485a0eed478",    
+            "6687c31b7a5ce485a0eed479",
+            "6687c31b7a5ce485a0eed47b",    
+            "6687c31b7a5ce485a0eed47d"  
         ]
 
     },
@@ -94,11 +94,11 @@
 
         ],
         "profiles":[
-            scholarId,     
-            jugglerId,    
-            blasphemerId,
-            gossiperId,    
-            poetId  
+            "6687c31b7a5ce485a0eed476",     
+            "6687c31b7a5ce485a0eed478",    
+            "6687c31b7a5ce485a0eed479",
+            "6687c31b7a5ce485a0eed47b",    
+            "6687c31b7a5ce485a0eed47d"  
         ]
 
     },
@@ -135,9 +135,9 @@
 
         ],
         "profiles":[
-            pariahId,   
-            embalmerId,   
-            bumblerId    
+            "6687c31b7a5ce485a0eed477",   
+            "6687c31b7a5ce485a0eed47a",   
+            "6687c31b7a5ce485a0eed47c"    
         ]
 
     },
@@ -174,9 +174,9 @@
 
         ],
         "profiles":[
-            pariahId,   
-            embalmerId,   
-            bumblerId    
+            "6687c31b7a5ce485a0eed477",   
+            "6687c31b7a5ce485a0eed47a",   
+            "6687c31b7a5ce485a0eed47c"  
         ]
 
     },
@@ -217,9 +217,9 @@
 
         ],
         "profiles":[
-            pariahId,   
-            embalmerId,   
-            bumblerId    
+            "6687c31b7a5ce485a0eed477",   
+            "6687c31b7a5ce485a0eed47a",   
+            "6687c31b7a5ce485a0eed47c"   
         ]
 
     },
@@ -246,14 +246,14 @@
 
         ],
         "profiles":[
-            scholarId,   
-            pariahId,   
-            jugglerId,   
-            embalmerId,  
-            blasphemerId,
-            gossiperId,  
-            bumblerId,
-            poetId 
+            "6687c31b7a5ce485a0eed476",   
+            "6687c31b7a5ce485a0eed477",   
+            "6687c31b7a5ce485a0eed478",   
+            "6687c31b7a5ce485a0eed47a",  
+            "6687c31b7a5ce485a0eed479",
+            "6687c31b7a5ce485a0eed47b",  
+            "6687c31b7a5ce485a0eed47c",
+            "6687c31b7a5ce485a0eed47d" 
         ]
 
     },
@@ -280,14 +280,14 @@
 
         ],
         "profiles":[
-            scholarId,   
-            pariahId,   
-            jugglerId,   
-            embalmerId,  
-            blasphemerId,
-            gossiperId,  
-            bumblerId,
-            poetId 
+            "6687c31b7a5ce485a0eed476",   
+            "6687c31b7a5ce485a0eed477",   
+            "6687c31b7a5ce485a0eed478",   
+            "6687c31b7a5ce485a0eed47a",  
+            "6687c31b7a5ce485a0eed479",
+            "6687c31b7a5ce485a0eed47b",  
+            "6687c31b7a5ce485a0eed47c",
+            "6687c31b7a5ce485a0eed47d" 
         ]
 
     },
@@ -331,7 +331,7 @@
 
         ],
         "profiles":[
-            scholarId  
+            "6687c31b7a5ce485a0eed476"  
             
         ]
 
@@ -368,7 +368,7 @@
 
         ],
         "profiles":[
-            pariahId  
+            "6687c31b7a5ce485a0eed477"  
             
         ]
 
@@ -408,7 +408,7 @@
 
         ],
         "profiles":[
-            jugglerId  
+            "6687c31b7a5ce485a0eed478"  
             
         ]
 
@@ -444,7 +444,7 @@
 
         ],
         "profiles":[
-            embalmerId  
+            "6687c31b7a5ce485a0eed47a"  
             
         ]
 
