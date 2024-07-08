@@ -67,8 +67,6 @@ const getAllProfiles = async () => {
             const antidotePotions = equipmentByProfile.filter(item => item.type === "antidote");
             const enhancerPotions = equipmentByProfile.filter(item => item.type === "enhancer");
 
-            const profileCopy = Object.assign({}, profiles[i]);
-
             const returnProfile = {
                 _id: profiles[i]._id,
                 name: profiles[i].name,
