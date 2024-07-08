@@ -5,7 +5,7 @@
 
 [
     {
-        "name": "Robe 1",
+        "name": "Celestial Robe of the Archmage",
         "description": "ABC",
         "type": "armor",
         "image": "/images/equipment/armor/robe_1.jpg",
@@ -33,7 +33,7 @@
 
     },
     {
-        "name": "Robe 2",
+        "name": "Ethereal Vestments of the Whispering Winds",
         "description": "ABC",
         "type": "armor",
         "image": "/images/equipment/armor/robe_2.jpg",
@@ -66,7 +66,7 @@
 
     },
     {
-        "name": "Robe 3",
+        "name": "Abyssal Tunic of the Shadow Lord",
         "description": "ABC",
         "type": "armor",
         "image": "/images/equipment/armor/robe_3.jpg",
@@ -103,7 +103,7 @@
 
     },
     {
-        "name": "Armor 1",
+        "name": "Shadowstalker Leather Jerkin",
         "description": "ABC",
         "type": "armor",
         "image": "/images/equipment/armor/armor_1.jpg",
@@ -142,7 +142,7 @@
 
     },
     {
-        "name": "Armor 2",
+        "name": "Huntsman's Wildwood Cuirass",
         "description": "ABC",
         "type": "armor",
         "image": "/images/equipment/armor/armor_2.jpg",
@@ -181,7 +181,7 @@
 
     },
     {
-        "name": "Armor 3",
+        "name": "Dragonhide Battle Vest",
         "description": "ABC",
         "type": "armor",
         "image": "/images/equipment/armor/armor_3.jpg",
@@ -224,7 +224,7 @@
 
     },
     {
-        "name": "Short Sword",
+        "name": "Blade of Eternal Flame",
         "description": "ABC",
         "type": "weapon",
         "image": "/images/equipment/weapons/sword_1.jpg",
@@ -258,7 +258,7 @@
 
     },
     {
-        "name": "Long Sword",
+        "name": "Stormbringer's Fury",
         "description": "ABC",
         "type": "weapon",
         "image": "/images/equipment/weapons/sword_2.jpg",
@@ -613,7 +613,7 @@
     //ARTIFACTS
 
     {
-        "name": "Artifact 1",
+        "name": "Phoenix Feather Relic",
         "description": "ABC",
         "type": "artifact",
         "image": "/images/equipment/artifacts/artifact_1.jpg",
@@ -658,7 +658,7 @@
 
     },
     {
-        "name": "Artifact 2",
+        "name": "Amulet of the Serpent's Eye",
         "description": "ABC",
         "type": "artifact",
         "image": "/images/equipment/artifacts/artifact_2.jpg",
@@ -703,7 +703,7 @@
 
     },
     {
-        "name": "Artifact 3",
+        "name": "Orb of Infinite Wisdom",
         "description": "ABC",
         "type": "artifact",
         "image": "/images/equipment/artifacts/artifact_3.jpg",
@@ -748,7 +748,7 @@
 
     },
     {
-        "name": "Healing Potion 1",
+        "name": "Elixir of Vitality",
         "description": "ABC",
         "type": "healing",
         "image": "/images/equipment/artifacts/potion_1.jpg",
@@ -782,7 +782,7 @@
 
     },
     {
-        "name": "Healing Potion 2",
+        "name": "Potion of Rejuvenation",
         "description": "ABC",
         "type": "healing",
         "image": "/images/equipment/artifacts/potion_2.jpg",
@@ -821,7 +821,7 @@
 
     },
     {
-        "name": "Healing Potion 3",
+        "name": "Essence of Restoration",
         "description": "ABC",
         "type": "healing",
         "image": "/images/equipment/artifacts/potion_3.jpg",
