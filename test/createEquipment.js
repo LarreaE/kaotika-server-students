@@ -1,12 +1,12 @@
 
-//const Equipment = require('../models/equipmentModel');
+
 const Weapon = require('../models/weaponModel');
 const Armor = require('../models/diseaseModel');
 const Artifact = require('../models/artifactModel');
 const PotionHealing = require('../models/potionHealingModel');
 const PotionAntidote = require('../models/potionAntidoteModel');
 const PotionEnhancer = require('../models/potionEnhancerModel');
-const 
+
 
 
 const { schema } = require('../models/profileModel');
@@ -14,15 +14,6 @@ const profileService = require('../services/profileService');
 
 const mongoose =  require ('mongoose');
 const mongodbRoute = 'mongodb+srv://oscar:tst_sr_0@cluster0.pynwe.mongodb.net/Kaotika?retryWrites=true&w=majority';
-
-//Willpower: Asignación de orden de turnos. Intervención mental en enemigos. Estado de salud mental.
-//Strength: Daño del arma. Mínimo para usar armas melee
-//Intelligence: Interviene en la prababilidad de éxito al crear y usar una poción. calidad de creación de pociones. Mínimo para usar pociones. A más inteligencia más efecto posible
-//Constitution: Interviene en el cálculo de los HP iniciales.
-//Dexterity: Mínimo para usar armas missile. Interviene en la probabilidad de éxito al atacar con armas.
-
-
-//clearEquipment();
 
 
 
@@ -120,32 +111,26 @@ const createEquipment = async () => {
             if (type === "weapon")
             {
                 newItem = new Weapon(item);
-                console.log("Entra");
             }
             else if (type === "armor")
             {
                 newItem = new Armor(item);
-                console.log("Entra");
             }
             else if (type === "artifact")
             {
                 newItem = new Artifact(item);
-                console.log("Entra");
             }
             else if (type === "healing")
             {
-                newItem = new PotionHealing(item);
-                console.log("Entra");
+                newItem = new PotionHealing(item); 
             }
             else if (type === "antidote")
             {
                 newItem = new PotionAntidote(item);
-       
             }
             else if (type === "enhancer")
             {
-                newItem = new PotionEnhancer(item);
-                
+                newItem = new PotionEnhancer(item);  
             }
             else
             {
