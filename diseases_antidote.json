@@ -79,7 +79,7 @@
     "name": "Ethereal Consumption",
     "description": "A spectral illness that causes the afflicted to slowly fade into the ethereal plane, losing touch with reality.",
     "type": "illness",
-    "antidote": "Anchor Root",
+    "antidote": "Ethereal Regeneration",
     "modifiers": [
       {
         "attribute": "Intelligence",

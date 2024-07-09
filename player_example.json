@@ -4,13 +4,13 @@
     "email": "trym@gmail.com",
     "avatar": "./images/xxx.jpg",
     "profile": "6687c31b7a5ce485a0eed476",
-    "equipment": ["668bca105319ea9afdff06f5",
-                "668bca105319ea9afdff0716",
-                "668bca125319ea9afdff0744",
-                "668bca125319ea9afdff0761",
-                "668bca125319ea9afdff0750",
-                "668bca135319ea9afdff076b"
-             ]
+    "equipment": {"armor": "668bca105319ea9afdff06f5",
+                  "weapon": "668bca105319ea9afdff0716",
+                  "artifact": "668bca125319ea9afdff0744",
+                  "antidote_potion":"668bca125319ea9afdff0761",
+                  "healing_potion": "668bca125319ea9afdff0750",
+                  "enhancer_potion":"668bca135319ea9afdff076b"
+                }
  
  
 

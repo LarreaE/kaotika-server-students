@@ -15,13 +15,14 @@ const playerSchema = new Schema({
    experience: {type: Number, default: 0},
    is_active: {type: Boolean, default: true},
    profile: {type: Schema.Types.ObjectId,    ref: "Profile"},
-   equipment: [{type: Schema.Types.ObjectId, ref: "Armor"},
-               {type: Schema.Types.ObjectId, ref: "Weapon"},
-               {type: Schema.Types.ObjectId, ref: "Artifact"},
-               {type: Schema.Types.ObjectId, ref: "PotionAntidote"},
-               {type: Schema.Types.ObjectId, ref: "PotionHealing"},
-               {type: Schema.Types.ObjectId, ref: "PotionEnhancer"}
-            ],
+   equipment: {armor: {type: Schema.Types.ObjectId, ref: "Armor"},
+               weapon: {type: Schema.Types.ObjectId, ref: "Weapon"},
+               artifact: {type: Schema.Types.ObjectId, ref: "Artifact"},
+               antidote_potion: {type: Schema.Types.ObjectId, ref: "PotionAntidote"},
+               healing_potion: {type: Schema.Types.ObjectId, ref: "PotionHealing"},
+               enhancer_potion: {type: Schema.Types.ObjectId, ref: "PotionEnhancer"}
+               },
+            
 
    inventory: {type: Array, default: null},
    tasks: { type:[String], default: null },
