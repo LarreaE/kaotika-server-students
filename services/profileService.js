@@ -29,9 +29,6 @@ const getAllProfiles = async () => {
 
         for (let i = 0; i < allProfiles.length; ++i)
         {
-            //console.log(allProfiles[i].name);
-            //console.log("-----------------------------------");
-            
             const profileId = allProfiles[i]._id;
 
             const weapons = allWeapons.filter(item => 
@@ -58,11 +55,6 @@ const getAllProfiles = async () => {
                 item.profiles.some(id => id.equals(profileId))
             );
 
-
-
-
-            
-
             const returnProfile = {
                 _id: allProfiles[i]._id,
                 name: allProfiles[i].name,
@@ -78,15 +70,9 @@ const getAllProfiles = async () => {
                 }
             }
 
-
-           
-
-            
             returnProfiles.push(returnProfile);
 
-        }
-
-        
+        } 
 
         return returnProfiles;
 

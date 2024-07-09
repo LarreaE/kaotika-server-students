@@ -53,6 +53,7 @@ const getOnePlayer = async (playerId) => {
 const createNewPlayer = async (newPlayer) => {
     try 
     {
+        console.log(newPlayer);
         let playerToInsert = new Player(newPlayer);
         const createdPlayer = await playerToInsert.save();   
         return createdPlayer;

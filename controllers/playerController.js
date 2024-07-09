@@ -7,7 +7,7 @@ const getAllPlayers = async (req, res) => {
     if (!allPlayers) {
         res.status(404).send({message: 'No existen players'});
     }
-    res.send({ status: "OK", data: allPlayers });
+    res.send({ statavatarus: "OK", data: allPlayers });
   } catch (error) {
     res
       .status(error?.status || 500)
@@ -92,11 +92,7 @@ const getOnePlayer = async (req, res) => {
 const createNewPlayer = async (req, res) => {
   const { body } = req;
 
-  const newPlayer = {
-    name: body.name,
-    email: body.email,
-    image: body.image
-  };
+  const newPlayer = body;
 
   try {
     const createdPlayer = await playerService.createNewPlayer(newPlayer);
