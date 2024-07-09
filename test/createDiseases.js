@@ -6,7 +6,6 @@ const Artifact = require('../models/artifactModel');
 const PotionHealing = require('../models/potionHealingModel');
 const PotionAntidote = require('../models/potionAntidoteModel');
 const PotionEnhancer = require('../models/potionEnhancerModel');
-const 
 
 
 const { schema } = require('../models/profileModel');

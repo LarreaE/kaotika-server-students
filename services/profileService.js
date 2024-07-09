@@ -1,7 +1,5 @@
 
 const Profile = require('../models/profileModel'); 
-//const Equipment = require('../models/equipmentModel'); 
-//const equipmentService = require('./equipmentService');
 const Weapon = require('../models/weaponModel');
 const Armor = require('../models/armorModel');
 const Artifact = require('../models/artifactModel');
@@ -16,64 +14,29 @@ const getAllProfiles = async () => {
     try
     {
      
-        //const equipment = await Equipment.find().exec();
         const allProfiles = await Profile.find().exec();
         const allWeapons = await Weapon.find().exec();
         const allArmors = await Armor.find().exec();
         const allArtifacts = await Artifact.find().exec();
         const allHealingPotions = await PotionHealing.find().exec();
-        const allAntidotes = await PotionAntidote.find().exec();
+        const allAntidotes = await PotionAntidote.find().populate('recovery_effect').exec();
         const allEnhancerPotions = await PotionEnhancer.find().exec();
-        
-        //const equipment = await equipmentService.getAllEquipment();
 
+  
 
-
-
-        //console.log(equipment[5]);
-        
-        // for (let i = 0; i < equipment.length; ++i)
-        // {
-        //     console.log(profiles);
-        // }
-
-
-        // for (let i = 0; i < profiles.length; ++i)
-        // {
-        //     console.log(profiles[i].name);
-        //     console.log("-----------------------------------");
-            
-        //     const profileId = profiles[i]._id;
-        //     //console.log("Entra" + profileId);
-
-        //     const equipmentByProfile = equipment.filter(item => 
-        //         item.profiles.some(id => id.equals(profileId))
-        //     );
-
-        //     console.log(equipmentByProfile);
-        //     console.log("-----------------------------------");
-        // }
-
-
-        // profiles[0].equipment = "dgdfgfdgdf";
-        // profiles[0].things = "dgdfgfdgdf";
-        
-        // console.log(profiles[0]);
     
         const returnProfiles = [];
 
-        for (let i = 0; i < allProfiles.length; ++i)
+        for (let i = 0; i < 1; ++i)
         {
-            console.log(allProfiles[i].name);
-            console.log("-----------------------------------");
+            //console.log(allProfiles[i].name);
+            //console.log("-----------------------------------");
             
             const profileId = allProfiles[i]._id;
 
             const weapons = allWeapons.filter(item => 
                 item.profiles.some(id => id.equals(profileId))
             );
-
-            //console.log(weapons);
 
             const artifacts = allArtifacts.filter(item => 
                 item.profiles.some(id => id.equals(profileId))
@@ -97,12 +60,8 @@ const getAllProfiles = async () => {
 
 
 
-            // const weapons = equipmentByProfile.filter(item => item.type === "weapon");
-            // const artifacts = equipmentByProfile.filter(item => item.type === "artifact");
-            // const armors = equipmentByProfile.filter(item => item.type === "armor");
-            // const healingPotions = equipmentByProfile.filter(item => item.type === "healing");
-            // const antidotePotions = equipmentByProfile.filter(item => item.type === "antidote");
-            // const enhancerPotions = equipmentByProfile.filter(item => item.type === "enhancer");
+
+            
 
             const returnProfile = {
                 _id: allProfiles[i]._id,
@@ -120,14 +79,14 @@ const getAllProfiles = async () => {
             }
 
 
-
+           
 
             
             returnProfiles.push(returnProfile);
 
         }
 
-        console.log(returnProfiles[0]);
+        
 
         return returnProfiles;
 

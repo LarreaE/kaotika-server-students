@@ -1,0 +1,315 @@
+[
+  {
+    "name": "Shadowblight",
+    "description": "A disease that causes the afflicted to be consumed by darkness, their skin turning black as shadows envelop their body.",
+    "type": "curse",
+    "antidote": "Luminous Elixir",
+    "modifiers": [
+      {
+        "attribute": "Constitution",
+        "value": -10
+      },
+      {
+        "attribute": "Charisma",
+        "value": -7
+      },
+      {
+        "attribute": "Insanity",
+        "value": 18
+      },
+      {
+        "attribute": "Hit points",
+        "value": -50
+      }
+    ]
+  },
+  {
+    "name": "Frostbane Fever",
+    "description": "A chilling illness that lowers the body temperature drastically, causing frost to form on the skin and organs to freeze.",
+    "type": "illness",
+    "antidote": "Inferno Brew",
+    "modifiers": [
+      {
+        "attribute": "Constitution",
+        "value": -12
+      },
+      {
+        "attribute": "Dexterity",
+        "value": -8
+      }
+    ]
+  },
+  {
+    "name": "Wailing Plague",
+    "description": "An infectious disease that causes the afflicted to uncontrollably wail in pain, spreading misery and despair.",
+    "type": "illness",
+    "antidote": "Silent Whisper Potion",
+    "modifiers": [
+      {
+        "attribute": "Charisma",
+        "value": -9
+      },
+      {
+        "attribute": "Insanity",
+        "value": 7
+      }
+    ]
+  },
+  {
+    "name": "Cursed Blood",
+    "description": "A curse that turns the blood into a dark, viscous liquid that poisons the body from within, causing severe pain and eventual death.",
+    "type": "curse",
+    "antidote": "Purity Serum",
+    "modifiers": [
+      {
+        "attribute": "Constitution",
+        "value": -14
+      },
+      {
+        "attribute": "Strength",
+        "value": -7
+      },
+      {
+        "attribute": "Hit points",
+        "value": -60
+      }
+    ]
+  },
+  {
+    "name": "Ethereal Consumption",
+    "description": "A spectral illness that causes the afflicted to slowly fade into the ethereal plane, losing touch with reality.",
+    "type": "illness",
+    "antidote": "Anchor Root",
+    "modifiers": [
+      {
+        "attribute": "Intelligence",
+        "value": -10
+      },
+      {
+        "attribute": "Insanity",
+        "value": 6
+      }
+    ]
+  },
+  {
+    "name": "Mindfire",
+    "description": "A curse that inflames the mind, causing intense migraines and hallucinations.",
+    "type": "curse",
+    "antidote": "Mind Soother",
+    "modifiers": [
+      {
+        "attribute": "Intelligence",
+        "value": -8
+      },
+      {
+        "attribute": "Insanity",
+        "value": 20
+      },
+      {
+        "attribute": "Charisma",
+        "value": -9
+      },
+      {
+        "attribute": "Hit points",
+        "value": -35
+      }
+    ]
+  },
+  {
+    "name": "Boneshiver",
+    "description": "An illness that causes the bones to become brittle and cold, making movement agonizing.",
+    "type": "illness",
+    "antidote": "Bone Reinforcer",
+    "modifiers": [
+      {
+        "attribute": "Strength",
+        "value": -10
+      },
+      {
+        "attribute": "Constitution",
+        "value": -9
+      }
+    ]
+  },
+  {
+    "name": "Soulrot",
+    "description": "A necrotic curse that slowly decays the soul, causing profound weakness and despair.",
+    "type": "curse",
+    "antidote": "Soul Balm",
+    "modifiers": [
+      {
+        "attribute": "Charisma",
+        "value": -11
+      },
+      {
+        "attribute": "Hit points",
+        "value": -70
+      },
+      {
+        "attribute": "Insanity",
+        "value": 17
+      }
+    ]
+  },
+  {
+    "name": "Fleshweaver's Malady",
+    "description": "A grotesque illness that warps the flesh, causing it to grow uncontrollably and painfully.",
+    "type": "illness",
+    "antidote": "Flesh Tonic",
+    "modifiers": [
+      {
+        "attribute": "Dexterity",
+        "value": -13
+      },
+      {
+        "attribute": "Constitution",
+        "value": -8
+      }
+    ]
+  },
+  {
+    "name": "Eldritch Pox",
+    "description": "A curse that marks the skin with arcane runes, draining the life force of the afflicted.",
+    "type": "curse",
+    "antidote": "Arcane Cleanser",
+    "modifiers": [
+      {
+        "attribute": "Strength",
+        "value": -9
+      },
+      {
+        "attribute": "Hit points",
+        "value": -40
+      },
+      {
+        "attribute": "Charisma",
+        "value": -12
+      }
+    ]
+  },
+  {
+    "name": "Lich's Breath",
+    "description": "An illness that causes the breath of the afflicted to become toxic, slowly killing them and those around them.",
+    "type": "illness",
+    "antidote": "Breath Purifier",
+    "modifiers": [
+      {
+        "attribute": "Constitution",
+        "value": -11
+      },
+      {
+        "attribute": "Hit points",
+        "value": -15
+      }
+    ]
+  },
+  {
+    "name": "Cursed Tongue",
+    "description": "A curse that renders the afflicted unable to speak without causing harm to themselves and others.",
+    "type": "curse",
+    "antidote": "Voice Restorer",
+    "modifiers": [
+      {
+        "attribute": "Charisma",
+        "value": -12
+      },
+      {
+        "attribute": "Insanity",
+        "value": 21
+      },
+      {
+        "attribute": "Hit points",
+        "value": -35
+      }
+    ]
+  },
+  {
+    "name": "Plague of Eyes",
+    "description": "An illness that causes extra eyes to form all over the body, driving the afflicted mad.",
+    "type": "illness",
+    "antidote": "Eye Balm",
+    "modifiers": [
+      {
+        "attribute": "Dexterity",
+        "value": -7
+      },
+      {
+        "attribute": "Insanity",
+        "value": 8
+      }
+    ]
+  },
+  {
+    "name": "Bloodfire",
+    "description": "A curse that ignites the blood of the afflicted, causing intense internal burning sensations.",
+    "type": "curse",
+    "antidote": "Blood Cooler",
+    "modifiers": [
+      {
+        "attribute": "Constitution",
+        "value": -13
+      },
+      {
+        "attribute": "Strength",
+        "value": -5
+      },
+      {
+        "attribute": "Hit points",
+        "value": -55
+      }
+    ]
+  },
+  {
+    "name": "Mindfray",
+    "description": "An illness that frays the mind's connections, causing memory loss and cognitive decline.",
+    "type": "illness",
+    "antidote": "Mind Healer",
+    "modifiers": [
+      {
+        "attribute": "Intelligence",
+        "value": -12
+      },
+      {
+        "attribute": "Insanity",
+        "value": 6
+      }
+    ]
+  },
+  {
+    "name": "Veilrot",
+    "description": "A curse that causes the skin to become transparent, making the afflicted's muscles and bones visible.",
+    "type": "curse",
+    "antidote": "Veil Restorer",
+    "modifiers": [
+      {
+        "attribute": "Charisma",
+        "value": -10
+      },
+      {
+        "attribute": "Hit points",
+        "value": -45
+      },
+      {
+        "attribute": "Insanity",
+        "value": 15
+      }
+    ]
+  },
+  {
+    "name": "Souldrain",
+    "description": "An illness that saps the very soul of the afflicted, leaving them weak and lethargic.",
+    "type": "illness",
+    "antidote": "Soul Revitalizer",
+    "modifiers": [
+      {
+        "attribute": "Strength",
+        "value": -14
+      },
+      {
+        "attribute": "Constitution",
+        "value": -7
+      }
+    ]
+  }
+
+]
