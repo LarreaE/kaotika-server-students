@@ -27,7 +27,7 @@ const getAllProfiles = async () => {
     
         const returnProfiles = [];
 
-        for (let i = 0; i < 1; ++i)
+        for (let i = 0; i < allProfiles.length; ++i)
         {
             //console.log(allProfiles[i].name);
             //console.log("-----------------------------------");
