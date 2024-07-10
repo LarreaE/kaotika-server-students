@@ -93,9 +93,14 @@ const createNewPlayer = async (req, res) => {
   const { body } = req;
 
   const newPlayer = body;
+  console.log("Body data received")
+  console.log(newPlayer);
 
   try {
     const createdPlayer = await playerService.createNewPlayer(newPlayer);
+
+    console.log("Player data returned to controller")
+    console.log(createdPlayer);
     res.status(201).send({ status: "OK", data: createdPlayer });
   } catch (error) {
     res

@@ -1,0 +1,210 @@
+[{
+  "_id": {
+    "$oid": "668bca125319ea9afdff073e"
+  },
+  "name": "Phoenix Feather Relic",
+  "description": "An ancient artifact imbued with the essence of a phoenix, this relic grants the bearer the power of rebirth, healing wounds and restoring vitality in moments of need.",
+  "type": "artifact",
+  "image": "/images/equipment/artifacts/artifact_1.jpg",
+  "modifiers_charisma": [
+    {
+      "attribute": "Strength",
+      "value": 0.5,
+      "_id": {
+        "$oid": "668bca125319ea9afdff073f"
+      }
+    }
+  ],
+  "modifiers": [
+    {
+      "attribute": "Dexterity",
+      "value": -8,
+      "_id": {
+        "$oid": "668bca125319ea9afdff0740"
+      }
+    }
+  ],
+  "min_attr": [
+    {
+      "name": "Charisma",
+      "value": 10,
+      "_id": {
+        "$oid": "668bca125319ea9afdff0741"
+      }
+    },
+    {
+      "name": "Dexterity",
+      "value": 15,
+      "_id": {
+        "$oid": "668bca125319ea9afdff0742"
+      }
+    }
+  ],
+  "profiles": [
+    {
+      "$oid": "6687c31b7a5ce485a0eed476"
+    },
+    {
+      "$oid": "6687c31b7a5ce485a0eed477"
+    },
+    {
+      "$oid": "6687c31b7a5ce485a0eed478"
+    },
+    {
+      "$oid": "6687c31b7a5ce485a0eed479"
+    },
+    {
+      "$oid": "6687c31b7a5ce485a0eed47a"
+    },
+    {
+      "$oid": "6687c31b7a5ce485a0eed47b"
+    },
+    {
+      "$oid": "6687c31b7a5ce485a0eed47c"
+    },
+    {
+      "$oid": "6687c31b7a5ce485a0eed47d"
+    }
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "668bca125319ea9afdff0744"
+  },
+  "name": "Amulet of the Serpent's Eye",
+  "description": "This mystical amulet, adorned with a serpent-shaped gem, grants its wearer heightened perception and insight, allowing them to see through illusions and detect hidden truths.",
+  "type": "artifact",
+  "image": "/images/equipment/artifacts/artifact_2.jpg",
+  "modifiers_charisma": [
+    {
+      "attribute": "Intelligence",
+      "value": 0.5,
+      "_id": {
+        "$oid": "668bca125319ea9afdff0745"
+      }
+    }
+  ],
+  "modifiers": [
+    {
+      "attribute": "Strength",
+      "value": -8,
+      "_id": {
+        "$oid": "668bca125319ea9afdff0746"
+      }
+    }
+  ],
+  "min_attr": [
+    {
+      "name": "Charisma",
+      "value": 10,
+      "_id": {
+        "$oid": "668bca125319ea9afdff0747"
+      }
+    },
+    {
+      "name": "Strength",
+      "value": 15,
+      "_id": {
+        "$oid": "668bca125319ea9afdff0748"
+      }
+    }
+  ],
+  "profiles": [
+    {
+      "$oid": "6687c31b7a5ce485a0eed476"
+    },
+    {
+      "$oid": "6687c31b7a5ce485a0eed477"
+    },
+    {
+      "$oid": "6687c31b7a5ce485a0eed478"
+    },
+    {
+      "$oid": "6687c31b7a5ce485a0eed479"
+    },
+    {
+      "$oid": "6687c31b7a5ce485a0eed47a"
+    },
+    {
+      "$oid": "6687c31b7a5ce485a0eed47b"
+    },
+    {
+      "$oid": "6687c31b7a5ce485a0eed47c"
+    },
+    {
+      "$oid": "6687c31b7a5ce485a0eed47d"
+    }
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "668bca125319ea9afdff074a"
+  },
+  "name": "Orb of Infinite Wisdom",
+  "description": "A legendary artifact pulsating with arcane energy, this orb bestows profound knowledge and clarity upon its possessor, enhancing their intellect and granting visions of the future.",
+  "type": "artifact",
+  "image": "/images/equipment/artifacts/artifact_3.jpg",
+  "modifiers_charisma": [
+    {
+      "attribute": "Constitution",
+      "value": 0.5,
+      "_id": {
+        "$oid": "668bca125319ea9afdff074b"
+      }
+    }
+  ],
+  "modifiers": [
+    {
+      "attribute": "Dexterity",
+      "value": -8,
+      "_id": {
+        "$oid": "668bca125319ea9afdff074c"
+      }
+    }
+  ],
+  "min_attr": [
+    {
+      "name": "Charisma",
+      "value": 10,
+      "_id": {
+        "$oid": "668bca125319ea9afdff074d"
+      }
+    },
+    {
+      "name": "Constitution",
+      "value": 20,
+      "_id": {
+        "$oid": "668bca125319ea9afdff074e"
+      }
+    }
+  ],
+  "profiles": [
+    {
+      "$oid": "6687c31b7a5ce485a0eed476"
+    },
+    {
+      "$oid": "6687c31b7a5ce485a0eed477"
+    },
+    {
+      "$oid": "6687c31b7a5ce485a0eed478"
+    },
+    {
+      "$oid": "6687c31b7a5ce485a0eed479"
+    },
+    {
+      "$oid": "6687c31b7a5ce485a0eed47a"
+    },
+    {
+      "$oid": "6687c31b7a5ce485a0eed47b"
+    },
+    {
+      "$oid": "6687c31b7a5ce485a0eed47c"
+    },
+    {
+      "$oid": "6687c31b7a5ce485a0eed47d"
+    }
+  ],
+  "__v": 0
+}]

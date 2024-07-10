@@ -1,0 +1,343 @@
+[{
+  "_id": {
+    "$oid": "668bca105319ea9afdff06f1"
+  },
+  "name": "Celestial Robe of the Archmage",
+  "description": "Woven with threads of starlight, this robe grants the wearer unparalleled magical power and wisdom.",
+  "type": "armor",
+  "image": "/images/equipment/armors/robe_1.jpg",
+  "modifiers": [
+    {
+      "attribute": "Constitution",
+      "value": 5,
+      "_id": {
+        "$oid": "668bca105319ea9afdff06f2"
+      }
+    }
+  ],
+  "min_attr": [
+    {
+      "name": "Dexterity",
+      "value": 10,
+      "_id": {
+        "$oid": "668bca105319ea9afdff06f3"
+      }
+    }
+  ],
+  "profiles": [
+    {
+      "$oid": "6687c31b7a5ce485a0eed476"
+    },
+    {
+      "$oid": "6687c31b7a5ce485a0eed478"
+    },
+    {
+      "$oid": "6687c31b7a5ce485a0eed47a"
+    },
+    {
+      "$oid": "6687c31b7a5ce485a0eed47b"
+    },
+    {
+      "$oid": "6687c31b7a5ce485a0eed47d"
+    }
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "668bca105319ea9afdff06f5"
+  },
+  "name": "Ethereal Vestments of the Whispering Winds",
+  "description": "These light, flowing vestments allow the wearer to move with the speed and grace of the wind, enhancing agility and evasion.",
+  "type": "armor",
+  "image": "/images/equipment/armors/robe_2.jpg",
+  "modifiers": [
+    {
+      "attribute": "Constitution",
+      "value": 7,
+      "_id": {
+        "$oid": "668bca105319ea9afdff06f6"
+      }
+    },
+    {
+      "attribute": "Dexterity",
+      "value": -3,
+      "_id": {
+        "$oid": "668bca105319ea9afdff06f7"
+      }
+    }
+  ],
+  "min_attr": [
+    {
+      "name": "Dexterity",
+      "value": 10,
+      "_id": {
+        "$oid": "668bca105319ea9afdff06f8"
+      }
+    }
+  ],
+  "profiles": [
+    {
+      "$oid": "6687c31b7a5ce485a0eed476"
+    },
+    {
+      "$oid": "6687c31b7a5ce485a0eed478"
+    },
+    {
+      "$oid": "6687c31b7a5ce485a0eed47a"
+    },
+    {
+      "$oid": "6687c31b7a5ce485a0eed47b"
+    },
+    {
+      "$oid": "6687c31b7a5ce485a0eed47d"
+    }
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "668bca105319ea9afdff06fa"
+  },
+  "name": "Abyssal Tunic of the Shadow Lord",
+  "description": "Cloaked in darkness, this tunic imbues the wearer with the power of shadows, enhancing stealth and providing protection against dark magic.",
+  "type": "armor",
+  "image": "/images/equipment/armors/robe_3.jpg",
+  "modifiers": [
+    {
+      "attribute": "Constitution",
+      "value": 8,
+      "_id": {
+        "$oid": "668bca105319ea9afdff06fb"
+      }
+    },
+    {
+      "attribute": "Intelligence",
+      "value": 2,
+      "_id": {
+        "$oid": "668bca105319ea9afdff06fc"
+      }
+    },
+    {
+      "attribute": "Dexterity",
+      "value": -6,
+      "_id": {
+        "$oid": "668bca105319ea9afdff06fd"
+      }
+    }
+  ],
+  "min_attr": [
+    {
+      "name": "Dexterity",
+      "value": 10,
+      "_id": {
+        "$oid": "668bca105319ea9afdff06fe"
+      }
+    }
+  ],
+  "profiles": [
+    {
+      "$oid": "6687c31b7a5ce485a0eed476"
+    },
+    {
+      "$oid": "6687c31b7a5ce485a0eed478"
+    },
+    {
+      "$oid": "6687c31b7a5ce485a0eed47a"
+    },
+    {
+      "$oid": "6687c31b7a5ce485a0eed47b"
+    },
+    {
+      "$oid": "6687c31b7a5ce485a0eed47d"
+    }
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "668bca105319ea9afdff0700"
+  },
+  "name": "Shadowstalker Leather Jerkin",
+  "description": "Crafted from enchanted hides, this jerkin allows the wearer to blend into shadows, increasing stealth and agility.",
+  "type": "armor",
+  "image": "/images/equipment/armors/armor_1.jpg",
+  "modifiers": [
+    {
+      "attribute": "Constitution",
+      "value": 10,
+      "_id": {
+        "$oid": "668bca105319ea9afdff0701"
+      }
+    },
+    {
+      "attribute": "Strength",
+      "value": -5,
+      "_id": {
+        "$oid": "668bca105319ea9afdff0702"
+      }
+    },
+    {
+      "attribute": "Dexterity",
+      "value": -3,
+      "_id": {
+        "$oid": "668bca105319ea9afdff0703"
+      }
+    }
+  ],
+  "min_attr": [
+    {
+      "name": "Dexterity",
+      "value": 5,
+      "_id": {
+        "$oid": "668bca105319ea9afdff0704"
+      }
+    },
+    {
+      "name": "Strength",
+      "value": 15,
+      "_id": {
+        "$oid": "668bca105319ea9afdff0705"
+      }
+    }
+  ],
+  "profiles": [
+    {
+      "$oid": "6687c31b7a5ce485a0eed477"
+    },
+    {
+      "$oid": "6687c31b7a5ce485a0eed479"
+    },
+    {
+      "$oid": "6687c31b7a5ce485a0eed47c"
+    }
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "668bca105319ea9afdff0707"
+  },
+  "name": "Huntsman's Wildwood Cuirass",
+  "description": "Made from the tough hides of forest beasts, this cuirass offers excellent protection and enhances the wearer's connection with nature.",
+  "type": "armor",
+  "image": "/images/equipment/armors/armor_2.jpg",
+  "modifiers": [
+    {
+      "attribute": "Constitution",
+      "value": 12,
+      "_id": {
+        "$oid": "668bca105319ea9afdff0708"
+      }
+    },
+    {
+      "attribute": "Strength",
+      "value": -9,
+      "_id": {
+        "$oid": "668bca105319ea9afdff0709"
+      }
+    },
+    {
+      "attribute": "Dexterity",
+      "value": -3,
+      "_id": {
+        "$oid": "668bca105319ea9afdff070a"
+      }
+    }
+  ],
+  "min_attr": [
+    {
+      "name": "Dexterity",
+      "value": 5,
+      "_id": {
+        "$oid": "668bca105319ea9afdff070b"
+      }
+    },
+    {
+      "name": "Strength",
+      "value": 15,
+      "_id": {
+        "$oid": "668bca105319ea9afdff070c"
+      }
+    }
+  ],
+  "profiles": [
+    {
+      "$oid": "6687c31b7a5ce485a0eed477"
+    },
+    {
+      "$oid": "6687c31b7a5ce485a0eed479"
+    },
+    {
+      "$oid": "6687c31b7a5ce485a0eed47c"
+    }
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "668bca105319ea9afdff070e"
+  },
+  "name": "Dragonhide Battle Vest",
+  "description": "Forged from the scales of a mighty dragon, this vest provides exceptional durability and resistance to fire and magic.",
+  "type": "armor",
+  "image": "/images/equipment/armors/armor_8.jpg",
+  "modifiers": [
+    {
+      "attribute": "Constitution",
+      "value": 13,
+      "_id": {
+        "$oid": "668bca105319ea9afdff070f"
+      }
+    },
+    {
+      "attribute": "Intelligence",
+      "value": 4,
+      "_id": {
+        "$oid": "668bca105319ea9afdff0710"
+      }
+    },
+    {
+      "attribute": "Strength",
+      "value": -11,
+      "_id": {
+        "$oid": "668bca105319ea9afdff0711"
+      }
+    },
+    {
+      "attribute": "Dexterity",
+      "value": -4,
+      "_id": {
+        "$oid": "668bca105319ea9afdff0712"
+      }
+    }
+  ],
+  "min_attr": [
+    {
+      "name": "Dexterity",
+      "value": 5,
+      "_id": {
+        "$oid": "668bca105319ea9afdff0713"
+      }
+    },
+    {
+      "name": "Strength",
+      "value": 15,
+      "_id": {
+        "$oid": "668bca105319ea9afdff0714"
+      }
+    }
+  ],
+  "profiles": [
+    {
+      "$oid": "6687c31b7a5ce485a0eed477"
+    },
+    {
+      "$oid": "6687c31b7a5ce485a0eed479"
+    },
+    {
+      "$oid": "6687c31b7a5ce485a0eed47c"
+    }
+  ],
+  "__v": 0
+}]

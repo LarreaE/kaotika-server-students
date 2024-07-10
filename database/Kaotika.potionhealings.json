@@ -1,0 +1,176 @@
+[{
+  "_id": {
+    "$oid": "668bca125319ea9afdff0750"
+  },
+  "name": "Elixir of Vitality",
+  "description": "A rejuvenating potion that restores vigor and vitality to the drinker, enhancing their overall health and resilience. It accelerates healing and bolsters the immune system, ensuring rapid recovery from fatigue and minor injuries.",
+  "type": "healing",
+  "image": "/images/equipment/potions/potion_1.jpg",
+  "modifiers": [
+    {
+      "attribute": "Hit points",
+      "value": 20,
+      "_id": {
+        "$oid": "668bca125319ea9afdff0751"
+      }
+    }
+  ],
+  "min_attr": [
+    {
+      "name": "Intelligence",
+      "value": 5,
+      "_id": {
+        "$oid": "668bca125319ea9afdff0752"
+      }
+    }
+  ],
+  "profiles": [
+    {
+      "$oid": "6687c31b7a5ce485a0eed476"
+    },
+    {
+      "$oid": "6687c31b7a5ce485a0eed477"
+    },
+    {
+      "$oid": "6687c31b7a5ce485a0eed478"
+    },
+    {
+      "$oid": "6687c31b7a5ce485a0eed479"
+    },
+    {
+      "$oid": "6687c31b7a5ce485a0eed47a"
+    },
+    {
+      "$oid": "6687c31b7a5ce485a0eed47b"
+    },
+    {
+      "$oid": "6687c31b7a5ce485a0eed47c"
+    },
+    {
+      "$oid": "6687c31b7a5ce485a0eed47d"
+    }
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "668bca125319ea9afdff0754"
+  },
+  "name": "Potion of Rejuvenation",
+  "description": "This revitalizing potion restores energy and vitality to the drinker, replenishing stamina and rejuvenating the body. It heals minor wounds and fatigue, leaving the user refreshed and ready for further challenges.",
+  "type": "healing",
+  "image": "/images/equipment/potions/potion_2.jpg",
+  "modifiers": [
+    {
+      "attribute": "Hit points",
+      "value": 40,
+      "_id": {
+        "$oid": "668bca125319ea9afdff0755"
+      }
+    },
+    {
+      "attribute": "Intelligence",
+      "value": -5,
+      "_id": {
+        "$oid": "668bca125319ea9afdff0756"
+      }
+    }
+  ],
+  "min_attr": [
+    {
+      "name": "Intelligence",
+      "value": 10,
+      "_id": {
+        "$oid": "668bca125319ea9afdff0757"
+      }
+    }
+  ],
+  "profiles": [
+    {
+      "$oid": "6687c31b7a5ce485a0eed476"
+    },
+    {
+      "$oid": "6687c31b7a5ce485a0eed477"
+    },
+    {
+      "$oid": "6687c31b7a5ce485a0eed478"
+    },
+    {
+      "$oid": "6687c31b7a5ce485a0eed479"
+    },
+    {
+      "$oid": "6687c31b7a5ce485a0eed47a"
+    },
+    {
+      "$oid": "6687c31b7a5ce485a0eed47b"
+    },
+    {
+      "$oid": "6687c31b7a5ce485a0eed47c"
+    },
+    {
+      "$oid": "6687c31b7a5ce485a0eed47d"
+    }
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "668bca125319ea9afdff0759"
+  },
+  "name": "Essence of Restoration",
+  "description": "The Essence of Restoration is a potent elixir that accelerates healing and revitalizes the body, swiftly repairing injuries and replenishing vitality. It is highly sought after for its ability to restore health and vigor, making it invaluable in times of need",
+  "type": "healing",
+  "image": "/images/equipment/potions/potion_3.jpg",
+  "modifiers": [
+    {
+      "attribute": "Hit points",
+      "value": 70,
+      "_id": {
+        "$oid": "668bca125319ea9afdff075a"
+      }
+    },
+    {
+      "attribute": "Intelligence",
+      "value": -15,
+      "_id": {
+        "$oid": "668bca125319ea9afdff075b"
+      }
+    }
+  ],
+  "min_attr": [
+    {
+      "name": "Intelligence",
+      "value": 25,
+      "_id": {
+        "$oid": "668bca125319ea9afdff075c"
+      }
+    }
+  ],
+  "profiles": [
+    {
+      "$oid": "6687c31b7a5ce485a0eed476"
+    },
+    {
+      "$oid": "6687c31b7a5ce485a0eed477"
+    },
+    {
+      "$oid": "6687c31b7a5ce485a0eed478"
+    },
+    {
+      "$oid": "6687c31b7a5ce485a0eed479"
+    },
+    {
+      "$oid": "6687c31b7a5ce485a0eed47a"
+    },
+    {
+      "$oid": "6687c31b7a5ce485a0eed47b"
+    },
+    {
+      "$oid": "6687c31b7a5ce485a0eed47c"
+    },
+    {
+      "$oid": "6687c31b7a5ce485a0eed47d"
+    }
+  ],
+  "__v": 0
+}]

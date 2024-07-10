@@ -55,6 +55,9 @@ const createNewPlayer = async (newPlayer) => {
     {
         let playerToInsert = new Player(newPlayer);
         const createdPlayer = await playerToInsert.save();   
+
+        console.log("Created and saved player");
+        console.log(createdPlayer);
         return createdPlayer;
     } 
     catch (error) 

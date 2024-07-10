@@ -1,0 +1,381 @@
+[{
+  "_id": {
+    "$oid": "668bca105319ea9afdff0716"
+  },
+  "name": "Blade of Eternal Flame",
+  "description": "Forged in the heart of a volcano, this sword burns with an undying fire. ",
+  "type": "weapon",
+  "image": "/images/equipment/weapons/sword_1.jpg",
+  "damage": "2D8",
+  "base_percentage": 20,
+  "modifiers": [
+    {
+      "attribute": "Strength",
+      "value": -1,
+      "_id": {
+        "$oid": "668bca105319ea9afdff0717"
+      }
+    }
+  ],
+  "min_level": 1,
+  "profiles": [
+    {
+      "$oid": "6687c31b7a5ce485a0eed476"
+    },
+    {
+      "$oid": "6687c31b7a5ce485a0eed477"
+    },
+    {
+      "$oid": "6687c31b7a5ce485a0eed478"
+    },
+    {
+      "$oid": "6687c31b7a5ce485a0eed479"
+    },
+    {
+      "$oid": "6687c31b7a5ce485a0eed47a"
+    },
+    {
+      "$oid": "6687c31b7a5ce485a0eed47b"
+    },
+    {
+      "$oid": "6687c31b7a5ce485a0eed47c"
+    },
+    {
+      "$oid": "6687c31b7a5ce485a0eed47d"
+    }
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "668bca105319ea9afdff0719"
+  },
+  "name": "Stormbringer's Fury",
+  "description": "Imbued with the power of a raging storm, this sword crackles with lightning and thunder. ",
+  "type": "weapon",
+  "image": "/images/equipment/weapons/sword_2.jpg",
+  "damage": "2D12",
+  "base_percentage": 15,
+  "modifiers": [
+    {
+      "attribute": "Strength",
+      "value": -3,
+      "_id": {
+        "$oid": "668bca105319ea9afdff071a"
+      }
+    }
+  ],
+  "min_level": 1,
+  "profiles": [
+    {
+      "$oid": "6687c31b7a5ce485a0eed476"
+    },
+    {
+      "$oid": "6687c31b7a5ce485a0eed477"
+    },
+    {
+      "$oid": "6687c31b7a5ce485a0eed478"
+    },
+    {
+      "$oid": "6687c31b7a5ce485a0eed479"
+    },
+    {
+      "$oid": "6687c31b7a5ce485a0eed47a"
+    },
+    {
+      "$oid": "6687c31b7a5ce485a0eed47b"
+    },
+    {
+      "$oid": "6687c31b7a5ce485a0eed47c"
+    },
+    {
+      "$oid": "6687c31b7a5ce485a0eed47d"
+    }
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "668bca115319ea9afdff071c"
+  },
+  "name": "Arthur's Feather",
+  "description": "A mystical relic said to have belonged to the legendary king, this feather is imbued with enchantments of protection and wisdom.",
+  "type": "weapon",
+  "image": "/images/equipment/weapons/sword_3.jpg",
+  "damage": "4D12+3",
+  "base_percentage": 5,
+  "modifiers": [
+    {
+      "attribute": "Dexterity",
+      "value": -3,
+      "_id": {
+        "$oid": "668bca115319ea9afdff071d"
+      }
+    },
+    {
+      "attribute": "Strength",
+      "value": -1,
+      "_id": {
+        "$oid": "668bca115319ea9afdff071e"
+      }
+    },
+    {
+      "attribute": "Intelligence",
+      "value": -5,
+      "_id": {
+        "$oid": "668bca115319ea9afdff071f"
+      }
+    }
+  ],
+  "min_level": 1,
+  "profiles": [
+    {
+      "$oid": "6687c31b7a5ce485a0eed476"
+    }
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "668bca115319ea9afdff0721"
+  },
+  "name": "Poisoned Pouch",
+  "description": "A devious artifact filled with lethal toxins, the Poisoned Pouch allows its possessor to craft and deploy a variety of poisons.",
+  "type": "weapon",
+  "image": "/images/equipment/weapons/sword_4.jpg",
+  "damage": "4D12+3",
+  "base_percentage": 5,
+  "modifiers": [
+    {
+      "attribute": "Constitution",
+      "value": -4,
+      "_id": {
+        "$oid": "668bca115319ea9afdff0722"
+      }
+    },
+    {
+      "attribute": "Strength",
+      "value": -5,
+      "_id": {
+        "$oid": "668bca115319ea9afdff0723"
+      }
+    }
+  ],
+  "min_level": 1,
+  "profiles": [
+    {
+      "$oid": "6687c31b7a5ce485a0eed477"
+    }
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "668bca115319ea9afdff0725"
+  },
+  "name": "Twirling Yo-yo",
+  "description": "A seemingly playful toy with a hidden edge, the Twirling Yo-yo is a versatile weapon in the right hands. ",
+  "type": "weapon",
+  "image": "/images/equipment/weapons/maze_3.jpg",
+  "damage": "3D12",
+  "base_percentage": 5,
+  "modifiers": [
+    {
+      "attribute": "Strength",
+      "value": -2,
+      "_id": {
+        "$oid": "668bca115319ea9afdff0726"
+      }
+    },
+    {
+      "attribute": "Dexterity",
+      "value": -3,
+      "_id": {
+        "$oid": "668bca115319ea9afdff0727"
+      }
+    },
+    {
+      "attribute": "Insanity",
+      "value": 5,
+      "_id": {
+        "$oid": "668bca115319ea9afdff0728"
+      }
+    }
+  ],
+  "min_level": 1,
+  "profiles": [
+    {
+      "$oid": "6687c31b7a5ce485a0eed478"
+    }
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "668bca115319ea9afdff072a"
+  },
+  "name": "Undertaker's Embalming Scalpel",
+  "description": "This sinister instrument is imbued with necromantic energies, allowing it to cut through flesh and spirit with precision. ",
+  "type": "weapon",
+  "image": "/images/equipment/weapons/maze_3.jpg",
+  "damage": "1D12",
+  "base_percentage": 5,
+  "modifiers": [
+    {
+      "attribute": "Strength",
+      "value": -1,
+      "_id": {
+        "$oid": "668bca115319ea9afdff072b"
+      }
+    },
+    {
+      "attribute": "Insanity",
+      "value": 10,
+      "_id": {
+        "$oid": "668bca115319ea9afdff072c"
+      }
+    }
+  ],
+  "min_level": 1,
+  "profiles": [
+    {
+      "$oid": "6687c31b7a5ce485a0eed479"
+    }
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "668bca115319ea9afdff072e"
+  },
+  "name": "Heretic Anthem",
+  "description": "A forbidden tome inscribed with blasphemous chants, the Heretic Anthem is a powerful artifact that channels dark magic. ",
+  "type": "weapon",
+  "image": "/images/equipment/weapons/maze_3.jpg",
+  "damage": "3D12+4",
+  "base_percentage": 5,
+  "modifiers": [
+    {
+      "attribute": "Strength",
+      "value": -1,
+      "_id": {
+        "$oid": "668bca115319ea9afdff072f"
+      }
+    },
+    {
+      "attribute": "Intelligence",
+      "value": -5,
+      "_id": {
+        "$oid": "668bca115319ea9afdff0730"
+      }
+    }
+  ],
+  "min_level": 1,
+  "profiles": [
+    {
+      "$oid": "6687c31b7a5ce485a0eed47a"
+    }
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "668bca115319ea9afdff0732"
+  },
+  "name": "Inferno's Ear",
+  "description": "This enchanted artifact, resembling a small, fiery ear, grants the wielder the ability to eavesdrop on distant conversations and detect lies. ",
+  "type": "weapon",
+  "image": "/images/equipment/weapons/maze_3.jpg",
+  "damage": "3D12+4",
+  "base_percentage": 5,
+  "modifiers": [
+    {
+      "attribute": "Strength",
+      "value": -2,
+      "_id": {
+        "$oid": "668bca115319ea9afdff0733"
+      }
+    },
+    {
+      "attribute": "Constitution",
+      "value": -7,
+      "_id": {
+        "$oid": "668bca115319ea9afdff0734"
+      }
+    },
+    {
+      "attribute": "Dexterity",
+      "value": 3,
+      "_id": {
+        "$oid": "668bca115319ea9afdff0735"
+      }
+    }
+  ],
+  "profiles": [
+    {
+      "$oid": "6687c31b7a5ce485a0eed47b"
+    }
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "668bca115319ea9afdff0737"
+  },
+  "name": "Wooden Leg",
+  "description": "This enchanted prosthetic limb, carved from ancient, magical wood, grants the wearer enhanced stability and strength. ",
+  "type": "weapon",
+  "image": "/images/equipment/weapons/maze_1.jpg",
+  "damage": "3D8+2",
+  "base_percentage": 5,
+  "modifiers": [
+    {
+      "attribute": "Strength",
+      "value": -12,
+      "_id": {
+        "$oid": "668bca115319ea9afdff0738"
+      }
+    }
+  ],
+  "min_level": 1,
+  "profiles": [
+    {
+      "$oid": "6687c31b7a5ce485a0eed47c"
+    }
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "668bca115319ea9afdff073a"
+  },
+  "name": "Storyteller's Lute",
+  "description": "This beautifully crafted lute is imbued with the power of ancient tales and melodies.",
+  "type": "weapon",
+  "image": "/images/equipment/weapons/maze_2.jpg",
+  "damage": "4D10",
+  "base_percentage": 5,
+  "modifiers": [
+    {
+      "attribute": "Strength",
+      "value": -3,
+      "_id": {
+        "$oid": "668bca115319ea9afdff073b"
+      }
+    },
+    {
+      "attribute": "Charisma",
+      "value": -7,
+      "_id": {
+        "$oid": "668bca115319ea9afdff073c"
+      }
+    }
+  ],
+  "min_level": 1,
+  "profiles": [
+    {
+      "$oid": "6687c31b7a5ce485a0eed47d"
+    }
+  ],
+  "__v": 0
+}]

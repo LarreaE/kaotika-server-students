@@ -1,0 +1,144 @@
+[{
+  "_id": {
+    "$oid": "668bca125319ea9afdff075e"
+  },
+  "name": "Luminous Elixir",
+  "description": "This invigorating potion enhances the drinker's agility and reflexes, restoring nimbleness and precision to their movements, making it perfect for evading attacks and executing complex maneuvers.",
+  "type": "antidote",
+  "image": "/images/equipment/potions/potion_4.jpg",
+  "recovery_effect": {
+    "$oid": "668cf21b87b351f5c9875212"
+  },
+  "min_attr": [
+    {
+      "name": "Intelligence",
+      "value": 10,
+      "_id": {
+        "$oid": "668bca125319ea9afdff075f"
+      }
+    }
+  ],
+  "profiles": [
+    {
+      "$oid": "6687c31b7a5ce485a0eed476"
+    },
+    {
+      "$oid": "6687c31b7a5ce485a0eed477"
+    },
+    {
+      "$oid": "6687c31b7a5ce485a0eed478"
+    },
+    {
+      "$oid": "6687c31b7a5ce485a0eed479"
+    },
+    {
+      "$oid": "6687c31b7a5ce485a0eed47a"
+    },
+    {
+      "$oid": "6687c31b7a5ce485a0eed47b"
+    },
+    {
+      "$oid": "6687c31b7a5ce485a0eed47c"
+    },
+    {
+      "$oid": "6687c31b7a5ce485a0eed47d"
+    }
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "668bca125319ea9afdff0761"
+  },
+  "name": "Ethereal Regeneration",
+  "description": "This potent elixir sharpens the mind and enhances cognitive abilities, replenishing mental clarity and focus, making it ideal for solving complex problems and casting intricate spells.",
+  "type": "antidote",
+  "image": "/images/equipment/potions/potion_5.jpg",
+  "recovery_effect": {
+    "$oid": "668cf21b87b351f5c9875216"
+  },
+  "min_attr": [
+    {
+      "name": "Intelligence",
+      "value": 10,
+      "_id": {
+        "$oid": "668bca125319ea9afdff0762"
+      }
+    }
+  ],
+  "profiles": [
+    {
+      "$oid": "6687c31b7a5ce485a0eed476"
+    },
+    {
+      "$oid": "6687c31b7a5ce485a0eed477"
+    },
+    {
+      "$oid": "6687c31b7a5ce485a0eed478"
+    },
+    {
+      "$oid": "6687c31b7a5ce485a0eed479"
+    },
+    {
+      "$oid": "6687c31b7a5ce485a0eed47a"
+    },
+    {
+      "$oid": "6687c31b7a5ce485a0eed47b"
+    },
+    {
+      "$oid": "6687c31b7a5ce485a0eed47c"
+    },
+    {
+      "$oid": "6687c31b7a5ce485a0eed47d"
+    }
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "668bca125319ea9afdff0764"
+  },
+  "name": "Mind Soother",
+  "description": "This powerful concoction revitalizes the muscles and fortifies the body, restoring physical power and endurance, enabling the drinker to perform feats of immense strength and overcome physical challenges.",
+  "type": "antidote",
+  "image": "/images/equipment/potions/potion_6.jpg",
+  "recovery_effect": {
+    "$oid": "668cf21b87b351f5c9875217"
+  },
+  "min_attr": [
+    {
+      "name": "Intelligence",
+      "value": 10,
+      "_id": {
+        "$oid": "668bca125319ea9afdff0765"
+      }
+    }
+  ],
+  "profiles": [
+    {
+      "$oid": "6687c31b7a5ce485a0eed476"
+    },
+    {
+      "$oid": "6687c31b7a5ce485a0eed477"
+    },
+    {
+      "$oid": "6687c31b7a5ce485a0eed478"
+    },
+    {
+      "$oid": "6687c31b7a5ce485a0eed479"
+    },
+    {
+      "$oid": "6687c31b7a5ce485a0eed47a"
+    },
+    {
+      "$oid": "6687c31b7a5ce485a0eed47b"
+    },
+    {
+      "$oid": "6687c31b7a5ce485a0eed47c"
+    },
+    {
+      "$oid": "6687c31b7a5ce485a0eed47d"
+    }
+  ],
+  "__v": 0
+}]

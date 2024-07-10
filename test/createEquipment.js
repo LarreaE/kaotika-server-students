@@ -7,6 +7,10 @@ const PotionHealing = require('../models/potionHealingModel');
 const PotionAntidote = require('../models/potionAntidoteModel');
 const PotionEnhancer = require('../models/potionEnhancerModel');
 
+constfs = require('fs');
+
+
+
 
 
 const { schema } = require('../models/profileModel');
@@ -78,10 +82,20 @@ const clearEquipment = async() => {
 }
 
 
+const readFromDB = async() => {
+
+    const data = fs.readFileSync('../database/Kaotika.armors.json',{ encoding: 'utf8', flag: 'r' });
+
+    console.log(JSON.parse(data));
+
+}
+
 
 const createEquipment = async () => {
     try
     { 
+
+        await readFromDB();
         await connectToDB();
 
         await clearEquipment();

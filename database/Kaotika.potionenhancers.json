@@ -1,0 +1,165 @@
+[{
+  "_id": {
+    "$oid": "668bca125319ea9afdff0767"
+  },
+  "name": "Potion of Increase Strength",
+  "description": "This robust elixir temporarily amplifies the drinker's physical power, significantly boosting muscle strength and stamina, allowing for extraordinary feats of might and endurance in battle.\n\n\n\n",
+  "type": "enhancer",
+  "image": "/images/equipment/potions/potion_10.jpg",
+  "duration": 2,
+  "modifiers": [
+    {
+      "attribute": "Strength",
+      "value": 20,
+      "_id": {
+        "$oid": "668bca125319ea9afdff0768"
+      }
+    }
+  ],
+  "min_attr": [
+    {
+      "name": "Intelligence",
+      "value": 10,
+      "_id": {
+        "$oid": "668bca125319ea9afdff0769"
+      }
+    }
+  ],
+  "profiles": [
+    {
+      "$oid": "6687c31b7a5ce485a0eed476"
+    },
+    {
+      "$oid": "6687c31b7a5ce485a0eed477"
+    },
+    {
+      "$oid": "6687c31b7a5ce485a0eed478"
+    },
+    {
+      "$oid": "6687c31b7a5ce485a0eed479"
+    },
+    {
+      "$oid": "6687c31b7a5ce485a0eed47a"
+    },
+    {
+      "$oid": "6687c31b7a5ce485a0eed47b"
+    },
+    {
+      "$oid": "6687c31b7a5ce485a0eed47c"
+    },
+    {
+      "$oid": "6687c31b7a5ce485a0eed47d"
+    }
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "668bca135319ea9afdff076b"
+  },
+  "name": "Potion of Madness",
+  "description": "A dangerous brew that plunges the drinker into a frenzy, this potion unleashes chaotic energy, inducing unpredictable behavior and granting bursts of wild strength at the cost of sanity.",
+  "type": "enhancer",
+  "image": "/images/equipment/potions/potion_11.jpg",
+  "duration": 2,
+  "modifiers": [
+    {
+      "attribute": "Insanity",
+      "value": 20,
+      "_id": {
+        "$oid": "668bca135319ea9afdff076c"
+      }
+    }
+  ],
+  "min_attr": [
+    {
+      "name": "Intelligence",
+      "value": 25,
+      "_id": {
+        "$oid": "668bca135319ea9afdff076d"
+      }
+    }
+  ],
+  "profiles": [
+    {
+      "$oid": "6687c31b7a5ce485a0eed476"
+    },
+    {
+      "$oid": "6687c31b7a5ce485a0eed477"
+    },
+    {
+      "$oid": "6687c31b7a5ce485a0eed478"
+    },
+    {
+      "$oid": "6687c31b7a5ce485a0eed479"
+    },
+    {
+      "$oid": "6687c31b7a5ce485a0eed47a"
+    },
+    {
+      "$oid": "6687c31b7a5ce485a0eed47b"
+    },
+    {
+      "$oid": "6687c31b7a5ce485a0eed47c"
+    },
+    {
+      "$oid": "6687c31b7a5ce485a0eed47d"
+    }
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "668bca135319ea9afdff076f"
+  },
+  "name": "Potion of Increase Constitution",
+  "description": "This hearty elixir enhances the drinker's physical resilience and endurance, boosting their overall health and vitality, allowing them to withstand greater physical stress and recover more quickly from injuries.",
+  "type": "enhancer",
+  "image": "/images/equipment/potions/potion_12.jpg",
+  "duration": 2,
+  "modifiers": [
+    {
+      "attribute": "Constitution",
+      "value": 20,
+      "_id": {
+        "$oid": "668bca135319ea9afdff0770"
+      }
+    }
+  ],
+  "min_attr": [
+    {
+      "name": "Intelligence",
+      "value": 15,
+      "_id": {
+        "$oid": "668bca135319ea9afdff0771"
+      }
+    }
+  ],
+  "profiles": [
+    {
+      "$oid": "6687c31b7a5ce485a0eed476"
+    },
+    {
+      "$oid": "6687c31b7a5ce485a0eed477"
+    },
+    {
+      "$oid": "6687c31b7a5ce485a0eed478"
+    },
+    {
+      "$oid": "6687c31b7a5ce485a0eed479"
+    },
+    {
+      "$oid": "6687c31b7a5ce485a0eed47a"
+    },
+    {
+      "$oid": "6687c31b7a5ce485a0eed47b"
+    },
+    {
+      "$oid": "6687c31b7a5ce485a0eed47c"
+    },
+    {
+      "$oid": "6687c31b7a5ce485a0eed47d"
+    }
+  ],
+  "__v": 0
+}]

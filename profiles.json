@@ -163,7 +163,7 @@
             {
                 "name": "Strength",
                 "description": "Manages the chance of success when using a melee weapon, and the damage a melee weapon does",
-                "value": 17
+                "value": 5
             }
       
         ]
