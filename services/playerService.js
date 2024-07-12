@@ -1,13 +1,13 @@
 
 const Player = require('../models/playerModel');
 const profileService = require("./profileService");
-const Profile = require('../models/profileModel'); 
-const Weapon = require('../models/weaponModel');
-const Armor = require('../models/armorModel');
-const Artifact = require('../models/artifactModel');
-const PotionHealing = require('../models/potionHealingModel');
-const PotionAntidote = require('../models/potionAntidoteModel');
-const PotionEnhancer = require('../models/potionEnhancerModel');
+// const Profile = require('../models/profileModel'); 
+// const Weapon = require('../models/weaponModel');
+// const Armor = require('../models/armorModel');
+// const Artifact = require('../models/artifactModel');
+// const PotionHealing = require('../models/potionHealingModel');
+// const PotionAntidote = require('../models/potionAntidoteModel');
+// const PotionEnhancer = require('../models/potionEnhancerModel');
 
 
 const getAllPlayers = async () => {  
@@ -71,7 +71,7 @@ const createNewPlayer = async (newPlayer) => {
         const completePlayer = populatePlayer(createdPlayer);
 
 
-        return createdPlayer;
+        return completePlayer;
     } 
     catch (error) 
     {
@@ -83,9 +83,24 @@ const createNewPlayer = async (newPlayer) => {
 const populatePlayer = async (createdPlayer) => {
 
     console.log("populateFunction");
-    const playerCreated = await Player.findById(createdPlayer._id);
-    await playerCreated.equipment.populate
-    console.log(playerCreated);
+    const playerPopulated = await Player.findById(createdPlayer._id).populate('profile').exec();
+    console.log(playerPopulated);
+
+    await playerPopulated.equipment.populate('armor', {'profiles': 0});
+    await playerPopulated.equipment.populate('weapon', {'profiles': 0});
+    await playerPopulated.equipment.populate('artifact', {'profiles': 0});
+    await playerPopulated.equipment.populate('healing_potion', {'profiles': 0});
+    await playerPopulated.equipment.populate('antidote_potion', {'profiles': 0});
+    await playerPopulated.equipment.populate('enhancer_potion', {'profiles': 0});
+    await playerPopulated.equipment.antidote_potion.populate('recovery_effect');
+
+    
+    //console.log(playerCreated);
+    //console.log("PLAYER DATA AFTER ARMOR POPULATION")
+    //console.log(playerPopulated);
+
+    return playerPopulated;
+    
 }
 
 
