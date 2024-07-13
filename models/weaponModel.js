@@ -13,7 +13,14 @@ const weaponSchema = new Schema({
    image: String,
    damage: String,
    base_percentage: Number,
-   modifiers: [{attribute: String, value: Number}],
+   modifiers: {
+      intelligence: Number,
+      dexterity: Number,
+      constitution: Number,
+      insanity: Number,
+      charisma: Number,
+      strength: Number
+    },
    min_level: Number,
    profiles: [{type: Schema.Types.ObjectId, ref: "Profile"}]
 
