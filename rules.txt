@@ -15,7 +15,9 @@ DERIVED ATTRIBUTES
 
 HP: 3*(CON + STR)
 ATT: STR - INS / 2. (Can be negative or positive) 
-*** creo que sería ideal sumar 17.5 (mínimo valor que aparece entre todos. Lo tiene el JUGGLER)
+ (mínimo valor que aparece entre todos. Lo tiene el JUGGLER)
+Además el blasfemador empieza con -12.5 pero puede perder mucho más entre armaduras y armas.
+*** creo que sería ideal sumar 20-25 puntos al ataque.
 Para que todos empiecen en 0 y no haya negativos.
 
 DEF: DEX + CON + INT/2
