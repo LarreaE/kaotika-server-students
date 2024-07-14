@@ -1,5 +1,8 @@
 
-// INT, DEX, CON, CHA, STR: Min 5 - Max 30
+
+
+
+
 // INS: Min 10 - Max 45
 
 // RULES for INT, DEX, CON, CHA, STR.
@@ -10,327 +13,327 @@
 
 
 
-[
-    {
-        "name": "Scholar",
-        "description":"In silent libraries and secret laboratories, the Scholar spends his days immersed in knowledge. With a brilliant mind and insatiable curiosity, he seeks to understand the mysteries of the universe and unravel the secrets hidden in ancient texts. His intelligence is his greatest weapon, capable of solving complex puzzles and devising ingenious strategies. Though he does not excel in physical strength, his insight and wisdom make him an invaluable ally. The Scholar is a beacon of light in the darkness, guided by the desire for knowledge and truth.",
-        "image": "/images/profiles/scholar.jpg",
-        "attributes": [
-            {
-                "name": "Intelligence",
-                "description": "The intelligence controls the chance of success when using a potion",
-                "value": 30
-            },
-            {
-                "name": "Dexterity",
-                "description": "Manages the chance of success when using a melee weapon and the damage a missile weapon does",
-                "value": 15
-            },
-            {
-                "name": "Insanity",
-                "description": "Indicates the state of mental health of an adventurer. If the insanity is high, there will be more chance to make a fumble of a critical hit, and the resulting damage will be more critical. If the insanity is low, there will be less chance to make a fumble or a critical hit, and the resulting damage will be less critical",
-                "value": 25
-            },
-            {
-                "name": "Charisma",
-                "description": "Indicates the chance to attack first in the next round",
-                "value": 15
-            },
-            {
-                "name": "Constitution",
-                "description": "Indicates the number of Hit Points an adventurer starts with",
-                "value": 5
-            },
-            {
-                "name": "Strength",
-                "description": "Manages the chance of success when using a melee weapon, and the damage a melee weapon does",
-                "value": 5
-            }
+// [
+//     {
+//         "name": "Scholar",
+//         "description":"In silent libraries and secret laboratories, the Scholar spends his days immersed in knowledge. With a brilliant mind and insatiable curiosity, he seeks to understand the mysteries of the universe and unravel the secrets hidden in ancient texts. His intelligence is his greatest weapon, capable of solving complex puzzles and devising ingenious strategies. Though he does not excel in physical strength, his insight and wisdom make him an invaluable ally. The Scholar is a beacon of light in the darkness, guided by the desire for knowledge and truth.",
+//         "image": "/images/profiles/scholar.jpg",
+//         "attributes": [
+//             {
+//                 "name": "Intelligence",
+//                 "description": "The intelligence controls the chance of success when using a potion",
+//                 "value": 30
+//             },
+//             {
+//                 "name": "Dexterity",
+//                 "description": "Manages the chance of success when using a melee weapon and the damage a missile weapon does",
+//                 "value": 15
+//             },
+//             {
+//                 "name": "Insanity",
+//                 "description": "Indicates the state of mental health of an adventurer. If the insanity is high, there will be more chance to make a fumble of a critical hit, and the resulting damage will be more critical. If the insanity is low, there will be less chance to make a fumble or a critical hit, and the resulting damage will be less critical",
+//                 "value": 25
+//             },
+//             {
+//                 "name": "Charisma",
+//                 "description": "Indicates the chance to attack first in the next round",
+//                 "value": 15
+//             },
+//             {
+//                 "name": "Constitution",
+//                 "description": "Indicates the number of Hit Points an adventurer starts with",
+//                 "value": 5
+//             },
+//             {
+//                 "name": "Strength",
+//                 "description": "Manages the chance of success when using a melee weapon, and the damage a melee weapon does",
+//                 "value": 5
+//             }
       
-        ]
+//         ]
       
-    },
+//     },
 
-    {
-        "name": "Pariah",
-        "description":"Expelled from society and condemned to wander alone, the Pariah is a figure marked by suffering and resilience. Despite his ostracism, he has developed an inner and physical strength that makes him a formidable adversary. His life on the margins of civilization has taught him to fend for himself, facing the dangers of the world with unyielding determination. Stripped of everything but his own will, the Pariah is a symbol of endurance and survival in a cruel and unforgiving world.",
-        "image": "/images/profiles/pariah.jpg",
-        "attributes": [
-            {
-                "name": "Intelligence",
-                "description": "The intelligence controls the chance of success when using a potion",
-                "value": 5
-            },
-            {
-                "name": "Dexterity",
-                "description": "Manages the chance of success when using a melee weapon and the damage a missile weapon does",
-                "value": 17
-            },
-            {
-                "name": "Insanity",
-                "description": "Indicates the state of mental health of an adventurer. If the insanity is high, there will be more chance to make a fumble of a critical hit, and the resulting damage will be more critical. If the insanity is low, there will be less chance to make a fumble or a critical hit, and the resulting damage will be less critical",
-                "value": 30
-            },
-            {
-                "name": "Charisma",
-                "description": "Indicates the chance to attack first in the next round",
-                "value": 5
-            },
-            {
-                "name": "Constitution",
-                "description": "Indicates the number of Hit Points an adventurer starts with",
-                "value": 13
-            },
-            {
-                "name": "Strength",
-                "description": "Manages the chance of success when using a melee weapon, and the damage a melee weapon does",
-                "value": 30
-            }
+//     {
+//         "name": "Pariah",
+//         "description":"Expelled from society and condemned to wander alone, the Pariah is a figure marked by suffering and resilience. Despite his ostracism, he has developed an inner and physical strength that makes him a formidable adversary. His life on the margins of civilization has taught him to fend for himself, facing the dangers of the world with unyielding determination. Stripped of everything but his own will, the Pariah is a symbol of endurance and survival in a cruel and unforgiving world.",
+//         "image": "/images/profiles/pariah.jpg",
+//         "attributes": [
+//             {
+//                 "name": "Intelligence",
+//                 "description": "The intelligence controls the chance of success when using a potion",
+//                 "value": 5
+//             },
+//             {
+//                 "name": "Dexterity",
+//                 "description": "Manages the chance of success when using a melee weapon and the damage a missile weapon does",
+//                 "value": 17
+//             },
+//             {
+//                 "name": "Insanity",
+//                 "description": "Indicates the state of mental health of an adventurer. If the insanity is high, there will be more chance to make a fumble of a critical hit, and the resulting damage will be more critical. If the insanity is low, there will be less chance to make a fumble or a critical hit, and the resulting damage will be less critical",
+//                 "value": 30
+//             },
+//             {
+//                 "name": "Charisma",
+//                 "description": "Indicates the chance to attack first in the next round",
+//                 "value": 5
+//             },
+//             {
+//                 "name": "Constitution",
+//                 "description": "Indicates the number of Hit Points an adventurer starts with",
+//                 "value": 13
+//             },
+//             {
+//                 "name": "Strength",
+//                 "description": "Manages the chance of success when using a melee weapon, and the damage a melee weapon does",
+//                 "value": 30
+//             }
       
-        ]
+//         ]
       
-    },
+//     },
 
-    {
-        "name": "Juggler",
-        "description":"In the center of the square, where the crowd gathers, the Juggler displays his art. His hands move with hypnotic grace, controlling objects with a precision that seems to defy the laws of physics. He is not only a master of entertainment but also a shrewd strategist. Every move is calculated, every trick a distraction that hides his true intentions. The Juggler is a master of deception, capable of slipping into the shadows and disappearing in the blink of an eye, leaving behind a trail of mystery and awe.",
-        "image": "/images/profiles/juggler.jpg",
-        "attributes": [
-            {
-                "name": "Intelligence",
-                "description": "The intelligence controls the chance of success when using a potion",
-                "value": 5
-            },
-            {
-                "name": "Dexterity",
-                "description": "Manages the chance of success when using a melee weapon and the damage a missile weapon does",
-                "value": 30
-            },
-            {
-                "name": "Insanity",
-                "description": "Indicates the state of mental health of an adventurer. If the insanity is high, there will be more chance to make a fumble of a critical hit, and the resulting damage will be more critical. If the insanity is low, there will be less chance to make a fumble or a critical hit, and the resulting damage will be less critical",
-                "value": 45
-            },
-            {
-                "name": "Charisma",
-                "description": "Indicates the chance to attack first in the next round",
-                "value": 17
-            },
-            {
-                "name": "Constitution",
-                "description": "Indicates the number of Hit Points an adventurer starts with",
-                "value": 13
-            },
-            {
-                "name": "Strength",
-                "description": "Manages the chance of success when using a melee weapon, and the damage a melee weapon does",
-                "value": 5
-            }
+//     {
+//         "name": "Juggler",
+//         "description":"In the center of the square, where the crowd gathers, the Juggler displays his art. His hands move with hypnotic grace, controlling objects with a precision that seems to defy the laws of physics. He is not only a master of entertainment but also a shrewd strategist. Every move is calculated, every trick a distraction that hides his true intentions. The Juggler is a master of deception, capable of slipping into the shadows and disappearing in the blink of an eye, leaving behind a trail of mystery and awe.",
+//         "image": "/images/profiles/juggler.jpg",
+//         "attributes": [
+//             {
+//                 "name": "Intelligence",
+//                 "description": "The intelligence controls the chance of success when using a potion",
+//                 "value": 5
+//             },
+//             {
+//                 "name": "Dexterity",
+//                 "description": "Manages the chance of success when using a melee weapon and the damage a missile weapon does",
+//                 "value": 30
+//             },
+//             {
+//                 "name": "Insanity",
+//                 "description": "Indicates the state of mental health of an adventurer. If the insanity is high, there will be more chance to make a fumble of a critical hit, and the resulting damage will be more critical. If the insanity is low, there will be less chance to make a fumble or a critical hit, and the resulting damage will be less critical",
+//                 "value": 45
+//             },
+//             {
+//                 "name": "Charisma",
+//                 "description": "Indicates the chance to attack first in the next round",
+//                 "value": 17
+//             },
+//             {
+//                 "name": "Constitution",
+//                 "description": "Indicates the number of Hit Points an adventurer starts with",
+//                 "value": 13
+//             },
+//             {
+//                 "name": "Strength",
+//                 "description": "Manages the chance of success when using a melee weapon, and the damage a melee weapon does",
+//                 "value": 5
+//             }
       
-        ]
+//         ]
       
-    },
-    {
-        "name": "Blasphemer",
-        "description":"The Blasphemer is a dark and provocative figure, known for challenging norms and questioning established beliefs. His words are like poison, capable of corrupting and destabilizing the faith of those who listen. Rejected by society and hunted for his heresy, the Blasphemer has developed impressive tenacity and cunning. With a sharp mind and a sharper tongue, he does not fear facing established powers and sowing doubt wherever he goes. He is an iconoclast, a destroyer of dogmas, and a bearer of uncomfortable truths.",
-        "image": "/images/profiles/blasphemer.jpg",
-        "attributes": [
-            {
-                "name": "Intelligence",
-                "description": "The intelligence controls the chance of success when using a potion",
-                "value": 15
-            },
-            {
-                "name": "Dexterity",
-                "description": "Manages the chance of success when using a melee weapon and the damage a missile weapon does",
-                "value": 5
-            },
-            {
-                "name": "Insanity",
-                "description": "Indicates the state of mental health of an adventurer. If the insanity is high, there will be more chance to make a fumble of a critical hit, and the resulting damage will be more critical. If the insanity is low, there will be less chance to make a fumble or a critical hit, and the resulting damage will be less critical",
-                "value": 35
-            },
-            {
-                "name": "Charisma",
-                "description": "Indicates the chance to attack first in the next round",
-                "value": 30
-            },
-            {
-                "name": "Constitution",
-                "description": "Indicates the number of Hit Points an adventurer starts with",
-                "value": 15
-            },
-            {
-                "name": "Strength",
-                "description": "Manages the chance of success when using a melee weapon, and the damage a melee weapon does",
-                "value": 5
-            }
+//     },
+//     {
+//         "name": "Blasphemer",
+//         "description":"The Blasphemer is a dark and provocative figure, known for challenging norms and questioning established beliefs. His words are like poison, capable of corrupting and destabilizing the faith of those who listen. Rejected by society and hunted for his heresy, the Blasphemer has developed impressive tenacity and cunning. With a sharp mind and a sharper tongue, he does not fear facing established powers and sowing doubt wherever he goes. He is an iconoclast, a destroyer of dogmas, and a bearer of uncomfortable truths.",
+//         "image": "/images/profiles/blasphemer.jpg",
+//         "attributes": [
+//             {
+//                 "name": "Intelligence",
+//                 "description": "The intelligence controls the chance of success when using a potion",
+//                 "value": 15
+//             },
+//             {
+//                 "name": "Dexterity",
+//                 "description": "Manages the chance of success when using a melee weapon and the damage a missile weapon does",
+//                 "value": 5
+//             },
+//             {
+//                 "name": "Insanity",
+//                 "description": "Indicates the state of mental health of an adventurer. If the insanity is high, there will be more chance to make a fumble of a critical hit, and the resulting damage will be more critical. If the insanity is low, there will be less chance to make a fumble or a critical hit, and the resulting damage will be less critical",
+//                 "value": 35
+//             },
+//             {
+//                 "name": "Charisma",
+//                 "description": "Indicates the chance to attack first in the next round",
+//                 "value": 30
+//             },
+//             {
+//                 "name": "Constitution",
+//                 "description": "Indicates the number of Hit Points an adventurer starts with",
+//                 "value": 15
+//             },
+//             {
+//                 "name": "Strength",
+//                 "description": "Manages the chance of success when using a melee weapon, and the damage a melee weapon does",
+//                 "value": 5
+//             }
       
-        ]
+//         ]
       
-    },
+//     },
 
-    {
-        "name": "Embalmer",
-        "description":"In the quiet, shadowed corners of the necropolis, the Embalmer performs his sacred and somber duties. Clad in robes as dark as the midnight sky, he is the keeper of the dead, the guardian of the departed. With hands steady and skilled, he prepares the bodies for their final journey, preserving them with ancient and arcane methods known only to a select few. His knowledge of life and death is profound, and his presence commands both respect and fear. The Embalmer speaks in whispers, his words carrying the weight of the afterlife, and his eyes see beyond the veil of mortality. He is a figure of mystery and reverence, a master of the delicate balance between this world and the next.",
-        "image": "/images/profiles/embalmer.jpg",
-        "attributes": [
-            {
-                "name": "Intelligence",
-                "description": "The intelligence controls the chance of success when using a potion",
-                "value": 13
-            },
-            {
-                "name": "Dexterity",
-                "description": "Manages the chance of success when using a melee weapon and the damage a missile weapon does",
-                "value": 30
-            },
-            {
-                "name": "Insanity",
-                "description": "Indicates the state of mental health of an adventurer. If the insanity is high, there will be more chance to make a fumble of a critical hit, and the resulting damage will be more critical. If the insanity is low, there will be less chance to make a fumble or a critical hit, and the resulting damage will be less critical",
-                "value": 40
-            },
-            {
-                "name": "Charisma",
-                "description": "Indicates the chance to attack first in the next round",
-                "value": 5
-            },
-            {
-                "name": "Constitution",
-                "description": "Indicates the number of Hit Points an adventurer starts with",
-                "value": 5
-            },
-            {
-                "name": "Strength",
-                "description": "Manages the chance of success when using a melee weapon, and the damage a melee weapon does",
-                "value": 17
-            }
+//     {
+//         "name": "Embalmer",
+//         "description":"In the quiet, shadowed corners of the necropolis, the Embalmer performs his sacred and somber duties. Clad in robes as dark as the midnight sky, he is the keeper of the dead, the guardian of the departed. With hands steady and skilled, he prepares the bodies for their final journey, preserving them with ancient and arcane methods known only to a select few. His knowledge of life and death is profound, and his presence commands both respect and fear. The Embalmer speaks in whispers, his words carrying the weight of the afterlife, and his eyes see beyond the veil of mortality. He is a figure of mystery and reverence, a master of the delicate balance between this world and the next.",
+//         "image": "/images/profiles/embalmer.jpg",
+//         "attributes": [
+//             {
+//                 "name": "Intelligence",
+//                 "description": "The intelligence controls the chance of success when using a potion",
+//                 "value": 13
+//             },
+//             {
+//                 "name": "Dexterity",
+//                 "description": "Manages the chance of success when using a melee weapon and the damage a missile weapon does",
+//                 "value": 30
+//             },
+//             {
+//                 "name": "Insanity",
+//                 "description": "Indicates the state of mental health of an adventurer. If the insanity is high, there will be more chance to make a fumble of a critical hit, and the resulting damage will be more critical. If the insanity is low, there will be less chance to make a fumble or a critical hit, and the resulting damage will be less critical",
+//                 "value": 40
+//             },
+//             {
+//                 "name": "Charisma",
+//                 "description": "Indicates the chance to attack first in the next round",
+//                 "value": 5
+//             },
+//             {
+//                 "name": "Constitution",
+//                 "description": "Indicates the number of Hit Points an adventurer starts with",
+//                 "value": 5
+//             },
+//             {
+//                 "name": "Strength",
+//                 "description": "Manages the chance of success when using a melee weapon, and the damage a melee weapon does",
+//                 "value": 17
+//             }
       
-        ]
+//         ]
       
-    },
+//     },
 
-    {
-        "name": "Gossiper",
-        "description":"In every corner of the tavern and every market stall, the Gossiper weaves his web of words. With a sharp tongue and keen ear, he gathers and disseminates information with the skill of a master spy. His words can rally a crowd or destroy a reputation in minutes. No secret escapes his reach, and although his motives are often questionable, his knowledge is indisputable. The Gossiper is the master of rumor, a weaver of intrigues whose words have the power to change the destiny of kingdoms.",
-        "image": "/images/profiles/gossiper.jpg",
-        "attributes": [
-            {
-                "name": "Intelligence",
-                "description": "The intelligence controls the chance of success when using a potion",
-                "value": 30
-            },
-            {
-                "name": "Dexterity",
-                "description": "Manages the chance of success when using a melee weapon and the damage a missile weapon does",
-                "value": 10
-            },
-            {
-                "name": "Insanity",
-                "description": "Indicates the state of mental health of an adventurer. If the insanity is high, there will be more chance to make a fumble of a critical hit, and the resulting damage will be more critical. If the insanity is low, there will be less chance to make a fumble or a critical hit, and the resulting damage will be less critical",
-                "value": 10
-            },
-            {
-                "name": "Charisma",
-                "description": "Indicates the chance to attack first in the next round",
-                "value": 20
-            },
-            {
-                "name": "Constitution",
-                "description": "Indicates the number of Hit Points an adventurer starts with",
-                "value": 5
-            },
-            {
-                "name": "Strength",
-                "description": "Manages the chance of success when using a melee weapon, and the damage a melee weapon does",
-                "value": 5
-            }
+//     {
+//         "name": "Gossiper",
+//         "description":"In every corner of the tavern and every market stall, the Gossiper weaves his web of words. With a sharp tongue and keen ear, he gathers and disseminates information with the skill of a master spy. His words can rally a crowd or destroy a reputation in minutes. No secret escapes his reach, and although his motives are often questionable, his knowledge is indisputable. The Gossiper is the master of rumor, a weaver of intrigues whose words have the power to change the destiny of kingdoms.",
+//         "image": "/images/profiles/gossiper.jpg",
+//         "attributes": [
+//             {
+//                 "name": "Intelligence",
+//                 "description": "The intelligence controls the chance of success when using a potion",
+//                 "value": 30
+//             },
+//             {
+//                 "name": "Dexterity",
+//                 "description": "Manages the chance of success when using a melee weapon and the damage a missile weapon does",
+//                 "value": 10
+//             },
+//             {
+//                 "name": "Insanity",
+//                 "description": "Indicates the state of mental health of an adventurer. If the insanity is high, there will be more chance to make a fumble of a critical hit, and the resulting damage will be more critical. If the insanity is low, there will be less chance to make a fumble or a critical hit, and the resulting damage will be less critical",
+//                 "value": 10
+//             },
+//             {
+//                 "name": "Charisma",
+//                 "description": "Indicates the chance to attack first in the next round",
+//                 "value": 20
+//             },
+//             {
+//                 "name": "Constitution",
+//                 "description": "Indicates the number of Hit Points an adventurer starts with",
+//                 "value": 5
+//             },
+//             {
+//                 "name": "Strength",
+//                 "description": "Manages the chance of success when using a melee weapon, and the damage a melee weapon does",
+//                 "value": 5
+//             }
       
-        ]
+//         ]
       
-    },
+//     },
 
-    {
-        "name": "Bumbler",
-        "description":"In the chaotic tapestry of life, the Bumbler stumbles through with a charm all his own. His mismatched attire and perpetually confused expression belie a heart of gold and an uncanny knack for finding himself at the center of extraordinary events. Though he trips over his own feet and often seems lost, fate has a curious way of guiding him to where he is needed most. The Bumbler’s innocence and good intentions make him a magnet for both trouble and wonder. His misadventures, filled with laughter and unexpected heroism, endear him to all he meets. He is the unlikeliest of heroes, proving time and again that even the most seemingly hapless among us can make a profound difference in the world.",
-        "image": "/images/profiles/bumbler.jpg",
-        "attributes": [
-            {
-                "name": "Intelligence",
-                "description": "The intelligence controls the chance of success when using a potion",
-                "value": 5
-            },
-            {
-                "name": "Dexterity",
-                "description": "Manages the chance of success when using a melee weapon and the damage a missile weapon does",
-                "value": 5
-            },
-            {
-                "name": "Insanity",
-                "description": "Indicates the state of mental health of an adventurer. If the insanity is high, there will be more chance to make a fumble of a critical hit, and the resulting damage will be more critical. If the insanity is low, there will be less chance to make a fumble or a critical hit, and the resulting damage will be less critical",
-                "value": 15
-            },
-            {
-                "name": "Charisma",
-                "description": "Indicates the chance to attack first in the next round",
-                "value": 5
-            },
-            {
-                "name": "Constitution",
-                "description": "Indicates the number of Hit Points an adventurer starts with",
-                "value": 30
-            },
-            {
-                "name": "Strength",
-                "description": "Manages the chance of success when using a melee weapon, and the damage a melee weapon does",
-                "value": 25
-            }
+//     {
+//         "name": "Bumbler",
+//         "description":"In the chaotic tapestry of life, the Bumbler stumbles through with a charm all his own. His mismatched attire and perpetually confused expression belie a heart of gold and an uncanny knack for finding himself at the center of extraordinary events. Though he trips over his own feet and often seems lost, fate has a curious way of guiding him to where he is needed most. The Bumbler’s innocence and good intentions make him a magnet for both trouble and wonder. His misadventures, filled with laughter and unexpected heroism, endear him to all he meets. He is the unlikeliest of heroes, proving time and again that even the most seemingly hapless among us can make a profound difference in the world.",
+//         "image": "/images/profiles/bumbler.jpg",
+//         "attributes": [
+//             {
+//                 "name": "Intelligence",
+//                 "description": "The intelligence controls the chance of success when using a potion",
+//                 "value": 5
+//             },
+//             {
+//                 "name": "Dexterity",
+//                 "description": "Manages the chance of success when using a melee weapon and the damage a missile weapon does",
+//                 "value": 5
+//             },
+//             {
+//                 "name": "Insanity",
+//                 "description": "Indicates the state of mental health of an adventurer. If the insanity is high, there will be more chance to make a fumble of a critical hit, and the resulting damage will be more critical. If the insanity is low, there will be less chance to make a fumble or a critical hit, and the resulting damage will be less critical",
+//                 "value": 15
+//             },
+//             {
+//                 "name": "Charisma",
+//                 "description": "Indicates the chance to attack first in the next round",
+//                 "value": 5
+//             },
+//             {
+//                 "name": "Constitution",
+//                 "description": "Indicates the number of Hit Points an adventurer starts with",
+//                 "value": 30
+//             },
+//             {
+//                 "name": "Strength",
+//                 "description": "Manages the chance of success when using a melee weapon, and the damage a melee weapon does",
+//                 "value": 25
+//             }
       
-        ]
+//         ]
       
-    },
+//     },
 
-    {
-        "name": "Poet",
-        "description":"In the grand halls of kings and the humble abodes of commoners, the Poet weaves his magic with words. His voice is a symphony, each phrase a note that resonates with the soul. Dressed in garments that flutter like pages of an ancient manuscript, the Poet is a wanderer and a sage, chronicling the stories of the world with a quill dipped in the ink of imagination. His verses can inspire armies, melt hearts, and stir revolutions. He sees the beauty in the mundane and the tragedy in the magnificent, capturing the essence of human experience in his lyrical tapestry. The Poet is a dreamer, a visionary, a timeless messenger of the human spirit.",
-        "image": "/images/profiles/poet.jpg",
-        "attributes": [
-            {
-                "name": "Intelligence",
-                "description": "The intelligence controls the chance of success when using a potion",
-                "value": 20
-            },
-            {
-                "name": "Dexterity",
-                "description": "Manages the chance of success when using a melee weapon and the damage a missile weapon does",
-                "value": 10
-            },
-            {
-                "name": "Insanity",
-                "description": "Indicates the state of mental health of an adventurer. If the insanity is high, there will be more chance to make a fumble of a critical hit, and the resulting damage will be more critical. If the insanity is low, there will be less chance to make a fumble or a critical hit, and the resulting damage will be less critical",
-                "value": 20
-            },
-            {
-                "name": "Charisma",
-                "description": "Indicates the chance to attack first in the next round",
-                "value": 30
-            },
-            {
-                "name": "Constitution",
-                "description": "Indicates the number of Hit Points an adventurer starts with",
-                "value": 5
-            },
-            {
-                "name": "Strength",
-                "description": "Manages the chance of success when using a melee weapon, and the damage a melee weapon does",
-                "value": 5
-            }
+//     {
+//         "name": "Poet",
+//         "description":"In the grand halls of kings and the humble abodes of commoners, the Poet weaves his magic with words. His voice is a symphony, each phrase a note that resonates with the soul. Dressed in garments that flutter like pages of an ancient manuscript, the Poet is a wanderer and a sage, chronicling the stories of the world with a quill dipped in the ink of imagination. His verses can inspire armies, melt hearts, and stir revolutions. He sees the beauty in the mundane and the tragedy in the magnificent, capturing the essence of human experience in his lyrical tapestry. The Poet is a dreamer, a visionary, a timeless messenger of the human spirit.",
+//         "image": "/images/profiles/poet.jpg",
+//         "attributes": [
+//             {
+//                 "name": "Intelligence",
+//                 "description": "The intelligence controls the chance of success when using a potion",
+//                 "value": 20
+//             },
+//             {
+//                 "name": "Dexterity",
+//                 "description": "Manages the chance of success when using a melee weapon and the damage a missile weapon does",
+//                 "value": 10
+//             },
+//             {
+//                 "name": "Insanity",
+//                 "description": "Indicates the state of mental health of an adventurer. If the insanity is high, there will be more chance to make a fumble of a critical hit, and the resulting damage will be more critical. If the insanity is low, there will be less chance to make a fumble or a critical hit, and the resulting damage will be less critical",
+//                 "value": 20
+//             },
+//             {
+//                 "name": "Charisma",
+//                 "description": "Indicates the chance to attack first in the next round",
+//                 "value": 30
+//             },
+//             {
+//                 "name": "Constitution",
+//                 "description": "Indicates the number of Hit Points an adventurer starts with",
+//                 "value": 5
+//             },
+//             {
+//                 "name": "Strength",
+//                 "description": "Manages the chance of success when using a melee weapon, and the damage a melee weapon does",
+//                 "value": 5
+//             }
       
-        ]
+//         ]
       
-    }
-
-
+//     }
 
 
-]
+
+
+// ]

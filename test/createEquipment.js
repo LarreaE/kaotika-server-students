@@ -1,13 +1,13 @@
 
 
 const Weapon = require('../models/weaponModel');
-const Armor = require('../models/diseaseModel');
+const Armor = require('../models/armorModel');
 const Artifact = require('../models/artifactModel');
 const PotionHealing = require('../models/potionHealingModel');
 const PotionAntidote = require('../models/potionAntidoteModel');
 const PotionEnhancer = require('../models/potionEnhancerModel');
 
-constfs = require('fs');
+const fs = require('fs');
 
 
 
@@ -82,11 +82,26 @@ const clearEquipment = async() => {
 }
 
 
-const readFromDB = async() => {
+const getEquipment = () => {
 
-    const data = fs.readFileSync('../database/Kaotika.armors.json',{ encoding: 'utf8', flag: 'r' });
+    const data1 = fs.readFileSync('../database/Kaotika.armors.json',{ encoding: 'utf8', flag: 'r' });
+    const data2 = fs.readFileSync('../database/Kaotika.weapons.json',{ encoding: 'utf8', flag: 'r' });
+    const data3 = fs.readFileSync('../database/Kaotika.artifacts.json',{ encoding: 'utf8', flag: 'r' });
+    const data4 = fs.readFileSync('../database/Kaotika.potionhealings.json',{ encoding: 'utf8', flag: 'r' });
+    const data5 = fs.readFileSync('../database/Kaotika.potionantidotes.json',{ encoding: 'utf8', flag: 'r' });
+    const data6 = fs.readFileSync('../database/Kaotika.potionenhancers.json',{ encoding: 'utf8', flag: 'r' });
+    
+    const equipment =  [...JSON.parse(data1), 
+                        ...JSON.parse(data2), 
+                        ...JSON.parse(data3), 
+                        ...JSON.parse(data4), 
+                        ...JSON.parse(data5), 
+                        ...JSON.parse(data6)];
+    //console.log(equipment);
+    return equipment;
 
-    console.log(JSON.parse(data));
+    fs.writeFileSync('../database/equipment2.json', JSON.stringify(equipment), { encoding: 'utf8', flag: 'w' });
+    
 
 }
 
@@ -95,25 +110,28 @@ const createEquipment = async () => {
     try
     { 
 
-        await readFromDB();
         await connectToDB();
 
         await clearEquipment();
 
-        const profiles = await profileService.getAllProfiles();
+        // const profiles = await profileService.getAllProfiles();
 
-        const scholarId       = profiles[Profiles.SCHOLAR]._id;
-        const pariahId        = profiles[Profiles.PARIAH]._id;
-        const jugglerId       = profiles[Profiles.JUGGLER]._id;
-        const embalmerId      = profiles[Profiles.EMBALMER]._id;
-        const blasphemerId    = profiles[Profiles.BLASPHEMER]._id;
-        const gossiperId      = profiles[Profiles.GOSSIPER]._id;
-        const bumblerId       = profiles[Profiles.BUMBLER]._id;
-        const poetId          = profiles[Profiles.POET]._id;
+        // const scholarId       = profiles[Profiles.SCHOLAR]._id;
+        // const pariahId        = profiles[Profiles.PARIAH]._id;
+        // const jugglerId       = profiles[Profiles.JUGGLER]._id;
+        // const embalmerId      = profiles[Profiles.EMBALMER]._id;
+        // const blasphemerId    = profiles[Profiles.BLASPHEMER]._id;
+        // const gossiperId      = profiles[Profiles.GOSSIPER]._id;
+        // const bumblerId       = profiles[Profiles.BUMBLER]._id;
+        // const poetId          = profiles[Profiles.POET]._id;
 
 
 
-        const data = getEquipment(scholarId, pariahId, jugglerId, embalmerId, blasphemerId, gossiperId, bumblerId, poetId)
+        const data = getEquipment();
+
+        console.log(data);
+
+        
 
 
 
@@ -133,6 +151,7 @@ const createEquipment = async () => {
             else if (type === "artifact")
             {
                 newItem = new Artifact(item);
+                console.log("Entra");
             }
             else if (type === "healing")
             {
@@ -175,961 +194,961 @@ const createEquipment = async () => {
 
 
 
-function getEquipment(scholarId, pariahId, jugglerId, embalmerId, blasphemerId, gossiperId, bumblerId, poetId)
-{
+// function getEquipment(scholarId, pariahId, jugglerId, embalmerId, blasphemerId, gossiperId, bumblerId, poetId)
+// {
 
  
 
-    const equipment = 
+//     const equipment = 
 
-    [
-        {
-            "name": "Celestial Robe of the Archmage",
-            "description": "ABC",
-            "type": "armor",
-            "image": "/images/equipment/armor/robe_1.jpg",
-            "modifiers": [
-                {
-                    "attribute": "Constitution",
-                    "value":     5
-                }
+//     [
+//         {
+//             "name": "Celestial Robe of the Archmage",
+//             "description": "ABC",
+//             "type": "armor",
+//             "image": "/images/equipment/armor/robe_1.jpg",
+//             "modifiers": [
+//                 {
+//                     "attribute": "Constitution",
+//                     "value":     5
+//                 }
 
-            ],
-            "min_attr":[
-                {
-                    "name": "Dexterity",
-                    "value": 10
-                }
+//             ],
+//             "min_attr":[
+//                 {
+//                     "name": "Dexterity",
+//                     "value": 10
+//                 }
 
-            ],
-            "profiles":[
-                scholarId,                     
-                jugglerId,                  
-                blasphemerId,
-                gossiperId,  
-                poetId  
-            ]
+//             ],
+//             "profiles":[
+//                 scholarId,                     
+//                 jugglerId,                  
+//                 blasphemerId,
+//                 gossiperId,  
+//                 poetId  
+//             ]
 
-        },
-        {
-            "name": "Ethereal Vestments of the Whispering Winds",
-            "description": "ABC",
-            "type": "armor",
-            "image": "/images/equipment/armor/robe_2.jpg",
-            "modifiers": [
-                {
-                    "attribute": "Constitution",
-                    "value":     7
-                },
-                {
-                    "attribute": "Dexterity",
-                    "value":     -3
-                }
-
-
-            ],
-            "min_attr":[
-                {
-                    "name": "Dexterity",
-                    "value": 10
-                }
-
-            ],
-            "profiles":[
-                scholarId,                     
-                jugglerId,                  
-                blasphemerId,
-                gossiperId,  
-                poetId    
-            ]
-
-        },
-        {
-            "name": "Abyssal Tunic of the Shadow Lord",
-            "description": "ABC",
-            "type": "armor",
-            "image": "/images/equipment/armor/robe_3.jpg",
-            "modifiers": [
-                {
-                    "attribute": "Constitution",
-                    "value":     8
-                },
-                {
-                    "attribute": "Intelligence",
-                    "value":     2
-                },
-                {
-                    "attribute": "Dexterity",
-                    "value":     -6
-                }
+//         },
+//         {
+//             "name": "Ethereal Vestments of the Whispering Winds",
+//             "description": "ABC",
+//             "type": "armor",
+//             "image": "/images/equipment/armor/robe_2.jpg",
+//             "modifiers": [
+//                 {
+//                     "attribute": "Constitution",
+//                     "value":     7
+//                 },
+//                 {
+//                     "attribute": "Dexterity",
+//                     "value":     -3
+//                 }
 
 
-            ],
-            "min_attr":[
-                {
-                    "name": "Dexterity",
-                    "value": 10
-                }
+//             ],
+//             "min_attr":[
+//                 {
+//                     "name": "Dexterity",
+//                     "value": 10
+//                 }
 
-            ],
-            "profiles":[ 
-                scholarId,                     
-                jugglerId,                  
-                blasphemerId,
-                gossiperId,  
-                poetId    
-            ]
+//             ],
+//             "profiles":[
+//                 scholarId,                     
+//                 jugglerId,                  
+//                 blasphemerId,
+//                 gossiperId,  
+//                 poetId    
+//             ]
 
-        },
-        {
-            "name": "Shadowstalker Leather Jerkin",
-            "description": "ABC",
-            "type": "armor",
-            "image": "/images/equipment/armor/armor_1.jpg",
-            "modifiers": [
-                {
-                    "attribute": "Constitution",
-                    "value":     10
-                },
-                {
-                    "attribute": "Strength",
-                    "value":     -5
-                },
-                {
-                    "attribute": "Dexterity",
-                    "value":     -3
-                }
-
-
-            ],
-            "min_attr":[
-                {
-                    "name": "Dexterity",
-                    "value": 5
-                },
-                {
-                    "name": "Strength",
-                    "value": 15
-                }
-
-            ],
-            "profiles":[
-                pariahId,    
-                embalmerId,                
-                bumblerId     
-            ]
-
-        },
-        {
-            "name": "Huntsman's Wildwood Cuirass",
-            "description": "ABC",
-            "type": "armor",
-            "image": "/images/equipment/armor/armor_2.jpg",
-            "modifiers": [
-                {
-                    "attribute": "Constitution",
-                    "value":     12
-                },
-                {
-                    "attribute": "Strength",
-                    "value":     -9
-                },
-                {
-                    "attribute": "Dexterity",
-                    "value":     -3
-                }
+//         },
+//         {
+//             "name": "Abyssal Tunic of the Shadow Lord",
+//             "description": "ABC",
+//             "type": "armor",
+//             "image": "/images/equipment/armor/robe_3.jpg",
+//             "modifiers": [
+//                 {
+//                     "attribute": "Constitution",
+//                     "value":     8
+//                 },
+//                 {
+//                     "attribute": "Intelligence",
+//                     "value":     2
+//                 },
+//                 {
+//                     "attribute": "Dexterity",
+//                     "value":     -6
+//                 }
 
 
-            ],
-            "min_attr":[
-                {
-                    "name": "Dexterity",
-                    "value": 5
-                },
-                {
-                    "name": "Strength",
-                    "value": 15
-                }
+//             ],
+//             "min_attr":[
+//                 {
+//                     "name": "Dexterity",
+//                     "value": 10
+//                 }
 
-            ],
-            "profiles":[
-                pariahId,    
-                embalmerId,                
-                bumblerId    
-            ]
+//             ],
+//             "profiles":[ 
+//                 scholarId,                     
+//                 jugglerId,                  
+//                 blasphemerId,
+//                 gossiperId,  
+//                 poetId    
+//             ]
 
-        },
-        {
-            "name": "Dragonhide Battle Vest",
-            "description": "ABC",
-            "type": "armor",
-            "image": "/images/equipment/armor/armor_3.jpg",
-            "modifiers": [
-                {
-                    "attribute": "Constitution",
-                    "value":     13
-                },
-                {
-                    "attribute": "Intelligence",
-                    "value":     4
-                },
-                {
-                    "attribute": "Strength",
-                    "value":     -11
-                },
-                {
-                    "attribute": "Dexterity",
-                    "value":     -4
-                }
+//         },
+//         {
+//             "name": "Shadowstalker Leather Jerkin",
+//             "description": "ABC",
+//             "type": "armor",
+//             "image": "/images/equipment/armor/armor_1.jpg",
+//             "modifiers": [
+//                 {
+//                     "attribute": "Constitution",
+//                     "value":     10
+//                 },
+//                 {
+//                     "attribute": "Strength",
+//                     "value":     -5
+//                 },
+//                 {
+//                     "attribute": "Dexterity",
+//                     "value":     -3
+//                 }
 
 
-            ],
-            "min_attr":[
-                {
-                    "name": "Dexterity",
-                    "value": 5
-                },
-                {
-                    "name": "Strength",
-                    "value": 15
-                }
+//             ],
+//             "min_attr":[
+//                 {
+//                     "name": "Dexterity",
+//                     "value": 5
+//                 },
+//                 {
+//                     "name": "Strength",
+//                     "value": 15
+//                 }
 
-            ],
-            "profiles":[
-                pariahId,    
-                embalmerId,                
-                bumblerId  
+//             ],
+//             "profiles":[
+//                 pariahId,    
+//                 embalmerId,                
+//                 bumblerId     
+//             ]
+
+//         },
+//         {
+//             "name": "Huntsman's Wildwood Cuirass",
+//             "description": "ABC",
+//             "type": "armor",
+//             "image": "/images/equipment/armor/armor_2.jpg",
+//             "modifiers": [
+//                 {
+//                     "attribute": "Constitution",
+//                     "value":     12
+//                 },
+//                 {
+//                     "attribute": "Strength",
+//                     "value":     -9
+//                 },
+//                 {
+//                     "attribute": "Dexterity",
+//                     "value":     -3
+//                 }
+
+
+//             ],
+//             "min_attr":[
+//                 {
+//                     "name": "Dexterity",
+//                     "value": 5
+//                 },
+//                 {
+//                     "name": "Strength",
+//                     "value": 15
+//                 }
+
+//             ],
+//             "profiles":[
+//                 pariahId,    
+//                 embalmerId,                
+//                 bumblerId    
+//             ]
+
+//         },
+//         {
+//             "name": "Dragonhide Battle Vest",
+//             "description": "ABC",
+//             "type": "armor",
+//             "image": "/images/equipment/armor/armor_3.jpg",
+//             "modifiers": [
+//                 {
+//                     "attribute": "Constitution",
+//                     "value":     13
+//                 },
+//                 {
+//                     "attribute": "Intelligence",
+//                     "value":     4
+//                 },
+//                 {
+//                     "attribute": "Strength",
+//                     "value":     -11
+//                 },
+//                 {
+//                     "attribute": "Dexterity",
+//                     "value":     -4
+//                 }
+
+
+//             ],
+//             "min_attr":[
+//                 {
+//                     "name": "Dexterity",
+//                     "value": 5
+//                 },
+//                 {
+//                     "name": "Strength",
+//                     "value": 15
+//                 }
+
+//             ],
+//             "profiles":[
+//                 pariahId,    
+//                 embalmerId,                
+//                 bumblerId  
                    
-            ]
+//             ]
 
-        },
-        {
-            "name": "Blade of Eternal Flame",
-            "description": "ABC",
-            "type": "weapon",
-            "image": "/images/equipment/weapons/sword_1.jpg",
-            "damage": "2D8",
-            "base_percentage": 20,
-            "modifiers": [
-                {
-                    "attribute": "Strength",
-                    "value":     -1
-                }
-
-
-            ],
-            "min_level": 1,
-            "profiles":[
-                scholarId,   
-                pariahId,   
-                jugglerId,   
-                embalmerId,  
-                blasphemerId,
-                gossiperId,  
-                bumblerId,
-                poetId 
-            ]
-
-        },
-        {
-            "name": "Stormbringer's Fury",
-            "description": "ABC",
-            "type": "weapon",
-            "image": "/images/equipment/weapons/sword_2.jpg",
-            "damage": "2D12",
-            "base_percentage": 15,
-            "modifiers": [
-                {
-                    "attribute": "Strength",
-                    "value":     -3
-                }
+//         },
+//         {
+//             "name": "Blade of Eternal Flame",
+//             "description": "ABC",
+//             "type": "weapon",
+//             "image": "/images/equipment/weapons/sword_1.jpg",
+//             "damage": "2D8",
+//             "base_percentage": 20,
+//             "modifiers": [
+//                 {
+//                     "attribute": "Strength",
+//                     "value":     -1
+//                 }
 
 
-            ],
-            "min_level": 1,
-            "profiles":[
-                scholarId,   
-                pariahId,   
-                jugglerId,   
-                embalmerId,  
-                blasphemerId,
-                gossiperId,  
-                bumblerId,
-                poetId  
-            ]
+//             ],
+//             "min_level": 1,
+//             "profiles":[
+//                 scholarId,   
+//                 pariahId,   
+//                 jugglerId,   
+//                 embalmerId,  
+//                 blasphemerId,
+//                 gossiperId,  
+//                 bumblerId,
+//                 poetId 
+//             ]
 
-        },
-        {
-            "name": "Arthur's Feather",
-            "description": "ABC",
-            "type": "weapon",
-            "image": "/images/equipment/weapons/sword_3.jpg",
-            "damage": "4D12+3",
-            "base_percentage": 5,
-            "modifiers": [
-                {
-                    "attribute": "Dexterity",
-                    "value":     -3
-                },
-                {
-                    "attribute": "Strength",
-                    "value":     -1
-                },
-                {
-                    "attribute": "Intelligence",
-                    "value":     -5
-                }
+//         },
+//         {
+//             "name": "Stormbringer's Fury",
+//             "description": "ABC",
+//             "type": "weapon",
+//             "image": "/images/equipment/weapons/sword_2.jpg",
+//             "damage": "2D12",
+//             "base_percentage": 15,
+//             "modifiers": [
+//                 {
+//                     "attribute": "Strength",
+//                     "value":     -3
+//                 }
 
 
-            ],
-            "min_level": 1,
-            "profiles":[
-                scholarId 
+//             ],
+//             "min_level": 1,
+//             "profiles":[
+//                 scholarId,   
+//                 pariahId,   
+//                 jugglerId,   
+//                 embalmerId,  
+//                 blasphemerId,
+//                 gossiperId,  
+//                 bumblerId,
+//                 poetId  
+//             ]
+
+//         },
+//         {
+//             "name": "Arthur's Feather",
+//             "description": "ABC",
+//             "type": "weapon",
+//             "image": "/images/equipment/weapons/sword_3.jpg",
+//             "damage": "4D12+3",
+//             "base_percentage": 5,
+//             "modifiers": [
+//                 {
+//                     "attribute": "Dexterity",
+//                     "value":     -3
+//                 },
+//                 {
+//                     "attribute": "Strength",
+//                     "value":     -1
+//                 },
+//                 {
+//                     "attribute": "Intelligence",
+//                     "value":     -5
+//                 }
+
+
+//             ],
+//             "min_level": 1,
+//             "profiles":[
+//                 scholarId 
                 
-            ]
+//             ]
 
-        },
-        {
-            "name": "Poisoned Pouch",
-            "description": "ABC",
-            "type": "weapon",
-            "image": "/images/equipment/weapons/sword_4.jpg",
-            "damage": "4D12+3",
-            "base_percentage": 5,
-            "modifiers": [
-                {
-                    "attribute": "Constitution",
-                    "value":     -4
-                },
-                {
-                    "attribute": "Strength",
-                    "value":     -5
-                }
+//         },
+//         {
+//             "name": "Poisoned Pouch",
+//             "description": "ABC",
+//             "type": "weapon",
+//             "image": "/images/equipment/weapons/sword_4.jpg",
+//             "damage": "4D12+3",
+//             "base_percentage": 5,
+//             "modifiers": [
+//                 {
+//                     "attribute": "Constitution",
+//                     "value":     -4
+//                 },
+//                 {
+//                     "attribute": "Strength",
+//                     "value":     -5
+//                 }
 
 
-            ],
-            "min_level": 1,
-            "profiles":[
-                pariahId  
+//             ],
+//             "min_level": 1,
+//             "profiles":[
+//                 pariahId  
                 
-            ]
+//             ]
 
-        },
-        {
-            "name": "Twirling Yo-yo",
-            "description": "ABC",
-            "type": "weapon",
-            "image": "/images/equipment/weapons/sword_5.jpg",
-            "damage": "3D12",
-            "base_percentage": 5,
-            "modifiers": [
-                {
-                    "attribute": "Strength",
-                    "value":     -2
-                },
-                {
-                    "attribute": "Dexterity",
-                    "value":     -3
-                },
-                {
-                    "attribute": "Insanity",
-                    "value":     5
-                }
+//         },
+//         {
+//             "name": "Twirling Yo-yo",
+//             "description": "ABC",
+//             "type": "weapon",
+//             "image": "/images/equipment/weapons/sword_5.jpg",
+//             "damage": "3D12",
+//             "base_percentage": 5,
+//             "modifiers": [
+//                 {
+//                     "attribute": "Strength",
+//                     "value":     -2
+//                 },
+//                 {
+//                     "attribute": "Dexterity",
+//                     "value":     -3
+//                 },
+//                 {
+//                     "attribute": "Insanity",
+//                     "value":     5
+//                 }
 
 
-            ],
-            "min_level": 1,
-            "profiles":[
-                jugglerId 
+//             ],
+//             "min_level": 1,
+//             "profiles":[
+//                 jugglerId 
                 
-            ]
+//             ]
 
-        },
-        {
-            "name": "Undertaker's Embalming Scalpel",
-            "description": "ABC",
-            "type": "weapon",
-            "image": "/images/equipment/weapons/sword_5.jpg",
-            "damage": "1D12",
-            "base_percentage": 5,
-            "modifiers": [
-                {
-                    "attribute": "Strength",
-                    "value":     -1
-                },
-                {
-                    "attribute": "Insanity",
-                    "value":     10
-                }
+//         },
+//         {
+//             "name": "Undertaker's Embalming Scalpel",
+//             "description": "ABC",
+//             "type": "weapon",
+//             "image": "/images/equipment/weapons/sword_5.jpg",
+//             "damage": "1D12",
+//             "base_percentage": 5,
+//             "modifiers": [
+//                 {
+//                     "attribute": "Strength",
+//                     "value":     -1
+//                 },
+//                 {
+//                     "attribute": "Insanity",
+//                     "value":     10
+//                 }
 
 
-            ],
-            "min_level": 1,
-            "profiles":[
-                embalmerId  
+//             ],
+//             "min_level": 1,
+//             "profiles":[
+//                 embalmerId  
                 
-            ]
+//             ]
 
-        },
-        {
-            "name": "Heretic Anthem",
-            "description": "ABC",
-            "type": "weapon",
-            "image": "/images/equipment/weapons/sword_5.jpg",
-            "damage": "3D12+4",
-            "base_percentage": 5,
-            "modifiers": [
-                {
-                    "attribute": "Strength",
-                    "value":     -1
-                },
-                {
-                    "attribute": "Intelligence",
-                    "value":     -5
-                }
+//         },
+//         {
+//             "name": "Heretic Anthem",
+//             "description": "ABC",
+//             "type": "weapon",
+//             "image": "/images/equipment/weapons/sword_5.jpg",
+//             "damage": "3D12+4",
+//             "base_percentage": 5,
+//             "modifiers": [
+//                 {
+//                     "attribute": "Strength",
+//                     "value":     -1
+//                 },
+//                 {
+//                     "attribute": "Intelligence",
+//                     "value":     -5
+//                 }
 
 
-            ],
-            "min_level": 1,
-            "profiles":[
-                blasphemerId  
+//             ],
+//             "min_level": 1,
+//             "profiles":[
+//                 blasphemerId  
                 
-            ]
+//             ]
 
-        },
-        {
-            "name": "Inferno's Ear",
-            "description": "ABC",
-            "type": "weapon",
-            "image": "/images/equipment/weapons/sword_5.jpg",
-            "damage": "3D12+4",
-            "base_percentage": 5,
-            "modifiers": [
-                {
-                    "attribute": "Strength",
-                    "value":     -2
-                },
-                {
-                    "attribute": "Constitution",
-                    "value":     -7
-                },
-                ,
-                {
-                    "attribute": "Dexterity",
-                    "value":     3
-                }
+//         },
+//         {
+//             "name": "Inferno's Ear",
+//             "description": "ABC",
+//             "type": "weapon",
+//             "image": "/images/equipment/weapons/sword_5.jpg",
+//             "damage": "3D12+4",
+//             "base_percentage": 5,
+//             "modifiers": [
+//                 {
+//                     "attribute": "Strength",
+//                     "value":     -2
+//                 },
+//                 {
+//                     "attribute": "Constitution",
+//                     "value":     -7
+//                 },
+//                 ,
+//                 {
+//                     "attribute": "Dexterity",
+//                     "value":     3
+//                 }
 
 
-            ],
-            "min_attr":[
-                {
-                    "name":     "Strength",
-                    "value":    5
-                },
-                {
-                    "name":     "Constitution",
-                    "value":    5
-                },
-                {
-                    "name":     "Dexterity",
-                    "value":    10
-                }
+//             ],
+//             "min_attr":[
+//                 {
+//                     "name":     "Strength",
+//                     "value":    5
+//                 },
+//                 {
+//                     "name":     "Constitution",
+//                     "value":    5
+//                 },
+//                 {
+//                     "name":     "Dexterity",
+//                     "value":    10
+//                 }
 
-            ],
-            "profiles":[
-                gossiperId  
+//             ],
+//             "profiles":[
+//                 gossiperId  
                 
-            ]
+//             ]
 
-        },
-        {
-            "name": "Wooden Leg",
-            "description": "ABC",
-            "type": "weapon",
-            "image": "/images/equipment/weapons/sword_5.jpg",
-            "damage": "3D8+2",
-            "base_percentage": 5,
-            "modifiers": [
-                {
-                    "attribute": "Strength",
-                    "value":     -12
-                }
+//         },
+//         {
+//             "name": "Wooden Leg",
+//             "description": "ABC",
+//             "type": "weapon",
+//             "image": "/images/equipment/weapons/sword_5.jpg",
+//             "damage": "3D8+2",
+//             "base_percentage": 5,
+//             "modifiers": [
+//                 {
+//                     "attribute": "Strength",
+//                     "value":     -12
+//                 }
 
 
-            ],
-            "min_level": 1,
-            "profiles":[
-                bumblerId  
+//             ],
+//             "min_level": 1,
+//             "profiles":[
+//                 bumblerId  
                 
-            ]
+//             ]
 
-        },
-        {
-            "name": "Storyteller's Lute",
-            "description": "ABC",
-            "type": "weapon",
-            "image": "/images/equipment/weapons/sword_5.jpg",
-            "damage": "4D10",
-            "base_percentage": 5,
-            "modifiers": [
-                {
-                    "attribute": "Strength",
-                    "value":     -3
-                },
-                {
-                    "attribute": "Charisma",
-                    "value":     -7
-                }
+//         },
+//         {
+//             "name": "Storyteller's Lute",
+//             "description": "ABC",
+//             "type": "weapon",
+//             "image": "/images/equipment/weapons/sword_5.jpg",
+//             "damage": "4D10",
+//             "base_percentage": 5,
+//             "modifiers": [
+//                 {
+//                     "attribute": "Strength",
+//                     "value":     -3
+//                 },
+//                 {
+//                     "attribute": "Charisma",
+//                     "value":     -7
+//                 }
 
-            ],
-            "min_level": 1,
+//             ],
+//             "min_level": 1,
             
-            "profiles":[
-                poetId  
+//             "profiles":[
+//                 poetId  
                 
-            ]
+//             ]
 
-        },
+//         },
 
-        //ARTIFACTS
+//         //ARTIFACTS
 
-        {
-            "name": "Phoenix Feather Relic",
-            "description": "ABC",
-            "type": "artifact",
-            "image": "/images/equipment/artifacts/artifact_1.jpg",
+//         {
+//             "name": "Phoenix Feather Relic",
+//             "description": "ABC",
+//             "type": "artifact",
+//             "image": "/images/equipment/artifacts/artifact_1.jpg",
             
-            "modifiers_charisma": [
+//             "modifiers_charisma": [
                 
-                    {
-                        "attribute": "Strength",
-                        "value": 0.5  
-                    }
+//                     {
+//                         "attribute": "Strength",
+//                         "value": 0.5  
+//                     }
 
-            ],
-            "modifiers": [
-                {
-                    "attribute": "Dexterity",
-                    "value": -8   
-                }
+//             ],
+//             "modifiers": [
+//                 {
+//                     "attribute": "Dexterity",
+//                     "value": -8   
+//                 }
 
-            ],
-            "min_attr":[
-                {
-                    "name":     "Charisma",
-                    "value":    10
-                },
-                {
-                    "name":     "Dexterity",
-                    "value":    15
-                }
+//             ],
+//             "min_attr":[
+//                 {
+//                     "name":     "Charisma",
+//                     "value":    10
+//                 },
+//                 {
+//                     "name":     "Dexterity",
+//                     "value":    15
+//                 }
 
-            ],
-            "profiles":[
-                scholarId,   
-                pariahId,   
-                jugglerId,   
-                embalmerId,  
-                blasphemerId,
-                gossiperId,  
-                bumblerId,
-                poetId   
+//             ],
+//             "profiles":[
+//                 scholarId,   
+//                 pariahId,   
+//                 jugglerId,   
+//                 embalmerId,  
+//                 blasphemerId,
+//                 gossiperId,  
+//                 bumblerId,
+//                 poetId   
                 
-            ]
+//             ]
 
-        },
-        {
-            "name": "Amulet of the Serpent's Eye",
-            "description": "ABC",
-            "type": "artifact",
-            "image": "/images/equipment/artifacts/artifact_2.jpg",
+//         },
+//         {
+//             "name": "Amulet of the Serpent's Eye",
+//             "description": "ABC",
+//             "type": "artifact",
+//             "image": "/images/equipment/artifacts/artifact_2.jpg",
             
-            "modifiers_charisma": [
+//             "modifiers_charisma": [
                 
-                    {
-                        "attribute": "Intelligence",
-                        "value": 0.5  
-                    }
+//                     {
+//                         "attribute": "Intelligence",
+//                         "value": 0.5  
+//                     }
 
-            ],
-            "modifiers": [
-                {
-                    "attribute": "Strength",
-                    "value": -8   
-                }
+//             ],
+//             "modifiers": [
+//                 {
+//                     "attribute": "Strength",
+//                     "value": -8   
+//                 }
 
-            ],
-            "min_attr":[
-                {
-                    "name":     "Charisma",
-                    "value":    10
-                },
-                {
-                    "name":     "Strength",
-                    "value":    15
-                }
+//             ],
+//             "min_attr":[
+//                 {
+//                     "name":     "Charisma",
+//                     "value":    10
+//                 },
+//                 {
+//                     "name":     "Strength",
+//                     "value":    15
+//                 }
 
-            ],
-            "profiles":[
-                scholarId,   
-                pariahId,   
-                jugglerId,   
-                embalmerId,  
-                blasphemerId,
-                gossiperId,  
-                bumblerId,
-                poetId   
+//             ],
+//             "profiles":[
+//                 scholarId,   
+//                 pariahId,   
+//                 jugglerId,   
+//                 embalmerId,  
+//                 blasphemerId,
+//                 gossiperId,  
+//                 bumblerId,
+//                 poetId   
                 
-            ]
+//             ]
 
-        },
-        {
-            "name": "Orb of Infinite Wisdom",
-            "description": "ABC",
-            "type": "artifact",
-            "image": "/images/equipment/artifacts/artifact_3.jpg",
+//         },
+//         {
+//             "name": "Orb of Infinite Wisdom",
+//             "description": "ABC",
+//             "type": "artifact",
+//             "image": "/images/equipment/artifacts/artifact_3.jpg",
             
-            "modifiers_charisma": [
+//             "modifiers_charisma": [
                 
-                    {
-                        "attribute": "Constitution",
-                        "value": 0.5  
-                    }
+//                     {
+//                         "attribute": "Constitution",
+//                         "value": 0.5  
+//                     }
 
-            ],
-            "modifiers": [
-                {
-                    "attribute": "Dexterity",
-                    "value": -8   
-                }
+//             ],
+//             "modifiers": [
+//                 {
+//                     "attribute": "Dexterity",
+//                     "value": -8   
+//                 }
 
-            ],
-            "min_attr":[
-                {
-                    "name":     "Charisma",
-                    "value":    10
-                },
-                {
-                    "name":     "Constitution",
-                    "value":    20
-                }
+//             ],
+//             "min_attr":[
+//                 {
+//                     "name":     "Charisma",
+//                     "value":    10
+//                 },
+//                 {
+//                     "name":     "Constitution",
+//                     "value":    20
+//                 }
 
-            ],
-            "profiles":[
-                scholarId,   
-                pariahId,   
-                jugglerId,   
-                embalmerId,  
-                blasphemerId,
-                gossiperId,  
-                bumblerId,
-                poetId   
+//             ],
+//             "profiles":[
+//                 scholarId,   
+//                 pariahId,   
+//                 jugglerId,   
+//                 embalmerId,  
+//                 blasphemerId,
+//                 gossiperId,  
+//                 bumblerId,
+//                 poetId   
                 
-            ]
+//             ]
 
-        },
-        {
-            "name": "Elixir of Vitality",
-            "description": "ABC",
-            "type": "healing",
-            "image": "/images/equipment/artifacts/potion_1.jpg",
+//         },
+//         {
+//             "name": "Elixir of Vitality",
+//             "description": "ABC",
+//             "type": "healing",
+//             "image": "/images/equipment/artifacts/potion_1.jpg",
             
-            "modifiers": [
-                {
-                    "attribute": "Hit points",
-                    "value": 20,
+//             "modifiers": [
+//                 {
+//                     "attribute": "Hit points",
+//                     "value": 20,
                     
-                }
+//                 }
 
-            ],
-            "min_attr":[
-                {
-                    "name":     "Intelligence",
-                    "value":    5
-                }
+//             ],
+//             "min_attr":[
+//                 {
+//                     "name":     "Intelligence",
+//                     "value":    5
+//                 }
 
-            ],
-            "profiles":[
-                scholarId,   
-                pariahId,   
-                jugglerId,   
-                embalmerId,  
-                blasphemerId,
-                gossiperId,  
-                bumblerId,
-                poetId   
+//             ],
+//             "profiles":[
+//                 scholarId,   
+//                 pariahId,   
+//                 jugglerId,   
+//                 embalmerId,  
+//                 blasphemerId,
+//                 gossiperId,  
+//                 bumblerId,
+//                 poetId   
                 
-            ]
+//             ]
 
-        },
-        {
-            "name": "Potion of Rejuvenation",
-            "description": "ABC",
-            "type": "healing",
-            "image": "/images/equipment/artifacts/potion_2.jpg",
+//         },
+//         {
+//             "name": "Potion of Rejuvenation",
+//             "description": "ABC",
+//             "type": "healing",
+//             "image": "/images/equipment/artifacts/potion_2.jpg",
             
-            "modifiers": [
-                {
-                    "attribute": "Hit points",
-                    "value": 40,
+//             "modifiers": [
+//                 {
+//                     "attribute": "Hit points",
+//                     "value": 40,
                     
-                },
-                {
-                    "attribute": "Intelligence",
-                    "value": -5 
-                }
+//                 },
+//                 {
+//                     "attribute": "Intelligence",
+//                     "value": -5 
+//                 }
 
 
-            ],
-            "min_attr":[
-                {
-                    "name":     "Intelligence",
-                    "value":    10
-                }
+//             ],
+//             "min_attr":[
+//                 {
+//                     "name":     "Intelligence",
+//                     "value":    10
+//                 }
 
-            ],
-            "profiles":[
-                scholarId,   
-                pariahId,   
-                jugglerId,   
-                embalmerId,  
-                blasphemerId,
-                gossiperId,  
-                bumblerId,
-                poetId   
+//             ],
+//             "profiles":[
+//                 scholarId,   
+//                 pariahId,   
+//                 jugglerId,   
+//                 embalmerId,  
+//                 blasphemerId,
+//                 gossiperId,  
+//                 bumblerId,
+//                 poetId   
                 
-            ]
+//             ]
 
-        },
-        {
-            "name": "Essence of Restoration",
-            "description": "ABC",
-            "type": "healing",
-            "image": "/images/equipment/artifacts/potion_3.jpg",
+//         },
+//         {
+//             "name": "Essence of Restoration",
+//             "description": "ABC",
+//             "type": "healing",
+//             "image": "/images/equipment/artifacts/potion_3.jpg",
             
-            "modifiers": [
-                {
-                    "attribute": "Hit points",
-                    "value": 70
-                },
-                {
-                    "attribute": "Intelligence",
-                    "value": -15
-                }
+//             "modifiers": [
+//                 {
+//                     "attribute": "Hit points",
+//                     "value": 70
+//                 },
+//                 {
+//                     "attribute": "Intelligence",
+//                     "value": -15
+//                 }
 
 
-            ],
-            "min_attr":[
-                {
-                    "name":     "Intelligence",
-                    "value":    25
-                }
+//             ],
+//             "min_attr":[
+//                 {
+//                     "name":     "Intelligence",
+//                     "value":    25
+//                 }
 
-            ],
-            "profiles":[
-                scholarId,   
-                pariahId,   
-                jugglerId,   
-                embalmerId,  
-                blasphemerId,
-                gossiperId,  
-                bumblerId,
-                poetId   
+//             ],
+//             "profiles":[
+//                 scholarId,   
+//                 pariahId,   
+//                 jugglerId,   
+//                 embalmerId,  
+//                 blasphemerId,
+//                 gossiperId,  
+//                 bumblerId,
+//                 poetId   
                 
-            ]
+//             ]
 
-        },
-        {
-            "name": "Potion of Restore Dexterity",
-            "description": "ABC",
-            "type": "antidote",
-            "image": "/images/equipment/artifacts/potion_4.jpg",
+//         },
+//         {
+//             "name": "Potion of Restore Dexterity",
+//             "description": "ABC",
+//             "type": "antidote",
+//             "image": "/images/equipment/artifacts/potion_4.jpg",
             
-            "recovery_effect": scholarId,
-            "min_attr":[
-                {
-                    "name":     "Intelligence",
-                    "value":    10
-                }
+//             "recovery_effect": scholarId,
+//             "min_attr":[
+//                 {
+//                     "name":     "Intelligence",
+//                     "value":    10
+//                 }
 
-            ],
-            "profiles":[
-                scholarId,   
-                pariahId,   
-                jugglerId,   
-                embalmerId,  
-                blasphemerId,
-                gossiperId,  
-                bumblerId,
-                poetId   
+//             ],
+//             "profiles":[
+//                 scholarId,   
+//                 pariahId,   
+//                 jugglerId,   
+//                 embalmerId,  
+//                 blasphemerId,
+//                 gossiperId,  
+//                 bumblerId,
+//                 poetId   
                 
-            ]
+//             ]
 
-        },
-        {
-            "name": "Potion of Restore Intelligence",
-            "description": "ABC",
-            "type": "antidote",
-            "image": "/images/equipment/artifacts/potion_4.jpg",
+//         },
+//         {
+//             "name": "Potion of Restore Intelligence",
+//             "description": "ABC",
+//             "type": "antidote",
+//             "image": "/images/equipment/artifacts/potion_4.jpg",
             
-            "recovery_effect": scholarId,
-            "min_attr":[
-                {
-                    "name":     "Intelligence",
-                    "value":    10
-                }
+//             "recovery_effect": scholarId,
+//             "min_attr":[
+//                 {
+//                     "name":     "Intelligence",
+//                     "value":    10
+//                 }
 
-            ],
-            "profiles":[
-                scholarId,   
-                pariahId,   
-                jugglerId,   
-                embalmerId,  
-                blasphemerId,
-                gossiperId,  
-                bumblerId,
-                poetId   
+//             ],
+//             "profiles":[
+//                 scholarId,   
+//                 pariahId,   
+//                 jugglerId,   
+//                 embalmerId,  
+//                 blasphemerId,
+//                 gossiperId,  
+//                 bumblerId,
+//                 poetId   
                 
-            ]
+//             ]
 
-        },
-        {
-            "name": "Potion of Restore Strength",
-            "description": "ABC",
-            "type": "antidote",
-            "image": "/images/equipment/artifacts/potion_4.jpg",
+//         },
+//         {
+//             "name": "Potion of Restore Strength",
+//             "description": "ABC",
+//             "type": "antidote",
+//             "image": "/images/equipment/artifacts/potion_4.jpg",
             
-            "recovery_effect": scholarId,
-            "min_attr":[
-                {
-                    "name":     "Intelligence",
-                    "value":    10
-                }
+//             "recovery_effect": scholarId,
+//             "min_attr":[
+//                 {
+//                     "name":     "Intelligence",
+//                     "value":    10
+//                 }
 
-            ],
-            "profiles":[
-                scholarId,   
-                pariahId,   
-                jugglerId,   
-                embalmerId,  
-                blasphemerId,
-                gossiperId,  
-                bumblerId,
-                poetId   
+//             ],
+//             "profiles":[
+//                 scholarId,   
+//                 pariahId,   
+//                 jugglerId,   
+//                 embalmerId,  
+//                 blasphemerId,
+//                 gossiperId,  
+//                 bumblerId,
+//                 poetId   
                 
-            ]
+//             ]
 
-        },
-        {
-            "name": "Potion of Increase Strength",
-            "description": "ABC",
-            "type": "enhancer",
-            "image": "/images/equipment/artifacts/potion_4.jpg",
-            "duration": 2,
+//         },
+//         {
+//             "name": "Potion of Increase Strength",
+//             "description": "ABC",
+//             "type": "enhancer",
+//             "image": "/images/equipment/artifacts/potion_4.jpg",
+//             "duration": 2,
 
-            "modifiers": [
-                {
-                    "attribute": "Strength",
-                    "value": 20
-                }
+//             "modifiers": [
+//                 {
+//                     "attribute": "Strength",
+//                     "value": 20
+//                 }
 
 
-            ],   
-            "min_attr":[
-                {
-                    "name":     "Intelligence",
-                    "value":    10
-                }
+//             ],   
+//             "min_attr":[
+//                 {
+//                     "name":     "Intelligence",
+//                     "value":    10
+//                 }
 
-            ],
-            "profiles":[
-                scholarId,   
-                pariahId,   
-                jugglerId,   
-                embalmerId,  
-                blasphemerId,
-                gossiperId,  
-                bumblerId,
-                poetId   
+//             ],
+//             "profiles":[
+//                 scholarId,   
+//                 pariahId,   
+//                 jugglerId,   
+//                 embalmerId,  
+//                 blasphemerId,
+//                 gossiperId,  
+//                 bumblerId,
+//                 poetId   
                 
-            ]
+//             ]
 
-        },
-        {
-            "name": "Potion of Madness",
-            "description": "ABC",
-            "type": "enhancer",
-            "image": "/images/equipment/artifacts/potion_4.jpg",
-            "duration": 2,
+//         },
+//         {
+//             "name": "Potion of Madness",
+//             "description": "ABC",
+//             "type": "enhancer",
+//             "image": "/images/equipment/artifacts/potion_4.jpg",
+//             "duration": 2,
 
-            "modifiers": [
-                {
-                    "attribute": "Insanity",
-                    "value": 20
-                }
+//             "modifiers": [
+//                 {
+//                     "attribute": "Insanity",
+//                     "value": 20
+//                 }
 
 
-            ],   
-            "min_attr":[
-                {
-                    "name":     "Intelligence",
-                    "value":    25
-                }
+//             ],   
+//             "min_attr":[
+//                 {
+//                     "name":     "Intelligence",
+//                     "value":    25
+//                 }
 
-            ],
-            "profiles":[
-                scholarId,   
-                pariahId,   
-                jugglerId,   
-                embalmerId,  
-                blasphemerId,
-                gossiperId,  
-                bumblerId,
-                poetId   
+//             ],
+//             "profiles":[
+//                 scholarId,   
+//                 pariahId,   
+//                 jugglerId,   
+//                 embalmerId,  
+//                 blasphemerId,
+//                 gossiperId,  
+//                 bumblerId,
+//                 poetId   
                 
-            ]
+//             ]
 
-        },
-        {
-            "name": "Potion of Increase Constitution",
-            "description": "ABC",
-            "type": "enhancer",
-            "image": "/images/equipment/artifacts/potion_4.jpg",
-            "duration": 2,
+//         },
+//         {
+//             "name": "Potion of Increase Constitution",
+//             "description": "ABC",
+//             "type": "enhancer",
+//             "image": "/images/equipment/artifacts/potion_4.jpg",
+//             "duration": 2,
 
-            "modifiers": [
-                {
-                    "attribute": "Constitution",
-                    "value": 20
-                }
+//             "modifiers": [
+//                 {
+//                     "attribute": "Constitution",
+//                     "value": 20
+//                 }
 
-            ],   
-            "min_attr":[
-                {
-                    "name":     "Intelligence",
-                    "value":    15
-                }
+//             ],   
+//             "min_attr":[
+//                 {
+//                     "name":     "Intelligence",
+//                     "value":    15
+//                 }
 
-            ],
-            "profiles":[
-                scholarId,   
-                pariahId,   
-                jugglerId,   
-                embalmerId,  
-                blasphemerId,
-                gossiperId,  
-                bumblerId,
-                poetId   
+//             ],
+//             "profiles":[
+//                 scholarId,   
+//                 pariahId,   
+//                 jugglerId,   
+//                 embalmerId,  
+//                 blasphemerId,
+//                 gossiperId,  
+//                 bumblerId,
+//                 poetId   
                 
-            ]
+//             ]
 
-        }
+//         }
         
-    ];
+//     ];
 
-    return equipment
+//     return equipment
 
-}
+// }
 
 //clearEquipment();
 createEquipment();

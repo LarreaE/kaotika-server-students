@@ -11,6 +11,7 @@ const weaponSchema = new Schema({
    description: String,
    type: String,
    image: String,
+   value: Number,
    damage: String,
    base_percentage: Number,
    modifiers: {

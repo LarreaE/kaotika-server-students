@@ -2,12 +2,13 @@
   "_id": {
     "$oid": "668bca125319ea9afdff075e"
   },
-  "name": "Luminous Elixir",
-  "description": "This invigorating potion enhances the drinker's agility and reflexes, restoring nimbleness and precision to their movements, making it perfect for evading attacks and executing complex maneuvers.",
+  "name": "Lightbane Elixir",
+  "description": "A potent concoction brewed from the rare Lumina flowers that only bloom under the full moon. The elixir emits a radiant glow and, when consumed, floods the body with purifying light, banishing the shadows and restoring the natural hue of the skin.",
   "type": "antidote",
   "image": "/images/equipment/potions/potion_4.jpg",
+  "value": 10,
   "recovery_effect": {
-    "$oid": "668cf21b87b351f5c9875212"
+    "$oid": "6693fd5846527d0df5f0efe7"
   },
   "min_attr": [
     {
@@ -50,12 +51,13 @@
   "_id": {
     "$oid": "668bca125319ea9afdff0761"
   },
-  "name": "Ethereal Regeneration",
-  "description": "This potent elixir sharpens the mind and enhances cognitive abilities, replenishing mental clarity and focus, making it ideal for solving complex problems and casting intricate spells.",
+  "name": "Etherbind Tonic",
+  "description": "A mystical tonic made from binding agents and ethereal dust, anchoring the afflicted back to the material plane.",
   "type": "antidote",
   "image": "/images/equipment/potions/potion_5.jpg",
+  "value": 10,
   "recovery_effect": {
-    "$oid": "668cf21b87b351f5c9875216"
+    "$oid": "6693fd5846527d0df5f0efeb"
   },
   "min_attr": [
     {
@@ -98,12 +100,13 @@
   "_id": {
     "$oid": "668bca125319ea9afdff0764"
   },
-  "name": "Mind Soother",
-  "description": "This powerful concoction revitalizes the muscles and fortifies the body, restoring physical power and endurance, enabling the drinker to perform feats of immense strength and overcome physical challenges.",
+  "name": "Mind's Ease Elixir",
+  "description": "A cooling elixir brewed from the leaves of the Frostmind plant, alleviating migraines and clearing hallucinations.",
   "type": "antidote",
   "image": "/images/equipment/potions/potion_6.jpg",
+  "value": 10,
   "recovery_effect": {
-    "$oid": "668cf21b87b351f5c9875217"
+    "$oid": "6693fd5846527d0df5f0efec"
   },
   "min_attr": [
     {

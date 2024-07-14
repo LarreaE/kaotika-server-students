@@ -12,6 +12,7 @@ const potionAntidoteSchema = new Schema({
    description: String,
    type: String,
    image: String,
+   value: Number,
    recovery_effect: {type: Schema.Types.ObjectId, ref: "Disease"},
    min_attr: [{name: String, value: Number}],
    profiles: [{type: Schema.Types.ObjectId, ref: "Profile"}]
