@@ -5,7 +5,7 @@
   "name": "Potion of Increase Strength",
   "description": "This robust elixir temporarily amplifies the drinker's physical power, significantly boosting muscle strength and stamina.\n\n\n",
   "type": "enhancer",
-  "image": "/images/equipment/potions/potion_10.jpg",
+  "image": "/images/equipment/potions/enhancer/enhancer_1.png",
   "value": 10,
   "duration": 2,
   "modifiers": {
@@ -60,7 +60,7 @@
   "name": "Potion of Madness",
   "description": "A dangerous brew that plunges the drinker into a frenzy, this potion unleashes chaotic energy.",
   "type": "enhancer",
-  "image": "/images/equipment/potions/potion_11.jpg",
+  "image": "/images/equipment/potions/enhancer/enhancer_2.png",
   "value": 10,
   "duration": 2,
   "modifiers": {
@@ -115,7 +115,7 @@
   "name": "Potion of Increase Constitution",
   "description": "This hearty elixir enhances the drinker's physical resilience and endurance.",
   "type": "enhancer",
-  "image": "/images/equipment/potions/potion_12.jpg",
+  "image": "/images/equipment/potions/enhancer/enhancer_3.png",
   "value": 10,
   "duration": 2,
   "modifiers": {

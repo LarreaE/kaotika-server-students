@@ -5,7 +5,7 @@
   "name": "Elixir of Vitality",
   "description": "A rejuvenating potion that restores vigor and vitality to the drinker.",
   "type": "healing",
-  "image": "/images/equipment/potions/potion_1.jpg",
+  "image": "/images/equipment/potions/healing/healing_1.png",
   "value": 10,
   "modifiers": {
     "hit_points": 20,
@@ -60,7 +60,7 @@
   "name": "Potion of Rejuvenation",
   "description": "This revitalizing potion restores energy and vitality to the drinker.",
   "type": "healing",
-  "image": "/images/equipment/potions/potion_2.jpg",
+  "image": "/images/equipment/potions/healing/healing_2.png",
   "value": 10,
   "modifiers": {
     "hit_points": 40,
@@ -115,7 +115,7 @@
   "name": "Essence of Restoration",
   "description": "The Essence of Restoration is a potent elixir that accelerates healing and revitalizes the body.",
   "type": "healing",
-  "image": "/images/equipment/potions/potion_3.jpg",
+  "image": "/images/equipment/potions/healing/healing_3.png",
   "value": 10,
   "modifiers": {
     "hit_points": 70,

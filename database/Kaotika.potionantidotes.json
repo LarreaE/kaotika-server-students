@@ -5,7 +5,7 @@
   "name": "Lightbane Elixir",
   "description": "A potent concoction brewed from the rare Lumina flowers that only bloom under the full moon. The elixir emits a radiant glow and, when consumed, floods the body with purifying light, banishing the shadows and restoring the natural hue of the skin.",
   "type": "antidote",
-  "image": "/images/equipment/potions/potion_4.jpg",
+  "image": "/images/equipment/potions/antidote/antidote_1.png",
   "value": 10,
   "recovery_effect": {
     "$oid": "6693fd5846527d0df5f0efe7"
@@ -54,7 +54,7 @@
   "name": "Etherbind Tonic",
   "description": "A mystical tonic made from binding agents and ethereal dust, anchoring the afflicted back to the material plane.",
   "type": "antidote",
-  "image": "/images/equipment/potions/potion_5.jpg",
+  "image": "/images/equipment/potions/antidote/antidote_2.png",
   "value": 10,
   "recovery_effect": {
     "$oid": "6693fd5846527d0df5f0efeb"
@@ -103,7 +103,7 @@
   "name": "Mind's Ease Elixir",
   "description": "A cooling elixir brewed from the leaves of the Frostmind plant, alleviating migraines and clearing hallucinations.",
   "type": "antidote",
-  "image": "/images/equipment/potions/potion_6.jpg",
+  "image": "/images/equipment/potions/antidote/antidote_3.png",
   "value": 10,
   "recovery_effect": {
     "$oid": "6693fd5846527d0df5f0efec"
