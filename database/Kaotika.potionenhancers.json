@@ -3,19 +3,19 @@
     "$oid": "668bca125319ea9afdff0767"
   },
   "name": "Potion of Increase Strength",
-  "description": "This robust elixir temporarily amplifies the drinker's physical power, significantly boosting muscle strength and stamina, allowing for extraordinary feats of might and endurance in battle.\n\n\n\n",
+  "description": "This robust elixir temporarily amplifies the drinker's physical power, significantly boosting muscle strength and stamina.\n\n\n",
   "type": "enhancer",
   "image": "/images/equipment/potions/potion_10.jpg",
+  "value": 10,
   "duration": 2,
-  "modifiers": [
-    {
-      "attribute": "Strength",
-      "value": 20,
-      "_id": {
-        "$oid": "668bca125319ea9afdff0768"
-      }
-    }
-  ],
+  "modifiers": {
+    "intelligence": 0,
+    "dexterity": 0,
+    "constitution": 0,
+    "insanity": 0,
+    "charisma": 0,
+    "strength": 20
+  },
   "min_attr": [
     {
       "name": "Intelligence",
@@ -58,19 +58,19 @@
     "$oid": "668bca135319ea9afdff076b"
   },
   "name": "Potion of Madness",
-  "description": "A dangerous brew that plunges the drinker into a frenzy, this potion unleashes chaotic energy, inducing unpredictable behavior and granting bursts of wild strength at the cost of sanity.",
+  "description": "A dangerous brew that plunges the drinker into a frenzy, this potion unleashes chaotic energy.",
   "type": "enhancer",
   "image": "/images/equipment/potions/potion_11.jpg",
+  "value": 10,
   "duration": 2,
-  "modifiers": [
-    {
-      "attribute": "Insanity",
-      "value": 20,
-      "_id": {
-        "$oid": "668bca135319ea9afdff076c"
-      }
-    }
-  ],
+  "modifiers": {
+    "intelligence": 0,
+    "dexterity": 0,
+    "constitution": 0,
+    "insanity": 20,
+    "charisma": 0,
+    "strength": 0
+  },
   "min_attr": [
     {
       "name": "Intelligence",
@@ -113,19 +113,19 @@
     "$oid": "668bca135319ea9afdff076f"
   },
   "name": "Potion of Increase Constitution",
-  "description": "This hearty elixir enhances the drinker's physical resilience and endurance, boosting their overall health and vitality, allowing them to withstand greater physical stress and recover more quickly from injuries.",
+  "description": "This hearty elixir enhances the drinker's physical resilience and endurance.",
   "type": "enhancer",
   "image": "/images/equipment/potions/potion_12.jpg",
+  "value": 10,
   "duration": 2,
-  "modifiers": [
-    {
-      "attribute": "Constitution",
-      "value": 20,
-      "_id": {
-        "$oid": "668bca135319ea9afdff0770"
-      }
-    }
-  ],
+  "modifiers": {
+    "intelligence": 0,
+    "dexterity": 0,
+    "constitution": 20,
+    "insanity": 0,
+    "charisma": 0,
+    "strength": 0
+  },
   "min_attr": [
     {
       "name": "Intelligence",

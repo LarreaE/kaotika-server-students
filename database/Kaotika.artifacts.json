@@ -6,24 +6,15 @@
   "description": "An ancient artifact imbued with the essence of a phoenix, this relic grants the bearer the power of rebirth, healing wounds and restoring vitality in moments of need.",
   "type": "artifact",
   "image": "/images/equipment/artifacts/artifact_1.jpg",
-  "modifiers_charisma": [
-    {
-      "attribute": "Strength",
-      "value": 0.5,
-      "_id": {
-        "$oid": "668bca125319ea9afdff073f"
-      }
-    }
-  ],
-  "modifiers": [
-    {
-      "attribute": "Dexterity",
-      "value": -8,
-      "_id": {
-        "$oid": "668bca125319ea9afdff0740"
-      }
-    }
-  ],
+  "value": 10,
+  "modifiers": {
+    "intelligence": 0,
+    "dexterity": 8,
+    "constitution": 7,
+    "insanity": 0,
+    "charisma": 0,
+    "strength": 0
+  },
   "min_attr": [
     {
       "name": "Charisma",
@@ -76,24 +67,15 @@
   "description": "This mystical amulet, adorned with a serpent-shaped gem, grants its wearer heightened perception and insight, allowing them to see through illusions and detect hidden truths.",
   "type": "artifact",
   "image": "/images/equipment/artifacts/artifact_2.jpg",
-  "modifiers_charisma": [
-    {
-      "attribute": "Intelligence",
-      "value": 0.5,
-      "_id": {
-        "$oid": "668bca125319ea9afdff0745"
-      }
-    }
-  ],
-  "modifiers": [
-    {
-      "attribute": "Strength",
-      "value": -8,
-      "_id": {
-        "$oid": "668bca125319ea9afdff0746"
-      }
-    }
-  ],
+  "value": 10,
+  "modifiers": {
+    "intelligence": 8,
+    "dexterity": 0,
+    "constitution": 0,
+    "insanity": 7,
+    "charisma": 0,
+    "strength": 0
+  },
   "min_attr": [
     {
       "name": "Charisma",
@@ -146,24 +128,15 @@
   "description": "A legendary artifact pulsating with arcane energy, this orb bestows profound knowledge and clarity upon its possessor, enhancing their intellect and granting visions of the future.",
   "type": "artifact",
   "image": "/images/equipment/artifacts/artifact_3.jpg",
-  "modifiers_charisma": [
-    {
-      "attribute": "Constitution",
-      "value": 0.5,
-      "_id": {
-        "$oid": "668bca125319ea9afdff074b"
-      }
-    }
-  ],
-  "modifiers": [
-    {
-      "attribute": "Dexterity",
-      "value": -8,
-      "_id": {
-        "$oid": "668bca125319ea9afdff074c"
-      }
-    }
-  ],
+  "value": 10,
+  "modifiers": {
+    "intelligence": 15,
+    "dexterity": 0,
+    "constitution": 0,
+    "insanity": 0,
+    "charisma": 0,
+    "strength": 0
+  },
   "min_attr": [
     {
       "name": "Charisma",
@@ -173,8 +146,8 @@
       }
     },
     {
-      "name": "Constitution",
-      "value": 20,
+      "name": "Dexterity",
+      "value": 15,
       "_id": {
         "$oid": "668bca125319ea9afdff074e"
       }

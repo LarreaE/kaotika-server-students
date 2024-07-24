@@ -1,9 +1,16 @@
+
+
+
 [
   {
+    "_id": {
+      "$oid": "6693fd5846527d0df5f0efe7"
+    },
     "name": "Shadowblight",
     "description": "A disease that causes the afflicted to be consumed by darkness, their skin turning black as shadows envelop their body.",
     "type": "curse",
-    "antidote": "Luminous Elixir",
+    "antidote_name": "Lightbane Elixir",
+    "antidote_description": "A potent concoction brewed from the rare Lumina flowers that only bloom under the full moon. The elixir emits a radiant glow and, when consumed, floods the body with purifying light, banishing the shadows and restoring the natural hue of the skin.",
     "modifiers": [
       {
         "attribute": "Constitution",
@@ -24,10 +31,14 @@
     ]
   },
   {
+    "_id": {
+      "$oid": "6693fd5846527d0df5f0efe8"
+    },
     "name": "Frostbane Fever",
     "description": "A chilling illness that lowers the body temperature drastically, causing frost to form on the skin and organs to freeze.",
     "type": "illness",
-    "antidote": "Inferno Brew",
+    "antidote_name": "Sunfire Potion",
+    "antidote_description": "A warming potion made from the essence of fire blossoms. It raises the body temperature, melts the frost, and revitalizes the organs.",
     "modifiers": [
       {
         "attribute": "Constitution",
@@ -40,10 +51,14 @@
     ]
   },
   {
+    "_id": {
+      "$oid": "6693fd5846527d0df5f0efe9"
+    },
     "name": "Wailing Plague",
     "description": "An infectious disease that causes the afflicted to uncontrollably wail in pain, spreading misery and despair.",
     "type": "illness",
-    "antidote": "Silent Whisper Potion",
+    "antidote_name": "Silencer's Draught",
+    "antidote_description": "A calming draught made from nightshade and lavender that soothes pain and silences the wails, bringing peace to the afflicted.",
     "modifiers": [
       {
         "attribute": "Charisma",
@@ -56,10 +71,14 @@
     ]
   },
   {
+    "_id": {
+      "$oid": "6693fd5846527d0df5f0efea"
+    },
     "name": "Cursed Blood",
     "description": "A curse that turns the blood into a dark, viscous liquid that poisons the body from within, causing severe pain and eventual death.",
     "type": "curse",
-    "antidote": "Purity Serum",
+    "antidote_name": "Pureheart Serum",
+    "antidote_description": "A powerful serum distilled from the hearts of unicorns, purifying the blood and neutralizing the poison.",
     "modifiers": [
       {
         "attribute": "Constitution",
@@ -76,10 +95,14 @@
     ]
   },
   {
+    "_id": {
+      "$oid": "6693fd5846527d0df5f0efeb"
+    },
     "name": "Ethereal Consumption",
     "description": "A spectral illness that causes the afflicted to slowly fade into the ethereal plane, losing touch with reality.",
     "type": "illness",
-    "antidote": "Ethereal Regeneration",
+    "antidote_name": "Etherbind Tonic",
+    "antidote_description": "A mystical tonic made from binding agents and ethereal dust, anchoring the afflicted back to the material plane.",
     "modifiers": [
       {
         "attribute": "Intelligence",
@@ -92,10 +115,14 @@
     ]
   },
   {
+    "_id": {
+      "$oid": "6693fd5846527d0df5f0efec"
+    },
     "name": "Mindfire",
     "description": "A curse that inflames the mind, causing intense migraines and hallucinations.",
     "type": "curse",
-    "antidote": "Mind Soother",
+    "antidote_name": "Mind's Ease Elixir",
+    "antidote_description": "A cooling elixir brewed from the leaves of the Frostmind plant, alleviating migraines and clearing hallucinations.",
     "modifiers": [
       {
         "attribute": "Intelligence",
@@ -116,10 +143,14 @@
     ]
   },
   {
+    "_id": {
+      "$oid": "6693fd5846527d0df5f0efed"
+    },
     "name": "Boneshiver",
     "description": "An illness that causes the bones to become brittle and cold, making movement agonizing.",
     "type": "illness",
-    "antidote": "Bone Reinforcer",
+    "antidote_name": "Bonefort Brew",
+    "antidote_description": "A fortifying brew made from dragon bone powder, strengthening and warming the bones.",
     "modifiers": [
       {
         "attribute": "Strength",
@@ -132,10 +163,14 @@
     ]
   },
   {
+    "_id": {
+      "$oid": "6693fd5846527d0df5f0efee"
+    },
     "name": "Soulrot",
     "description": "A necrotic curse that slowly decays the soul, causing profound weakness and despair.",
     "type": "curse",
-    "antidote": "Soul Balm",
+    "antidote_name": "Soulbind Essence",
+    "antidote_description": "An essence made from the tears of phoenixes, healing and binding the soul, reversing necrosis.",
     "modifiers": [
       {
         "attribute": "Charisma",
@@ -152,10 +187,14 @@
     ]
   },
   {
+    "_id": {
+      "$oid": "6693fd5846527d0df5f0efef"
+    },
     "name": "Fleshweaver's Malady",
     "description": "A grotesque illness that warps the flesh, causing it to grow uncontrollably and painfully.",
     "type": "illness",
-    "antidote": "Flesh Tonic",
+    "antidote_name": "Fleshbind Ointment",
+    "antidote_description": "A thick ointment made from giant's tears and healing herbs, halting the growth and soothing the pain.",
     "modifiers": [
       {
         "attribute": "Dexterity",
@@ -168,10 +207,14 @@
     ]
   },
   {
+    "_id": {
+      "$oid": "6693fd5846527d0df5f0eff0"
+    },
     "name": "Eldritch Pox",
     "description": "A curse that marks the skin with arcane runes, draining the life force of the afflicted.",
     "type": "curse",
-    "antidote": "Arcane Cleanser",
+    "antidote_name": "Runeveil Salve",
+    "antidote_description": "A salve made from arcane crystals and moonlit water, covering the runes and restoring life force.",
     "modifiers": [
       {
         "attribute": "Strength",
@@ -188,10 +231,14 @@
     ]
   },
   {
+    "_id": {
+      "$oid": "6693fd5846527d0df5f0eff1"
+    },
     "name": "Lich's Breath",
     "description": "An illness that causes the breath of the afflicted to become toxic, slowly killing them and those around them.",
     "type": "illness",
-    "antidote": "Breath Purifier",
+    "antidote_name": "Breathcleanse Potion",
+    "antidote_description": "A detoxifying potion made from silverleaf and purified air, neutralizing the toxicity of the breath.",
     "modifiers": [
       {
         "attribute": "Constitution",
@@ -204,112 +251,69 @@
     ]
   },
   {
+    "_id": {
+      "$oid": "6693fd5846527d0df5f0eff2"
+    },
     "name": "Cursed Tongue",
     "description": "A curse that renders the afflicted unable to speak without causing harm to themselves and others.",
     "type": "curse",
-    "antidote": "Voice Restorer",
+    "antidote_name":
+
+ "Silverspeech Syrup",
+    "antidote_description": "A syrup made from the nectar of whispering lilies, allowing the afflicted to speak without causing harm.",
     "modifiers": [
       {
         "attribute": "Charisma",
-        "value": -12
-      },
-      {
-        "attribute": "Insanity",
-        "value": 21
-      },
-      {
-        "attribute": "Hit points",
-        "value": -35
-      }
-    ]
-  },
-  {
-    "name": "Plague of Eyes",
-    "description": "An illness that causes extra eyes to form all over the body, driving the afflicted mad.",
-    "type": "illness",
-    "antidote": "Eye Balm",
-    "modifiers": [
-      {
-        "attribute": "Dexterity",
-        "value": -7
-      },
-      {
-        "attribute": "Insanity",
-        "value": 8
-      }
-    ]
-  },
-  {
-    "name": "Bloodfire",
-    "description": "A curse that ignites the blood of the afflicted, causing intense internal burning sensations.",
-    "type": "curse",
-    "antidote": "Blood Cooler",
-    "modifiers": [
-      {
-        "attribute": "Constitution",
         "value": -13
       },
       {
-        "attribute": "Strength",
-        "value": -5
-      },
-      {
-        "attribute": "Hit points",
-        "value": -55
-      }
-    ]
-  },
-  {
-    "name": "Mindfray",
-    "description": "An illness that frays the mind's connections, causing memory loss and cognitive decline.",
-    "type": "illness",
-    "antidote": "Mind Healer",
-    "modifiers": [
-      {
-        "attribute": "Intelligence",
-        "value": -12
-      },
-      {
         "attribute": "Insanity",
-        "value": 6
+        "value": 5
       }
     ]
   },
   {
-    "name": "Veilrot",
-    "description": "A curse that causes the skin to become transparent, making the afflicted's muscles and bones visible.",
-    "type": "curse",
-    "antidote": "Veil Restorer",
-    "modifiers": [
-      {
-        "attribute": "Charisma",
-        "value": -10
-      },
-      {
-        "attribute": "Hit points",
-        "value": -45
-      },
-      {
-        "attribute": "Insanity",
-        "value": 15
-      }
-    ]
-  },
-  {
-    "name": "Souldrain",
-    "description": "An illness that saps the very soul of the afflicted, leaving them weak and lethargic.",
+    "_id": {
+      "$oid": "6693fd5846527d0df5f0eff3"
+    },
+    "name": "Fiend's Grasp",
+    "description": "A demonic illness that causes the hands to transform into monstrous claws, uncontrollably attacking anything nearby.",
     "type": "illness",
-    "antidote": "Soul Revitalizer",
+    "antidote_name": "Calmhand Potion",
+    "antidote_description": "A soothing potion made from calming herbs and demon's bane, reverting the hands back to normal.",
     "modifiers": [
       {
-        "attribute": "Strength",
+        "attribute": "Dexterity",
         "value": -14
       },
       {
-        "attribute": "Constitution",
-        "value": -7
+        "attribute": "Strength",
+        "value": -6
+      }
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "6693fd5846527d0df5f0eff4"
+    },
+    "name": "Necrotic Whisper",
+    "description": "A curse that fills the mind with necrotic whispers, driving the afflicted mad and causing their body to decay.",
+    "type": "curse",
+    "antidote_name": "Lifebane Elixir",
+    "antidote_description": "A potent elixir brewed from the essence of life and blessed waters, silencing the whispers and halting decay.",
+    "modifiers": [
+      {
+        "attribute": "Intelligence",
+        "value": -15
+      },
+      {
+        "attribute": "Hit points",
+        "value": -50
+      },
+      {
+        "attribute": "Insanity",
+        "value": 30
       }
     ]
   }
-
 ]

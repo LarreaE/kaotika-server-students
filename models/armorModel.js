@@ -11,6 +11,7 @@ const armorSchema = new Schema({
    description: String,
    type: String,
    image: String,
+   value: Number,
    modifiers: {
       intelligence: Number,
       dexterity: Number,

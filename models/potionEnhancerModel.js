@@ -12,6 +12,7 @@ const potionEnhancerSchema = new Schema({
    type: String,
    image: String,
    duration: Number,
+   value: Number,
    modifiers: {
       intelligence: Number,
       dexterity: Number,

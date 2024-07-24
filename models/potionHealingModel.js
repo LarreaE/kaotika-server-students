@@ -11,6 +11,7 @@ const potionHealingSchema = new Schema({
    description: String,
    type: String,
    image: String,
+   value: Number,
    modifiers: {
       hit_points: Number,
       intelligence: Number,

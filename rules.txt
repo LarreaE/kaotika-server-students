@@ -14,7 +14,12 @@ DERIVED ATTRIBUTES
 -----------------
 
 HP: 3*(CON + STR)
-ATT: STR - INS / 2. (Can be negative or positive)
+ATT: STR - INS / 2. (Can be negative or positive) 
+ (mínimo valor que aparece entre todos. Lo tiene el JUGGLER)
+Además el blasfemador empieza con -12.5 pero puede perder mucho más entre armaduras y armas.
+*** creo que sería ideal sumar 20-25 puntos al ataque.
+Para que todos empiecen en 0 y no haya negativos.
+
 DEF: DEX + CON + INT/2
 RES MAGIC: INT + CHA
 CFP (critical or fumble probability): INS
@@ -57,6 +62,20 @@ Multiplier value
 
 
 
+CÁLCULO DE ESTADÍSTICAS DE ARMAS ÚNICAS
+---------------------------------------
+
+Todas empiezan con prob Base: 15
+Añaden 5 puntos a la habilidad más baja de la clase, excluyendo la fuerza
+No consumen puntos de fuerza
+Aumentan Insanity en 8
+
+Daño base 2D6 (bastante inferior a las armas comunes)
+por cada punto que sumamos al daño disminuimos charisma en 1 punto
+
+Ej:
+
+2D6+2 --> Charisma -2
 
 
 
