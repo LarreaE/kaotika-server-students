@@ -9,7 +9,7 @@ const { Schema } = mongoose;
 
 const playerSchema = new Schema({
   name: String,
-  nickname: String, default: 'Acolyte',
+  nickname: String, 
   email: String,
   avatar: String,
   level: {type: Number, default: 1},
