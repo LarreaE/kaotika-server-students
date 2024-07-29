@@ -437,7 +437,7 @@ const createEquipment = async () => {
 
 
 //             ],
-//             "min_level": 1,
+//             "min_lvl": 1,
 //             "profiles":[
 //                 scholarId,   
 //                 pariahId,   
@@ -465,7 +465,7 @@ const createEquipment = async () => {
 
 
 //             ],
-//             "min_level": 1,
+//             "min_lvl": 1,
 //             "profiles":[
 //                 scholarId,   
 //                 pariahId,   
@@ -501,7 +501,7 @@ const createEquipment = async () => {
 
 
 //             ],
-//             "min_level": 1,
+//             "min_lvl": 1,
 //             "profiles":[
 //                 scholarId 
                 
@@ -527,7 +527,7 @@ const createEquipment = async () => {
 
 
 //             ],
-//             "min_level": 1,
+//             "min_lvl": 1,
 //             "profiles":[
 //                 pariahId  
                 
@@ -557,7 +557,7 @@ const createEquipment = async () => {
 
 
 //             ],
-//             "min_level": 1,
+//             "min_lvl": 1,
 //             "profiles":[
 //                 jugglerId 
                 
@@ -583,7 +583,7 @@ const createEquipment = async () => {
 
 
 //             ],
-//             "min_level": 1,
+//             "min_lvl": 1,
 //             "profiles":[
 //                 embalmerId  
                 
@@ -609,7 +609,7 @@ const createEquipment = async () => {
 
 
 //             ],
-//             "min_level": 1,
+//             "min_lvl": 1,
 //             "profiles":[
 //                 blasphemerId  
                 
@@ -676,7 +676,7 @@ const createEquipment = async () => {
 
 
 //             ],
-//             "min_level": 1,
+//             "min_lvl": 1,
 //             "profiles":[
 //                 bumblerId  
                 
@@ -701,7 +701,7 @@ const createEquipment = async () => {
 //                 }
 
 //             ],
-//             "min_level": 1,
+//             "min_lvl": 1,
             
 //             "profiles":[
 //                 poetId  

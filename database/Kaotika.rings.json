@@ -1,0 +1,257 @@
+[
+    {
+        "name": "Ring of Eternal Flame",
+        "description": "A ring that burns with eternal fire, enhancing the wearer's attack power and fire resistance.",
+        "type": "ring",
+        "image": "/images/equipment/rings/ring_1.png",
+        "value": 10000,
+        "modifiers": {
+            "intelligence": 5,
+            "dexterity": 5,
+            "constitution": 10,
+            "insanity": 0,
+            "charisma": 10,
+            "strength": 15
+        },
+        "min_lvl": 20,
+        "profiles": []
+    },
+    {
+        "name": "Ring of the Arcane Sage",
+        "description": "This ring grants its wearer enhanced spellcasting abilities and increased magical power.",
+        "type": "ring",
+        "image": "/images/equipment/rings/ring_1.png",
+        "value": 12000,
+        "modifiers": {
+            "intelligence": 20,
+            "dexterity": 0,
+            "constitution": 5,
+            "insanity": 5,
+            "charisma": 10,
+            "strength": 0
+        },
+        "min_lvl": 25,
+        "profiles": []
+    },
+    {
+        "name": "Ring of Shadows",
+        "description": "A ring that cloaks the wearer in shadows, increasing their stealth and agility.",
+        "type": "ring",
+        "image": "/images/equipment/rings/ring_1.png",
+        "value": 14000,
+        "modifiers": {
+            "intelligence": 0,
+            "dexterity": 20,
+            "constitution": 5,
+            "insanity": 10,
+            "charisma": 5,
+            "strength": 10
+        },
+        "min_lvl": 30,
+        "profiles": []
+    },
+    {
+        "name": "Ring of the Dragon's Might",
+        "description": "A ring imbued with the strength of dragons, boosting the wearer's physical power and resistance.",
+        "type": "ring",
+        "image": "/images/equipment/rings/ring_1.png",
+        "value": 16000,
+        "modifiers": {
+            "intelligence": 0,
+            "dexterity": 5,
+            "constitution": 15,
+            "insanity": 0,
+            "charisma": 0,
+            "strength": 25
+        },
+        "min_lvl": 35,
+        "profiles": []
+    },
+    {
+        "name": "Ring of Celestial Guidance",
+        "description": "An ethereal ring that guides its wearer with celestial wisdom, enhancing their perception and charisma.",
+        "type": "ring",
+        "image": "/images/equipment/rings/ring_1.png",
+        "value": 18000,
+        "modifiers": {
+            "intelligence": 15,
+            "dexterity": 5,
+            "constitution": 0,
+            "insanity": 5,
+            "charisma": 20,
+            "strength": 0
+        },
+        "min_lvl": 40,
+        "profiles": []
+    },
+    {
+        "name": "Ring of the Stormlord",
+        "description": "A powerful ring that channels storm energy, increasing dexterity and providing lightning resistance.",
+        "type": "ring",
+        "image": "/images/equipment/rings/ring_1.png",
+        "value": 20000,
+        "modifiers": {
+            "intelligence": 10,
+            "dexterity": 20,
+            "constitution": 5,
+            "insanity": 0,
+            "charisma": 0,
+            "strength": 15
+        },
+        "min_lvl": 45,
+        "profiles": []
+    },
+    {
+        "name": "Ring of the Abyssal Guardian",
+        "description": "A dark ring that enhances the wearer's resilience and fearsome presence, boosting their physical defenses.",
+        "type": "ring",
+        "image": "/images/equipment/rings/ring_1.png",
+        "value": 22000,
+        "modifiers": {
+            "intelligence": 0,
+            "dexterity": 10,
+            "constitution": 20,
+            "insanity": 15,
+            "charisma": -10,
+            "strength": 20
+        },
+        "min_lvl": 50,
+        "profiles": []
+    },
+    {
+        "name": "Ring of Temporal Shifting",
+        "description": "An enigmatic ring that grants the wearer control over time, enhancing agility and foresight.",
+        "type": "ring",
+        "image": "/images/equipment/rings/ring_1.png",
+        "value": 24000,
+        "modifiers": {
+            "intelligence": 20,
+            "dexterity": 20,
+            "constitution": 0,
+            "insanity": 5,
+            "charisma": 10,
+            "strength": 10
+        },
+        "min_lvl": 55,
+        "profiles": []
+    },
+    {
+        "name": "Ring of the Phoenix's Rebirth",
+        "description": "A fiery ring that grants the wearer rejuvenation and immunity to fire.",
+        "type": "ring",
+        "image": "/images/equipment/rings/ring_1.png",
+        "value": 26000,
+        "modifiers": {
+            "intelligence": 10,
+            "dexterity": 10,
+            "constitution": 15,
+            "insanity": 5,
+            "charisma": 5,
+            "strength": 20
+        },
+        "min_lvl": 60,
+        "profiles": []
+    },
+    {
+        "name": "Ring of the Astral Voyager",
+        "description": "A ring that enhances the wearer's ability to travel between realms, improving overall resilience and perception.",
+        "type": "ring",
+        "image": "/images/equipment/rings/ring_1.png",
+        "value": 28000,
+        "modifiers": {
+            "intelligence": 15,
+            "dexterity": 15,
+            "constitution": 10,
+            "insanity": 10,
+            "charisma": 10,
+            "strength": 15
+        },
+        "min_lvl": 65,
+        "profiles": []
+    },
+    {
+        "name": "Ring of the Earthshaker",
+        "description": "A ring that grants the wearer immense strength and durability, with increased resistance to physical damage.",
+        "type": "ring",
+        "image": "/images/equipment/rings/ring_1.png",
+        "value": 30000,
+        "modifiers": {
+            "intelligence": 5,
+            "dexterity": 5,
+            "constitution": 25,
+            "insanity": 0,
+            "charisma": 5,
+            "strength": 30
+        },
+        "min_lvl": 70,
+        "profiles": []
+    },
+    {
+        "name": "Ring of the Celestial Protector",
+        "description": "A radiant ring that enhances the wearer's protective abilities, providing increased defense and healing.",
+        "type": "ring",
+        "image": "/images/equipment/rings/ring_1.png",
+        "value": 32000,
+        "modifiers": {
+            "intelligence": 10,
+            "dexterity": 5,
+            "constitution": 20,
+            "insanity": 0,
+            "charisma": 15,
+            "strength": 15
+        },
+        "min_lvl": 75,
+        "profiles": []
+    },
+    {
+        "name": "Ring of the Voidwalker",
+        "description": "A mysterious ring that grants enhanced stealth and agility, with increased power in dark environments.",
+        "type": "ring",
+        "image": "/images/equipment/rings/ring_1.png",
+        "value": 34000,
+        "modifiers": {
+            "intelligence": 10,
+            "dexterity": 25,
+            "constitution": 5,
+            "insanity": 10,
+            "charisma": -5,
+            "strength": 10
+        },
+        "min_lvl": 80,
+        "profiles": []
+    },
+    {
+        "name": "Ring of the Stormbringer",
+        "description": "A ring that channels the energy of storms, increasing the wearer's speed and attack power.",
+        "type": "ring",
+        "image": "/images/equipment/rings/ring_1.png",
+        "value": 36000,
+        "modifiers": {
+            "intelligence": 15,
+            "dexterity": 20,
+            "constitution": 10,
+            "insanity": 5,
+            "charisma": 10,
+            "strength": 20
+        },
+        "min_lvl": 85,
+        "profiles": []
+    },
+    {
+        "name": "Ring of the Nightstalker",
+        "description": "A dark ring that enhances the wearer's ability to move silently and strike with precision.",
+        "type": "ring",
+        "image": "/images/equipment/rings/ring_1.png",
+        "value": 38000,
+        "modifiers": {
+            "intelligence": 5,
+            "dexterity": 30,
+            "constitution": 5,
+            "insanity": 10,
+            "charisma": -5,
+            "strength": 15
+        },
+        "min_lvl": 90,
+        "profiles": []
+    }
+]

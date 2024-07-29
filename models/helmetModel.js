@@ -18,7 +18,7 @@ const helmetSchema = new Schema({
       charisma: Number,
       strength: Number
     },
-   min_level: Number,
+   min_lvl: Number,
    profiles: [{type: Schema.Types.ObjectId, ref: "Profile"}]
 
 });

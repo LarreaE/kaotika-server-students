@@ -1,0 +1,172 @@
+[
+    {
+        "name": "Titan's Footfall",
+        "description": "Heavy boots crafted from titan bones, offering immense strength and protection.",
+        "type": "boot",
+        "image": "/images/equipment/uniques/boots/boot_1.png",
+        "value": 2000,
+        "defense": 100,
+        "modifiers": {
+            "intelligence": 0,
+            "dexterity": 5,
+            "constitution": 20,
+            "insanity": 0,
+            "charisma": 2,
+            "strength": 25
+        },
+        "min_lvl": 60
+    },
+    {
+        "name": "Guardian's Stride",
+        "description": "Boots that offer the wearer the endurance and protection of a guardian.",
+        "type": "boot",
+        "image": "/images/equipment/uniques/boots/boot_2.png",
+        "value": 2200,
+        "defense": 110,
+        "modifiers": {
+            "intelligence": 2,
+            "dexterity": 8,
+            "constitution": 25,
+            "insanity": 0,
+            "charisma": 3,
+            "strength": 22
+        },
+        "min_lvl": 60
+    },
+    {
+        "name": "Warlord's March",
+        "description": "Boots worn by warlords, providing power and resilience.",
+        "type": "boot",
+        "image": "/images/equipment/uniques/boots/boot_3.png",
+        "value": 2400,
+        "defense": 120,
+        "modifiers": {
+            "intelligence": 0,
+            "dexterity": 10,
+            "constitution": 28,
+            "insanity": 2,
+            "charisma": 0,
+            "strength": 30
+        },
+        "min_lvl": 60
+    },
+    {
+        "name": "Inferno Stompers",
+        "description": "Boots infused with the power of the underworld, offering great strength and protection.",
+        "type": "boot",
+        "image": "/images/equipment/uniques/boots/boot_4.png",
+        "value": 2600,
+        "defense": 130,
+        "modifiers": {
+            "intelligence": 5,
+            "dexterity": 5,
+            "constitution": 30,
+            "insanity": 5,
+            "charisma": -1,
+            "strength": 28
+        },
+        "min_lvl": 60
+    },
+    {
+        "name": "Stormwalkers",
+        "description": "Boots that allow the wearer to stride with the power of a storm.",
+        "type": "boot",
+        "image": "/images/equipment/uniques/boots/boot_5.png",
+        "value": 2800,
+        "defense": 140,
+        "modifiers": {
+            "intelligence": 3,
+            "dexterity": 12,
+            "constitution": 25,
+            "insanity": 0,
+            "charisma": 4,
+            "strength": 25
+        },
+        "min_lvl": 60
+    },
+    {
+        "name": "Celestial Boots",
+        "description": "Boots blessed by celestial beings, providing divine protection.",
+        "type": "boot",
+        "image": "/images/equipment/uniques/boots/boot_6.png",
+        "value": 3000,
+        "defense": 150,
+        "modifiers": {
+            "intelligence": 5,
+            "dexterity": 8,
+            "constitution": 28,
+            "insanity": 0,
+            "charisma": 5,
+            "strength": 27
+        },
+        "min_lvl": 60
+    },
+    {
+        "name": "Phantom Tread",
+        "description": "Boots that grant the wearer the abilities of phantom warriors.",
+        "type": "boot",
+        "image": "/images/equipment/uniques/boots/boot_7.png",
+        "value": 3200,
+        "defense": 160,
+        "modifiers": {
+            "intelligence": 0,
+            "dexterity": 15,
+            "constitution": 30,
+            "insanity": 5,
+            "charisma": 2,
+            "strength": 30
+        },
+        "min_lvl": 60
+    },
+    {
+        "name": "Abyssal Greaves",
+        "description": "Boots forged from the deepest abyss, offering unmatched protection and strength.",
+        "type": "boot",
+        "image": "/images/equipment/uniques/boots/boot_8.png",
+        "value": 3400,
+        "defense": 170,
+        "modifiers": {
+            "intelligence": 5,
+            "dexterity": 10,
+            "constitution": 35,
+            "insanity": 5,
+            "charisma": -2,
+            "strength": 32
+        },
+        "min_lvl": 60
+    },
+    {
+        "name": "Titan's Steps",
+        "description": "Boots that grant the wearer the power and protection of a titan.",
+        "type": "boot",
+        "image": "/images/equipment/uniques/boots/boot_9.png",
+        "value": 3600,
+        "defense": 180,
+        "modifiers": {
+            "intelligence": 0,
+            "dexterity": 10,
+            "constitution": 40,
+            "insanity": 0,
+            "charisma": 3,
+            "strength": 35
+        },
+        "min_lvl": 60
+    },
+    {
+        "name": "Arcane Warrior's Boots",
+        "description": "Boots enchanted with powerful arcane spells, offering both protection and agility.",
+        "type": "boot",
+        "image": "/images/equipment/uniques/boots/boot_10.png",
+        "value": 3800,
+        "defense": 190,
+        "modifiers": {
+            "intelligence": 10,
+            "dexterity": 12,
+            "constitution": 30,
+            "insanity": 5,
+            "charisma": 0,
+            "strength": 28
+        },
+        "min_lvl": 60
+    }
+]

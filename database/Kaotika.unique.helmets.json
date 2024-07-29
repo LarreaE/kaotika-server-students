@@ -1,0 +1,240 @@
+[
+    {
+        "name": "Eternal Guardian Helmet",
+        "description": "A helmet blessed by the spirits of eternal guardians.",
+        "type": "helmet",
+        "image": "/images/equipment/uniques/helmets/helmet_1.png",
+        "value": 2000,
+        "defense": 150,
+        "modifiers": {
+            "intelligence": 10,
+            "dexterity": 5,
+            "constitution": 20,
+            "insanity": 15,
+            "charisma": -2,
+            "strength": 25
+        },
+        "min_lvl": 60
+    },
+    {
+        "name": "Infernal Visage",
+        "description": "A helmet forged in the fires of the underworld.",
+        "type": "helmet",
+        "image": "/images/equipment/uniques/helmets/helmet_2.png",
+        "value": 2200,
+        "defense": 160,
+        "modifiers": {
+            "intelligence": 15,
+            "dexterity": 10,
+            "constitution": 15,
+            "insanity": 20,
+            "charisma": -5,
+            "strength": 30
+        },
+        "min_lvl": 60
+    },
+    {
+        "name": "Celestial Helm",
+        "description": "A helmet infused with the light of celestial beings.",
+        "type": "helmet",
+        "image": "/images/equipment/uniques/helmets/helmet_3.png",
+        "value": 2400,
+        "defense": 170,
+        "modifiers": {
+            "intelligence": 20,
+            "dexterity": 8,
+            "constitution": 18,
+            "insanity": 10,
+            "charisma": 5,
+            "strength": 22
+        },
+        "min_lvl": 60
+    },
+    {
+        "name": "Warlord's Aegis",
+        "description": "A helmet worn by the greatest warlords in history.",
+        "type": "helmet",
+        "image": "/images/equipment/uniques/helmets/helmet_4.png",
+        "value": 2600,
+        "defense": 180,
+        "modifiers": {
+            "intelligence": 12,
+            "dexterity": 12,
+            "constitution": 25,
+            "insanity": 12,
+            "charisma": -3,
+            "strength": 35
+        },
+        "min_lvl": 60
+    },
+    {
+        "name": "Mystic Sage's Helm",
+        "description": "A helmet used by the most powerful mystics.",
+        "type": "helmet",
+        "image": "/images/equipment/uniques/helmets/helmet_5.png",
+        "value": 2800,
+        "defense": 190,
+        "modifiers": {
+            "intelligence": 25,
+            "dexterity": 15,
+            "constitution": 20,
+            "insanity": 8,
+            "charisma": 0,
+            "strength": 18
+        },
+        "min_lvl": 60
+    },
+    {
+        "name": "Titan's Helm",
+        "description": "A helmet crafted from the bones of titans.",
+        "type": "helmet",
+        "image": "/images/equipment/uniques/helmets/helmet_6.png",
+        "value": 3000,
+        "defense": 200,
+        "modifiers": {
+            "intelligence": 8,
+            "dexterity": 18,
+            "constitution": 30,
+            "insanity": 5,
+            "charisma": -6,
+            "strength": 40
+        },
+        "min_lvl": 60
+    },
+    {
+        "name": "Arcane Conqueror's Helm",
+        "description": "A helmet worn by the greatest arcane conquerors.",
+        "type": "helmet",
+        "image": "/images/equipment/uniques/helmets/helmet_7.png",
+        "value": 3200,
+        "defense": 210,
+        "modifiers": {
+            "intelligence": 30,
+            "dexterity": 20,
+            "constitution": 22,
+            "insanity": 12,
+            "charisma": 3,
+            "strength": 20
+        },
+        "min_lvl": 60
+    },
+    {
+        "name": "Dragonlord's Helm",
+        "description": "A helmet imbued with the power of ancient dragons.",
+        "type": "helmet",
+        "image": "/images/equipment/uniques/helmets/helmet_8.png",
+        "value": 3400,
+        "defense": 220,
+        "modifiers": {
+            "intelligence": 18,
+            "dexterity": 25,
+            "constitution": 24,
+            "insanity": 7,
+            "charisma": 2,
+            "strength": 28
+        },
+        "min_lvl": 60
+    },
+    {
+        "name": "Helm of the Fallen King",
+        "description": "A helmet worn by a king who fell in battle, now possessing his spirit.",
+        "type": "helmet",
+        "image": "/images/equipment/uniques/helmet/helmet_9.png",
+        "value": 3600,
+        "defense": 230,
+        "modifiers": {
+            "intelligence": 22,
+            "dexterity": 15,
+            "constitution": 28,
+            "insanity": 9,
+            "charisma": -1,
+            "strength": 32
+        },
+        "min_lvl": 60
+    },
+    {
+        "name": "Phantom Warrior's Helm",
+        "description": "A helmet that grants the wearer the abilities of phantom warriors.",
+        "type": "helmet",
+        "image": "/images/equipment/uniques/helmets/helmet_10.png",
+        "value": 3800,
+        "defense": 240,
+        "modifiers": {
+            "intelligence": 15,
+            "dexterity": 30,
+            "constitution": 20,
+            "insanity": 10,
+            "charisma": 1,
+            "strength": 25
+        },
+        "min_lvl": 60
+    },
+    {
+        "name": "Helm of the Forsaken",
+        "description": "A helmet cursed by the souls of the forsaken.",
+        "type": "helmet",
+        "image": "/images/equipment/uniques/helmets/helmet_11.png",
+        "value": 4000,
+        "defense": 250,
+        "modifiers": {
+            "intelligence": 20,
+            "dexterity": 10,
+            "constitution": 35,
+            "insanity": 15,
+            "charisma": -4,
+            "strength": 38
+        },
+        "min_lvl": 60
+    },
+    {
+        "name": "Helm of the Arcane Titan",
+        "description": "A helmet that combines the power of titans and arcane magic.",
+        "type": "helmet",
+        "image": "/images/equipment/uniques/helmets/helmet_12.png",
+        "value": 4200,
+        "defense": 260,
+        "modifiers": {
+            "intelligence": 35,
+            "dexterity": 22,
+            "constitution": 25,
+            "insanity": 10,
+            "charisma": 0,
+            "strength": 28
+        },
+        "min_lvl": 60
+    },
+    {
+        "name": "Helm of the Shadow King",
+        "description": "A helmet that grants the power of the shadow realm.",
+        "type": "helmet",
+        "image": "/images/equipment/uniques/helmet/helmet_13.png",
+        "value": 4400,
+        "defense": 270,
+        "modifiers": {
+            "intelligence": 28,
+            "dexterity": 18,
+            "constitution": 22,
+            "insanity": 8,
+            "charisma": 4,
+            "strength": 30
+        },
+        "min_lvl": 60
+    },
+    {
+        "name": "Helm of the Eternal Flame",
+        "description": "A helmet that burns with an eternal, magical flame.",
+        "type": "helmet",
+        "image": "/images/equipment/uniques/helmets/helmet_14.png",
+        "value": 4600,
+        "defense": 280,
+        "modifiers": {
+            "intelligence": 25,
+            "dexterity": 15,
+            "constitution": 30,
+            "insanity": 5,
+            "charisma": -2,
+            "strength": 35
+        },
+        "min_lvl": 60
+    }
+]

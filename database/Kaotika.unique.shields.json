@@ -1,0 +1,189 @@
+[
+    {
+        "name": "Aegis of the Immortal",
+        "description": "A shield said to be imbued with the power of immortality, providing unparalleled protection.",
+        "type": "shield",
+        "image": "/images/equipment/uniques/shields/shield_1.png",
+        "value": 4000,
+        "defense": 300,
+        "modifiers": {
+            "intelligence": 5,
+            "dexterity": 5,
+            "constitution": 35,
+            "insanity": 0,
+            "charisma": 10,
+            "strength": 15
+        },
+        "min_lvl": 60
+    },
+    {
+        "name": "Dragonfire Shield",
+        "description": "A shield forged from dragon scales, capable of withstanding immense heat and force.",
+        "type": "shield",
+        "image": "/images/equipment/uniques/shields/shield_2.png",
+        "value": 4200,
+        "defense": 320,
+        "modifiers": {
+            "intelligence": 10,
+            "dexterity": 5,
+            "constitution": 40,
+            "insanity": 0,
+            "charisma": 5,
+            "strength": 20
+        },
+        "min_lvl": 60
+    },
+    {
+        "name": "Guardian's Bastion",
+        "description": "A massive shield that provides exceptional protection and boosts the wearer's strength.",
+        "type": "shield",
+        "image": "/images/equipment/uniques/shields/shield_3.png",
+        "value": 4400,
+        "defense": 340,
+        "modifiers": {
+            "intelligence": 5,
+            "dexterity": 5,
+            "constitution": 45,
+            "insanity": 0,
+            "charisma": 8,
+            "strength": 18
+        },
+        "min_lvl": 60
+    },
+    {
+        "name": "Phantom Guard",
+        "description": "A shield that seems to phase in and out of existence, providing ghostly protection.",
+        "type": "shield",
+        "image": "/images/equipment/uniques/shields/shield_4.png",
+        "value": 4600,
+        "defense": 360,
+        "modifiers": {
+            "intelligence": 10,
+            "dexterity": 10,
+            "constitution": 38,
+            "insanity": 5,
+            "charisma": 5,
+            "strength": 22
+        },
+        "min_lvl": 60
+    },
+    {
+        "name": "Celestial Aegis",
+        "description": "A shield blessed by celestial beings, offering divine protection.",
+        "type": "shield",
+        "image": "/images/equipment/uniques/shields/shield_5.png",
+        "value": 4800,
+        "defense": 380,
+        "modifiers": {
+            "intelligence": 15,
+            "dexterity": 5,
+            "constitution": 40,
+            "insanity": 0,
+            "charisma": 10,
+            "strength": 25
+        },
+        "min_lvl": 60
+    },
+    {
+        "name": "Titan's Barrier",
+        "description": "A shield forged from the remnants of a fallen titan, providing immense protection.",
+        "type": "shield",
+        "image": "/images/equipment/uniques/shields/shield_6.png",
+        "value": 5000,
+        "defense": 400,
+        "modifiers": {
+            "intelligence": 5,
+            "dexterity": 10,
+            "constitution": 45,
+            "insanity": 0,
+            "charisma": 5,
+            "strength": 30
+        },
+        "min_lvl": 60
+    },
+    {
+        "name": "Stormwall Shield",
+        "description": "A shield imbued with the power of a raging storm, providing electric protection.",
+        "type": "shield",
+        "image": "/images/equipment/uniques/shields/shield_7.png",
+        "value": 5200,
+        "defense": 420,
+        "modifiers": {
+            "intelligence": 10,
+            "dexterity": 5,
+            "constitution": 50,
+            "insanity": 0,
+            "charisma": 8,
+            "strength": 28
+        },
+        "min_lvl": 60
+    },
+    {
+        "name": "Inferno Bulwark",
+        "description": "A shield that radiates intense heat, providing both protection and offensive capabilities.",
+        "type": "shield",
+        "image": "/images/equipment/uniques/shields/shield_8.png",
+        "value": 5400,
+        "defense": 440,
+        "modifiers": {
+            "intelligence": 5,
+            "dexterity": 5,
+            "constitution": 55,
+            "insanity": 5,
+            "charisma": 5,
+            "strength": 25
+        },
+        "min_lvl": 60
+    },
+    {
+        "name": "Frostbound Shield",
+        "description": "A shield crafted from enchanted ice, offering protection and resistance to cold.",
+        "type": "shield",
+        "image": "/images/equipment/uniques/shields/shield_9.png",
+        "value": 5600,
+        "defense": 460,
+        "modifiers": {
+            "intelligence": 10,
+            "dexterity": 10,
+            "constitution": 50,
+            "insanity": 0,
+            "charisma": 7,
+            "strength": 25
+        },
+        "min_lvl": 60
+    },
+    {
+        "name": "Earthshaker Shield",
+        "description": "A shield that trembles with the power of the earth, providing unparalleled defense.",
+        "type": "shield",
+        "image": "/images/equipment/uniques/shields/shield_10.png",
+        "value": 5800,
+        "defense": 480,
+        "modifiers": {
+            "intelligence": 5,
+            "dexterity": 5,
+            "constitution": 60,
+            "insanity": 0,
+            "charisma": 5,
+            "strength": 30
+        },
+        "min_lvl": 60
+    },
+    {
+        "name": "Abyssal Protector",
+        "description": "A shield forged in the depths of the abyss, offering dark and powerful protection.",
+        "type": "shield",
+        "image": "/images/equipment/uniques/shields/shield_11.png",
+        "value": 6000,
+        "defense": 500,
+        "modifiers": {
+            "intelligence": 10,
+            "dexterity": 5,
+            "constitution": 55,
+            "insanity": 10,
+            "charisma": 5,
+            "strength": 35
+        },
+        "min_lvl": 60
+    }
+]

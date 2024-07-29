@@ -1,0 +1,268 @@
+[
+    {
+        "name": "Dragon's Fury",
+        "description": "A sword forged from the scales of an ancient dragon, radiating fiery power.",
+        "type": "weapon",
+        "image": "/images/equipment/uniques/weapons/swords/sword_1.png",
+        "value": 5000,
+        "damage": "4D6+8",
+        "base_percentage": 25,
+        "modifiers": {
+            "intelligence": 0,
+            "dexterity": 5,
+            "constitution": 10,
+            "insanity": 12,
+            "charisma": 0,
+            "strength": 20
+        },
+        "min_lvl": 70,
+        "profiles": []
+    },
+    {
+        "name": "Celestial Blade",
+        "description": "A blade blessed by celestial beings, offering divine damage and protection.",
+        "type": "weapon",
+        "image": "/images/equipment/uniques/weapons/swords/sword_2.png",
+        "value": 5200,
+        "damage": "3D8+10",
+        "base_percentage": 20,
+        "modifiers": {
+            "intelligence": 15,
+            "dexterity": 0,
+            "constitution": 15,
+            "insanity": 0,
+            "charisma": 10,
+            "strength": 15
+        },
+        "min_lvl": 70,
+        "profiles": []
+    },
+    {
+        "name": "Shadowrend",
+        "description": "A sword shrouded in darkness, dealing extra damage to those in the shadows.",
+        "type": "weapon",
+        "image": "/images/equipment/uniques/weapons/swords/sword_3.png",
+        "value": 5400,
+        "damage": "5D6+6",
+        "base_percentage": 30,
+        "modifiers": {
+            "intelligence": 10,
+            "dexterity": 5,
+            "constitution": 5,
+            "insanity": 15,
+            "charisma": -5,
+            "strength": 20
+        },
+        "min_lvl": 70,
+        "profiles": []
+    },
+    {
+        "name": "Stormbringer",
+        "description": "A sword crackling with the power of storms, capable of unleashing thunderous attacks.",
+        "type": "weapon",
+        "image": "/images/equipment/uniques/weapons/swords/sword_4.png",
+        "value": 5600,
+        "damage": "4D6+10",
+        "base_percentage": 25,
+        "modifiers": {
+            "intelligence": 10,
+            "dexterity": 10,
+            "constitution": 10,
+            "insanity": 0,
+            "charisma": 5,
+            "strength": 25
+        },
+        "min_lvl": 70,
+        "profiles": []
+    },
+    {
+        "name": "Frostbite Edge",
+        "description": "An icy blade that freezes enemies with each strike, slowing their movements.",
+        "type": "weapon",
+        "image": "/images/equipment/uniques/weapons/swords/sword_5.png",
+        "value": 5800,
+        "damage": "3D8+12",
+        "base_percentage": 20,
+        "modifiers": {
+            "intelligence": 15,
+            "dexterity": 0,
+            "constitution": 10,
+            "insanity": 5,
+            "charisma": 5,
+            "strength": 20
+        },
+        "min_lvl": 70,
+        "profiles": []
+    },
+    {
+        "name": "Infernal Cleaver",
+        "description": "A blade imbued with infernal flames, causing burning damage over time.",
+        "type": "weapon",
+        "image": "/images/equipment/uniques/weapons/swords/sword_6.png",
+        "value": 6000,
+        "damage": "4D8+8",
+        "base_percentage": 30,
+        "modifiers": {
+            "intelligence": 0,
+            "dexterity": 5,
+            "constitution": 10,
+            "insanity": 20,
+            "charisma": -10,
+            "strength": 25
+        },
+        "min_lvl": 70,
+        "profiles": []
+    },
+    {
+        "name": "Galactic Edge",
+        "description": "A sword with an otherworldly glow, cutting through space itself.",
+        "type": "weapon",
+        "image": "/images/equipment/uniques/weapons/swords/sword_7.png",
+        "value": 6200,
+        "damage": "5D6+12",
+        "base_percentage": 25,
+        "modifiers": {
+            "intelligence": 20,
+            "dexterity": 5,
+            "constitution": 5,
+            "insanity": 10,
+            "charisma": 15,
+            "strength": 15
+        },
+        "min_lvl": 70,
+        "profiles": []
+    },
+    {
+        "name": "Titan's Wrath",
+        "description": "A massive sword that channels the fury of titans, delivering devastating blows.",
+        "type": "weapon",
+        "image": "/images/equipment/uniques/weapons/swords/sword_8.png",
+        "value": 6400,
+        "damage": "6D6+10",
+        "base_percentage": 30,
+        "modifiers": {
+            "intelligence": 0,
+            "dexterity": 5,
+            "constitution": 20,
+            "insanity": 5,
+            "charisma": 0,
+            "strength": 30
+        },
+        "min_lvl": 70,
+        "profiles": []
+    },
+    {
+        "name": "Arcane Ripper",
+        "description": "A sword infused with arcane energy, enhancing the wearer's spellcasting abilities.",
+        "type": "weapon",
+        "image": "/images/equipment/uniques/weapons/swords/sword_9.png",
+        "value": 6600,
+        "damage": "4D8+10",
+        "base_percentage": 20,
+        "modifiers": {
+            "intelligence": 20,
+            "dexterity": 5,
+            "constitution": 10,
+            "insanity": 5,
+            "charisma": 10,
+            "strength": 15
+        },
+        "min_lvl": 70,
+        "profiles": []
+    },
+    {
+        "name": "Vortex Slayer",
+        "description": "A sword with the power to summon vortexes, pulling enemies into its deadly grip.",
+        "type": "weapon",
+        "image": "/images/equipment/uniques/weapons/swords/sword_10.png",
+        "value": 6800,
+        "damage": "5D6+14",
+        "base_percentage": 30,
+        "modifiers": {
+            "intelligence": 15,
+            "dexterity": 15,
+            "constitution": 5,
+            "insanity": 10,
+            "charisma": 0,
+            "strength": 20
+        },
+        "min_lvl": 70,
+        "profiles": []
+    },
+    {
+        "name": "Eclipse Blade",
+        "description": "A sword that channels the power of eclipses, granting increased critical strike chance.",
+        "type": "weapon",
+        "image": "/images/equipment/uniques/weapons/swords/sword_11.png",
+        "value": 7000,
+        "damage": "3D8+14",
+        "base_percentage": 25,
+        "modifiers": {
+            "intelligence": 10,
+            "dexterity": 20,
+            "constitution": 10,
+            "insanity": 5,
+            "charisma": 5,
+            "strength": 20
+        },
+        "min_lvl": 70,
+        "profiles": []
+    },
+    {
+        "name": "Abyssal Talon",
+        "description": "A sword forged in the abyss, dealing shadow damage and striking fear into enemies.",
+        "type": "weapon",
+        "image": "/images/equipment/uniques/weapons/swords/sword_12.png",
+        "value": 7200,
+        "damage": "6D6+8",
+        "base_percentage": 30,
+        "modifiers": {
+            "intelligence": 20,
+            "dexterity": 0,
+            "constitution": 15,
+            "insanity": 15,
+            "charisma": -10,
+            "strength": 25
+        },
+        "min_lvl": 70,
+        "profiles": []
+    },
+    {
+        "name": "Phoenix's Ember",
+        "description": "A sword that burns with the eternal flames of a phoenix, causing fiery devastation.",
+        "type": "weapon",
+        "image": "/images/equipment/uniques/weapons/swords/sword_13.png",
+        "value": 7400,
+        "damage": "4D8+16",
+        "base_percentage": 30,
+        "modifiers": {
+            "intelligence": 0,
+            "dexterity": 10,
+            "constitution": 20,
+            "insanity": 10,
+            "charisma": 10,
+            "strength": 30
+        },
+        "min_lvl": 70,
+        "profiles": []
+    },
+    {
+        "name": "Temporal Slice",
+        "description": "A sword that can slice through the fabric of time, dealing extra damage to temporal anomalies.",
+        "type": "weapon",
+        "image": "/images/equipment/uniques/weapons/swords/sword_14.png",
+        "value": 7600,
+        "damage": "5D8+14",
+        "base_percentage": 25,
+        "modifiers": {
+            "intelligence": 15,
+            "dexterity": 15,
+            "constitution": 5,
+            "insanity": 10,
+            "charisma": 10,
+            "strength": 20
+        },
+        "min_lvl": 70,
+        "profiles": []
+    }
+]

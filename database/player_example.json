@@ -1,18 +1,494 @@
-
 {
-    "name": "Avarus MAgickus",
-    "email": "trym@gmail.com",
-    "avatar": "./images/xxx.jpg",
-    "profile": "6687c31b7a5ce485a0eed476",
-    "equipment": {"armor": "668bca105319ea9afdff06f5",
-                  "weapon": "668bca105319ea9afdff0716",
-                  "artifact": "668bca125319ea9afdff0744",
-                  "antidote_potion":"668bca125319ea9afdff0761",
-                  "healing_potion": "668bca125319ea9afdff0750",
-                  "enhancer_potion":"668bca135319ea9afdff076b"
-                }
- 
- 
-
- 
- }
+  "_id": "66a4e701b9f9903f8d8ad2c6",
+  "name": "Oskar Calvo",
+  "nickname": "Mortimer",
+  "email": "vocoder12@gmail.com",
+  "avatar": "https://lh3.googleusercontent.com/a/ACg8ocJXSt_uHvH43jRmzSroP6ZGRm1nT2Z-6AtB8Ww-A3R72oI0TXNx=s96-c",
+  "level": 100,
+  "experience": 32500,
+  "is_active": true,
+  "profile": null,
+  "equipment": {
+    "helmet": {
+      "_id": "",
+      "name": "Warlord's Aegis",
+      "description": "A helmet worn by the greatest warlords in history.",
+      "type": "helmet",
+      "image": "/images/equipment/uniques/helmets/helmet_4.png",
+      "value": 2600,
+      "defense": 180,
+      "modifiers": {
+          "intelligence": 12,
+          "dexterity": 12,
+          "constitution": 25,
+          "insanity": 12,
+          "charisma": -3,
+          "strength": 35
+      },
+      "min_lvl": 60
+    },
+    "weapon": {
+      "_id": "668bca105319ea9afdff0716",
+      "name": "Blade of Eternal Flame",
+      "description": "Forged in the heart of a volcano, this sword burns with an undying fire. ",
+      "type": "weapon",
+      "image": "/images/equipment/uniques/weapons/swords/sword_2.png",
+      "value": 1000,
+      "modifiers": {
+        "intelligence": 30,
+        "dexterity": 30,
+        "constitution": 30,
+        "insanity": 30,
+        "charisma": 30,
+        "strength": 30
+      },
+      "damage": "2D10+3",
+      "base_percentage": 5,
+      "min_lvl": 90,
+      "profiles": [],
+      "__v": 0
+    },
+    "armor": {
+      "_id": "668bca105319ea9afdff06f1",
+      "name": "Celestial Armor of the Archmage",
+      "description": "Woven with threads of starlight, this robe grants the wearer unparalleled magical power and wisdom.",
+      "type": "armor",
+      "image": "/images/equipment/uniques/armors/armor_1.png",
+      "value": 10000,
+      "modifiers": {
+        "intelligence": 50,
+        "dexterity": 50,
+        "constitution": 50,
+        "insanity": 25,
+        "charisma": 50,
+        "strength": 50
+      },
+      "min_lvl": 60,
+      "profiles": []
+    },
+    "shield": {
+      "_id": "",
+      "name": "Abyssal Protector",
+      "description": "A shield forged in the depths of the abyss, offering dark and powerful protection.",
+      "type": "shield",
+      "image": "/images/equipment/uniques/shields/shield_11.png",
+      "value": 6000,
+      "defense": 500,
+      "modifiers": {
+          "intelligence": 10,
+          "dexterity": 5,
+          "constitution": 55,
+          "insanity": 10,
+          "charisma": 5,
+          "strength": 35
+      },
+      "min_lvl": 60
+    },
+    "artifact": {
+      "_id": "",
+      "name": "Amulet of the Phoenix's Flight",
+      "description": "An amulet that grants the wearer the ability to move swiftly and evade attacks, inspired by the phoenix's grace.",
+      "type": "artifact",
+      "image": "/images/equipment/artifacts/artifact_12.png",
+      "value": 34000,
+      "modifiers": {
+          "intelligence": 10,
+          "dexterity": 20,
+          "constitution": 10,
+          "insanity": 0,
+          "charisma": 5,
+          "strength": 15
+      },
+      "min_lvl": 70,
+      "profiles": []
+    },
+    "boot": {
+      "_id": "",
+      "name": "Arcane Warrior's Boots",
+      "description": "Boots enchanted with powerful arcane spells, offering both protection and agility.",
+      "type": "boot",
+      "image": "/images/equipment/uniques/boots/boot_10.png",
+      "value": 3800,
+      "defense": 190,
+      "modifiers": {
+          "intelligence": 10,
+          "dexterity": 12,
+          "constitution": 30,
+          "insanity": 5,
+          "charisma": 0,
+          "strength": 28
+      },
+      "min_lvl": 60
+    },
+    "ring": {
+      "_id": "",
+      "name": "Ring of the Stormbringer",
+      "description": "A ring that channels the energy of storms, increasing the wearer's speed and attack power.",
+      "type": "ring",
+      "image": "/images/equipment/rings/ring_1.png",
+      "value": 36000,
+      "modifiers": {
+          "intelligence": 15,
+          "dexterity": 20,
+          "constitution": 10,
+          "insanity": 5,
+          "charisma": 10,
+          "strength": 20
+      },
+      "min_lvl": 85,
+      "profiles": []
+    },
+    "antidote_potion": {
+      "_id": "668bca125319ea9afdff0764",
+      "name": "Mind's Ease Elixir",
+      "description": "A cooling elixir brewed from the leaves of the Frostmind plant, alleviating migraines and clearing hallucinations.",
+      "type": "antidote",
+      "image": "/images/equipment/potions/antidote/antidote_3.png",
+      "value": 10,
+      "recovery_effect": {
+        "_id": "668bca125319ea9afdff0759",
+        "name": "Essence of Restoration",
+        "description": "The Essence of Restoration is a potent elixir that accelerates healing and revitalizes the body.",
+        "type": "healing",
+        "modifiers": {
+          "hit_points": 70,
+          "intelligence": -15,
+          "dexterity": 0,
+          "constitution": 0,
+          "insanity": 0,
+          "charisma": 0,
+          "strength": 0
+        }
+      },
+      "min_lvl": 20,
+      "profiles": []
+    },
+    "healing_potion": {
+      "_id": "668bca125319ea9afdff0759",
+      "name": "Essence of Restoration",
+      "description": "The Essence of Restoration is a potent elixir that accelerates healing and revitalizes the body.",
+      "type": "healing",
+      "image": "/images/equipment/potions/healing/healing_3.png",
+      "value": 10,
+      "modifiers": {
+        "hit_points": 70,
+        "intelligence": -15,
+        "dexterity": 0,
+        "constitution": 0,
+        "insanity": 0,
+        "charisma": 0,
+        "strength": 0
+      },
+      "min_lvl": 10,
+      "profiles": []
+    },
+    "enhancer_potion": {
+      "_id": "668bca125319ea9afdff0767",
+      "name": "Potion of Increase Strength",
+      "description": "This robust elixir temporarily amplifies the drinker's physical power, significantly boosting muscle strength and stamina.\n\n\n",
+      "type": "enhancer",
+      "image": "/images/equipment/potions/enhancer/enhancer_1.png",
+      "value": 10,
+      "duration": 2,
+      "modifiers": {
+        "intelligence": 0,
+        "dexterity": 0,
+        "constitution": 0,
+        "insanity": 0,
+        "charisma": 0,
+        "strength": 20
+      },
+      "min_lvl": 5,
+      "profiles": []
+    }
+  },
+  "inventory": {
+    "helmets": [
+      {
+        "_id": "",
+        "name": "Infernal Visage",
+        "description": "A helmet forged in the fires of the underworld.",
+        "type": "helmet",
+        "image": "/images/equipment/uniques/helmets/helmet_2.png",
+        "value": 2200,
+        "defense": 160,
+        "modifiers": {
+            "intelligence": 15,
+            "dexterity": 10,
+            "constitution": 15,
+            "insanity": 20,
+            "charisma": -5,
+            "strength": 30
+        },
+        "min_lvl": 60
+      },
+      {
+        "_id": "",
+        "name": "Celestial Helm",
+        "description": "A helmet infused with the light of celestial beings.",
+        "type": "helmet",
+        "image": "/images/equipment/uniques/helmets/helmet_3.png",
+        "value": 2400,
+        "defense": 170,
+        "modifiers": {
+            "intelligence": 20,
+            "dexterity": 8,
+            "constitution": 18,
+            "insanity": 10,
+            "charisma": 5,
+            "strength": 22
+        },
+        "min_lvl": 60
+      }
+    ],
+    "weapons": [
+      {
+        "_id": "",
+        "name": "Dragon's Fury",
+        "description": "A sword forged from the scales of an ancient dragon, radiating fiery power.",
+        "type": "weapon",
+        "image": "/images/equipment/uniques/weapons/swords/sword_1.png",
+        "value": 5000,
+        "damage": "4D6+8",
+        "base_percentage": 25,
+        "modifiers": {
+            "intelligence": 0,
+            "dexterity": 5,
+            "constitution": 10,
+            "insanity": 12,
+            "charisma": 0,
+            "strength": 20
+        },
+        "min_lvl": 70,
+        "profiles": []
+      }
+    ],
+    "armors": [
+      {
+        "_id": "",
+        "name": "Helm of the Eternal Flame",
+        "description": "A helmet that burns with an eternal, magical flame.",
+        "type": "armor",
+        "image": "/images/equipment/uniques/armors/armor_10.png",
+        "value": 6800,
+        "defense": 440,
+        "modifiers": {
+            "intelligence": 10,
+            "dexterity": 5,
+            "constitution": 50,
+            "insanity": 5,
+            "charisma": -2,
+            "strength": 55
+        },
+        "min_lvl": 60
+      },
+      {
+        "_id": "",
+        "name": "Celestial Guardian Armor",
+        "description": "Armor blessed by celestial beings, offering divine protection.",
+        "type": "armor",
+        "image": "/images/equipment/uniques/armors/armor_11.png",
+        "value": 7000,
+        "defense": 450,
+        "modifiers": {
+            "intelligence": 12,
+            "dexterity": 10,
+            "constitution": 55,
+            "insanity": 0,
+            "charisma": 5,
+            "strength": 50
+        },
+        "min_lvl": 60
+      }
+    ],
+    "shields": [
+      {
+        "_id": "",
+        "name": "Frostbound Shield",
+        "description": "A shield crafted from enchanted ice, offering protection and resistance to cold.",
+        "type": "shield",
+        "image": "/images/equipment/uniques/shields/shield_9.png",
+        "value": 5600,
+        "defense": 460,
+        "modifiers": {
+            "intelligence": 10,
+            "dexterity": 10,
+            "constitution": 50,
+            "insanity": 0,
+            "charisma": 7,
+            "strength": 25
+        },
+        "min_lvl": 60
+      },
+      {
+        "_id": "",
+        "name": "Earthshaker Shield",
+        "description": "A shield that trembles with the power of the earth, providing unparalleled defense.",
+        "type": "shield",
+        "image": "/images/equipment/uniques/shields/shield_10.png",
+        "value": 5800,
+        "defense": 480,
+        "modifiers": {
+            "intelligence": 5,
+            "dexterity": 5,
+            "constitution": 60,
+            "insanity": 0,
+            "charisma": 5,
+            "strength": 30
+        },
+        "min_lvl": 60
+     }
+    ],
+    "artifacts": [
+      {
+        "_id": "",
+        "name": "Amulet of the Iron Heart",
+        "description": "This amulet fortifies the wearer's heart, boosting their resistance to physical and magical attacks.",
+        "type": "artifact",
+        "image": "/images/equipment/artifacts/artifact_13.png",
+        "value": 36000,
+        "modifiers": {
+            "intelligence": 5,
+            "dexterity": 5,
+            "constitution": 25,
+            "insanity": 0,
+            "charisma": 10,
+            "strength": 10
+        },
+        "min_lvl": 75,
+        "profiles": []
+      },
+      {
+        "_id": "",
+        "name": "Amulet of the Astral Traveler",
+        "description": "An amulet that allows the wearer to traverse between realms, increasing their overall resilience and insight.",
+        "type": "artifact",
+        "image": "/images/equipment/artifacts/artifact_14.png",
+        "value": 38000,
+        "modifiers": {
+            "intelligence": 15,
+            "dexterity": 10,
+            "constitution": 20,
+            "insanity": 10,
+            "charisma": 10,
+            "strength": 15
+        },
+        "min_lvl": 80,
+        "profiles": []
+      }
+    ],
+    "boots": [
+      {
+        "_id": "",
+        "name": "Abyssal Greaves",
+        "description": "Boots forged from the deepest abyss, offering unmatched protection and strength.",
+        "type": "boot",
+        "image": "/images/equipment/uniques/boots/boot_8.png",
+        "value": 3400,
+        "defense": 170,
+        "modifiers": {
+            "intelligence": 5,
+            "dexterity": 10,
+            "constitution": 35,
+            "insanity": 5,
+            "charisma": -2,
+            "strength": 32
+        },
+        "min_lvl": 60
+      },
+      {
+        "_id": "",
+        "name": "Titan's Steps",
+        "description": "Boots that grant the wearer the power and protection of a titan.",
+        "type": "boot",
+        "image": "/images/equipment/uniques/boots/boot_9.png",
+        "value": 3600,
+        "defense": 180,
+        "modifiers": {
+            "intelligence": 0,
+            "dexterity": 10,
+            "constitution": 40,
+            "insanity": 0,
+            "charisma": 3,
+            "strength": 35
+        },
+        "min_lvl": 60
+      }
+    ],
+    "rings": [],
+    "antidote_potions": [
+      {
+        "_id": "668bca125319ea9afdff0761",
+        "name": "Etherbind Tonic",
+        "description": "A mystical tonic made from binding agents and ethereal dust, anchoring the afflicted back to the material plane.",
+        "type": "antidote",
+        "image": "/images/equipment/potions/antidote/antidote_2.png",
+        "value": 10,
+        "recovery_effect": {
+          "_id": "668bca125319ea9afdff0759",
+          "name": "Essence of Restoration",
+          "description": "The Essence of Restoration is a potent elixir that accelerates healing and revitalizes the body.",
+          "type": "healing",
+          "modifiers": {
+            "hit_points": 70,
+            "intelligence": -15,
+            "dexterity": 0,
+            "constitution": 0,
+            "insanity": 0,
+            "charisma": 0,
+            "strength": 0
+          }
+        },
+        "min_lvl": 5,
+        "profiles": []
+      }
+    ],
+    "healing_potions": [
+      {
+        "_id": "668bca125319ea9afdff0750",
+        "name": "Elixir of Vitality",
+        "description": "A rejuvenating potion that restores vigor and vitality to the drinker.",
+        "type": "healing",
+        "image": "/images/equipment/potions/healing/healing_1.png",
+        "value": 10,
+        "modifiers": {
+          "hit_points": 20,
+          "intelligence": 0,
+          "dexterity": 0,
+          "constitution": 0,
+          "insanity": 0,
+          "charisma": 0,
+          "strength": 0
+        },
+        "min_lvl": 15,
+        "profiles": []
+      }
+    ],
+    "enhancer_potions": [
+      {
+        "_id": "668bca125319ea9afdff0767",
+        "name": "Potion of Increase Strength",
+        "description": "This robust elixir temporarily amplifies the drinker's physical power, significantly boosting muscle strength and stamina.",
+        "type": "enhancer",
+        "image": "/images/equipment/potions/enhancer/enhancer_1.png",
+        "value": 10,
+        "duration": 2,
+        "modifiers": {
+          "intelligence": 0,
+          "dexterity": 0,
+          "constitution": 0,
+          "insanity": 0,
+          "charisma": 0,
+          "strength": 20
+        },
+        "min_lvl": 20,
+        "profiles": []
+      }
+    ]
+  },
+  "tasks": [],
+  "gold": 32589,
+  "created_date": {
+    "$date": "2024-07-27T12:24:33.993Z"
+  }
+}

@@ -17,7 +17,7 @@
   },
   "damage": "2D10+3",
   "base_percentage": 5,
-  "min_level": 1,
+  "min_lvl": 1,
   "profiles": [
     {
       "$oid": "6687c31b7a5ce485a0eed476"
@@ -65,7 +65,7 @@
     "charisma": 0,
     "strength": -3
   },
-  "min_level": 1,
+  "min_lvl": 1,
   "profiles": [
     {
       "$oid": "6687c31b7a5ce485a0eed476"
@@ -113,7 +113,7 @@
     "charisma": 0,
     "strength": 0
   },
-  "min_level": 1,
+  "min_lvl": 1,
   "profiles": [
     {
       "$oid": "6687c31b7a5ce485a0eed476"
@@ -139,7 +139,7 @@
     "charisma": -1,
     "strength": 0
   },
-  "min_level": 1,
+  "min_lvl": 1,
   "profiles": [
     {
       "$oid": "6687c31b7a5ce485a0eed477"
@@ -166,7 +166,7 @@
     "charisma": -6,
     "strength": 0
   },
-  "min_level": 1,
+  "min_lvl": 1,
   "profiles": [
     {
       "$oid": "6687c31b7a5ce485a0eed478"
@@ -194,7 +194,7 @@
     "charisma": -2,
     "strength": 0
   },
-  "min_level": 1,
+  "min_lvl": 1,
   "profiles": [
     {
       "$oid": "6687c31b7a5ce485a0eed479"
@@ -220,7 +220,7 @@
     "charisma": -1,
     "strength": 0
   },
-  "min_level": 1,
+  "min_lvl": 1,
   "profiles": [
     {
       "$oid": "6687c31b7a5ce485a0eed47a"
@@ -247,7 +247,7 @@
     "charisma": -5,
     "strength": 0
   },
-  "min_level": 1,
+  "min_lvl": 1,
   "profiles": [
     {
       "$oid": "6687c31b7a5ce485a0eed47b"
@@ -274,7 +274,7 @@
     "charisma": -3,
     "strength": 0
   },
-  "min_level": 1,
+  "min_lvl": 1,
   "profiles": [
     {
       "$oid": "6687c31b7a5ce485a0eed47c"
@@ -301,7 +301,7 @@
     "charisma": -4,
     "strength": 0
   },
-  "min_level": 1,
+  "min_lvl": 1,
   "profiles": [
     {
       "$oid": "6687c31b7a5ce485a0eed47d"
