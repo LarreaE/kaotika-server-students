@@ -94,7 +94,7 @@ const createNewPlayer = async (req, res) => {
 
   const newPlayer = body;
   console.log("Body data received")
-  console.log(newPlayer);
+  //console.log(newPlayer);
 
   try {
     const createdPlayer = await playerService.createNewPlayer(newPlayer);

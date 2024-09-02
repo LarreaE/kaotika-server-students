@@ -17,13 +17,13 @@ const playerSchema = new Schema({
   is_active: {type: Boolean, default: true},
   profile: {type: Schema.Types.ObjectId, ref: "Profile"},
   equipment: {
-    helmet: {type: Schema.Types.ObjectId, ref: "Helmet"},
+    helmet: {type: Schema.Types.ObjectId, ref: "Helmet", default: null}, 
     weapon: {type: Schema.Types.ObjectId, ref: "Weapon"},
     armor: {type: Schema.Types.ObjectId, ref: "Armor"},
-    shield: {type: Schema.Types.ObjectId, ref: "Shield"},
+    shield: {type: Schema.Types.ObjectId, ref: "Shield", default: null},
     artifact: {type: Schema.Types.ObjectId, ref: "Artifact"},
-    boot: {type: Schema.Types.ObjectId, ref: "Boot"},
-    ring: {type: Schema.Types.ObjectId, ref: "Ring"},
+    boot: {type: Schema.Types.ObjectId, ref: "Boot", default: null},
+    ring: {type: Schema.Types.ObjectId, ref: "Ring", default: null},
     antidote_potion: {type: Schema.Types.ObjectId, ref: "PotionAntidote"},
     healing_potion: {type: Schema.Types.ObjectId, ref: "PotionHealing"},
     enhancer_potion: {type: Schema.Types.ObjectId, ref: "PotionEnhancer"}
@@ -40,7 +40,7 @@ const playerSchema = new Schema({
     healing_potion: [{type: Schema.Types.ObjectId, ref: "PotionHealing"}],
     enhancer_potion: [{type: Schema.Types.ObjectId, ref: "PotionEnhancer"}]
   },
-  tasks: { type:[String], default: null },
+  tasks: [{ type:[String], default: null }],
   created_date: { type: Date, default: Date.now },
   gold: {type: Number, default:50}
 });

@@ -70,7 +70,6 @@ const createNewPlayer = async (newPlayer) => {
 
         const completePlayer = populatePlayer(createdPlayer);
 
-
         return completePlayer;
     } 
     catch (error) 
