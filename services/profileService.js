@@ -83,9 +83,27 @@ const getAllProfiles = async () => {
     }
 };
 
+const getProfileById = async (id) => { 
+    try
+    {
+
+
+        //console.log("Entra");
+        const profile = await Profile.findById(id).exec();  
+
+
+        return profile;
+    }
+    catch (error) 
+    {
+        throw error;
+    }
+
+};
 
 module.exports = {
-    getAllProfiles
+    getAllProfiles,
+    getProfileById
     
 }
 

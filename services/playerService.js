@@ -68,12 +68,26 @@ const getOnePlayer = async (playerId) => {
 const createNewPlayer = async (newPlayer) => {
     try 
     {
-        
-        let playerToInsert = new Player(newPlayer);
-        const createdPlayer = await playerToInsert.save();   
+        const profile = await profileService.getProfileById(newPlayer.profile);
 
-        //console.log("Created and saved player");
-        //console.log(createdPlayer);
+
+        const attributes = {
+            intelligence:   profile.attributes[0].value,
+            dexterity:      profile.attributes[1].value,
+            insanity:       profile.attributes[2].value,
+            charisma:       profile.attributes[3].value,
+            constitution:   profile.attributes[4].value,
+            strength:       profile.attributes[5].value
+
+        }
+
+        newPlayer = {...newPlayer, attributes: attributes};
+        let playerToInsert = new Player(newPlayer);
+
+
+        console.log(playerToInsert);
+
+        const createdPlayer = await playerToInsert.save(); 
 
         
 
@@ -88,9 +102,11 @@ const createNewPlayer = async (newPlayer) => {
 
 const populatePlayer = async (createdPlayer) => {
 
+
+
     console.log("populateFunction");
     const playerPopulated = await Player.findById(createdPlayer._id).populate('profile').exec();
-    //console.log(playerPopulated);
+    console.log(playerPopulated);
 
     await playerPopulated.equipment.populate('armor', {'profiles': 0});
     await playerPopulated.equipment.populate('weapon', {'profiles': 0});

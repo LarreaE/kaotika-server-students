@@ -16,6 +16,14 @@ const playerSchema = new Schema({
   experience: {type: Number, default: 0},
   is_active: {type: Boolean, default: true},
   profile: {type: Schema.Types.ObjectId, ref: "Profile"},
+  attributes: {
+    intelligence: Number,
+    dexterity: Number,
+    insanity: Number,
+    charisma: Number,
+    constitution: Number,
+    strength: Number
+  },
   equipment: {
     helmet: {type: Schema.Types.ObjectId, ref: "Helmet", default: null}, 
     weapon: {type: Schema.Types.ObjectId, ref: "Weapon"},
