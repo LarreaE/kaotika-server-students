@@ -32,18 +32,16 @@ const getPlayerByEmail = async (req, res) => {
 
   try {
     const data = await playerService.getPlayerByEmail(email);
-
-    //console.log(data);
     
     //La consulta devuelve un array
-    if (data.player.length === 0) {
+    if (data.message === "NO PLAYER") {
       return res
       .status(404)
       .send({ status: "NOT FOUND", 
               data: data/*{ error:  `Can't find player with the email '${email}'`} */});
     }
 
-    return res.send({ status: "OK", data: data });
+    return res.send({ status: "OK", data: data.createdPlayer});
 
   } catch (error) {
     res

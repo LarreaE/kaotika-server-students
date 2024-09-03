@@ -29,15 +29,22 @@ const getAllPlayers = async () => {
 const getPlayerByEmail = async (email) => { 
     try
     {
+
+        //console.log("Entra");
         const player = await Player.find({email}).exec();  
         if (player.length === 0)   
         {
             //Obtenemos todas las clases y devolvemos el array con ellas
             const profiles = await profileService.getAllProfiles();
-            return { player, profiles };
+            return { message: "NO PLAYER", profiles };
         }
 
-        return {player};
+        //console.log(player);
+        const createdPlayer = await populatePlayer(player[0]);
+        //console.log(createdPlayer);
+
+        //console.log("Devolvemos player creado populado")
+        return { message: "PLAYER OK", createdPlayer };
     }
     catch (error) 
     {
@@ -68,9 +75,9 @@ const createNewPlayer = async (newPlayer) => {
         //console.log("Created and saved player");
         //console.log(createdPlayer);
 
-        const completePlayer = populatePlayer(createdPlayer);
+        
 
-        return completePlayer;
+        return createdPlayer;
     } 
     catch (error) 
     {
@@ -83,7 +90,7 @@ const populatePlayer = async (createdPlayer) => {
 
     console.log("populateFunction");
     const playerPopulated = await Player.findById(createdPlayer._id).populate('profile').exec();
-    console.log(playerPopulated);
+    //console.log(playerPopulated);
 
     await playerPopulated.equipment.populate('armor', {'profiles': 0});
     await playerPopulated.equipment.populate('weapon', {'profiles': 0});
