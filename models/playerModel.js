@@ -29,16 +29,16 @@ const playerSchema = new Schema({
     enhancer_potion: {type: Schema.Types.ObjectId, ref: "PotionEnhancer"}
     },
   inventory: {
-    helmet: [{type: Schema.Types.ObjectId, ref: "Helmet"}],
-    weapon: [{type: Schema.Types.ObjectId, ref: "Weapon"}],
-    armor: [{type: Schema.Types.ObjectId, ref: "Armor"}],
-    shield: [{type: Schema.Types.ObjectId, ref: "Shield"}],
-    artifact: [{type: Schema.Types.ObjectId, ref: "Artifact"}],
-    boot: [{type: Schema.Types.ObjectId, ref: "Boot"}],
-    ring: [{type: Schema.Types.ObjectId, ref: "Ring"}],
-    antidote_potion: [{type: Schema.Types.ObjectId, ref: "PotionAntidote"}],
-    healing_potion: [{type: Schema.Types.ObjectId, ref: "PotionHealing"}],
-    enhancer_potion: [{type: Schema.Types.ObjectId, ref: "PotionEnhancer"}]
+    helmets: [{type: Schema.Types.ObjectId, ref: "Helmet"}],
+    weapons: [{type: Schema.Types.ObjectId, ref: "Weapon"}],
+    armors: [{type: Schema.Types.ObjectId, ref: "Armor"}],
+    shields: [{type: Schema.Types.ObjectId, ref: "Shield"}],
+    artifacts: [{type: Schema.Types.ObjectId, ref: "Artifact"}],
+    boots: [{type: Schema.Types.ObjectId, ref: "Boot"}],
+    rings: [{type: Schema.Types.ObjectId, ref: "Ring"}],
+    antidote_potions: [{type: Schema.Types.ObjectId, ref: "PotionAntidote"}],
+    healing_potions: [{type: Schema.Types.ObjectId, ref: "PotionHealing"}],
+    enhancer_potions: [{type: Schema.Types.ObjectId, ref: "PotionEnhancer"}]
   },
   tasks: [{ type:[String], default: null }],
   created_date: { type: Date, default: Date.now },
