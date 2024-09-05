@@ -26,13 +26,13 @@ const playerSchema = new Schema({
     strength: Number
   },
   equipment: {
-    helmet: {type: Schema.Types.ObjectId, ref: "Helmet", default: null}, 
+    helmet: {type: Schema.Types.ObjectId, ref: "Helmet", default: "66d99aac7518eb4990035363"}, 
     weapon: {type: Schema.Types.ObjectId, ref: "Weapon"},
     armor: {type: Schema.Types.ObjectId, ref: "Armor"},
-    shield: {type: Schema.Types.ObjectId, ref: "Shield", default: null},
+    shield: {type: Schema.Types.ObjectId, ref: "Shield", default: "66c214bfc8130114eead2906"},
     artifact: {type: Schema.Types.ObjectId, ref: "Artifact"},
-    boot: {type: Schema.Types.ObjectId, ref: "Boot", default: null},
-    ring: {type: Schema.Types.ObjectId, ref: "Ring", default: null},
+    boot: {type: Schema.Types.ObjectId, ref: "Boot", default: "66d99a807518eb499003535f"},
+    ring: {type: Schema.Types.ObjectId, ref: "Ring", default: "66a6d6c8dfbffe7e6503970f"},
     antidote_potion: {type: Schema.Types.ObjectId, ref: "PotionAntidote"},
     healing_potion: {type: Schema.Types.ObjectId, ref: "PotionHealing"},
     enhancer_potion: {type: Schema.Types.ObjectId, ref: "PotionEnhancer"}

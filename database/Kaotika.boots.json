@@ -1,0 +1,19 @@
+[
+    {
+        "name": "Titan's Footfall",
+        "description": "Heavy boots crafted from titan bones, offering immense strength and protection.",
+        "type": "boot",
+        "image": "/images/equipment/uniques/boots/boot_1.png",
+        "value": 5,
+        "defense": 4,
+        "modifiers": {
+            "intelligence": 0,
+            "dexterity": 0,
+            "constitution": 0,
+            "insanity": 0,
+            "charisma": 0,
+            "strength": 0
+        },
+        "min_lvl": 1
+    }
+]

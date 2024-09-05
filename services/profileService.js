@@ -6,6 +6,10 @@ const Artifact = require('../models/artifactModel');
 const PotionHealing = require('../models/potionHealingModel');
 const PotionAntidote = require('../models/potionAntidoteModel');
 const PotionEnhancer = require('../models/potionEnhancerModel');
+const Helmet = require('../models/helmetModel');
+const Boot = require('../models/bootModel');
+const Shield = require('../models/shieldModel');
+const Ring = require('../models/ringModel');
 
 
 
@@ -22,6 +26,8 @@ const getAllProfiles = async () => {
         const allAntidotes = (await PotionAntidote.find().populate('recovery_effect').exec()).slice(0,3);
         const allEnhancerPotions = (await PotionEnhancer.find().exec()).slice(0,3);
 
+        
+        
 
         //console.log(`Num armaduras: + ${allWeapons.length}`);
     
@@ -42,8 +48,6 @@ const getAllProfiles = async () => {
             const armors = allArmors.filter(item => 
                 item.profiles.some(id => id.equals(profileId))
             );
-
-            
 
             const healingPotions = allHealingPotions.filter(item => 
                 item.profiles.some(id => id.equals(profileId))
@@ -69,6 +73,8 @@ const getAllProfiles = async () => {
                                 healing_potions: healingPotions, 
                                 antidote_potions: antidotePotions,
                                 enhancer_potions: enhancerPotions
+                                
+
                 }
             }
 

@@ -1,0 +1,620 @@
+[{
+  "_id": {
+    "$oid": "66c214bfc8130114eead2906"
+  },
+  "name": "Shield of the Ember Ward",
+  "description": "A shield that protects the bearer from fire and enhances their resistance to heat-based attacks.",
+  "type": "shield",
+  "image": "/images/equipment/shields/shield_1.png",
+  "value": 10,
+  "defense": 5,
+  "modifiers": {
+    "intelligence": 0,
+    "dexterity": 0,
+    "constitution": 0,
+    "insanity": 0,
+    "charisma": 0,
+    "strength": 0
+  },
+  "min_lvl": 1
+},
+{
+  "_id": {
+    "$oid": "66c214bfc8130114eead2907"
+  },
+  "name": "Aegis of the Fallen Knight",
+  "description": "A once-proud shield that still retains the courage and strength of the knight who bore it.",
+  "type": "shield",
+  "image": "/images/equipment/shields/shield_2.png",
+  "value": 20,
+  "defense": 15,
+  "modifiers": {
+    "intelligence": 0,
+    "dexterity": 0,
+    "constitution": 8,
+    "insanity": 0,
+    "charisma": 2,
+    "strength": 4
+  },
+  "min_lvl": 12
+},
+{
+  "_id": {
+    "$oid": "66c214bfc8130114eead2908"
+  },
+  "name": "Bulwark of the Eternal Guardian",
+  "description": "A shield that never tires, constantly standing between its bearer and harm.",
+  "type": "shield",
+  "image": "/images/equipment/shields/shield_3.png",
+  "value": 16,
+  "defense": 14,
+  "modifiers": {
+    "intelligence": 0,
+    "dexterity": 2,
+    "constitution": 10,
+    "insanity": 3,
+    "charisma": 0,
+    "strength": 2
+  },
+  "min_lvl": 15
+},
+{
+  "_id": {
+    "$oid": "66c214bfc8130114eead2909"
+  },
+  "name": "Ward of the Thunderlord",
+  "description": "This shield crackles with latent lightning energy, enhancing the bearer's reflexes and fortitude.",
+  "type": "shield",
+  "image": "/images/equipment/shields/shield_4.png",
+  "value": 17,
+  "defense": 13,
+  "modifiers": {
+    "intelligence": 0,
+    "dexterity": 3,
+    "constitution": 7,
+    "insanity": 2,
+    "charisma": 0,
+    "strength": 5
+  },
+  "min_lvl": 18
+},
+{
+  "_id": {
+    "$oid": "66c214bfc8130114eead290a"
+  },
+  "name": "Shield of Frostbound Resolve",
+  "description": "A shield imbued with the essence of frost, protecting its bearer from cold-based attacks.",
+  "type": "shield",
+  "image": "/images/equipment/shields/shield_5.png",
+  "value": 15,
+  "defense": 11,
+  "modifiers": {
+    "intelligence": 0,
+    "dexterity": 0,
+    "constitution": 6,
+    "insanity": 0,
+    "charisma": 0,
+    "strength": 4
+  },
+  "min_lvl": 14
+},
+{
+  "_id": {
+    "$oid": "66c214bfc8130114eead290b"
+  },
+  "name": "Defender of the Lost Realm",
+  "description": "A legendary shield said to have protected the last king of a fallen empire.",
+  "type": "shield",
+  "image": "/images/equipment/shields/shield_6.png",
+  "value": 19,
+  "defense": 16,
+  "modifiers": {
+    "intelligence": 2,
+    "dexterity": 0,
+    "constitution": 9,
+    "insanity": 1,
+    "charisma": 0,
+    "strength": 5
+  },
+  "min_lvl": 20
+},
+{
+  "_id": {
+    "$oid": "66c214bfc8130114eead290c"
+  },
+  "name": "Aegis of the Sun",
+  "description": "This shield radiates warmth and light, providing its bearer with increased vitality and resilience.",
+  "type": "shield",
+  "image": "/images/equipment/shields/shield_7.png",
+  "value": 20,
+  "defense": 17,
+  "modifiers": {
+    "intelligence": 0,
+    "dexterity": 1,
+    "constitution": 10,
+    "insanity": 0,
+    "charisma": 5,
+    "strength": 4
+  },
+  "min_lvl": 22
+},
+{
+  "_id": {
+    "$oid": "66c214bfc8130114eead290d"
+  },
+  "name": "Shield of the Earthshaker",
+  "description": "Forged from the strongest stone, this shield grants its bearer unmatched stability and strength.",
+  "type": "shield",
+  "image": "/images/equipment/shields/shield_8.png",
+  "value": 17,
+  "defense": 15,
+  "modifiers": {
+    "intelligence": 0,
+    "dexterity": 0,
+    "constitution": 12,
+    "insanity": 0,
+    "charisma": 0,
+    "strength": 6
+  },
+  "min_lvl": 25
+},
+{
+  "_id": {
+    "$oid": "66c214bfc8130114eead290e"
+  },
+  "name": "Guardian of the Ancient Forest",
+  "description": "A shield made from sacred wood, protecting its bearer with the power of nature.",
+  "type": "shield",
+  "image": "/images/equipment/shields/shield_9.png",
+  "value": 15,
+  "defense": 13,
+  "modifiers": {
+    "intelligence": 2,
+    "dexterity": 4,
+    "constitution": 8,
+    "insanity": 0,
+    "charisma": 0,
+    "strength": 3
+  },
+  "min_lvl": 18
+},
+{
+  "_id": {
+    "$oid": "66c214bfc8130114eead290f"
+  },
+  "name": "Shield of the Arcane Defender",
+  "description": "A mystical shield that enhances its bearer's magical defenses and increases focus.",
+  "type": "shield",
+  "image": "/images/equipment/shields/shield_10.png",
+  "value": 20,
+  "defense": 14,
+  "modifiers": {
+    "intelligence": 8,
+    "dexterity": 0,
+    "constitution": 7,
+    "insanity": 0,
+    "charisma": 0,
+    "strength": 0
+  },
+  "min_lvl": 28
+},
+{
+  "_id": {
+    "$oid": "66c214bfc8130114eead2910"
+  },
+  "name": "Bulwark of the Silvermoon",
+  "description": "A shield forged in the light of the silver moon, offering enhanced agility and protection.",
+  "type": "shield",
+  "image": "/images/equipment/shields/shield_11.png",
+  "value": 17,
+  "defense": 12,
+  "modifiers": {
+    "intelligence": 2,
+    "dexterity": 7,
+    "constitution": 5,
+    "insanity": 0,
+    "charisma": 0,
+    "strength": 0
+  },
+  "min_lvl": 15
+},
+{
+  "_id": {
+    "$oid": "66c214bfc8130114eead2911"
+  },
+  "name": "Ward of the Abyss",
+  "description": "A shield that channels the power of the abyss, providing protection against dark magic and corruption.",
+  "type": "shield",
+  "image": "/images/equipment/shields/shield_12.png",
+  "value": 18,
+  "defense": 13,
+  "modifiers": {
+    "intelligence": 5,
+    "dexterity": 0,
+    "constitution": 8,
+    "insanity": 3,
+    "charisma": 0,
+    "strength": 0
+  },
+  "min_lvl": 20
+},
+{
+  "_id": {
+    "$oid": "66c214bfc8130114eead2912"
+  },
+  "name": "Guardian of the Stormsea",
+  "description": "A shield blessed by the sea gods, offering protection against water-based attacks and increasing fortitude.",
+  "type": "shield",
+  "image": "/images/equipment/shields/shield_13.png",
+  "value": 16,
+  "defense": 11,
+  "modifiers": {
+    "intelligence": 0,
+    "dexterity": 0,
+    "constitution": 10,
+    "insanity": 0,
+    "charisma": 0,
+    "strength": 3
+  },
+  "min_lvl": 17
+},
+{
+  "_id": {
+    "$oid": "66c214bfc8130114eead2913"
+  },
+  "name": "Aegis of the Dawnwatcher",
+  "description": "A shield that captures the first light of dawn, offering enhanced protection and clarity of mind.",
+  "type": "shield",
+  "image": "/images/equipment/shields/shield_14.png",
+  "value": 19,
+  "defense": 14,
+  "modifiers": {
+    "intelligence": 3,
+    "dexterity": 0,
+    "constitution": 9,
+    "insanity": 0,
+    "charisma": 5,
+    "strength": 0
+  },
+  "min_lvl": 23
+},
+{
+  "_id": {
+    "$oid": "66c214bfc8130114eead2914"
+  },
+  "name": "Barrier of the Flameborn",
+  "description": "This shield glows with the embers of ancient flames, offering resistance to fire and boosting vitality.",
+  "type": "shield",
+  "image": "/images/equipment/shields/shield_15.png",
+  "value": 17,
+  "defense": 12,
+  "modifiers": {
+    "intelligence": 0,
+    "dexterity": 0,
+    "constitution": 10,
+    "insanity": 2,
+    "charisma": 0,
+    "strength": 2
+  },
+  "min_lvl": 19
+},
+{
+  "_id": {
+    "$oid": "66c214bfc8130114eead2915"
+  },
+  "name": "Shield of the Starcaller",
+  "description": "A shield that resonates with the power of the stars, providing its bearer with wisdom and enhanced reflexes.",
+  "type": "shield",
+  "image": "/images/equipment/shields/shield_16.png",
+  "value": 18,
+  "defense": 15,
+  "modifiers": {
+    "intelligence": 7,
+    "dexterity": 2,
+    "constitution": 5,
+    "insanity": 0,
+    "charisma": 0,
+    "strength": 0
+  },
+  "min_lvl": 25
+},
+{
+  "_id": {
+    "$oid": "66c214bfc8130114eead2916"
+  },
+  "name": "Protector of the Fallen Sun",
+  "description": "A shield crafted from ancient solar metal, offering resilience and strength in battle.",
+  "type": "shield",
+  "image": "/images/equipment/shields/shield_17.png",
+  "value": 20,
+  "defense": 17,
+  "modifiers": {
+    "intelligence": 0,
+    "dexterity": 0,
+    "constitution": 10,
+    "insanity": 1,
+    "charisma": 0,
+    "strength": 5
+  },
+  "min_lvl": 28
+},
+{
+  "_id": {
+    "$oid": "66c214bfc8130114eead2917"
+  },
+  "name": "Bulwark of the Eternal Flame",
+  "description": "A shield that burns with eternal fire, protecting its bearer from any harm while granting the power of the flame.",
+  "type": "shield",
+  "image": "/images/equipment/shields/shield_18.png",
+  "value": 19,
+  "defense": 14,
+  "modifiers": {
+    "intelligence": 0,
+    "dexterity": 0,
+    "constitution": 12,
+    "insanity": 2,
+    "charisma": 0,
+    "strength": 4
+  },
+  "min_lvl": 26
+},
+{
+  "_id": {
+    "$oid": "66c214bfc8130114eead2918"
+  },
+  "name": "Aegis of the Forgotten Depths",
+  "description": "A shield forged in the deepest parts of the earth, providing unmatched protection and stability.",
+  "type": "shield",
+  "image": "/images/equipment/shields/shield_19.png",
+  "value": 16,
+  "defense": 13,
+  "modifiers": {
+    "intelligence": 0,
+    "dexterity": 1,
+    "constitution": 11,
+    "insanity": 0,
+    "charisma": 0,
+    "strength": 3
+  },
+  "min_lvl": 20
+},
+{
+  "_id": {
+    "$oid": "66c214bfc8130114eead2919"
+  },
+  "name": "Ward of the Infinite Mind",
+  "description": "A shield that taps into the power of the mind, enhancing the bearer's intelligence and mental fortitude.",
+  "type": "shield",
+  "image": "/images/equipment/shields/shield_20.png",
+  "value": 17,
+  "defense": 12,
+  "modifiers": {
+    "intelligence": 10,
+    "dexterity": 0,
+    "constitution": 5,
+    "insanity": 4,
+    "charisma": 0,
+    "strength": 0
+  },
+  "min_lvl": 22
+},
+{
+  "_id": {
+    "$oid": "66c214bfc8130114eead291a"
+  },
+  "name": "Defender of the Frozen Wastes",
+  "description": "This shield is made of enchanted ice, offering protection against the harshest cold and increasing resilience.",
+  "type": "shield",
+  "image": "/images/equipment/shields/shield_21.png",
+  "value": 18,
+  "defense": 15,
+  "modifiers": {
+    "intelligence": 0,
+    "dexterity": 0,
+    "constitution": 13,
+    "insanity": 1,
+    "charisma": 0,
+    "strength": 2
+  },
+  "min_lvl": 24
+},
+{
+  "_id": {
+    "$oid": "66c214bfc8130114eead291b"
+  },
+  "name": "Guardian of the Celestial Realm",
+  "description": "A shield blessed by celestial beings, offering protection against both physical and magical attacks.",
+  "type": "shield",
+  "image": "/images/equipment/shields/shield_22.png",
+  "value": 19,
+  "defense": 14,
+  "modifiers": {
+    "intelligence": 5,
+    "dexterity": 0,
+    "constitution": 10,
+    "insanity": 0,
+    "charisma": 3,
+    "strength": 2
+  },
+  "min_lvl": 26
+},
+{
+  "_id": {
+    "$oid": "66c214bfc8130114eead291c"
+  },
+  "name": "Aegis of the Sacred Flame",
+  "description": "A shield imbued with sacred fire, granting protection against the undead and boosting the bearer's strength.",
+  "type": "shield",
+  "image": "/images/equipment/shields/shield_23.png",
+  "value": 20,
+  "defense": 16,
+  "modifiers": {
+    "intelligence": 0,
+    "dexterity": 0,
+    "constitution": 8,
+    "insanity": 2,
+    "charisma": 0,
+    "strength": 6
+  },
+  "min_lvl": 27
+},
+{
+  "_id": {
+    "$oid": "66c214bfc8130114eead291d"
+  },
+  "name": "Bulwark of the Thunderstorm",
+  "description": "This shield is charged with the power of storms, offering protection against lightning-based attacks and increasing agility.",
+  "type": "shield",
+  "image": "/images/equipment/shields/shield_24.png",
+  "value": 17,
+  "defense": 13,
+  "modifiers": {
+    "intelligence": 0,
+    "dexterity": 4,
+    "constitution": 7,
+    "insanity": 0,
+    "charisma": 0,
+    "strength": 3
+  },
+  "min_lvl": 23
+},
+{
+  "_id": {
+    "$oid": "66c214bfc8130114eead291e"
+  },
+  "name": "Shield of the Dragon's Wrath",
+  "description": "Forged from dragon scales, this shield offers resistance to fire and increases the bearer's strength.",
+  "type": "shield",
+  "image": "/images/equipment/shields/shield_25.png",
+  "value": 19,
+  "defense": 15,
+  "modifiers": {
+    "intelligence": 0,
+    "dexterity": 0,
+    "constitution": 10,
+    "insanity": 1,
+    "charisma": 0,
+    "strength": 5
+  },
+  "min_lvl": 28
+},
+{
+  "_id": {
+    "$oid": "66c214bfc8130114eead291f"
+  },
+  "name": "Protector of the Ancient Order",
+  "description": "A shield passed down through generations, offering unparalleled defense and boosting the bearer's resolve.",
+  "type": "shield",
+  "image": "/images/equipment/shields/shield_26.png",
+  "value": 16,
+  "defense": 12,
+  "modifiers": {
+    "intelligence": 0,
+    "dexterity": 0,
+    "constitution": 9,
+    "insanity": 0,
+    "charisma": 0,
+    "strength": 4
+  },
+  "min_lvl": 19
+},
+{
+  "_id": {
+    "$oid": "66c214bfc8130114eead2920"
+  },
+  "name": "Aegis of the Golden Sun",
+  "description": "A shield that shines with the light of a thousand suns, providing enhanced defense and increasing the bearer's charisma.",
+  "type": "shield",
+  "image": "/images/equipment/shields/shield_27.png",
+  "value": 20,
+  "defense": 17,
+  "modifiers": {
+    "intelligence": 0,
+    "dexterity": 0,
+    "constitution": 8,
+    "insanity": 0,
+    "charisma": 7,
+    "strength": 0
+  },
+  "min_lvl": 28
+},
+{
+  "_id": {
+    "$oid": "66c214bfc8130114eead2921"
+  },
+  "name": "Shield of the Shifting Sands",
+  "description": "A shield imbued with the power of the desert, offering protection against earth-based attacks and increasing the bearer's agility.",
+  "type": "shield",
+  "image": "/images/equipment/shields/shield_28.png",
+  "value": 15,
+  "defense": 11,
+  "modifiers": {
+    "intelligence": 0,
+    "dexterity": 5,
+    "constitution": 7,
+    "insanity": 0,
+    "charisma": 0,
+    "strength": 2
+  },
+  "min_lvl": 18
+},
+{
+  "_id": {
+    "$oid": "66c214bfc8130114eead2922"
+  },
+  "name": "Guardian of the Crimson Moon",
+  "description": "A shield forged under the crimson moon, offering protection against dark magic and increasing vitality.",
+  "type": "shield",
+  "image": "/images/equipment/shields/shield_29.png",
+  "value": 18,
+  "defense": 14,
+  "modifiers": {
+    "intelligence": 2,
+    "dexterity": 0,
+    "constitution": 10,
+    "insanity": 1,
+    "charisma": 0,
+    "strength": 3
+  },
+  "min_lvl": 22
+},
+{
+  "_id": {
+    "$oid": "66c214bfc8130114eead2923"
+  },
+  "name": "Bulwark of the Tempest",
+  "description": "A shield blessed by the gods of the wind, offering enhanced defense and increasing the bearer's agility.",
+  "type": "shield",
+  "image": "/images/equipment/shields/shield_30.png",
+  "value": 17,
+  "defense": 13,
+  "modifiers": {
+    "intelligence": 0,
+    "dexterity": 6,
+    "constitution": 7,
+    "insanity": 0,
+    "charisma": 0,
+    "strength": 1
+  },
+  "min_lvl": 21
+},
+{
+  "_id": {
+    "$oid": "66c214bfc8130114eead2924"
+  },
+  "name": "Aegis of the Eternal Vigil",
+  "description": "A shield that never rests, offering unmatched protection and enhancing the bearer's awareness.",
+  "type": "shield",
+  "image": "/images/equipment/shields/shield_31.png",
+  "value": 19,
+  "defense": 16,
+  "modifiers": {
+    "intelligence": 3,
+    "dexterity": 0,
+    "constitution": 10,
+    "insanity": 0,
+    "charisma": 0,
+    "strength": 4
+  },
+  "min_lvl": 27
+}]

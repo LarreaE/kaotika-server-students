@@ -115,6 +115,12 @@ const populatePlayer = async (createdPlayer) => {
     await playerPopulated.equipment.populate('antidote_potion', {'profiles': 0});
     await playerPopulated.equipment.populate('enhancer_potion', {'profiles': 0});
     await playerPopulated.equipment.antidote_potion.populate('recovery_effect');
+    await playerPopulated.equipment.populate('ring', {'profiles': 0});
+    await playerPopulated.equipment.populate('helmet', {'profiles': 0});
+    await playerPopulated.equipment.populate('shield', {'profiles': 0});
+    await playerPopulated.equipment.populate('boot', {'profiles': 0});
+    
+    
 
     
     //console.log(playerCreated);

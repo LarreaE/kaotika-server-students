@@ -1,0 +1,19 @@
+[
+    {
+        "name": "Eternal Guardian Helmet",
+        "description": "A helmet blessed by the spirits of eternal guardians.",
+        "type": "helmet",
+        "image": "/images/equipment/uniques/helmets/helmet_1.png",
+        "value": 5,
+        "defense": 3,
+        "modifiers": {
+            "intelligence": 0,
+            "dexterity": 0,
+            "constitution": 0,
+            "insanity": 0,
+            "charisma": 0,
+            "strength": 0
+        },
+        "min_lvl": 1
+    }
+]
