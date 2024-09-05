@@ -29,7 +29,7 @@ const playerSchema = new Schema({
     helmet: {type: Schema.Types.ObjectId, ref: "Helmet", default: "66d99aac7518eb4990035363"}, 
     weapon: {type: Schema.Types.ObjectId, ref: "Weapon"},
     armor: {type: Schema.Types.ObjectId, ref: "Armor"},
-    shield: {type: Schema.Types.ObjectId, ref: "Shield", default: "66c214bfc8130114eead2906"},
+    shield: {type: Schema.Types.ObjectId, ref: "Shield", default: "66c214bfc8130114eead2919"},
     artifact: {type: Schema.Types.ObjectId, ref: "Artifact"},
     boot: {type: Schema.Types.ObjectId, ref: "Boot", default: "66d99a807518eb499003535f"},
     ring: {type: Schema.Types.ObjectId, ref: "Ring", default: "66a6d6c8dfbffe7e6503970f"},
