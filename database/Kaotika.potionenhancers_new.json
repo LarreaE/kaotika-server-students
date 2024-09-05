@@ -1,0 +1,138 @@
+[{
+  "_id": {
+    "$oid": "668bca125319ea9afdff0767"
+  },
+  "name": "Potion of Increase Strength",
+  "description": "This robust elixir temporarily amplifies the drinker's physical power, significantly boosting muscle strength and stamina.\n\n\n",
+  "type": "enhancer",
+  "image": "/images/equipment/potions/enhancer/enhancer_1.png",
+  "value": 10,
+  "duration": 2,
+  "modifiers": {
+    "intelligence": 0,
+    "dexterity": 0,
+    "constitution": 0,
+    "insanity": 0,
+    "charisma": 0,
+    "strength": 20
+  },
+  "min_lvl": 1,
+  "profiles": [
+    {
+      "$oid": "6687c31b7a5ce485a0eed476"
+    },
+    {
+      "$oid": "6687c31b7a5ce485a0eed477"
+    },
+    {
+      "$oid": "6687c31b7a5ce485a0eed478"
+    },
+    {
+      "$oid": "6687c31b7a5ce485a0eed479"
+    },
+    {
+      "$oid": "6687c31b7a5ce485a0eed47a"
+    },
+    {
+      "$oid": "6687c31b7a5ce485a0eed47b"
+    },
+    {
+      "$oid": "6687c31b7a5ce485a0eed47c"
+    },
+    {
+      "$oid": "6687c31b7a5ce485a0eed47d"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "668bca135319ea9afdff076b"
+  },
+  "name": "Potion of Madness",
+  "description": "A dangerous brew that plunges the drinker into a frenzy, this potion unleashes chaotic energy.",
+  "type": "enhancer",
+  "image": "/images/equipment/potions/enhancer/enhancer_2.png",
+  "value": 10,
+  "duration": 2,
+  "modifiers": {
+    "intelligence": 0,
+    "dexterity": 0,
+    "constitution": 0,
+    "insanity": 20,
+    "charisma": 0,
+    "strength": 0
+  },
+  "min_lvl": 1,
+  "profiles": [
+    {
+      "$oid": "6687c31b7a5ce485a0eed476"
+    },
+    {
+      "$oid": "6687c31b7a5ce485a0eed477"
+    },
+    {
+      "$oid": "6687c31b7a5ce485a0eed478"
+    },
+    {
+      "$oid": "6687c31b7a5ce485a0eed479"
+    },
+    {
+      "$oid": "6687c31b7a5ce485a0eed47a"
+    },
+    {
+      "$oid": "6687c31b7a5ce485a0eed47b"
+    },
+    {
+      "$oid": "6687c31b7a5ce485a0eed47c"
+    },
+    {
+      "$oid": "6687c31b7a5ce485a0eed47d"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "668bca135319ea9afdff076f"
+  },
+  "name": "Potion of Increase Constitution",
+  "description": "This hearty elixir enhances the drinker's physical resilience and endurance.",
+  "type": "enhancer",
+  "image": "/images/equipment/potions/enhancer/enhancer_3.png",
+  "value": 10,
+  "duration": 2,
+  "modifiers": {
+    "intelligence": 0,
+    "dexterity": 0,
+    "constitution": 20,
+    "insanity": 0,
+    "charisma": 0,
+    "strength": 0
+  },
+  "min_lvl": 1,
+  "profiles": [
+    {
+      "$oid": "6687c31b7a5ce485a0eed476"
+    },
+    {
+      "$oid": "6687c31b7a5ce485a0eed477"
+    },
+    {
+      "$oid": "6687c31b7a5ce485a0eed478"
+    },
+    {
+      "$oid": "6687c31b7a5ce485a0eed479"
+    },
+    {
+      "$oid": "6687c31b7a5ce485a0eed47a"
+    },
+    {
+      "$oid": "6687c31b7a5ce485a0eed47b"
+    },
+    {
+      "$oid": "6687c31b7a5ce485a0eed47c"
+    },
+    {
+      "$oid": "6687c31b7a5ce485a0eed47d"
+    }
+  ]
+}]

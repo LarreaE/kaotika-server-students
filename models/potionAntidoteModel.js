@@ -14,7 +14,7 @@ const potionAntidoteSchema = new Schema({
    image: String,
    value: Number,
    recovery_effect: {type: Schema.Types.ObjectId, ref: "Disease"},
-   min_attr: [{name: String, value: Number}],
+   min_lvl: Number,
    profiles: [{type: Schema.Types.ObjectId, ref: "Profile"}]
 
 });

@@ -20,7 +20,7 @@ const artifactSchema = new Schema({
       charisma: Number,
       strength: Number
     },
-   min_attr: [{name: String, value: Number}],
+   min_lvl: Number,
    profiles: [{type: Schema.Types.ObjectId, ref: "Profile"}]
 
 });

@@ -12,6 +12,7 @@ const playerSchema = new Schema({
   nickname: String, 
   email: String,
   avatar: String,
+  classroom_Id: {type: String, default:null},
   level: {type: Number, default: 1},
   experience: {type: Number, default: 0},
   is_active: {type: Boolean, default: true},

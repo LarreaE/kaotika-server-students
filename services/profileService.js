@@ -15,15 +15,15 @@ const getAllProfiles = async () => {
     {
      
         const allProfiles = await Profile.find().exec();
-        const allWeapons = await Weapon.find().exec();
-        const allArmors = await Armor.find().exec();
-        const allArtifacts = await Artifact.find().exec();
-        const allHealingPotions = await PotionHealing.find().exec();
-        const allAntidotes = await PotionAntidote.find().populate('recovery_effect').exec();
-        const allEnhancerPotions = await PotionEnhancer.find().exec();
+        const allWeapons = (await Weapon.find().exec()).slice(0,9);
+        const allArmors = (await Armor.find().exec()).slice(0,6);
+        const allArtifacts = (await Artifact.find().exec()).slice(0,3);
+        const allHealingPotions = (await PotionHealing.find().exec()).slice(0,3);
+        const allAntidotes = (await PotionAntidote.find().populate('recovery_effect').exec()).slice(0,3);
+        const allEnhancerPotions = (await PotionEnhancer.find().exec()).slice(0,3);
 
-  
 
+        //console.log(`Num armaduras: + ${allWeapons.length}`);
     
         const returnProfiles = [];
 
@@ -42,6 +42,8 @@ const getAllProfiles = async () => {
             const armors = allArmors.filter(item => 
                 item.profiles.some(id => id.equals(profileId))
             );
+
+            
 
             const healingPotions = allHealingPotions.filter(item => 
                 item.profiles.some(id => id.equals(profileId))

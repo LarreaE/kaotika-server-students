@@ -1,0 +1,138 @@
+[{
+  "_id": {
+    "$oid": "668bca125319ea9afdff0750"
+  },
+  "name": "Elixir of Vitality",
+  "description": "A rejuvenating potion that restores vigor and vitality to the drinker.",
+  "type": "healing",
+  "image": "/images/equipment/potions/healing/healing_1.png",
+  "value": 10,
+  "modifiers": {
+    "hit_points": 20,
+    "intelligence": 0,
+    "dexterity": 0,
+    "constitution": 0,
+    "insanity": 0,
+    "charisma": 0,
+    "strength": 0
+  },
+  "min_lvl": 1,
+  "profiles": [
+    {
+      "$oid": "6687c31b7a5ce485a0eed476"
+    },
+    {
+      "$oid": "6687c31b7a5ce485a0eed477"
+    },
+    {
+      "$oid": "6687c31b7a5ce485a0eed478"
+    },
+    {
+      "$oid": "6687c31b7a5ce485a0eed479"
+    },
+    {
+      "$oid": "6687c31b7a5ce485a0eed47a"
+    },
+    {
+      "$oid": "6687c31b7a5ce485a0eed47b"
+    },
+    {
+      "$oid": "6687c31b7a5ce485a0eed47c"
+    },
+    {
+      "$oid": "6687c31b7a5ce485a0eed47d"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "668bca125319ea9afdff0754"
+  },
+  "name": "Potion of Rejuvenation",
+  "description": "This revitalizing potion restores energy and vitality to the drinker.",
+  "type": "healing",
+  "image": "/images/equipment/potions/healing/healing_2.png",
+  "value": 10,
+  "modifiers": {
+    "hit_points": 40,
+    "intelligence": -5,
+    "dexterity": 0,
+    "constitution": 0,
+    "insanity": 0,
+    "charisma": 0,
+    "strength": 0
+  },
+  "min_lvl": 1,
+  "profiles": [
+    {
+      "$oid": "6687c31b7a5ce485a0eed476"
+    },
+    {
+      "$oid": "6687c31b7a5ce485a0eed477"
+    },
+    {
+      "$oid": "6687c31b7a5ce485a0eed478"
+    },
+    {
+      "$oid": "6687c31b7a5ce485a0eed479"
+    },
+    {
+      "$oid": "6687c31b7a5ce485a0eed47a"
+    },
+    {
+      "$oid": "6687c31b7a5ce485a0eed47b"
+    },
+    {
+      "$oid": "6687c31b7a5ce485a0eed47c"
+    },
+    {
+      "$oid": "6687c31b7a5ce485a0eed47d"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "668bca125319ea9afdff0759"
+  },
+  "name": "Essence of Restoration",
+  "description": "The Essence of Restoration is a potent elixir that accelerates healing and revitalizes the body.",
+  "type": "healing",
+  "image": "/images/equipment/potions/healing/healing_3.png",
+  "value": 10,
+  "modifiers": {
+    "hit_points": 70,
+    "intelligence": -15,
+    "dexterity": 0,
+    "constitution": 0,
+    "insanity": 0,
+    "charisma": 0,
+    "strength": 0
+  },
+  "min_lvl": 1,
+  "profiles": [
+    {
+      "$oid": "6687c31b7a5ce485a0eed476"
+    },
+    {
+      "$oid": "6687c31b7a5ce485a0eed477"
+    },
+    {
+      "$oid": "6687c31b7a5ce485a0eed478"
+    },
+    {
+      "$oid": "6687c31b7a5ce485a0eed479"
+    },
+    {
+      "$oid": "6687c31b7a5ce485a0eed47a"
+    },
+    {
+      "$oid": "6687c31b7a5ce485a0eed47b"
+    },
+    {
+      "$oid": "6687c31b7a5ce485a0eed47c"
+    },
+    {
+      "$oid": "6687c31b7a5ce485a0eed47d"
+    }
+  ]
+}]

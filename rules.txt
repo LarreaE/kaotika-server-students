@@ -95,3 +95,10 @@ DISEASES
 
 Illness: Modifican 1 o 2 atributos
 Curse: Modifican 3 o 4 atributos y son más severas
+
+ARTIFACTS
+
+3 de inicio:
+
+Atributos excluyendo INS deben sumar 8
+Insanity puede tener efecto o no

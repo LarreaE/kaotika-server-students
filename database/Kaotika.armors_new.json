@@ -3,7 +3,7 @@
     "$oid": "668bca105319ea9afdff06f1"
   },
   "name": "Celestial Robe of the Archmage",
-  "description": "Woven with threads of starlight, this robe grants the wearer unparalleled magical power and wisdom.",
+  "description": "This robe grants the wearer unparalleled magical power and wisdom.",
   "type": "armor",
   "image": "/images/equipment/armors/robe_1.png",
   "value": 10,
@@ -16,7 +16,7 @@
     "charisma": 0,
     "strength": 0
   },
-  "min_lvl": 5,
+  "min_lvl": 1,
   "profiles": [
     "6687c31b7a5ce485a0eed476",
     "6687c31b7a5ce485a0eed478",
@@ -30,20 +30,20 @@
     "$oid": "668bca105319ea9afdff06f5"
   },
   "name": "Ethereal Vestments of the Whispering Winds",
-  "description": "These light, flowing vestments allow the wearer to move with the speed and grace of the wind, enhancing agility and evasion.",
+  "description": "These light vestments allow the wearer to enhance agility and evasion.",
   "type": "armor",
-  "image": "/images/equipment/armors/robe_2.jpg",
+  "image": "/images/equipment/armors/robe_2.png",
   "value": 10,
   "defense": 15,
   "modifiers": {
-    "intelligence": 2,
-    "dexterity": 0,
+    "intelligence": 0,
+    "dexterity": 2,
     "constitution": 0,
     "insanity": 0,
     "charisma": 0,
     "strength": -2
   },
-  "min_lvl": 5,
+  "min_lvl": 1,
   "profiles": [
     "6687c31b7a5ce485a0eed476",
     "6687c31b7a5ce485a0eed478",
@@ -57,9 +57,9 @@
     "$oid": "668bca105319ea9afdff06fa"
   },
   "name": "Abyssal Tunic of the Shadow Lord",
-  "description": "Cloaked in darkness, this tunic imbues the wearer with the power of shadows, enhancing stealth and providing protection against dark magic.",
+  "description": "This tunic provides protection against dark magic.",
   "type": "armor",
-  "image": "/images/equipment/armors/robe_3.jpg",
+  "image": "/images/equipment/armors/robe_3.png",
   "value": 10,
   "defense": 25,
   "modifiers": {
@@ -70,7 +70,7 @@
     "charisma": 0,
     "strength": -6
   },
-  "min_lvl": 5,
+  "min_lvl": 1,
   "profiles": [
     "6687c31b7a5ce485a0eed476",
     "6687c31b7a5ce485a0eed478",
@@ -84,9 +84,9 @@
     "$oid": "668bca105319ea9afdff0700"
   },
   "name": "Shadowstalker Leather Jerkin",
-  "description": "Crafted from enchanted hides, this jerkin allows the wearer to blend into shadows, increasing stealth and agility.",
+  "description": "This jerkin allows the wearer to blend into shadows.",
   "type": "armor",
-  "image": "/images/equipment/armors/armor_1.jpg",
+  "image": "/images/equipment/armors/armor_1.png",
   "value": 10,
   "defense": 30,
   "modifiers": {
@@ -97,7 +97,7 @@
     "charisma": 0,
     "strength": -5
   },
-  "min_lvl": 5,
+  "min_lvl": 1,
   "profiles": [
     "6687c31b7a5ce485a0eed477",
     "6687c31b7a5ce485a0eed479",
@@ -109,9 +109,9 @@
     "$oid": "668bca105319ea9afdff0707"
   },
   "name": "Huntsman's Wildwood Cuirass",
-  "description": "Made from the tough hides of forest beasts, this cuirass offers excellent protection and enhances the wearer's connection with nature.",
+  "description": "This cuirass offers excellent protection and enhances the wearer's connection with nature.",
   "type": "armor",
-  "image": "/images/equipment/armors/armor_2.jpg",
+  "image": "/images/equipment/armors/armor_2.png",
   "value": 10,
   "defense": 40,
   "modifiers": {
@@ -122,7 +122,7 @@
     "charisma": 0,
     "strength": -9
   },
-  "min_lvl": 5,
+  "min_lvl": 1,
   "profiles": [
     "6687c31b7a5ce485a0eed477",
     "6687c31b7a5ce485a0eed479",
@@ -134,9 +134,9 @@
     "$oid": "668bca105319ea9afdff070e"
   },
   "name": "Dragonhide Battle Vest",
-  "description": "Forged from the scales of a mighty dragon, this vest provides exceptional durability and resistance to fire and magic.",
+  "description": "This vest provides exceptional resistance to fire and magic.",
   "type": "armor",
-  "image": "/images/equipment/armors/armor_8.jpg",
+  "image": "/images/equipment/armors/armor_3.png",
   "value": 10,
   "defense": 60,
   "modifiers": {
@@ -147,7 +147,7 @@
     "charisma": 0,
     "strength": -11
   },
-  "min_lvl": 5,
+  "min_lvl": 1,
   "profiles": [
     "6687c31b7a5ce485a0eed477",
     "6687c31b7a5ce485a0eed479",
@@ -158,32 +158,6 @@
 
 
 
-{
-  "_id": {
-    "$oid": "66d817fa10f2a64d02302ef5"
-  },
-  "name": "Mystic's Robe",
-  "description": "A robe worn by ancient mystics.",
-  "type": "armor",
-  "image": "/images/equipment/armors/robe_2.png",
-  "value": 85,
-  "defense": 12,
-  "modifiers": {
-    "intelligence": 9,
-    "dexterity": 4,
-    "constitution": 4,
-    "insanity": 2,
-    "charisma": 5,
-    "strength": 1
-  },
-  "min_lvl": 4,
-  "profiles": [
-    "6687c31b7a5ce485a0eed479",
-    "6687c31b7a5ce485a0eed47a",
-    "6687c31b7a5ce485a0eed47b",
-    "6687c31b7a5ce485a0eed47d"
-  ]
-},
 
 
 
@@ -191,32 +165,6 @@
 
 
 
-{
-  "_id": {
-    "$oid": "66d817fa10f2a64d02302ef6"
-  },
-  "name": "Enchanter's Robe",
-  "description": "A robe infused with enchanting magic.",
-  "type": "armor",
-  "image": "/images/equipment/armors/robe_3.png",
-  "value": 88,
-  "defense": 13,
-  "modifiers": {
-    "intelligence": 8,
-    "dexterity": 3,
-    "constitution": 6,
-    "insanity": 3,
-    "charisma": 6,
-    "strength": 2
-  },
-  "min_lvl": 4,
-  "profiles": [
-    "6687c31b7a5ce485a0eed479",
-    "6687c31b7a5ce485a0eed47a",
-    "6687c31b7a5ce485a0eed47b",
-    "6687c31b7a5ce485a0eed47d"
-  ]
-},
 {
   "_id": {
     "$oid": "66d817fa10f2a64d02302ef7"
