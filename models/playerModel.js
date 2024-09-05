@@ -52,7 +52,7 @@ const playerSchema = new Schema({
   tasks: [{ type:[String], default: null }],
   created_date: { type: Date, default: Date.now },
   gold: {type: Number, default:50}
-});
+}, { versionKey: false });
 
 // Exportamos el modelo para usarlo en otros ficheros
 module.exports = mongoose.model('Player', playerSchema);
