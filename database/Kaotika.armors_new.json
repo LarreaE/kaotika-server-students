@@ -1,0 +1,713 @@
+[{
+  "_id": {
+    "$oid": "668bca105319ea9afdff06f1"
+  },
+  "name": "Celestial Robe of the Archmage",
+  "description": "Woven with threads of starlight, this robe grants the wearer unparalleled magical power and wisdom.",
+  "type": "armor",
+  "image": "/images/equipment/armors/robe_1.png",
+  "value": 10,
+  "defense": 15,
+  "modifiers": {
+    "intelligence": 0,
+    "dexterity": 0,
+    "constitution": 0,
+    "insanity": 0,
+    "charisma": 0,
+    "strength": 0
+  },
+  "min_lvl": 5,
+  "profiles": [
+    "6687c31b7a5ce485a0eed476",
+    "6687c31b7a5ce485a0eed478",
+    "6687c31b7a5ce485a0eed47a",
+    "6687c31b7a5ce485a0eed47b",
+    "6687c31b7a5ce485a0eed47d"
+  ]
+},
+{
+  "_id": {
+    "$oid": "668bca105319ea9afdff06f5"
+  },
+  "name": "Ethereal Vestments of the Whispering Winds",
+  "description": "These light, flowing vestments allow the wearer to move with the speed and grace of the wind, enhancing agility and evasion.",
+  "type": "armor",
+  "image": "/images/equipment/armors/robe_2.jpg",
+  "value": 10,
+  "defense": 15,
+  "modifiers": {
+    "intelligence": 2,
+    "dexterity": 0,
+    "constitution": 0,
+    "insanity": 0,
+    "charisma": 0,
+    "strength": -2
+  },
+  "min_lvl": 5,
+  "profiles": [
+    "6687c31b7a5ce485a0eed476",
+    "6687c31b7a5ce485a0eed478",
+    "6687c31b7a5ce485a0eed47a",
+    "6687c31b7a5ce485a0eed47b",
+    "6687c31b7a5ce485a0eed47d"
+  ]
+},
+{
+  "_id": {
+    "$oid": "668bca105319ea9afdff06fa"
+  },
+  "name": "Abyssal Tunic of the Shadow Lord",
+  "description": "Cloaked in darkness, this tunic imbues the wearer with the power of shadows, enhancing stealth and providing protection against dark magic.",
+  "type": "armor",
+  "image": "/images/equipment/armors/robe_3.jpg",
+  "value": 10,
+  "defense": 25,
+  "modifiers": {
+    "intelligence": 4,
+    "dexterity": 0,
+    "constitution": 0,
+    "insanity": 0,
+    "charisma": 0,
+    "strength": -6
+  },
+  "min_lvl": 5,
+  "profiles": [
+    "6687c31b7a5ce485a0eed476",
+    "6687c31b7a5ce485a0eed478",
+    "6687c31b7a5ce485a0eed47a",
+    "6687c31b7a5ce485a0eed47b",
+    "6687c31b7a5ce485a0eed47d"
+  ]
+},
+{
+  "_id": {
+    "$oid": "668bca105319ea9afdff0700"
+  },
+  "name": "Shadowstalker Leather Jerkin",
+  "description": "Crafted from enchanted hides, this jerkin allows the wearer to blend into shadows, increasing stealth and agility.",
+  "type": "armor",
+  "image": "/images/equipment/armors/armor_1.jpg",
+  "value": 10,
+  "defense": 30,
+  "modifiers": {
+    "intelligence": 0,
+    "dexterity": -3,
+    "constitution": 0,
+    "insanity": 0,
+    "charisma": 0,
+    "strength": -5
+  },
+  "min_lvl": 5,
+  "profiles": [
+    "6687c31b7a5ce485a0eed477",
+    "6687c31b7a5ce485a0eed479",
+    "6687c31b7a5ce485a0eed47c"
+  ]
+},
+{
+  "_id": {
+    "$oid": "668bca105319ea9afdff0707"
+  },
+  "name": "Huntsman's Wildwood Cuirass",
+  "description": "Made from the tough hides of forest beasts, this cuirass offers excellent protection and enhances the wearer's connection with nature.",
+  "type": "armor",
+  "image": "/images/equipment/armors/armor_2.jpg",
+  "value": 10,
+  "defense": 40,
+  "modifiers": {
+    "intelligence": 0,
+    "dexterity": -3,
+    "constitution": 0,
+    "insanity": 0,
+    "charisma": 0,
+    "strength": -9
+  },
+  "min_lvl": 5,
+  "profiles": [
+    "6687c31b7a5ce485a0eed477",
+    "6687c31b7a5ce485a0eed479",
+    "6687c31b7a5ce485a0eed47c"
+  ]
+},
+{
+  "_id": {
+    "$oid": "668bca105319ea9afdff070e"
+  },
+  "name": "Dragonhide Battle Vest",
+  "description": "Forged from the scales of a mighty dragon, this vest provides exceptional durability and resistance to fire and magic.",
+  "type": "armor",
+  "image": "/images/equipment/armors/armor_8.jpg",
+  "value": 10,
+  "defense": 60,
+  "modifiers": {
+    "intelligence": 4,
+    "dexterity": -4,
+    "constitution": 0,
+    "insanity": 0,
+    "charisma": 0,
+    "strength": -11
+  },
+  "min_lvl": 5,
+  "profiles": [
+    "6687c31b7a5ce485a0eed477",
+    "6687c31b7a5ce485a0eed479",
+    "6687c31b7a5ce485a0eed47c"
+  ]
+},
+
+
+
+
+{
+  "_id": {
+    "$oid": "66d817fa10f2a64d02302ef5"
+  },
+  "name": "Mystic's Robe",
+  "description": "A robe worn by ancient mystics.",
+  "type": "armor",
+  "image": "/images/equipment/armors/robe_2.png",
+  "value": 85,
+  "defense": 12,
+  "modifiers": {
+    "intelligence": 9,
+    "dexterity": 4,
+    "constitution": 4,
+    "insanity": 2,
+    "charisma": 5,
+    "strength": 1
+  },
+  "min_lvl": 4,
+  "profiles": [
+    "6687c31b7a5ce485a0eed479",
+    "6687c31b7a5ce485a0eed47a",
+    "6687c31b7a5ce485a0eed47b",
+    "6687c31b7a5ce485a0eed47d"
+  ]
+},
+
+
+
+
+
+
+
+{
+  "_id": {
+    "$oid": "66d817fa10f2a64d02302ef6"
+  },
+  "name": "Enchanter's Robe",
+  "description": "A robe infused with enchanting magic.",
+  "type": "armor",
+  "image": "/images/equipment/armors/robe_3.png",
+  "value": 88,
+  "defense": 13,
+  "modifiers": {
+    "intelligence": 8,
+    "dexterity": 3,
+    "constitution": 6,
+    "insanity": 3,
+    "charisma": 6,
+    "strength": 2
+  },
+  "min_lvl": 4,
+  "profiles": [
+    "6687c31b7a5ce485a0eed479",
+    "6687c31b7a5ce485a0eed47a",
+    "6687c31b7a5ce485a0eed47b",
+    "6687c31b7a5ce485a0eed47d"
+  ]
+},
+{
+  "_id": {
+    "$oid": "66d817fa10f2a64d02302ef7"
+  },
+  "name": "Voidweaver's Robe",
+  "description": "A robe woven from the threads of the void.",
+  "type": "armor",
+  "image": "/images/equipment/armors/robe_4.png",
+  "value": 90,
+  "defense": 14,
+  "modifiers": {
+    "intelligence": 10,
+    "dexterity": 2,
+    "constitution": 4,
+    "insanity": 5,
+    "charisma": 3,
+    "strength": 2
+  },
+  "min_lvl": 5,
+  "profiles": [
+    "6687c31b7a5ce485a0eed479",
+    "6687c31b7a5ce485a0eed47a",
+    "6687c31b7a5ce485a0eed47b",
+    "6687c31b7a5ce485a0eed47d"
+  ]
+},
+{
+  "_id": {
+    "$oid": "66d817fa10f2a64d02302ef8"
+  },
+  "name": "Robe of the Elementalist",
+  "description": "A robe that channels elemental forces.",
+  "type": "armor",
+  "image": "/images/equipment/armors/robe_5.png",
+  "value": 93,
+  "defense": 15,
+  "modifiers": {
+    "intelligence": 9,
+    "dexterity": 3,
+    "constitution": 6,
+    "insanity": 3,
+    "charisma": 4,
+    "strength": 1
+  },
+  "min_lvl": 5,
+  "profiles": [
+    "6687c31b7a5ce485a0eed479",
+    "6687c31b7a5ce485a0eed47a",
+    "6687c31b7a5ce485a0eed47b",
+    "6687c31b7a5ce485a0eed47d"
+  ]
+},
+{
+  "_id": {
+    "$oid": "66d817fa10f2a64d02302ef9"
+  },
+  "name": "Robe of the Necromancer",
+  "description": "A robe darkened by necromantic power.",
+  "type": "armor",
+  "image": "/images/equipment/armors/robe_6.png",
+  "value": 89,
+  "defense": 13,
+  "modifiers": {
+    "intelligence": 9,
+    "dexterity": 4,
+    "constitution": 5,
+    "insanity": 4,
+    "charisma": 2,
+    "strength": 1
+  },
+  "min_lvl": 4,
+  "profiles": [
+    "6687c31b7a5ce485a0eed479",
+    "6687c31b7a5ce485a0eed47a",
+    "6687c31b7a5ce485a0eed47b",
+    "6687c31b7a5ce485a0eed47d"
+  ]
+},
+{
+  "_id": {
+    "$oid": "66d818af10f2a64d02302efb"
+  },
+  "name": "Shadowstalker's Jacket",
+  "description": "A jacket that allows the wearer to blend into shadows.",
+  "type": "armor",
+  "image": "/images/equipment/armors/jacket_1.png",
+  "value": 76,
+  "defense": 14,
+  "modifiers": {
+    "intelligence": 4,
+    "dexterity": 8,
+    "constitution": 5,
+    "insanity": 2,
+    "charisma": 3,
+    "strength": 4
+  },
+  "min_lvl": 3,
+  "profiles": [
+    "6687c31b7a5ce485a0eed479",
+    "6687c31b7a5ce485a0eed47a",
+    "6687c31b7a5ce485a0eed47b",
+    "6687c31b7a5ce485a0eed47d"
+  ]
+},
+{
+  "_id": {
+    "$oid": "66d818af10f2a64d02302efc"
+  },
+  "name": "Stormcaller's Jacket",
+  "description": "A jacket that crackles with the energy of a storm.",
+  "type": "armor",
+  "image": "/images/equipment/armors/jacket_2.png",
+  "value": 89,
+  "defense": 16,
+  "modifiers": {
+    "intelligence": 7,
+    "dexterity": 6,
+    "constitution": 6,
+    "insanity": 3,
+    "charisma": 4,
+    "strength": 3
+  },
+  "min_lvl": 4,
+  "profiles": [
+    "6687c31b7a5ce485a0eed479",
+    "6687c31b7a5ce485a0eed47a",
+    "6687c31b7a5ce485a0eed47b",
+    "6687c31b7a5ce485a0eed47d"
+  ]
+},
+{
+  "_id": {
+    "$oid": "66d818af10f2a64d02302efd"
+  },
+  "name": "Inferno Jacket",
+  "description": "A jacket that burns with an inner fire.",
+  "type": "armor",
+  "image": "/images/equipment/armors/jacket_3.png",
+  "value": 92,
+  "defense": 17,
+  "modifiers": {
+    "intelligence": 6,
+    "dexterity": 5,
+    "constitution": 7,
+    "insanity": 2,
+    "charisma": 4,
+    "strength": 4
+  },
+  "min_lvl": 5,
+  "profiles": [
+    "6687c31b7a5ce485a0eed479",
+    "6687c31b7a5ce485a0eed47a",
+    "6687c31b7a5ce485a0eed47b",
+    "6687c31b7a5ce485a0eed47d"
+  ]
+},
+{
+  "_id": {
+    "$oid": "66d818af10f2a64d02302efe"
+  },
+  "name": "Frostbound Jacket",
+  "description": "A jacket that radiates an icy chill.",
+  "type": "armor",
+  "image": "/images/equipment/armors/jacket_4.png",
+  "value": 84,
+  "defense": 15,
+  "modifiers": {
+    "intelligence": 5,
+    "dexterity": 4,
+    "constitution": 8,
+    "insanity": 2,
+    "charisma": 3,
+    "strength": 5
+  },
+  "min_lvl": 4,
+  "profiles": [
+    "6687c31b7a5ce485a0eed479",
+    "6687c31b7a5ce485a0eed47a",
+    "6687c31b7a5ce485a0eed47b",
+    "6687c31b7a5ce485a0eed47d"
+  ]
+},
+{
+  "_id": {
+    "$oid": "66d818af10f2a64d02302eff"
+  },
+  "name": "Spiritwalker's Jacket",
+  "description": "A jacket that allows communion with spirits.",
+  "type": "armor",
+  "image": "/images/equipment/armors/jacket_5.png",
+  "value": 78,
+  "defense": 14,
+  "modifiers": {
+    "intelligence": 7,
+    "dexterity": 3,
+    "constitution": 5,
+    "insanity": 3,
+    "charisma": 5,
+    "strength": 2
+  },
+  "min_lvl": 3,
+  "profiles": [
+    "6687c31b7a5ce485a0eed479",
+    "6687c31b7a5ce485a0eed47a",
+    "6687c31b7a5ce485a0eed47b",
+    "6687c31b7a5ce485a0eed47d"
+  ]
+},
+{
+  "_id": {
+    "$oid": "66d818af10f2a64d02302f00"
+  },
+  "name": "Wildheart Jacket",
+  "description": "A jacket infused with the essence of nature.",
+  "type": "armor",
+  "image": "/images/equipment/armors/jacket_6.png",
+  "value": 81,
+  "defense": 14,
+  "modifiers": {
+    "intelligence": 4,
+    "dexterity": 6,
+    "constitution": 6,
+    "insanity": 2,
+    "charisma": 4,
+    "strength": 4
+  },
+  "min_lvl": 4,
+  "profiles": [
+    "6687c31b7a5ce485a0eed479",
+    "6687c31b7a5ce485a0eed47a",
+    "6687c31b7a5ce485a0eed47b",
+    "6687c31b7a5ce485a0eed47d"
+  ]
+},
+{
+  "_id": {
+    "$oid": "66d818af10f2a64d02302f01"
+  },
+  "name": "Phoenix Jacket",
+  "description": "A jacket that rises from the ashes.",
+  "type": "armor",
+  "image": "/images/equipment/armors/jacket_7.png",
+  "value": 95,
+  "defense": 18,
+  "modifiers": {
+    "intelligence": 8,
+    "dexterity": 4,
+    "constitution": 6,
+    "insanity": 3,
+    "charisma": 5,
+    "strength": 3
+  },
+  "min_lvl": 5,
+  "profiles": [
+    "6687c31b7a5ce485a0eed479",
+    "6687c31b7a5ce485a0eed47a",
+    "6687c31b7a5ce485a0eed47b",
+    "6687c31b7a5ce485a0eed47d"
+  ]
+},
+{
+  "_id": {
+    "$oid": "66d818af10f2a64d02302f02"
+  },
+  "name": "Thunderstrike Jacket",
+  "description": "A jacket that hums with thunderous power.",
+  "type": "armor",
+  "image": "/images/equipment/armors/jacket_8.png",
+  "value": 87,
+  "defense": 16,
+  "modifiers": {
+    "intelligence": 6,
+    "dexterity": 5,
+    "constitution": 7,
+    "insanity": 1,
+    "charisma": 4,
+    "strength": 5
+  },
+  "min_lvl": 5,
+  "profiles": [
+    "6687c31b7a5ce485a0eed479",
+    "6687c31b7a5ce485a0eed47a",
+    "6687c31b7a5ce485a0eed47b",
+    "6687c31b7a5ce485a0eed47d"
+  ]
+},
+{
+  "_id": {
+    "$oid": "66d818af10f2a64d02302f03"
+  },
+  "name": "Shadowhunter's Jacket",
+  "description": "A jacket designed for hunting in the dark.",
+  "type": "armor",
+  "image": "/images/equipment/armors/jacket_9.png",
+  "value": 83,
+  "defense": 15,
+  "modifiers": {
+    "intelligence": 5,
+    "dexterity": 7,
+    "constitution": 5,
+    "insanity": 2,
+    "charisma": 3,
+    "strength": 4
+  },
+  "min_lvl": 4,
+  "profiles": [
+    "6687c31b7a5ce485a0eed479",
+    "6687c31b7a5ce485a0eed47a",
+    "6687c31b7a5ce485a0eed47b",
+    "6687c31b7a5ce485a0eed47d"
+  ]
+},
+{
+  "_id": {
+    "$oid": "66d818af10f2a64d02302f04"
+  },
+  "name": "Dragonscale Jacket",
+  "description": "A jacket made from the scales of a dragon.",
+  "type": "armor",
+  "image": "/images/equipment/armors/jacket_10.png",
+  "value": 94,
+  "defense": 18,
+  "modifiers": {
+    "intelligence": 7,
+    "dexterity": 6,
+    "constitution": 8,
+    "insanity": 1,
+    "charisma": 4,
+    "strength": 5
+  },
+  "min_lvl": 5,
+  "profiles": [
+    "6687c31b7a5ce485a0eed479",
+    "6687c31b7a5ce485a0eed47a",
+    "6687c31b7a5ce485a0eed47b",
+    "6687c31b7a5ce485a0eed47d"
+  ]
+},
+{
+  "_id": {
+    "$oid": "66d818af10f2a64d02302f05"
+  },
+  "name": "Nightblade's Jacket",
+  "description": "A jacket that aids in stealth and assassination.",
+  "type": "armor",
+  "image": "/images/equipment/armors/jacket_11.png",
+  "value": 88,
+  "defense": 16,
+  "modifiers": {
+    "intelligence": 5,
+    "dexterity": 8,
+    "constitution": 6,
+    "insanity": 3,
+    "charisma": 3,
+    "strength": 4
+  },
+  "min_lvl": 4,
+  "profiles": [
+    "6687c31b7a5ce485a0eed479",
+    "6687c31b7a5ce485a0eed47a",
+    "6687c31b7a5ce485a0eed47b",
+    "6687c31b7a5ce485a0eed47d"
+  ]
+},
+{
+  "_id": {
+    "$oid": "66d818af10f2a64d02302f06"
+  },
+  "name": "Lifebinder's Jacket",
+  "description": "A jacket that nurtures life.",
+  "type": "armor",
+  "image": "/images/equipment/armors/jacket_12.png",
+  "value": 80,
+  "defense": 14,
+  "modifiers": {
+    "intelligence": 6,
+    "dexterity": 4,
+    "constitution": 7,
+    "insanity": 2,
+    "charisma": 4,
+    "strength": 3
+  },
+  "min_lvl": 3,
+  "profiles": [
+    "6687c31b7a5ce485a0eed479",
+    "6687c31b7a5ce485a0eed47a",
+    "6687c31b7a5ce485a0eed47b",
+    "6687c31b7a5ce485a0eed47d"
+  ]
+},
+{
+  "_id": {
+    "$oid": "66d818af10f2a64d02302f07"
+  },
+  "name": "Warden's Jacket",
+  "description": "A jacket worn by the guardians of ancient secrets.",
+  "type": "armor",
+  "image": "/images/equipment/armors/jacket_13.png",
+  "value": 85,
+  "defense": 15,
+  "modifiers": {
+    "intelligence": 7,
+    "dexterity": 5,
+    "constitution": 6,
+    "insanity": 3,
+    "charisma": 4,
+    "strength": 4
+  },
+  "min_lvl": 4,
+  "profiles": [
+    "6687c31b7a5ce485a0eed479",
+    "6687c31b7a5ce485a0eed47a",
+    "6687c31b7a5ce485a0eed47b",
+    "6687c31b7a5ce485a0eed47d"
+  ]
+},
+{
+  "_id": {
+    "$oid": "66d818af10f2a64d02302f08"
+  },
+  "name": "Earthshaker's Jacket",
+  "description": "A jacket that can withstand great force.",
+  "type": "armor",
+  "image": "/images/equipment/armors/jacket_14.png",
+  "value": 90,
+  "defense": 17,
+  "modifiers": {
+    "intelligence": 5,
+    "dexterity": 4,
+    "constitution": 8,
+    "insanity": 2,
+    "charisma": 3,
+    "strength": 5
+  },
+  "min_lvl": 5,
+  "profiles": [
+    "6687c31b7a5ce485a0eed479",
+    "6687c31b7a5ce485a0eed47a",
+    "6687c31b7a5ce485a0eed47b",
+    "6687c31b7a5ce485a0eed47d"
+  ]
+},
+{
+  "_id": {
+    "$oid": "66d818af10f2a64d02302f09"
+  },
+  "name": "Bloodseeker's Jacket",
+  "description": "A jacket that thirsts for battle.",
+  "type": "armor",
+  "image": "/images/equipment/armors/jacket_15.png",
+  "value": 87,
+  "defense": 16,
+  "modifiers": {
+    "intelligence": 6,
+    "dexterity": 7,
+    "constitution": 5,
+    "insanity": 2,
+    "charisma": 4,
+    "strength": 4
+  },
+  "min_lvl": 4,
+  "profiles": [
+    "6687c31b7a5ce485a0eed479",
+    "6687c31b7a5ce485a0eed47a",
+    "6687c31b7a5ce485a0eed47b",
+    "6687c31b7a5ce485a0eed47d"
+  ]
+},
+{
+  "_id": {
+    "$oid": "66d818af10f2a64d02302f0a"
+  },
+  "name": "Eclipseshade Jacket",
+  "description": "A jacket that shrouds the wearer in darkness.",
+  "type": "armor",
+  "image": "/images/equipment/armors/jacket_16.png",
+  "value": 91,
+  "defense": 17,
+  "modifiers": {
+    "intelligence": 7,
+    "dexterity": 5,
+    "constitution": 7,
+    "insanity": 1,
+    "charisma": 3,
+    "strength": 5
+  },
+  "min_lvl": 5,
+  "profiles": [
+    "6687c31b7a5ce485a0eed479",
+    "6687c31b7a5ce485a0eed47a",
+    "6687c31b7a5ce485a0eed47b",
+    "6687c31b7a5ce485a0eed47d"
+  ]
+}]

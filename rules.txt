@@ -79,3 +79,13 @@ Ej:
 
 
 
+
+ARMORS:
+
+Light armors: decreases STR while increases DEFENSE
+Heavy armors: Decreases STR + DEX while increases DEFENSE
+
+Every armor can alter other Attribute
+
+
+Basic armors all cost 10. 

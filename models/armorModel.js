@@ -12,6 +12,7 @@ const armorSchema = new Schema({
    type: String,
    image: String,
    value: Number,
+   defense: Number,
    modifiers: {
       intelligence: Number,
       dexterity: Number,
@@ -20,7 +21,7 @@ const armorSchema = new Schema({
       charisma: Number,
       strength: Number
     },
-   min_attr: [{name: String, value: Number}],
+   min_lvl: Number,
    profiles: [{type: Schema.Types.ObjectId, ref: "Profile"}]
 
 });
