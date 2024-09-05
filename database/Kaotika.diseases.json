@@ -1,3 +1,5 @@
+
+
 [{
   "_id": {
     "$oid": "6693fd5846527d0df5f0efe7"
@@ -5,25 +7,18 @@
   "name": "Shadowblight",
   "description": "A disease that causes the afflicted to be consumed by darkness, their skin turning black as shadows envelop their body.",
   "type": "curse",
-  "modifiers": [
-    {
-      "attribute": "Constitution",
-      "value": -10
-    },
-    {
-      "attribute": "Charisma",
-      "value": -7
-    },
-    {
-      "attribute": "Insanity",
-      "value": 18
-    },
-    {
-      "attribute": "Hit points",
-      "value": -50
-    }
-  ]
+  "modifiers":
+  {
+    "hit_points": -50,
+    "intelligence": 0,
+    "dexterity": 0,
+    "insanity": 18,
+    "charisma": -7,
+    "constitution": -10,
+    "strength": 0
+  }
 },
+  
 {
   "_id": {
     "$oid": "6693fd5846527d0df5f0efe8"
@@ -31,16 +26,17 @@
   "name": "Frostbane Fever",
   "description": "A chilling illness that lowers the body temperature drastically, causing frost to form on the skin and organs to freeze.",
   "type": "illness",
-  "modifiers": [
-    {
-      "attribute": "Constitution",
-      "value": -12
-    },
-    {
-      "attribute": "Dexterity",
-      "value": -8
-    }
-  ]
+  "modifiers":
+  {
+    "hit_points": 0,
+    "intelligence": 0,
+    "dexterity": 0,
+    "insanity": 0,
+    "charisma": 0,
+    "constitution": -12,
+    "strength": 0
+  }
+  
 },
 {
   "_id": {
@@ -49,16 +45,17 @@
   "name": "Wailing Plague",
   "description": "An infectious disease that causes the afflicted to uncontrollably wail in pain, spreading misery and despair.",
   "type": "illness",
-  "modifiers": [
-    {
-      "attribute": "Charisma",
-      "value": -9
-    },
-    {
-      "attribute": "Insanity",
-      "value": 7
-    }
-  ]
+  "modifiers":
+  {
+    "hit_points": 0,
+    "intelligence": 0,
+    "dexterity": 0,
+    "insanity": 7,
+    "charisma": -9,
+    "constitution": 0,
+    "strength": 0
+  }
+  
 },
 {
   "_id": {
@@ -67,20 +64,16 @@
   "name": "Cursed Blood",
   "description": "A curse that turns the blood into a dark, viscous liquid that poisons the body from within, causing severe pain and eventual death.",
   "type": "curse",
-  "modifiers": [
-    {
-      "attribute": "Constitution",
-      "value": -14
-    },
-    {
-      "attribute": "Strength",
-      "value": -7
-    },
-    {
-      "attribute": "Hit points",
-      "value": -60
-    }
-  ]
+  "modifiers":
+  {
+    "hit_points": -60,
+    "intelligence": 0,
+    "dexterity": 0,
+    "insanity": 0,
+    "charisma": 0,
+    "constitution": -14,
+    "strength": -7
+  }
 },
 {
   "_id": {
@@ -89,16 +82,16 @@
   "name": "Ethereal Consumption",
   "description": "A spectral illness that causes the afflicted to slowly fade into the ethereal plane, losing touch with reality.",
   "type": "illness",
-  "modifiers": [
-    {
-      "attribute": "Intelligence",
-      "value": -10
-    },
-    {
-      "attribute": "Insanity",
-      "value": 6
-    }
-  ]
+  "modifiers":
+  {
+    "hit_points": 0,
+    "intelligence": -10,
+    "dexterity": 0,
+    "insanity": 6,
+    "charisma": 0,
+    "constitution": 0,
+    "strength": 0
+  }
 },
 {
   "_id": {
@@ -107,24 +100,16 @@
   "name": "Mindfire",
   "description": "A curse that inflames the mind, causing intense migraines and hallucinations.",
   "type": "curse",
-  "modifiers": [
-    {
-      "attribute": "Intelligence",
-      "value": -8
-    },
-    {
-      "attribute": "Insanity",
-      "value": 20
-    },
-    {
-      "attribute": "Charisma",
-      "value": -9
-    },
-    {
-      "attribute": "Hit points",
-      "value": -35
-    }
-  ]
+  "modifiers":
+  {
+    "hit_points": -35,
+    "intelligence": -8,
+    "dexterity": 0,
+    "insanity": 20,
+    "charisma": -9,
+    "constitution": 0,
+    "strength": 0
+  }
 },
 {
   "_id": {
@@ -133,16 +118,16 @@
   "name": "Boneshiver",
   "description": "An illness that causes the bones to become brittle and cold, making movement agonizing.",
   "type": "illness",
-  "modifiers": [
-    {
-      "attribute": "Strength",
-      "value": -10
-    },
-    {
-      "attribute": "Constitution",
-      "value": -9
-    }
-  ]
+  "modifiers":
+  {
+    "hit_points": 0,
+    "intelligence": 0,
+    "dexterity": 0,
+    "insanity": 0,
+    "charisma": 0,
+    "constitution": -9,
+    "strength": -10
+  }
 },
 {
   "_id": {
@@ -151,20 +136,16 @@
   "name": "Soulrot",
   "description": "A necrotic curse that slowly decays the soul, causing profound weakness and despair.",
   "type": "curse",
-  "modifiers": [
-    {
-      "attribute": "Charisma",
-      "value": -11
-    },
-    {
-      "attribute": "Hit points",
-      "value": -70
-    },
-    {
-      "attribute": "Insanity",
-      "value": 17
-    }
-  ]
+  "modifiers":
+  {
+    "hit_points": -70,
+    "intelligence": 0,
+    "dexterity": 0,
+    "insanity": 17,
+    "charisma": -11,
+    "constitution": 0,
+    "strength": 0
+  }
 },
 {
   "_id": {
@@ -173,16 +154,16 @@
   "name": "Fleshweaver's Malady",
   "description": "A grotesque illness that warps the flesh, causing it to grow uncontrollably and painfully.",
   "type": "illness",
-  "modifiers": [
-    {
-      "attribute": "Dexterity",
-      "value": -13
-    },
-    {
-      "attribute": "Constitution",
-      "value": -8
-    }
-  ]
+  "modifiers":
+  {
+    "hit_points": 0,
+    "intelligence": 0,
+    "dexterity": -13,
+    "insanity": 0,
+    "charisma": 0,
+    "constitution": -8,
+    "strength": 0
+  }
 },
 {
   "_id": {
@@ -191,20 +172,16 @@
   "name": "Eldritch Pox",
   "description": "A curse that marks the skin with arcane runes, draining the life force of the afflicted.",
   "type": "curse",
-  "modifiers": [
-    {
-      "attribute": "Strength",
-      "value": -9
-    },
-    {
-      "attribute": "Hit points",
-      "value": -40
-    },
-    {
-      "attribute": "Charisma",
-      "value": -12
-    }
-  ]
+  "modifiers":
+  {
+    "hit_points": -40,
+    "intelligence": 0,
+    "dexterity": 0,
+    "insanity": 0,
+    "charisma": -12,
+    "constitution": 0,
+    "strength": -9
+  }
 },
 {
   "_id": {
@@ -213,16 +190,16 @@
   "name": "Lich's Breath",
   "description": "An illness that causes the breath of the afflicted to become toxic, slowly killing them and those around them.",
   "type": "illness",
-  "modifiers": [
-    {
-      "attribute": "Constitution",
-      "value": -11
-    },
-    {
-      "attribute": "Hit points",
-      "value": -15
-    }
-  ]
+  "modifiers":
+  {
+    "hit_points": -15,
+    "intelligence": 0,
+    "dexterity": 0,
+    "insanity": 0,
+    "charisma": 0,
+    "constitution": -11,
+    "strength": 0
+  }
 },
 {
   "_id": {
@@ -231,20 +208,16 @@
   "name": "Cursed Tongue",
   "description": "A curse that renders the afflicted unable to speak without causing harm to themselves and others.",
   "type": "curse",
-  "modifiers": [
-    {
-      "attribute": "Charisma",
-      "value": -12
-    },
-    {
-      "attribute": "Insanity",
-      "value": 21
-    },
-    {
-      "attribute": "Hit points",
-      "value": -35
-    }
-  ]
+  "modifiers":
+  {
+    "hit_points": -35,
+    "intelligence": 0,
+    "dexterity": 0,
+    "insanity": 21,
+    "charisma": -12,
+    "constitution": 0,
+    "strength": 0
+  }
 },
 {
   "_id": {
@@ -253,16 +226,16 @@
   "name": "Plague of Eyes",
   "description": "An illness that causes extra eyes to form all over the body, driving the afflicted mad.",
   "type": "illness",
-  "modifiers": [
-    {
-      "attribute": "Dexterity",
-      "value": -7
-    },
-    {
-      "attribute": "Insanity",
-      "value": 8
-    }
-  ]
+  "modifiers":
+  {
+    "hit_points": 0,
+    "intelligence": 0,
+    "dexterity": -7,
+    "insanity": 8,
+    "charisma": 0,
+    "constitution": 0,
+    "strength": 0
+  }
 },
 {
   "_id": {
@@ -271,20 +244,16 @@
   "name": "Bloodfire",
   "description": "A curse that ignites the blood of the afflicted, causing intense internal burning sensations.",
   "type": "curse",
-  "modifiers": [
-    {
-      "attribute": "Constitution",
-      "value": -13
-    },
-    {
-      "attribute": "Strength",
-      "value": -5
-    },
-    {
-      "attribute": "Hit points",
-      "value": -55
-    }
-  ]
+  "modifiers":
+  {
+    "hit_points": -55,
+    "intelligence": 0,
+    "dexterity": 0,
+    "insanity": 0,
+    "charisma": 0,
+    "constitution": -13,
+    "strength": -5
+  }
 },
 {
   "_id": {
@@ -293,16 +262,16 @@
   "name": "Mindfray",
   "description": "An illness that frays the mind's connections, causing memory loss and cognitive decline.",
   "type": "illness",
-  "modifiers": [
-    {
-      "attribute": "Intelligence",
-      "value": -12
-    },
-    {
-      "attribute": "Insanity",
-      "value": 6
-    }
-  ]
+  "modifiers":
+  {
+    "hit_points": 0,
+    "intelligence": -12,
+    "dexterity": 0,
+    "insanity": 6,
+    "charisma": 0,
+    "constitution": 0,
+    "strength": 0
+  }
 },
 {
   "_id": {
@@ -311,20 +280,16 @@
   "name": "Veilrot",
   "description": "A curse that causes the skin to become transparent, making the afflicted's muscles and bones visible.",
   "type": "curse",
-  "modifiers": [
-    {
-      "attribute": "Charisma",
-      "value": -10
-    },
-    {
-      "attribute": "Hit points",
-      "value": -45
-    },
-    {
-      "attribute": "Insanity",
-      "value": 15
-    }
-  ]
+  "modifiers":
+  {
+    "hit_points": -45,
+    "intelligence": 0,
+    "dexterity": 0,
+    "insanity": 15,
+    "charisma": -10,
+    "constitution": 0,
+    "strength": 0
+  }
 },
 {
   "_id": {
@@ -333,16 +298,16 @@
   "name": "Souldrain",
   "description": "An illness that saps the very soul of the afflicted, leaving them weak and lethargic.",
   "type": "illness",
-  "modifiers": [
-    {
-      "attribute": "Strength",
-      "value": -14
-    },
-    {
-      "attribute": "Constitution",
-      "value": -7
-    }
-  ]
+  "modifiers":
+  {
+    "hit_points": 0,
+    "intelligence": 0,
+    "dexterity": 0,
+    "insanity": 0,
+    "charisma": 0,
+    "constitution": 7,
+    "strength": -14
+  }
 },
 {
   "_id": {
@@ -351,20 +316,16 @@
   "name": "Warped Spine",
   "description": "A curse that twists the spine into unnatural shapes, causing immense pain and difficulty in movement.",
   "type": "curse",
-  "modifiers": [
-    {
-      "attribute": "Dexterity",
-      "value": -9
-    },
-    {
-      "attribute": "Hit points",
-      "value": -50
-    },
-    {
-      "attribute": "Strength",
-      "value": -10
-    }
-  ]
+  "modifiers":
+  {
+    "hit_points": -50,
+    "intelligence": 0,
+    "dexterity": -9,
+    "insanity": 0,
+    "charisma": 0,
+    "constitution": 0,
+    "strength": -10
+  }
 },
 {
   "_id": {
@@ -373,16 +334,16 @@
   "name": "Dream Eater",
   "description": "An illness that causes the afflicted to be plagued by nightmares, leaving them exhausted and paranoid.",
   "type": "illness",
-  "modifiers": [
-    {
-      "attribute": "Intelligence",
-      "value": -6
-    },
-    {
-      "attribute": "Insanity",
-      "value": 7
-    }
-  ]
+  "modifiers":
+  {
+    "hit_points": 0,
+    "intelligence": -6,
+    "dexterity": 0,
+    "insanity": 7,
+    "charisma": 0,
+    "constitution": 0,
+    "strength": 0
+  }
 },
 {
   "_id": {
@@ -391,20 +352,16 @@
   "name": "Gloomshade",
   "description": "A curse that envelops the afflicted in a perpetual shadow, making them invisible but draining their vitality.",
   "type": "curse",
-  "modifiers": [
-    {
-      "attribute": "Constitution",
-      "value": -12
-    },
-    {
-      "attribute": "Charisma",
-      "value": -6
-    },
-    {
-      "attribute": "Hit points",
-      "value": -40
-    }
-  ]
+  "modifiers":
+  {
+    "hit_points": -40,
+    "intelligence": 0,
+    "dexterity": 0,
+    "insanity": 0,
+    "charisma": -6,
+    "constitution": -12,
+    "strength": 0
+  }
 },
 {
   "_id": {
@@ -413,12 +370,16 @@
   "name": "Crimson Fever",
   "description": "An illness that causes a high fever and severe weakness, making the afflicted bedridden.",
   "type": "illness",
-  "modifiers": [
-    {
-      "attribute": "Strength",
-      "value": -10
-    }
-  ]
+  "modifiers":
+  {
+    "hit_points": 0,
+    "intelligence": 0,
+    "dexterity": 0,
+    "insanity": 0,
+    "charisma": 0,
+    "constitution": 0,
+    "strength": -10
+  }
 },
 {
   "_id": {
@@ -427,20 +388,16 @@
   "name": "Gravechill",
   "description": "A curse that causes the afflicted to feel constant cold, as if they were buried alive.",
   "type": "curse",
-  "modifiers": [
-    {
-      "attribute": "Constitution",
-      "value": -11
-    },
-    {
-      "attribute": "Hit points",
-      "value": -60
-    },
-    {
-      "attribute": "Insanity",
-      "value": 20
-    }
-  ]
+  "modifiers":
+  {
+    "hit_points": -60,
+    "intelligence": 0,
+    "dexterity": 0,
+    "insanity": 20,
+    "charisma": 0,
+    "constitution": -11,
+    "strength": 0
+  }
 },
 {
   "_id": {
@@ -449,16 +406,16 @@
   "name": "Bonebreaker Plague",
   "description": "An illness that weakens the bones, making them prone to fractures.",
   "type": "illness",
-  "modifiers": [
-    {
-      "attribute": "Constitution",
-      "value": -9
-    },
-    {
-      "attribute": "Strength",
-      "value": -7
-    }
-  ]
+  "modifiers":
+  {
+    "hit_points": 0,
+    "intelligence": 0,
+    "dexterity": 0,
+    "insanity": 0,
+    "charisma": 0,
+    "constitution": -9,
+    "strength": -7
+  }
 },
 {
   "_id": {
@@ -467,20 +424,16 @@
   "name": "Specter's Grip",
   "description": "A curse that causes the afflicted to be haunted by malevolent spirits, draining their will to live.",
   "type": "curse",
-  "modifiers": [
-    {
-      "attribute": "Charisma",
-      "value": -10
-    },
-    {
-      "attribute": "Insanity",
-      "value": 22
-    },
-    {
-      "attribute": "Hit points",
-      "value": -50
-    }
-  ]
+  "modifiers":
+  {
+    "hit_points": -50,
+    "intelligence": 0,
+    "dexterity": 0,
+    "insanity": 22,
+    "charisma": -10,
+    "constitution": 0,
+    "strength": 0
+  }
 },
 {
   "_id": {
@@ -489,12 +442,16 @@
   "name": "Mirelung",
   "description": "An illness that fills the lungs with a thick, tar-like substance, making breathing difficult.",
   "type": "illness",
-  "modifiers": [
-    {
-      "attribute": "Constitution",
-      "value": -15
-    }
-  ]
+  "modifiers":
+  {
+    "hit_points": 0,
+    "intelligence": 0,
+    "dexterity": 0,
+    "insanity": 0,
+    "charisma": 0,
+    "constitution": -15,
+    "strength": 0
+  }
 },
 {
   "_id": {
@@ -503,20 +460,16 @@
   "name": "Blight of Ages",
   "description": "A curse that accelerates aging, causing rapid deterioration of the body and mind.",
   "type": "curse",
-  "modifiers": [
-    {
-      "attribute": "Dexterity",
-      "value": -8
-    },
-    {
-      "attribute": "Intelligence",
-      "value": -12
-    },
-    {
-      "attribute": "Hit points",
-      "value": -45
-    }
-  ]
+  "modifiers":
+  {
+    "hit_points": -45,
+    "intelligence": -12,
+    "dexterity": -8,
+    "insanity": 0,
+    "charisma": 0,
+    "constitution": 0,
+    "strength": 0
+  }
 },
 {
   "_id": {
@@ -525,16 +478,16 @@
   "name": "Veinrot",
   "description": "An illness that causes the veins to decay, leading to severe pain and weakness.",
   "type": "illness",
-  "modifiers": [
-    {
-      "attribute": "Strength",
-      "value": -11
-    },
-    {
-      "attribute": "Hit points",
-      "value": -15
-    }
-  ]
+  "modifiers":
+  {
+    "hit_points": -15,
+    "intelligence": 0,
+    "dexterity": 0,
+    "insanity": 0,
+    "charisma": 0,
+    "constitution": 0,
+    "strength": -11
+  }
 },
 {
   "_id": {
@@ -543,20 +496,16 @@
   "name": "Curse of the Forgotten",
   "description": "A curse that erases the afflicted's existence from the memories of others, leading to profound loneliness.",
   "type": "curse",
-  "modifiers": [
-    {
-      "attribute": "Charisma",
-      "value": -13
-    },
-    {
-      "attribute": "Insanity",
-      "value": 25
-    },
-    {
-      "attribute": "Hit points",
-      "value": -35
-    }
-  ]
+  "modifiers":
+  {
+    "hit_points": -35,
+    "intelligence": 0,
+    "dexterity": 0,
+    "insanity": 25,
+    "charisma": -13,
+    "constitution": 0,
+    "strength": 0
+  }
 },
 {
   "_id": {
@@ -565,16 +514,16 @@
   "name": "Wormwood Plague",
   "description": "An illness that causes a severe allergic reaction to sunlight, making the skin blister and burn.",
   "type": "illness",
-  "modifiers": [
-    {
-      "attribute": "Dexterity",
-      "value": -7
-    },
-    {
-      "attribute": "Constitution",
-      "value": -10
-    }
-  ]
+  "modifiers":
+  {
+    "hit_points": 0,
+    "intelligence": 0,
+    "dexterity": -7,
+    "insanity": 0,
+    "charisma": 0,
+    "constitution": -10,
+    "strength": 0
+  }
 },
 {
   "_id": {
@@ -583,18 +532,14 @@
   "name": "Serpent's Curse",
   "description": "A curse that causes the afflicted to grow scales and fangs, but weakens their overall health.",
   "type": "curse",
-  "modifiers": [
-    {
-      "attribute": "Constitution",
-      "value": -14
-    },
-    {
-      "attribute": "Charisma",
-      "value": -6
-    },
-    {
-      "attribute": "Hit points",
-      "value": -55
-    }
-  ]
+  "modifiers":
+  {
+    "hit_points": -55,
+    "intelligence": 0,
+    "dexterity": 0,
+    "insanity": 0,
+    "charisma": -6,
+    "constitution": -14,
+    "strength": 0
+  }
 }]

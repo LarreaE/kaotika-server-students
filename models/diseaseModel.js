@@ -9,7 +9,16 @@ const diseaseSchema = new Schema({
    name: String,
    description: String,
    type: String,
-   modifiers: [{attribute: String, value: Number}]
+   modifiers: {
+      hit_points: Number,
+      intelligence: Number,
+      dexterity: Number,
+      constitution: Number,
+      insanity: Number,
+      charisma: Number,
+      strength: Number
+  }
+   
 
 });
 
