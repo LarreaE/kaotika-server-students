@@ -25,7 +25,7 @@ const weaponSchema = new Schema({
    min_lvl: Number,
    profiles: [{type: Schema.Types.ObjectId, ref: "Profile"}]
 
-});
+}, { versionKey: false });
 
 // Exportamos el modelo para usarlo en otros ficheros
 module.exports = mongoose.model('Weapon', weaponSchema);

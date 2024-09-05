@@ -62,7 +62,7 @@ Multiplier value
 
 
 
-CÁLCULO DE ESTADÍSTICAS DE ARMAS ÚNICAS
+ARMAS ÚNICAS DE PERSONAJE
 ---------------------------------------
 
 Todas empiezan con prob Base: 15
@@ -89,3 +89,9 @@ Every armor can alter other Attribute
 
 
 Basic armors all cost 10. 
+
+
+DISEASES
+
+Illness: Modifican 1 o 2 atributos
+Curse: Modifican 3 o 4 atributos y son más severas
