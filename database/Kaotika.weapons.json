@@ -1,59 +1,115 @@
 [{
   "_id": {
-    "$oid": "668bca105319ea9afdff0716"
+    "$oid": "668bca115319ea9afdff072a"
   },
-  "name": "Blade of Eternal Flame",
-  "description": "Forged in the heart of a volcano, this sword burns with an undying fire. ",
+  "name": "Undertaker's Embalming Scalpel",
+  "description": "This sinister instrument is imbued with necromantic energies, allowing it to cut through flesh and spirit with precision. ",
   "type": "weapon",
-  "image": "/images/equipment/weapons/sword_1.jpg",
+  "image": "/images/equipment/weapons/axe_7.png",
   "value": 10,
+  "damage": "2D6+2",
+  "base_percentage": 15,
   "modifiers": {
     "intelligence": 0,
     "dexterity": 0,
-    "constitution": 0,
-    "insanity": 0,
-    "charisma": 0,
-    "strength": -1
+    "constitution": 5,
+    "insanity": 8,
+    "charisma": -2,
+    "strength": 0
   },
-  "damage": "2D10+3",
-  "base_percentage": 5,
+  "min_lvl": 1,
+  "profiles": [
+    {
+      "$oid": "6687c31b7a5ce485a0eed47a"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "668bca115319ea9afdff0732"
+  },
+  "name": "Inferno's Ear",
+  "description": "This enchanted artifact, resembling a small, fiery ear, grants the wielder the ability to eavesdrop on distant conversations and detect lies. ",
+  "type": "weapon",
+  "image": "/images/equipment/weapons/hammer_3.png",
+  "value": 10,
+  "damage": "2D6+5",
+  "base_percentage": 15,
+  "modifiers": {
+    "intelligence": 0,
+    "dexterity": 0,
+    "constitution": 5,
+    "insanity": 8,
+    "charisma": -5,
+    "strength": 0
+  },
+  "min_lvl": 1,
+  "profiles": [
+    {
+      "$oid": "6687c31b7a5ce485a0eed47b"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "668bca115319ea9afdff072e"
+  },
+  "name": "Heretic Anthem",
+  "description": "A forbidden tome inscribed with blasphemous chants, the Heretic Anthem is a powerful artifact that channels dark magic. ",
+  "type": "weapon",
+  "image": "/images/equipment/weapons/hammer_3.png",
+  "damage": "2D6+1",
+  "base_percentage": 15,
+  "modifiers": {
+    "intelligence": 0,
+    "dexterity": 5,
+    "constitution": 0,
+    "insanity": 8,
+    "charisma": -1,
+    "strength": 0
+  },
+  "min_lvl": 1,
+  "profiles": [
+    {
+        
+      "$oid": "6687c31b7a5ce485a0eed479"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "668bca115319ea9afdff071c"
+  },
+  "name": "Arthur's Feather",
+  "description": "A mystical relic said to have belonged to the legendary king, this feather is imbued with enchantments of protection and wisdom.",
+  "type": "weapon",
+  "image": "/images/equipment/weapons/sword_3.png",
+  "value": 10,
+  "damage": "2D6",
+  "base_percentage": 15,
+  "modifiers": {
+    "intelligence": 0,
+    "dexterity": 0,
+    "constitution": 5,
+    "insanity": 8,
+    "charisma": 0,
+    "strength": 0
+  },
   "min_lvl": 1,
   "profiles": [
     {
       "$oid": "6687c31b7a5ce485a0eed476"
-    },
-    {
-      "$oid": "6687c31b7a5ce485a0eed477"
-    },
-    {
-      "$oid": "6687c31b7a5ce485a0eed478"
-    },
-    {
-      "$oid": "6687c31b7a5ce485a0eed479"
-    },
-    {
-      "$oid": "6687c31b7a5ce485a0eed47a"
-    },
-    {
-      "$oid": "6687c31b7a5ce485a0eed47b"
-    },
-    {
-      "$oid": "6687c31b7a5ce485a0eed47c"
-    },
-    {
-      "$oid": "6687c31b7a5ce485a0eed47d"
     }
-  ],
-  "__v": 0
+  ]
 },
 {
   "_id": {
     "$oid": "668bca105319ea9afdff0719"
   },
-  "name": "Stormbringer's Fury",
-  "description": "Imbued with the power of a raging storm, this sword crackles with lightning and thunder. ",
+  "name": "Shardblade",
+  "description": "A jagged sword prone to breaking on impact.",
   "type": "weapon",
-  "image": "/images/equipment/weapons/sword_2.jpg",
+  "image": "/images/equipment/weapons/sword_2.png",
   "value": 10,
   "damage": "2D12+4",
   "base_percentage": 5,
@@ -91,35 +147,7 @@
     {
       "$oid": "6687c31b7a5ce485a0eed47d"
     }
-  ],
-  "__v": 0
-},
-{
-  "_id": {
-    "$oid": "668bca115319ea9afdff071c"
-  },
-  "name": "Arthur's Feather",
-  "description": "A mystical relic said to have belonged to the legendary king, this feather is imbued with enchantments of protection and wisdom.",
-  "type": "weapon",
-  "image": "/images/equipment/weapons/sword_3.jpg",
-  "value": 10,
-  "damage": "2D6",
-  "base_percentage": 15,
-  "modifiers": {
-    "intelligence": 0,
-    "dexterity": 0,
-    "constitution": 5,
-    "insanity": 8,
-    "charisma": 0,
-    "strength": 0
-  },
-  "min_lvl": 1,
-  "profiles": [
-    {
-      "$oid": "6687c31b7a5ce485a0eed476"
-    }
-  ],
-  "__v": 0
+  ]
 },
 {
   "_id": {
@@ -128,7 +156,7 @@
   "name": "Poisoned Pouch",
   "description": "A devious artifact filled with lethal toxins, the Poisoned Pouch allows its possessor to craft and deploy a variety of poisons.",
   "type": "weapon",
-  "image": "/images/equipment/weapons/sword_4.jpg",
+  "image": "/images/equipment/weapons/sword_4.png",
   "damage": "2D6+1",
   "base_percentage": 15,
   "modifiers": {
@@ -144,143 +172,7 @@
     {
       "$oid": "6687c31b7a5ce485a0eed477"
     }
-  ],
-  "__v": 0
-},
-{
-  "_id": {
-    "$oid": "668bca115319ea9afdff0725"
-  },
-  "name": "Twirling Yo-yo",
-  "description": "A seemingly playful toy with a hidden edge, the Twirling Yo-yo is a versatile weapon in the right hands. ",
-  "type": "weapon",
-  "image": "/images/equipment/weapons/maze_3.jpg",
-  "value": 10,
-  "damage": "2D6+6",
-  "base_percentage": 15,
-  "modifiers": {
-    "intelligence": 5,
-    "dexterity": 0,
-    "constitution": 0,
-    "insanity": 8,
-    "charisma": -6,
-    "strength": 0
-  },
-  "min_lvl": 1,
-  "profiles": [
-    {
-      "$oid": "6687c31b7a5ce485a0eed478"
-    }
-  ],
-  "__v": 0
-},
-{
-  "_id": {
-    "$oid": "668bca115319ea9afdff072a"
-  },
-  "name": "Undertaker's Embalming Scalpel",
-  "description": "This sinister instrument is imbued with necromantic energies, allowing it to cut through flesh and spirit with precision. ",
-  "type": "weapon",
-  "image": "/images/equipment/weapons/maze_3.jpg",
-  "value": 10,
-  "damage": "2D6+2",
-  "base_percentage": 15,
-
-  "modifiers": {
-    "intelligence": 0,
-    "dexterity": 0,
-    "constitution": 5,
-    "insanity": 8,
-    "charisma": -2,
-    "strength": 0
-  },
-  "min_lvl": 1,
-  "profiles": [
-    {
-      "$oid": "6687c31b7a5ce485a0eed479"
-    }
-  ],
-  "__v": 0
-},
-{
-  "_id": {
-    "$oid": "668bca115319ea9afdff072e"
-  },
-  "name": "Heretic Anthem",
-  "description": "A forbidden tome inscribed with blasphemous chants, the Heretic Anthem is a powerful artifact that channels dark magic. ",
-  "type": "weapon",
-  "image": "/images/equipment/weapons/maze_3.jpg",
-  "damage": "2D6+1",
-  "base_percentage": 15,
-  "modifiers": {
-    "intelligence": 0,
-    "dexterity": 5,
-    "constitution": 0,
-    "insanity": 8,
-    "charisma": -1,
-    "strength": 0
-  },
-  "min_lvl": 1,
-  "profiles": [
-    {
-      "$oid": "6687c31b7a5ce485a0eed47a"
-    }
-  ],
-  "__v": 0
-},
-{
-  "_id": {
-    "$oid": "668bca115319ea9afdff0732"
-  },
-  "name": "Inferno's Ear",
-  "description": "This enchanted artifact, resembling a small, fiery ear, grants the wielder the ability to eavesdrop on distant conversations and detect lies. ",
-  "type": "weapon",
-  "image": "/images/equipment/weapons/maze_3.jpg",
-  "value": 10,
-  "damage": "2D6+5",
-  "base_percentage": 15,
-  "modifiers": {
-    "intelligence": 0,
-    "dexterity": 0,
-    "constitution": 5,
-    "insanity": 8,
-    "charisma": -5,
-    "strength": 0
-  },
-  "min_lvl": 1,
-  "profiles": [
-    {
-      "$oid": "6687c31b7a5ce485a0eed47b"
-    }
-  ],
-  "__v": 0
-},
-{
-  "_id": {
-    "$oid": "668bca115319ea9afdff0737"
-  },
-  "name": "Wooden Leg",
-  "description": "This enchanted prosthetic limb, carved from ancient, magical wood, grants the wearer enhanced stability and strength. ",
-  "type": "weapon",
-  "image": "/images/equipment/weapons/maze_1.jpg",
-  "value": 10,
-  "damage": "2D6+3",
-  "base_percentage": 15,
-  "modifiers": {
-    "intelligence": 5,
-    "dexterity": 0,
-    "constitution": 0,
-    "insanity": 8,
-    "charisma": -3,
-    "strength": 0
-  },
-  "min_lvl": 1,
-  "profiles": [
-    {
-      "$oid": "6687c31b7a5ce485a0eed47c"
-    }
-  ],
-  "__v": 0
+  ]
 },
 {
   "_id": {
@@ -289,7 +181,7 @@
   "name": "Storyteller's Lute",
   "description": "This beautifully crafted lute is imbued with the power of ancient tales and melodies.",
   "type": "weapon",
-  "image": "/images/equipment/weapons/maze_2.jpg",
+  "image": "/images/equipment/weapons/axe_4.png",
   "value": 10,
   "damage": "2D6+4",
   "base_percentage": 15,
@@ -306,6 +198,104 @@
     {
       "$oid": "6687c31b7a5ce485a0eed47d"
     }
-  ],
-  "__v": 0
+  ]
+},
+{
+  "_id": {
+    "$oid": "668bca115319ea9afdff0737"
+  },
+  "name": "Wooden Leg",
+  "description": "This enchanted prosthetic limb, carved from ancient, magical wood, grants the wearer enhanced stability and strength. ",
+  "type": "weapon",
+  "image": "/images/equipment/weapons/axe_5.png",
+  "value": 10,
+  "damage": "2D6+3",
+  "base_percentage": 15,
+  "modifiers": {
+    "intelligence": 5,
+    "dexterity": 0,
+    "constitution": 0,
+    "insanity": 8,
+    "charisma": -3,
+    "strength": 0
+  },
+  "min_lvl": 1,
+  "profiles": [
+    {
+      "$oid": "6687c31b7a5ce485a0eed47c"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "668bca105319ea9afdff0716"
+  },
+  "name": "Whisper Fang",
+  "description": "A light, sharp sword that cracks under pressure.",
+  "type": "weapon",
+  "image": "/images/equipment/weapons/sword_1.png",
+  "value": 10,
+  "modifiers": {
+    "intelligence": 0,
+    "dexterity": 0,
+    "constitution": 0,
+    "insanity": 0,
+    "charisma": 0,
+    "strength": -1
+  },
+  "damage": "2D10+3",
+  "base_percentage": 5,
+  "min_lvl": 1,
+  "profiles": [
+    {
+      "$oid": "6687c31b7a5ce485a0eed476"
+    },
+    {
+      "$oid": "6687c31b7a5ce485a0eed477"
+    },
+    {
+      "$oid": "6687c31b7a5ce485a0eed478"
+    },
+    {
+      "$oid": "6687c31b7a5ce485a0eed479"
+    },
+    {
+      "$oid": "6687c31b7a5ce485a0eed47a"
+    },
+    {
+      "$oid": "6687c31b7a5ce485a0eed47b"
+    },
+    {
+      "$oid": "6687c31b7a5ce485a0eed47c"
+    },
+    {
+      "$oid": "6687c31b7a5ce485a0eed47d"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "668bca115319ea9afdff0725"
+  },
+  "name": "Twirling Yo-yo",
+  "description": "A seemingly playful toy with a hidden edge, the Twirling Yo-yo is a versatile weapon in the right hands. ",
+  "type": "weapon",
+  "image": "/images/equipment/weapons/axe_3.png",
+  "value": 10,
+  "damage": "2D6+6",
+  "base_percentage": 15,
+  "modifiers": {
+    "intelligence": 5,
+    "dexterity": 0,
+    "constitution": 0,
+    "insanity": 8,
+    "charisma": -6,
+    "strength": 0
+  },
+  "min_lvl": 1,
+  "profiles": [
+    {
+      "$oid": "6687c31b7a5ce485a0eed478"
+    }
+  ]
 }]
