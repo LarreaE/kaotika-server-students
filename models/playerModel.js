@@ -49,7 +49,11 @@ const playerSchema = new Schema({
     healing_potions: [{type: Schema.Types.ObjectId, ref: "PotionHealing"}],
     enhancer_potions: [{type: Schema.Types.ObjectId, ref: "PotionEnhancer"}]
   },
-  tasks: [{ type:[String], default: null }],
+  //tasks: [{ type:[String], default: null }],
+  tasks: [{ classroom_Id: String, 
+            courseWorkName: String,
+            grade: String,
+            selectedAssignment: String}],
   created_date: { type: Date, default: Date.now },
   gold: {type: Number, default:50}
 }, { versionKey: false });

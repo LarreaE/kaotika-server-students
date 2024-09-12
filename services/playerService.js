@@ -2,7 +2,7 @@
 const Player = require('../models/playerModel');
 const profileService = require("./profileService");
 // const Profile = require('../models/profileModel'); 
-// const Weapon = require('../models/weaponModel');
+//const Weapon = require('../models/weaponModel');
 // const Armor = require('../models/armorModel');
 // const Artifact = require('../models/artifactModel');
 // const PotionHealing = require('../models/potionHealingModel');
@@ -106,8 +106,9 @@ const populatePlayer = async (createdPlayer) => {
 
     console.log("populateFunction");
     const playerPopulated = await Player.findById(createdPlayer._id).populate('profile').exec();
-    console.log(playerPopulated);
+    //console.log(playerPopulated);
 
+    //Poblamos el equipo
     await playerPopulated.equipment.populate('armor', {'profiles': 0});
     await playerPopulated.equipment.populate('weapon', {'profiles': 0});
     await playerPopulated.equipment.populate('artifact', {'profiles': 0});
@@ -119,7 +120,24 @@ const populatePlayer = async (createdPlayer) => {
     await playerPopulated.equipment.populate('helmet', {'profiles': 0});
     await playerPopulated.equipment.populate('shield', {'profiles': 0});
     await playerPopulated.equipment.populate('boot', {'profiles': 0});
+
     
+    //Poblamos el inventario
+    await playerPopulated.inventory.populate('helmets', {'profiles': 0});
+    await playerPopulated.inventory.populate('shields', {'profiles': 0});
+    await playerPopulated.inventory.populate('weapons', {'profiles': 0});
+    await playerPopulated.inventory.populate('boots', {'profiles': 0});
+    await playerPopulated.inventory.populate('rings', {'profiles': 0});
+    await playerPopulated.inventory.populate('armors', {'profiles': 0});
+    await playerPopulated.inventory.populate('artifacts', {'profiles': 0});
+    await playerPopulated.equipment.populate('healing_potions', {'profiles': 0});
+    await playerPopulated.equipment.populate('antidote_potions', {'profiles': 0});
+    await playerPopulated.equipment.populate('enhancer_potions', {'profiles': 0});
+
+    
+    
+
+
     
 
     
