@@ -149,15 +149,13 @@ const updateOnePlayer = async (req, res) => {
 
 
 const updateTasks = async (req, res) => {
+  console.log("Route players/tasks executed. updatedTasks function executed");
   console.log(req.body);
-  
+
   const { body } = req;
-
-
   const taskData = body;
 
-  console.log("Route players/tasks executed. Datos del body recibidos");
-  console.log(taskData);
+
 
   try {
      const updatedIds = await playerService.updateTask(taskData);
