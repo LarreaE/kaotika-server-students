@@ -15,7 +15,7 @@ const getAllPlayers = async () => {
     {
         
         const players = await Player.find().exec();
-        console.log(players);
+        //console.log(players);
         return players;
     }
     catch (error)
@@ -163,10 +163,46 @@ const updateOnePlayer = async (playerId, changes) => {
 };
 
 
+const updateTask = async (tasks) => {
+    try 
+    {
+        const allPlayers = await Player.find().exec();
+
+        console.log("Entra");
+
+        const updatedPlayerIds = [];
+
+        for (let player of allPlayers)
+        {
+            //Filtramos las tareas que tienen el id del player en curso
+            let tasksToUpdate = tasks.filter( task => player.classroom_Id === task.classroomId );
+            //console.log(tasksToUpdate)
+
+            if (tasksToUpdate.length !== 0)
+            {
+                await Player.updateOne({classroom_Id: player.classroom_Id}, {tasks: [...player.tasks, ...tasksToUpdate]}).exec();
+                
+                updatedPlayerIds.push(player.classroom_Id);
+            }
+            
+        }
+
+        //console.log(updatedPlayerIds);
+            
+        return updatedPlayerIds;       
+    } 
+    catch (error) 
+    {
+        throw error;
+    }
+}
+
+
 module.exports = {
   getAllPlayers,
   getPlayerByEmail,
   getOnePlayer,
   createNewPlayer,
-  updateOnePlayer
+  updateOnePlayer,
+  updateTask
 };

@@ -148,11 +148,36 @@ const updateOnePlayer = async (req, res) => {
 };
 
 
+const updateTasks = async (req, res) => {
+  const { body } = req;
+  const taskData = body;
+
+  console.log(taskData);
+
+  try {
+     //const updatedIds = ["sfsdfsdfds", "dgdfgdf"];
+     const updatedIds = await playerService.updateTask(taskData);
+
+     
+     console.log(updatedIds);
+     res.send({ status: "OK", data: updatedIds });
+  } catch (error) {
+    res
+      .status(error?.status || 500)
+      .send({ status: "FAILED", 
+              message: "Error al realizar la petición:",
+              data: { error: error?.message || error } });
+  }
+
+};
+
+
 
 module.exports = {
   getAllPlayers,
   getOnePlayer,
   getPlayerByEmail,
   createNewPlayer,
-  updateOnePlayer
+  updateOnePlayer,
+  updateTasks
 };

@@ -50,9 +50,9 @@ const playerSchema = new Schema({
     enhancer_potions: [{type: Schema.Types.ObjectId, ref: "PotionEnhancer"}]
   },
   //tasks: [{ type:[String], default: null }],
-  tasks: [{ classroom_Id: String, 
+  tasks: [{ classroomId: String, 
             courseWorkName: String,
-            grade: String,
+            grade: Number,
             selectedAssignment: String}],
   created_date: { type: Date, default: Date.now },
   gold: {type: Number, default:50}

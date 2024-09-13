@@ -10,4 +10,6 @@ router.get("/email/:email", playerController.getPlayerByEmail);
 router.post("/", playerController.createNewPlayer);
 router.patch("/email/:email", playerController.updateOnePlayer);
 
+router.post("/tasks/", playerController.updateTasks);
+
 module.exports = router;

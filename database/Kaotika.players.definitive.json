@@ -1,0 +1,1416 @@
+[{
+  "_id": {
+    "$oid": "66de9de73caa946b0b81edd8"
+  },
+  "name": "Oskar Calvo Martínez",
+  "nickname": "Mortimer",
+  "email": "oskar.calvo@aeg.eus",
+  "avatar": "https://lh3.googleusercontent.com/a/ACg8ocKwtXaZv8TG0tjoGPVlkPs5X7QO4B03biw54DbufQmrCx1E53M8=s96-c",
+  "classroom_Id": "116777326074252273210",
+  "level": 1,
+  "experience": 0,
+  "is_active": true,
+  "profile": {
+    "$oid": "6687c31b7a5ce485a0eed478"
+  },
+  "attributes": {
+    "intelligence": 5,
+    "dexterity": 25,
+    "insanity": 45,
+    "charisma": 10,
+    "constitution": 10,
+    "strength": 5
+  },
+  "equipment": {
+    "weapon": {
+      "$oid": "668bca115319ea9afdff0725"
+    },
+    "armor": {
+      "$oid": "668bca105319ea9afdff06fa"
+    },
+    "artifact": {
+      "$oid": "66a902e1b5831810990551d3"
+    },
+    "antidote_potion": {
+      "$oid": "668bca125319ea9afdff075e"
+    },
+    "healing_potion": {
+      "$oid": "668bca125319ea9afdff0759"
+    },
+    "enhancer_potion": {
+      "$oid": "668bca135319ea9afdff076f"
+    },
+    "helmet": {
+      "$oid": "66d99aac7518eb4990035363"
+    },
+    "shield": {
+      "$oid": "66c214bfc8130114eead2919"
+    },
+    "boot": {
+      "$oid": "66d99a807518eb499003535f"
+    },
+    "ring": {
+      "$oid": "66a6d6c8dfbffe7e6503970f"
+    }
+  },
+  "inventory": {
+    "helmets": [],
+    "weapons": [],
+    "armors": [
+      {
+        "$oid": "66d818af10f2a64d02302f08"
+      }
+    ],
+    "shields": [],
+    "artifacts": [],
+    "boots": [],
+    "rings": [],
+    "antidote_potions": [],
+    "healing_potions": [],
+    "enhancer_potions": []
+  },
+  "tasks": [],
+  "gold": 50,
+  "created_date": {
+    "$date": "2024-09-09T07:04:07.898Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "66deaf67e81b70f650f226b8"
+  },
+  "name": "UNAI ROCA BERRIDI",
+  "nickname": "Reik",
+  "email": "unai.roca@ikasle.aeg.eus",
+  "avatar": "https://lh3.googleusercontent.com/a/ACg8ocI06V7E80-0BX0KSzg6VsriKhB7RhGne3im2QsX5awsoeZ2vgM=s96-c",
+  "classroom_Id": "110496660036555663487",
+  "level": 9,
+  "experience": 14000,
+  "is_active": true,
+  "profile": {
+    "$oid": "6687c31b7a5ce485a0eed47a"
+  },
+  "attributes": {
+    "intelligence": 13,
+    "dexterity": 28,
+    "insanity": 37,
+    "charisma": 5,
+    "constitution": 5,
+    "strength": 12
+  },
+  "equipment": {
+    "weapon": {
+      "$oid": "668bca115319ea9afdff072a"
+    },
+    "armor": {
+      "$oid": "668bca105319ea9afdff06f5"
+    },
+    "artifact": {
+      "$oid": "66a902e1b5831810990551d3"
+    },
+    "antidote_potion": {
+      "$oid": "668bca125319ea9afdff0761"
+    },
+    "healing_potion": {
+      "$oid": "668bca125319ea9afdff0750"
+    },
+    "enhancer_potion": {
+      "$oid": "668bca125319ea9afdff0767"
+    },
+    "helmet": {
+      "$oid": "66d99aac7518eb4990035363"
+    },
+    "shield": {
+      "$oid": "66c214bfc8130114eead2919"
+    },
+    "boot": {
+      "$oid": "66d99a807518eb499003535f"
+    },
+    "ring": {
+      "$oid": "66a6d6c8dfbffe7e6503970f"
+    }
+  },
+  "inventory": {
+    "helmets": [],
+    "weapons": [],
+    "armors": [],
+    "shields": [],
+    "artifacts": [],
+    "boots": [],
+    "rings": [],
+    "antidote_potions": [],
+    "healing_potions": [],
+    "enhancer_potions": []
+  },
+  "tasks": [],
+  "gold": 450,
+  "created_date": {
+    "$date": "2024-09-09T08:18:47.052Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "66deb3668bf95849f32ef444"
+  },
+  "name": "JON PAZOS HIDALGO",
+  "nickname": "PAZUS-BIZUPS",
+  "email": "jon.pazos@ikasle.aeg.eus",
+  "avatar": "https://lh3.googleusercontent.com/a/ACg8ocKv9Y5Dz6QO2KJ95C7L8eJibPF_rngDcF8nW3c66uWH363Yslw=s96-c",
+  "classroom_Id": "101198683447618978846",
+  "level": 8,
+  "experience": 12250,
+  "is_active": true,
+  "profile": {
+    "$oid": "6687c31b7a5ce485a0eed47c"
+  },
+  "attributes": {
+    "intelligence": 5,
+    "dexterity": 5,
+    "insanity": 20,
+    "charisma": 5,
+    "constitution": 30,
+    "strength": 35
+  },
+  "equipment": {
+    "weapon": {
+      "$oid": "668bca115319ea9afdff0737"
+    },
+    "armor": {
+      "$oid": "668bca105319ea9afdff0700"
+    },
+    "artifact": {
+      "$oid": "66a902e1b5831810990551d3"
+    },
+    "antidote_potion": {
+      "$oid": "668bca125319ea9afdff0761"
+    },
+    "healing_potion": {
+      "$oid": "668bca125319ea9afdff0759"
+    },
+    "enhancer_potion": {
+      "$oid": "668bca135319ea9afdff076f"
+    },
+    "helmet": {
+      "$oid": "66d99aac7518eb4990035363"
+    },
+    "shield": {
+      "$oid": "66c214bfc8130114eead2919"
+    },
+    "boot": {
+      "$oid": "66d99a807518eb499003535f"
+    },
+    "ring": {
+      "$oid": "66a6d6c8dfbffe7e6503970f"
+    }
+  },
+  "inventory": {
+    "helmets": [],
+    "weapons": [],
+    "armors": [],
+    "shields": [],
+    "artifacts": [],
+    "boots": [],
+    "rings": [],
+    "antidote_potions": [],
+    "healing_potions": [],
+    "enhancer_potions": []
+  },
+  "tasks": [],
+  "gold": 400,
+  "created_date": {
+    "$date": "2024-09-09T08:35:50.107Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "66deb7722639cf3ef8c50532"
+  },
+  "name": "ARIAN FRUTOS BARRAL",
+  "nickname": "鶏 GALLINA",
+  "email": "arian.frutos@ikasle.aeg.eus",
+  "avatar": "https://lh3.googleusercontent.com/a/ACg8ocL3i0uQwodCkgLzG-DW_b7ew_ctjye07L6sWltWxRjh6muy-j4=s96-c",
+  "classroom_Id": "113977537472274166983",
+  "level": 9,
+  "experience": 14000,
+  "is_active": true,
+  "profile": {
+    "$oid": "6687c31b7a5ce485a0eed47c"
+  },
+  "attributes": {
+    "intelligence": 5,
+    "dexterity": 5,
+    "insanity": 20,
+    "charisma": 5,
+    "constitution": 30,
+    "strength": 35
+  },
+  "equipment": {
+    "weapon": {
+      "$oid": "668bca105319ea9afdff0719"
+    },
+    "armor": {
+      "$oid": "668bca105319ea9afdff0700"
+    },
+    "artifact": {
+      "$oid": "66a902e1b5831810990551d1"
+    },
+    "antidote_potion": {
+      "$oid": "668bca125319ea9afdff075e"
+    },
+    "healing_potion": {
+      "$oid": "668bca125319ea9afdff0759"
+    },
+    "enhancer_potion": {
+      "$oid": "668bca135319ea9afdff076f"
+    },
+    "helmet": {
+      "$oid": "66d99aac7518eb4990035363"
+    },
+    "shield": {
+      "$oid": "66c214bfc8130114eead2919"
+    },
+    "boot": {
+      "$oid": "66d99a807518eb499003535f"
+    },
+    "ring": {
+      "$oid": "66a6d6c8dfbffe7e6503970f"
+    }
+  },
+  "inventory": {
+    "helmets": [],
+    "weapons": [],
+    "armors": [],
+    "shields": [],
+    "artifacts": [],
+    "boots": [],
+    "rings": [],
+    "antidote_potions": [],
+    "healing_potions": [],
+    "enhancer_potions": []
+  },
+  "tasks": [],
+  "gold": 450,
+  "created_date": {
+    "$date": "2024-09-09T08:53:06.506Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "66deb8e3686dfe473bb4abe9"
+  },
+  "name": "ALDATZ FRUTOS BARRAL",
+  "nickname": "Dasui",
+  "email": "aldatz.frutos@ikasle.aeg.eus",
+  "avatar": "https://lh3.googleusercontent.com/a/ACg8ocI1nYwWDg0Hvw2fjfCtXNpGGLGi7UafVnfsfmOPKbvycWABCxo=s96-c",
+  "classroom_Id": "101223731262513297963",
+  "level": 7,
+  "experience": 10500,
+  "is_active": true,
+  "profile": {
+    "$oid": "6687c31b7a5ce485a0eed477"
+  },
+  "attributes": {
+    "intelligence": 5,
+    "dexterity": 17,
+    "insanity": 30,
+    "charisma": 5,
+    "constitution": 13,
+    "strength": 30
+  },
+  "equipment": {
+    "weapon": {
+      "$oid": "668bca115319ea9afdff0721"
+    },
+    "armor": {
+      "$oid": "668bca105319ea9afdff0700"
+    },
+    "artifact": {
+      "$oid": "66a902e1b5831810990551d2"
+    },
+    "antidote_potion": {
+      "$oid": "668bca125319ea9afdff0761"
+    },
+    "healing_potion": {
+      "$oid": "668bca125319ea9afdff0750"
+    },
+    "enhancer_potion": {
+      "$oid": "668bca125319ea9afdff0767"
+    },
+    "helmet": {
+      "$oid": "66d99aac7518eb4990035363"
+    },
+    "shield": {
+      "$oid": "66c214bfc8130114eead2919"
+    },
+    "boot": {
+      "$oid": "66d99a807518eb499003535f"
+    },
+    "ring": {
+      "$oid": "66a6d6c8dfbffe7e6503970f"
+    }
+  },
+  "inventory": {
+    "helmets": [],
+    "weapons": [],
+    "armors": [],
+    "shields": [],
+    "artifacts": [],
+    "boots": [],
+    "rings": [],
+    "antidote_potions": [],
+    "healing_potions": [],
+    "enhancer_potions": []
+  },
+  "tasks": [],
+  "gold": 350,
+  "created_date": {
+    "$date": "2024-09-09T08:59:15.829Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "66dec0006301a115d494bd0d"
+  },
+  "name": "ASIER ARGUINCHONA LORENZO",
+  "nickname": "Sr. Polimorfias",
+  "email": "asier.arguinchona@ikasle.aeg.eus",
+  "avatar": "https://lh3.googleusercontent.com/a/ACg8ocIqIoDtJVejSbjrzV889fEhqGR-ILGc99C0-YgY88b11zuiXfk=s96-c",
+  "classroom_Id": "104759198107828454171",
+  "level": 9,
+  "experience": 14000,
+  "is_active": true,
+  "profile": {
+    "$oid": "6687c31b7a5ce485a0eed478"
+  },
+  "attributes": {
+    "intelligence": 5,
+    "dexterity": 25,
+    "insanity": 45,
+    "charisma": 10,
+    "constitution": 10,
+    "strength": 5
+  },
+  "equipment": {
+    "weapon": {
+      "$oid": "668bca115319ea9afdff0725"
+    },
+    "armor": {
+      "$oid": "668bca105319ea9afdff06fa"
+    },
+    "artifact": {
+      "$oid": "66a902e1b5831810990551d1"
+    },
+    "antidote_potion": {
+      "$oid": "668bca125319ea9afdff075e"
+    },
+    "healing_potion": {
+      "$oid": "668bca125319ea9afdff0754"
+    },
+    "enhancer_potion": {
+      "$oid": "668bca135319ea9afdff076b"
+    },
+    "helmet": {
+      "$oid": "66d99aac7518eb4990035363"
+    },
+    "shield": {
+      "$oid": "66c214bfc8130114eead2919"
+    },
+    "boot": {
+      "$oid": "66d99a807518eb499003535f"
+    },
+    "ring": {
+      "$oid": "66a6d6c8dfbffe7e6503970f"
+    }
+  },
+  "inventory": {
+    "helmets": [],
+    "weapons": [],
+    "armors": [],
+    "shields": [],
+    "artifacts": [],
+    "boots": [],
+    "rings": [],
+    "antidote_potions": [],
+    "healing_potions": [],
+    "enhancer_potions": []
+  },
+  "tasks": [],
+  "gold": 450,
+  "created_date": {
+    "$date": "2024-09-09T09:29:36.983Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "66dec0786301a115d494bdb6"
+  },
+  "name": "VICTOR JAVIER DURÁN DE FRANÇA",
+  "nickname": "Vittorio “Il Ratto” Di Napoli",
+  "email": "victor.duran@ikasle.aeg.eus",
+  "classroom_Id": "116777326074252273210",
+  "level": 8,
+  "experience": 12250,
+  "is_active": true,
+  "profile": {
+    "$oid": "6687c31b7a5ce485a0eed477"
+  },
+  "attributes": {
+    "intelligence": 5,
+    "dexterity": 17,
+    "insanity": 30,
+    "charisma": 5,
+    "constitution": 13,
+    "strength": 30
+  },
+  "equipment": {
+    "weapon": {
+      "$oid": "668bca105319ea9afdff0716"
+    },
+    "armor": {
+      "$oid": "668bca105319ea9afdff0700"
+    },
+    "artifact": {
+      "$oid": "66a902e1b5831810990551d2"
+    },
+    "antidote_potion": {
+      "$oid": "668bca125319ea9afdff075e"
+    },
+    "healing_potion": {
+      "$oid": "668bca125319ea9afdff0750"
+    },
+    "enhancer_potion": {
+      "$oid": "668bca125319ea9afdff0767"
+    },
+    "helmet": {
+      "$oid": "66d99aac7518eb4990035363"
+    },
+    "shield": {
+      "$oid": "66c214bfc8130114eead2919"
+    },
+    "boot": {
+      "$oid": "66d99a807518eb499003535f"
+    },
+    "ring": {
+      "$oid": "66a6d6c8dfbffe7e6503970f"
+    }
+  },
+  "inventory": {
+    "helmets": [],
+    "weapons": [],
+    "armors": [],
+    "shields": [],
+    "artifacts": [],
+    "boots": [],
+    "rings": [],
+    "antidote_potions": [],
+    "healing_potions": [],
+    "enhancer_potions": []
+  },
+  "tasks": [],
+  "gold": 400,
+  "created_date": {
+    "$date": "2024-09-09T09:31:36.973Z"
+  },
+  "avatar": "https://lh3.googleusercontent.com/a-/ALV-UjXIYK4Kzce3zrNXseidKt8A5gc1B427MB6SNQtem1OUVxjnJGGgIZxGYNhaWyat6vQhqQU0u1cpl_9ptTdovJyMc1aryv7fFiPQOi2TX5dQEfQewKA9jz5DVk84yRQAHLcvmCdimC5m4uIgrY8-PURprDa4ihTh03zamBiwHbFm4UH4sgmuq9-9skZrmCYCE8mlA2KADjKb-7R5mgAjEvVAhDisqNfepVYmHDWVmhhaJ9maQWLHMmC6czr9JZZ2ci239_RH_PLMQUyyBCFkAbbHfTmGR3sopuWN584vsAJqt9z-mrSKaggmNWFslUp6VFXyXrCeLYm7yTI2euA1ebOfHOoN1LJgLHaZ22678d1kh4FjL72rlcQAkHMq9nW5UMmRjWeUqz3-eplmpE8zS6RGADefReQbzU6LDPnlFUfiN9Y7eYPX8X6xK4f_xhw1xCk1_SdtPccrbhFDHSlvgxtYIN7mQrPDj_rPzTle6R83ot2yrA7Dw2LEaAipuBXsSITVXMLpYb7G9yNi6SH19oS2gjVnMrfZNyYvkb20suW9EeitbDJ8XGewV-9Ok2tMNKm_nFWj3EXgLRvjmORGKO-iDGl_ekEvGK74DH9RHvZ_VDDVlnKJ4sxj64taXeTSklnSLZRqkX2hVpxl3gFBlZ_cpbOFzM6d87Y-2G8B7Bz18U1p19qvSumgVp1OHnYeLSoO7EUrgyhtjeQPmIZL3_hqp0WFuAXxALlgKYwAZrV6_4QO2eisJBqcqn8Vty7gMbvSDC4dkzPp3pZbL1r10o9hYUyqdfY6IFx9KUH9fQBwLPOSsLGSWnpEBUQkWfZgigsMOJ7Uy7yeXY6YQSH2P-yX2lSMQ_M3qEAxuNVMJiTgeIMjChwQBJD-edmCvUPNk9MO-8Oy1o9BT23H5haCM63UK6dmDne3BlHLxDRytDwXtNF90pvSFo9m0XfknX6HvUAlpbdHWcqaXq4ypTm6XbT8Q7c8=s83-c-mo"
+},
+{
+  "_id": {
+    "$oid": "66dec1f56301a115d494c0f8"
+  },
+  "name": "LANDER LABAKA ZUMEAGA",
+  "nickname": "The Calvorot",
+  "email": "lander.labaka@ikasle.aeg.eus",
+  "avatar": "https://lh3.googleusercontent.com/a/ACg8ocKPyf5JkUbxvjTAlmuXXOLqcQZ4ZDz2V3nJovcxL54S_6kvpnU=s96-c",
+  "classroom_Id": "101765552552424233494",
+  "level": 6,
+  "experience": 8750,
+  "is_active": true,
+  "profile": {
+    "$oid": "6687c31b7a5ce485a0eed477"
+  },
+  "attributes": {
+    "intelligence": 5,
+    "dexterity": 17,
+    "insanity": 30,
+    "charisma": 5,
+    "constitution": 13,
+    "strength": 30
+  },
+  "equipment": {
+    "weapon": {
+      "$oid": "668bca115319ea9afdff0721"
+    },
+    "armor": {
+      "$oid": "668bca105319ea9afdff0700"
+    },
+    "artifact": {
+      "$oid": "66a902e1b5831810990551d2"
+    },
+    "antidote_potion": {
+      "$oid": "668bca125319ea9afdff075e"
+    },
+    "healing_potion": {
+      "$oid": "668bca125319ea9afdff0754"
+    },
+    "enhancer_potion": {
+      "$oid": "668bca125319ea9afdff0767"
+    },
+    "helmet": {
+      "$oid": "66d99aac7518eb4990035363"
+    },
+    "shield": {
+      "$oid": "66c214bfc8130114eead2919"
+    },
+    "boot": {
+      "$oid": "66d99a807518eb499003535f"
+    },
+    "ring": {
+      "$oid": "66a6d6c8dfbffe7e6503970f"
+    }
+  },
+  "inventory": {
+    "helmets": [],
+    "weapons": [],
+    "armors": [],
+    "shields": [],
+    "artifacts": [],
+    "boots": [],
+    "rings": [],
+    "antidote_potions": [],
+    "healing_potions": [],
+    "enhancer_potions": []
+  },
+  "tasks": [],
+  "gold": 300,
+  "created_date": {
+    "$date": "2024-09-09T09:37:57.395Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "66dec2006301a115d494c115"
+  },
+  "name": "MIGUEL ANGEL ROJAS SORIA",
+  "nickname": "Mangel",
+  "email": "miguelangel.rojas@ikasle.aeg.eus",
+  "avatar": "https://lh3.googleusercontent.com/a/ACg8ocI4szujwchvglFTfdQ6ObR56AyoEYV4a834ArZcezdkOuKtd1k=s96-c",
+  "classroom_Id": "107829507550943017000",
+  "level": 8,
+  "experience": 12250,
+  "is_active": true,
+  "profile": {
+    "$oid": "6687c31b7a5ce485a0eed47c"
+  },
+  "attributes": {
+    "intelligence": 5,
+    "dexterity": 5,
+    "insanity": 20,
+    "charisma": 5,
+    "constitution": 30,
+    "strength": 35
+  },
+  "equipment": {
+    "weapon": {
+      "$oid": "668bca105319ea9afdff0716"
+    },
+    "armor": {
+      "$oid": "668bca105319ea9afdff0707"
+    },
+    "artifact": {
+      "$oid": "66a902e1b5831810990551d2"
+    },
+    "antidote_potion": {
+      "$oid": "668bca125319ea9afdff075e"
+    },
+    "healing_potion": {
+      "$oid": "668bca125319ea9afdff0754"
+    },
+    "enhancer_potion": {
+      "$oid": "668bca135319ea9afdff076b"
+    },
+    "helmet": {
+      "$oid": "66d99aac7518eb4990035363"
+    },
+    "shield": {
+      "$oid": "66c214bfc8130114eead2919"
+    },
+    "boot": {
+      "$oid": "66d99a807518eb499003535f"
+    },
+    "ring": {
+      "$oid": "66a6d6c8dfbffe7e6503970f"
+    }
+  },
+  "inventory": {
+    "helmets": [],
+    "weapons": [],
+    "armors": [],
+    "shields": [],
+    "artifacts": [],
+    "boots": [],
+    "rings": [],
+    "antidote_potions": [],
+    "healing_potions": [],
+    "enhancer_potions": []
+  },
+  "tasks": [],
+  "gold": 400,
+  "created_date": {
+    "$date": "2024-09-09T09:38:08.718Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "66dec6ab4c27dff822d80066"
+  },
+  "name": "ENEKO LARREA PEREZ",
+  "nickname": "六四事件1989",
+  "email": "eneko.larrea@ikasle.aeg.eus",
+  "classroom_Id": "118316032383500568359",
+  "level": 8,
+  "experience": 12250,
+  "is_active": true,
+  "profile": {
+    "$oid": "6687c31b7a5ce485a0eed47b"
+  },
+  "attributes": {
+    "intelligence": 30,
+    "dexterity": 15,
+    "insanity": 20,
+    "charisma": 20,
+    "constitution": 5,
+    "strength": 10
+  },
+  "equipment": {
+    "weapon": {
+      "$oid": "668bca115319ea9afdff0732"
+    },
+    "armor": {
+      "$oid": "668bca105319ea9afdff06f5"
+    },
+    "artifact": {
+      "$oid": "66a902e1b5831810990551d2"
+    },
+    "antidote_potion": {
+      "$oid": "668bca125319ea9afdff0764"
+    },
+    "healing_potion": {
+      "$oid": "668bca125319ea9afdff0750"
+    },
+    "enhancer_potion": {
+      "$oid": "668bca125319ea9afdff0767"
+    },
+    "helmet": {
+      "$oid": "66d99aac7518eb4990035363"
+    },
+    "shield": {
+      "$oid": "66c214bfc8130114eead2919"
+    },
+    "boot": {
+      "$oid": "66d99a807518eb499003535f"
+    },
+    "ring": {
+      "$oid": "66a6d6c8dfbffe7e6503970f"
+    }
+  },
+  "inventory": {
+    "helmets": [],
+    "weapons": [],
+    "armors": [],
+    "shields": [],
+    "artifacts": [],
+    "boots": [],
+    "rings": [],
+    "antidote_potions": [],
+    "healing_potions": [],
+    "enhancer_potions": []
+  },
+  "tasks": [],
+  "gold": 400,
+  "created_date": {
+    "$date": "2024-09-09T09:58:03.103Z"
+  },
+  "avatar": "https://lh3.googleusercontent.com/a-/ALV-UjWHn_b9Nj3XIINl8anZDdSJcrUfJN6VKMN6gsWc1LjBRX3vXN_DrJ1PP6D0pvKwR2E7wV7jdsivJdn1u5OXFsXrxqiPnt2JA6EfLkO7fGpFMOzirYCQLclvAcN4gZ3a_h1Upcpj9JXVn10C8aMZewWruq6dgeQO0nnm1KeJ5XVOXOPRgfxB0FI9Kk6anf_Hejf2EWJU5Yh0fsBTX_z7tAYbL03nkiCKku_Elx-PN3Z2ouQa2uCEeAthQMtM9dbUOEpuKm0a8KN2dSMnz976jp13JjI8GztjWxEREZxUrFSgraBv2D4MCBY78F0qpexMt3jnI0mmxJICnMEcBY3YXQ-3Ugi1UGv_VBFxC4ok6Gj0B927iE70WoOh72dfs2yrlQGFACVGdJNt44zGipMCnH89ag-lt4AVpeGZsA1v2aOwPnmBnGHculztzitER0Q33sdSW73Y8TuzJ70SoAqKmomlNUxO0f_3OTzWwQPZqTh6qGj4Id69nJAejHFXCaUfuURHCip3Yx5pEqAQ1N39Bb87kGAml5FFhiaz-D9C5gcPbUVNiQVkcIxd2IumShYsUyd1u86WnXDPyMHj0c7qH-p7VEWYgGi0lqyhe5KL--X1hxULlxq7KQFMKQmQMv9WHe2GXRUGEGDaUu4aVVIAH40T_CB_F6Xp1pBPeS0OwqdQcune1AU_Cgl_IYISwUUCZgmJO62ol579tG41GUBDwOrtfvscMb-2X5CBVJzzkj8FI6-tNkVW_Ei9GYwvg4TZ7kP3_AtTlnzCUPZPeD66g5keSzbpRBuA3LxN5BkCRUabGIaCBB_kHN4gHMzhLa6ByV1N2eY8mnDMZHwxuqiQDnEr9vF2l3DOM1p-6oQSVfnCGzXFCpIqNaUVDDpdg8ly0I_nksvgj4xHjMHF01aScUL7PaEUoUzmSqTT9Pb1ms8-sMdsy4o7scGO0iZTPDZYgPNRoO70Jz_-A5XqPCFwuNOkhHk=s83-c-mo"
+},
+{
+  "_id": {
+    "$oid": "66dec7e0c23791be382fa672"
+  },
+  "name": "Mikel Lopez Diaz",
+  "nickname": "Gastino Il Bitwise",
+  "email": "mikel.lopez@ikasle.aeg.eus",
+  "avatar": "https://lh3.googleusercontent.com/a/ACg8ocL1dzYBw_ARRY4QY0kQeVgo0FtuGYRvFFEgP2MM8u5ASK5GlpBo=s96-c",
+  "classroom_Id": "102327629739306805490",
+  "level": 9,
+  "experience": 14000,
+  "is_active": true,
+  "profile": {
+    "$oid": "6687c31b7a5ce485a0eed478"
+  },
+  "attributes": {
+    "intelligence": 5,
+    "dexterity": 25,
+    "insanity": 45,
+    "charisma": 10,
+    "constitution": 10,
+    "strength": 5
+  },
+  "equipment": {
+    "weapon": {
+      "$oid": "668bca115319ea9afdff0725"
+    },
+    "armor": {
+      "$oid": "668bca105319ea9afdff06fa"
+    },
+    "artifact": {
+      "$oid": "66a902e1b5831810990551d2"
+    },
+    "antidote_potion": {
+      "$oid": "668bca125319ea9afdff0761"
+    },
+    "healing_potion": {
+      "$oid": "668bca125319ea9afdff0754"
+    },
+    "enhancer_potion": {
+      "$oid": "668bca125319ea9afdff0767"
+    },
+    "helmet": {
+      "$oid": "66d99aac7518eb4990035363"
+    },
+    "shield": {
+      "$oid": "66c214bfc8130114eead2919"
+    },
+    "boot": {
+      "$oid": "66d99a807518eb499003535f"
+    },
+    "ring": {
+      "$oid": "66a6d6c8dfbffe7e6503970f"
+    }
+  },
+  "inventory": {
+    "helmets": [],
+    "weapons": [],
+    "armors": [],
+    "shields": [],
+    "artifacts": [],
+    "boots": [],
+    "rings": [],
+    "antidote_potions": [],
+    "healing_potions": [],
+    "enhancer_potions": []
+  },
+  "tasks": [],
+  "gold": 450,
+  "created_date": {
+    "$date": "2024-09-09T10:03:12.124Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "66dec9124c27dff822d8032d"
+  },
+  "name": "JULEN IZETA BALENTZIAGA",
+  "nickname": "Izeta",
+  "email": "julen.izeta@ikasle.aeg.eus",
+  "avatar": "https://lh3.googleusercontent.com/a/ACg8ocIWPV28aeLsP20wDM8j0pzjPVb5EU0vXvmo6Az_Vf8wuMdn=s96-c",
+  "classroom_Id": "102135547251726515154",
+  "level": 8,
+  "experience": 12250,
+  "is_active": true,
+  "profile": {
+    "$oid": "6687c31b7a5ce485a0eed476"
+  },
+  "attributes": {
+    "intelligence": 35,
+    "dexterity": 15,
+    "insanity": 25,
+    "charisma": 15,
+    "constitution": 5,
+    "strength": 5
+  },
+  "equipment": {
+    "weapon": {
+      "$oid": "668bca115319ea9afdff071c"
+    },
+    "armor": {
+      "$oid": "668bca105319ea9afdff06f5"
+    },
+    "artifact": {
+      "$oid": "66a902e1b5831810990551d2"
+    },
+    "antidote_potion": {
+      "$oid": "668bca125319ea9afdff0764"
+    },
+    "healing_potion": {
+      "$oid": "668bca125319ea9afdff0759"
+    },
+    "enhancer_potion": {
+      "$oid": "668bca125319ea9afdff0767"
+    },
+    "helmet": {
+      "$oid": "66d99aac7518eb4990035363"
+    },
+    "shield": {
+      "$oid": "66c214bfc8130114eead2919"
+    },
+    "boot": {
+      "$oid": "66d99a807518eb499003535f"
+    },
+    "ring": {
+      "$oid": "66a6d6c8dfbffe7e6503970f"
+    }
+  },
+  "inventory": {
+    "helmets": [],
+    "weapons": [],
+    "armors": [],
+    "shields": [],
+    "artifacts": [],
+    "boots": [],
+    "rings": [],
+    "antidote_potions": [],
+    "healing_potions": [],
+    "enhancer_potions": []
+  },
+  "tasks": [],
+  "gold": 400,
+  "created_date": {
+    "$date": "2024-09-09T10:08:18.304Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "66decc4ff42d4a193db77e71"
+  },
+  "name": "AITOR MENDIBURU BOTAS",
+  "nickname": "Dr Github",
+  "email": "aitor.mendiburu@ikasle.aeg.eus",
+  "avatar": "https://lh3.googleusercontent.com/a/ACg8ocIs9M5Fz0Dg1M7KgxcDGVyUSOeCIrXQmEVToR9cipfo71RLlOE=s96-c",
+  "classroom_Id": "107989406686626423363",
+  "level": 8,
+  "experience": 12250,
+  "is_active": true,
+  "profile": {
+    "$oid": "6687c31b7a5ce485a0eed479"
+  },
+  "attributes": {
+    "intelligence": 15,
+    "dexterity": 5,
+    "insanity": 35,
+    "charisma": 25,
+    "constitution": 15,
+    "strength": 5
+  },
+  "equipment": {
+    "weapon": {
+      "$oid": "668bca115319ea9afdff072e"
+    },
+    "armor": {
+      "$oid": "668bca105319ea9afdff070e"
+    },
+    "artifact": {
+      "$oid": "66a902e1b5831810990551d3"
+    },
+    "antidote_potion": {
+      "$oid": "668bca125319ea9afdff075e"
+    },
+    "healing_potion": {
+      "$oid": "668bca125319ea9afdff0754"
+    },
+    "enhancer_potion": {
+      "$oid": "668bca135319ea9afdff076b"
+    },
+    "helmet": {
+      "$oid": "66d99aac7518eb4990035363"
+    },
+    "shield": {
+      "$oid": "66c214bfc8130114eead2919"
+    },
+    "boot": {
+      "$oid": "66d99a807518eb499003535f"
+    },
+    "ring": {
+      "$oid": "66a6d6c8dfbffe7e6503970f"
+    }
+  },
+  "inventory": {
+    "helmets": [],
+    "weapons": [],
+    "armors": [],
+    "shields": [],
+    "artifacts": [],
+    "boots": [],
+    "rings": [],
+    "antidote_potions": [],
+    "healing_potions": [],
+    "enhancer_potions": []
+  },
+  "tasks": [],
+  "gold": 400,
+  "created_date": {
+    "$date": "2024-09-09T10:22:07.480Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "66decc66f42d4a193db77e8e"
+  },
+  "name": "ANDER ZUBIZARRETA AIZPURU",
+  "nickname": "The Chinese",
+  "email": "ander.zubizarreta@ikasle.aeg.eus",
+  "avatar": "https://lh3.googleusercontent.com/a/ACg8ocK1xYKWS7Mi0u3hC6Yxk1S0WXhQwfZc0NRNAlMP7piNF6i3Hgs=s96-c",
+  "classroom_Id": "109632777562032468352",
+  "level": 5,
+  "experience": 7000,
+  "is_active": true,
+  "profile": {
+    "$oid": "6687c31b7a5ce485a0eed477"
+  },
+  "attributes": {
+    "intelligence": 5,
+    "dexterity": 17,
+    "insanity": 30,
+    "charisma": 5,
+    "constitution": 13,
+    "strength": 30
+  },
+  "equipment": {
+    "weapon": {
+      "$oid": "668bca105319ea9afdff0716"
+    },
+    "armor": {
+      "$oid": "668bca105319ea9afdff0700"
+    },
+    "artifact": {
+      "$oid": "66a902e1b5831810990551d2"
+    },
+    "antidote_potion": {
+      "$oid": "668bca125319ea9afdff075e"
+    },
+    "healing_potion": {
+      "$oid": "668bca125319ea9afdff0754"
+    },
+    "enhancer_potion": {
+      "$oid": "668bca125319ea9afdff0767"
+    },
+    "helmet": {
+      "$oid": "66d99aac7518eb4990035363"
+    },
+    "shield": {
+      "$oid": "66c214bfc8130114eead2919"
+    },
+    "boot": {
+      "$oid": "66d99a807518eb499003535f"
+    },
+    "ring": {
+      "$oid": "66a6d6c8dfbffe7e6503970f"
+    }
+  },
+  "inventory": {
+    "helmets": [],
+    "weapons": [],
+    "armors": [],
+    "shields": [],
+    "artifacts": [],
+    "boots": [],
+    "rings": [],
+    "antidote_potions": [],
+    "healing_potions": [],
+    "enhancer_potions": []
+  },
+  "tasks": [],
+  "gold": 250,
+  "created_date": {
+    "$date": "2024-09-09T10:22:30.108Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "66e2b474e6fc79bc0b238e0a"
+  },
+  "name": "SERGIO GALDOS CORRALES",
+  "nickname": "Sergius Magnificus",
+  "email": "sergio.galdos@ikasle.aeg.eus",
+  "classroom_Id": "114320316735958408053",
+  "level": 1,
+  "experience": 0,
+  "is_active": true,
+  "profile": {
+    "$oid": "6687c31b7a5ce485a0eed477"
+  },
+  "attributes": {
+    "intelligence": 5,
+    "dexterity": 17,
+    "insanity": 30,
+    "charisma": 5,
+    "constitution": 13,
+    "strength": 30
+  },
+  "equipment": {
+    "weapon": {
+      "$oid": "668bca115319ea9afdff0721"
+    },
+    "armor": {
+      "$oid": "668bca105319ea9afdff0700"
+    },
+    "artifact": {
+      "$oid": "66a902e1b5831810990551d3"
+    },
+    "antidote_potion": {
+      "$oid": "668bca125319ea9afdff075e"
+    },
+    "healing_potion": {
+      "$oid": "668bca125319ea9afdff0750"
+    },
+    "enhancer_potion": {
+      "$oid": "668bca125319ea9afdff0767"
+    },
+    "helmet": {
+      "$oid": "66d99aac7518eb4990035363"
+    },
+    "shield": {
+      "$oid": "66c214bfc8130114eead2919"
+    },
+    "boot": {
+      "$oid": "66d99a807518eb499003535f"
+    },
+    "ring": {
+      "$oid": "66a6d6c8dfbffe7e6503970f"
+    }
+  },
+  "inventory": {
+    "helmets": [],
+    "weapons": [],
+    "armors": [],
+    "shields": [],
+    "artifacts": [],
+    "boots": [],
+    "rings": [],
+    "antidote_potions": [],
+    "healing_potions": [],
+    "enhancer_potions": []
+  },
+  "tasks": [],
+  "gold": 50,
+  "created_date": {
+    "$date": "2024-09-12T09:29:24.580Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "66e2d277a35d3f6234ebbbf5"
+  },
+  "name": "Avarus MAgickus",
+  "nickname": "Mortimer",
+  "email": "trym15@gmail.com",
+  "avatar": "./images/xxx.jpg",
+  "classroom_Id": null,
+  "level": 1,
+  "experience": 0,
+  "is_active": true,
+  "profile": {
+    "$oid": "6687c31b7a5ce485a0eed476"
+  },
+  "attributes": {
+    "intelligence": 35,
+    "dexterity": 15,
+    "insanity": 25,
+    "charisma": 15,
+    "constitution": 5,
+    "strength": 5
+  },
+  "equipment": {
+    "weapon": {
+      "$oid": "668bca105319ea9afdff0716"
+    },
+    "armor": {
+      "$oid": "668bca105319ea9afdff06f5"
+    },
+    "artifact": {
+      "$oid": "66a902e1b5831810990551de"
+    },
+    "antidote_potion": {
+      "$oid": "668bca125319ea9afdff0761"
+    },
+    "healing_potion": {
+      "$oid": "668bca125319ea9afdff0750"
+    },
+    "enhancer_potion": {
+      "$oid": "668bca135319ea9afdff076b"
+    },
+    "helmet": {
+      "$oid": "66d99aac7518eb4990035363"
+    },
+    "shield": {
+      "$oid": "66c214bfc8130114eead2906"
+    },
+    "boot": {
+      "$oid": "66d99a807518eb499003535f"
+    },
+    "ring": {
+      "$oid": "66a6d6c8dfbffe7e6503970f"
+    }
+  },
+  "inventory": {
+    "helmets": [],
+    "weapons": [],
+    "armors": [],
+    "shields": [],
+    "artifacts": [],
+    "boots": [],
+    "rings": [],
+    "antidote_potions": [],
+    "healing_potions": [],
+    "enhancer_potions": []
+  },
+  "tasks": [],
+  "gold": 50,
+  "created_date": {
+    "$date": "2024-09-12T11:37:27.114Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "66e2d8d6c965094acd2e49b1"
+  },
+  "name": "Avarus MAgickus",
+  "nickname": "Mortimer",
+  "email": "trym16@gmail.com",
+  "avatar": "./images/xxx.jpg",
+  "classroom_Id": null,
+  "level": 1,
+  "experience": 0,
+  "is_active": true,
+  "profile": {
+    "$oid": "6687c31b7a5ce485a0eed476"
+  },
+  "attributes": {
+    "intelligence": 35,
+    "dexterity": 15,
+    "insanity": 25,
+    "charisma": 15,
+    "constitution": 5,
+    "strength": 5
+  },
+  "equipment": {
+    "weapon": {
+      "$oid": "668bca105319ea9afdff0716"
+    },
+    "armor": {
+      "$oid": "668bca105319ea9afdff06f5"
+    },
+    "artifact": {
+      "$oid": "66a902e1b5831810990551de"
+    },
+    "antidote_potion": {
+      "$oid": "668bca125319ea9afdff0761"
+    },
+    "healing_potion": {
+      "$oid": "668bca125319ea9afdff0750"
+    },
+    "enhancer_potion": {
+      "$oid": "668bca135319ea9afdff076b"
+    },
+    "helmet": {
+      "$oid": "66d99aac7518eb4990035363"
+    },
+    "shield": {
+      "$oid": "66c214bfc8130114eead2919"
+    },
+    "boot": {
+      "$oid": "66d99a807518eb499003535f"
+    },
+    "ring": {
+      "$oid": "66a6d6c8dfbffe7e6503970f"
+    }
+  },
+  "inventory": {
+    "helmets": [
+      {
+        "$oid": "66d99aac7518eb4990035363"
+      }
+    ],
+    "weapons": [],
+    "armors": [],
+    "shields": [],
+    "artifacts": [],
+    "boots": [],
+    "rings": [],
+    "antidote_potions": [],
+    "healing_potions": [],
+    "enhancer_potions": []
+  },
+  "gold": 50,
+  "tasks": [],
+  "created_date": {
+    "$date": "2024-09-12T12:04:38.993Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "66e2e254c7839a1d82faf42d"
+  },
+  "name": "Avarus MAgickus",
+  "nickname": "Mortimer",
+  "email": "trym17@gmail.com",
+  "avatar": "./images/xxx.jpg",
+  "classroom_Id": null,
+  "level": 1,
+  "experience": 0,
+  "is_active": true,
+  "profile": {
+    "$oid": "6687c31b7a5ce485a0eed476"
+  },
+  "attributes": {
+    "intelligence": 35,
+    "dexterity": 15,
+    "insanity": 25,
+    "charisma": 15,
+    "constitution": 5,
+    "strength": 5
+  },
+  "equipment": {
+    "weapon": {
+      "$oid": "668bca105319ea9afdff0716"
+    },
+    "armor": {
+      "$oid": "668bca105319ea9afdff06f5"
+    },
+    "artifact": {
+      "$oid": "66a902e1b5831810990551de"
+    },
+    "antidote_potion": {
+      "$oid": "668bca125319ea9afdff0761"
+    },
+    "healing_potion": {
+      "$oid": "668bca125319ea9afdff0750"
+    },
+    "enhancer_potion": {
+      "$oid": "668bca135319ea9afdff076b"
+    },
+    "helmet": {
+      "$oid": "66d99aac7518eb4990035363"
+    },
+    "shield": {
+      "$oid": "66c214bfc8130114eead2919"
+    },
+    "boot": {
+      "$oid": "66d99a807518eb499003535f"
+    },
+    "ring": {
+      "$oid": "66a6d6c8dfbffe7e6503970f"
+    }
+  },
+  "inventory": {
+    "helmets": [
+      {
+        "$oid": "66d99aac7518eb4990035363"
+      }
+    ],
+    "weapons": [
+      {
+        "$oid": "668bca105319ea9afdff0719"
+      },
+      {
+        "$oid": "668bca115319ea9afdff072e"
+      }
+    ],
+    "armors": [],
+    "shields": [],
+    "artifacts": [],
+    "boots": [],
+    "rings": [],
+    "antidote_potions": [],
+    "healing_potions": [],
+    "enhancer_potions": []
+  },
+  "gold": 50,
+  "tasks": [],
+  "created_date": {
+    "$date": "2024-09-12T12:45:08.705Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "66e402d748930cb35e711558"
+  },
+  "name": "Avarus MAgickus",
+  "nickname": "Mortimer",
+  "email": "trym19@gmail.com",
+  "avatar": "./images/xxx.jpg",
+  "classroom_Id": "35364565756767",
+  "level": 1,
+  "experience": 0,
+  "is_active": true,
+  "profile": {
+    "$oid": "6687c31b7a5ce485a0eed476"
+  },
+  "attributes": {
+    "intelligence": 35,
+    "dexterity": 15,
+    "insanity": 25,
+    "charisma": 15,
+    "constitution": 5,
+    "strength": 5
+  },
+  "equipment": {
+    "weapon": {
+      "$oid": "668bca105319ea9afdff0716"
+    },
+    "armor": {
+      "$oid": "668bca105319ea9afdff06f5"
+    },
+    "artifact": {
+      "$oid": "66a902e1b5831810990551de"
+    },
+    "antidote_potion": {
+      "$oid": "668bca125319ea9afdff0761"
+    },
+    "healing_potion": {
+      "$oid": "668bca125319ea9afdff0750"
+    },
+    "enhancer_potion": {
+      "$oid": "668bca135319ea9afdff076b"
+    },
+    "helmet": {
+      "$oid": "66d99aac7518eb4990035363"
+    },
+    "shield": {
+      "$oid": "66c214bfc8130114eead2919"
+    },
+    "boot": {
+      "$oid": "66d99a807518eb499003535f"
+    },
+    "ring": {
+      "$oid": "66a6d6c8dfbffe7e6503970f"
+    }
+  },
+  "inventory": {
+    "helmets": [
+      {
+        "$oid": "66d99aac7518eb4990035363"
+      }
+    ],
+    "weapons": [
+      {
+        "$oid": "668bca105319ea9afdff0719"
+      },
+      {
+        "$oid": "668bca115319ea9afdff072e"
+      }
+    ],
+    "armors": [],
+    "shields": [],
+    "artifacts": [],
+    "boots": [],
+    "rings": [],
+    "antidote_potions": [],
+    "healing_potions": [],
+    "enhancer_potions": []
+  },
+  "gold": 50,
+  "tasks": [],
+  "created_date": {
+    "$date": "2024-09-13T09:16:07.536Z"
+  }
+}]
