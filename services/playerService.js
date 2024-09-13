@@ -166,9 +166,9 @@ const updateOnePlayer = async (playerId, changes) => {
 const updateTask = async (tasks) => {
     try 
     {
-        const allPlayers = await Player.find().exec();
+        console.log("Player service called succesfully");
 
-        console.log("Entra");
+        const allPlayers = await Player.find().exec();
 
         const updatedPlayerIds = [];
 
@@ -176,7 +176,6 @@ const updateTask = async (tasks) => {
         {
             //Filtramos las tareas que tienen el id del player en curso
             let tasksToUpdate = tasks.filter( task => player.classroom_Id === task.classroomId );
-            //console.log(tasksToUpdate)
 
             if (tasksToUpdate.length !== 0)
             {
@@ -187,7 +186,8 @@ const updateTask = async (tasks) => {
             
         }
 
-        //console.log(updatedPlayerIds);
+        console.log("Player service. Updated player ID list");
+        console.log(updatedPlayerIds);
             
         return updatedPlayerIds;       
     } 
