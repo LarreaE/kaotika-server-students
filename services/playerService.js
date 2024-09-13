@@ -173,14 +173,17 @@ const updateTask = async (tasks) => {
         {
             //Filtramos las tareas que tienen el id del player en curso
             let tasksToUpdate = tasks.filter( task => player.classroom_Id === task.classroomId );
-
+            console.log("Tasks to Update");
+            console.log(tasksToUpdate);
             if (tasksToUpdate.length !== 0)
             {
-                await Player.updateOne({classroom_Id: player.classroom_Id}, {tasks: [...player.tasks, ...tasksToUpdate]}).exec();
-                
-                updatedPlayerIds.push(player.classroom_Id);
-            }
-            
+                await Player.updateOne({classroom_Id: player.classroom_Id}, {tasks: [...player.tasks, ...tasksToUpdate]}).exec().then(result => {
+                    console.log(result);
+                    updatedPlayerIds.push(player.classroom_Id);
+                }).catch(error => {
+                    console.error(error);
+                });    
+            }       
         }
 
         console.log("Player service. Updated player ID list");
