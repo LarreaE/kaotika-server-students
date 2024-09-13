@@ -153,7 +153,7 @@ const updateTasks = async (req, res) => {
   console.log(req.body);
 
   const { body } = req;
-  const taskData = body;
+  const taskData = body.consolidated;
 
 
 
