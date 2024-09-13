@@ -163,7 +163,9 @@ const updateOnePlayer = async (playerId, changes) => {
 const updateTask = async (tasks) => {
     try 
     {
-        console.log("Player service called succesfully");
+        console.log("updateTask called succesfully");
+        console.log("Tasks:");
+        console.log(tasks);
 
         const allPlayers = await Player.find().exec();
 
