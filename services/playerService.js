@@ -103,10 +103,7 @@ const createNewPlayer = async (newPlayer) => {
 const populatePlayer = async (createdPlayer) => {
 
 
-
-    console.log("populateFunction");
     const playerPopulated = await Player.findById(createdPlayer._id).populate('profile').exec();
-    //console.log(playerPopulated);
 
     //Poblamos el equipo
     await playerPopulated.equipment.populate('armor', {'profiles': 0});
