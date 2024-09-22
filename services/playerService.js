@@ -1,6 +1,11 @@
 
 const Player = require('../models/playerModel');
 const profileService = require("./profileService");
+const {Roll} = require('./../classes/roll');
+const {PercentileBar} = require('../classes/percentileBar');
+const {GoldManager} = require('../classes/goldManager');
+
+
 // const Profile = require('../models/profileModel'); 
 //const Weapon = require('../models/weaponModel');
 // const Armor = require('../models/armorModel');
@@ -179,12 +184,16 @@ const updateTask = async (tasks) => {
             console.log(tasksToUpdate);
             if (tasksToUpdate.length !== 0)
             {
-                await Player.updateOne({classroom_Id: player.classroom_Id}, {tasks: [...player.tasks, ...tasksToUpdate]}).exec().then(result => {
-                    console.log(result);
-                    updatedPlayerIds.push(player.classroom_Id);
-                }).catch(error => {
-                    console.error(error);
-                });    
+                //await Player.updateOne({classroom_Id: player.classroom_Id}, {tasks: [...player.tasks, ...tasksToUpdate]}).exec().then(result => {
+                   // console.log(result);
+                    // updatedPlayerIds.push(player.classroom_Id);
+
+
+                checkIfLevelUpAndUpdatePlayer(player);
+                
+                // }).catch(error => {
+                //     console.error(error);
+                // });    
             }       
         }
 
@@ -197,6 +206,72 @@ const updateTask = async (tasks) => {
     {
         throw error;
     }
+}
+
+const checkIfLevelUpAndUpdatePlayer = (player) => {
+    
+    const isLevelUp = true;
+    if (isLevelUp)
+    {
+        //updateLevelAndExperience();
+        updateGold(player);
+    }
+    
+    
+
+}
+
+const updateGold = (player) => {
+
+    //Calculate gold quantity when level ups one unit
+    console.log("Enters updateGold")
+
+
+    
+
+    //Create percentileBar with Charisma prob
+    const charisma = player.attributes.charisma;
+
+    const percentileBar = PercentileBar.create20CriticalAndFumble(charisma);
+
+    console.log(`Percentile Bar`);
+    console.log(percentileBar);
+
+    //Throw 1D100
+    const d100 = new Roll(100, 1, 0);
+    const d100roll = d100.execute();
+    console.log(d100roll);
+
+    const typeOfRoll = percentileBar.getTypeOfRoll(d100roll);
+    console.log("Type of Roll: " + typeOfRoll);
+
+    const dieRollMap = new Map();
+
+    const roll0 = new Roll(4, 1, -1);
+    const roll1 = new Roll(20, 1, 0);
+    const roll2 = new Roll(48, 1, +2);
+    const roll3 = new Roll(60, 1, +20);
+    const roll4 = new Roll(100, 1, +60);
+    const roll5 = new Roll(200, 1, +70);
+
+
+
+    dieRollMap.set(PercentileBar.Value.FUMBLE,      roll0);//1D4-1 (-1, 3)
+    dieRollMap.set(PercentileBar.Value.FAIL,        roll1);   //1D12 (1, 20)
+    dieRollMap.set(PercentileBar.Value.SUCCESS,     roll2);   //1D48+2 (6, 50)
+    dieRollMap.set(PercentileBar.Value.GREAT,       roll3);  //1D60+20 (23, 80)
+    dieRollMap.set(PercentileBar.Value.CRITICAL,    roll4);   //1D100+60 (61, 160)
+    dieRollMap.set(PercentileBar.Value.PERFECT,     roll5);   //1D200+70 (72, 270)
+
+    const goldManager = GoldManager.create(dieRollMap);
+
+   
+    const gold = goldManager.calculateGold(player.level, 1);
+    
+    console.log("Gold obtained")
+    console.log(gold);
+
+
 }
 
 
