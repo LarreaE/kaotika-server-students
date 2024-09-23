@@ -24,6 +24,6 @@ class Roll
     }
 }
 
-module.exports  = { Roll
+module.exports = { Roll
 
 }
