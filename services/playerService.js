@@ -36,8 +36,10 @@ const getPlayerByEmail = async (email) => {
     {
 
         //console.log("Entra");
-        const player = await Player.find({email}).exec();  
-        if (player.length === 0)   
+        const player = await Player.findOne({email}).exec(); 
+        //console.log(player);
+        
+        if (player === null)   
         {
             //Obtenemos todas las clases y devolvemos el array con ellas
             const profiles = await profileService.getAllProfiles();
@@ -45,7 +47,8 @@ const getPlayerByEmail = async (email) => {
         }
 
         //console.log(player);
-        const createdPlayer = await populatePlayer(player[0]);
+        //const player = players[0];
+        const createdPlayer = await populatePlayer(player._id);
         //console.log(createdPlayer);
 
         //console.log("Devolvemos player creado populado")
@@ -105,10 +108,11 @@ const createNewPlayer = async (newPlayer) => {
 };
 
 
-const populatePlayer = async (createdPlayer) => {
+const populatePlayer = async (playerId) => {
 
 
-    const playerPopulated = await Player.findById(createdPlayer._id).populate('profile').exec();
+    const playerPopulated = await Player.findById(playerId).populate('profile').exec();
+
 
     //Poblamos el equipo
     await playerPopulated.equipment.populate('armor', {'profiles': 0});
@@ -122,8 +126,9 @@ const populatePlayer = async (createdPlayer) => {
     await playerPopulated.equipment.populate('helmet', {'profiles': 0});
     await playerPopulated.equipment.populate('shield', {'profiles': 0});
     await playerPopulated.equipment.populate('boot', {'profiles': 0});
+
  
-    //Poblamos el inventario
+    // //Poblamos el inventario
     await playerPopulated.inventory.populate('helmets', {'profiles': 0});
     await playerPopulated.inventory.populate('shields', {'profiles': 0});
     await playerPopulated.inventory.populate('weapons', {'profiles': 0});
@@ -143,7 +148,7 @@ const updateOnePlayer = async (playerId, changes) => {
     try 
     {
         const updatedPlayer = await Player.findByIdAndUpdate(playerId,{$set:changes},{new:true});
-        const populatedDataPlayer = await populatePlayer(updatedPlayer);
+        const populatedDataPlayer = await populatePlayer(updatedPlayer._id);
         return populatedDataPlayer;       
     } 
     catch (error) 

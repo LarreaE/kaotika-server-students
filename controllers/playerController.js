@@ -31,6 +31,9 @@ const getPlayerByEmail = async (req, res) => {
   }
 
   try {
+    console.log("Llega");
+    console.log(email);
+    
     const data = await playerService.getPlayerByEmail(email);
     
     //La consulta devuelve un array
