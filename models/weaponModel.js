@@ -12,8 +12,12 @@ const weaponSchema = new Schema({
    type: String,
    image: String,
    value: Number,
-   damage: String,
+   die_faces: Number,
+   die_modifier: Number,
+   die_num: Number,
    base_percentage: Number,
+   isUnique: Boolean,
+   isActive: Boolean,
    modifiers: {
       intelligence: Number,
       dexterity: Number,

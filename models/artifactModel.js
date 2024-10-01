@@ -12,6 +12,8 @@ const artifactSchema = new Schema({
    type: String,
    image: String,
    value: Number,
+   isUnique: Boolean,
+   isActive: Boolean,
    modifiers: {
       intelligence: Number,
       dexterity: Number,

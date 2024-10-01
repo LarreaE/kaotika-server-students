@@ -203,9 +203,7 @@ const checkIfLevelUpAndUpdatePlayer = async (player, task) => {
     try
     {
         const newXP = player.experience + task.grade * EXPERIENCE_PER_GRADE;
-
         const newLevel = Math.floor(newXP / EXPERIENCE_TO_NEXT_LEVEL) + 1;
-
         const numOfLevelsToAdd = newLevel - player.level;
 
         console.log("Actual XP");
@@ -220,9 +218,6 @@ const checkIfLevelUpAndUpdatePlayer = async (player, task) => {
         if (isLevelUp)
         {
             let newGold = player.gold;
-
-            //const randomPieces = [];
-            
             let inventory = player.inventory;
 
             //Actualizamos el oro un número de veces igual a los niveles añadidos.
@@ -233,28 +228,21 @@ const checkIfLevelUpAndUpdatePlayer = async (player, task) => {
                 newGold += updateGoldInLevel(player, levelToUpdate);
 
                 //Seleccionamos una pieza del equipamiento aleatoria por nivel
-
-
                 const randomPiece = await getRandomEquipment(player, levelToUpdate);
-                //randomPieces.push(randomPiece);
                 
-
-                 //Añadimos la pieza a BD
                 const inventoryType = randomPiece.type + "s";
-                //console.log(inventoryType);
-                //const inventoryType = "helmets";
                 const availablePiecesFromType = inventory[inventoryType];
 
                 console.log("Available pieces");
                 console.log(availablePiecesFromType);
 
-
+                //Vamos alimentando el inventario con un nuevo elemento por nivel subido
                 inventory = {...inventory, [inventoryType]:[...availablePiecesFromType, randomPiece._id]};
 
             }
 
             
-            //Actualizamos el inventario en BD
+            //Actualizamos el inventario en BD 
             await Player.updateOne({classroom_Id: player.classroom_Id}, {inventory});
                 
 
@@ -300,9 +288,6 @@ const updateGoldInLevel = (player, level) => {
     const charisma = player.attributes.charisma;
 
     const percentileBar = PercentileBar.create20CriticalAndFumble(charisma);
-
-    // console.log(`Percentile Bar`);
-    // console.log(percentileBar);
 
     //Throw 1D100
     const d100 = new Roll(100, 1, 0);
@@ -382,7 +367,7 @@ const getRandomEquipment = async(player, levelToUpdate) => {
     }
 
     
-    const numPiece = Math.floor(Math.random()*availableEquipment.length);
+    const numPiece = Math.floor(Math.random() * availableEquipment.length);
     const randomPiece = availableEquipment[numPiece];
 
     console.log(randomPiece);

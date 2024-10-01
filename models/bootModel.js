@@ -10,6 +10,8 @@ const bootSchema = new Schema({
    description: String,
    type: String,
    image: String,
+   isUnique: Boolean,
+   isActive: Boolean,
    modifiers: {
       intelligence: Number,
       dexterity: Number,
