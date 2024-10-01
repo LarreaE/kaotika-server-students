@@ -9,7 +9,7 @@ const mongodbRoute = process.env.MONGODB_ROUTE;
 
 
 const app = express(); 
-const PORT = process.env.PORT || 3002; 
+const PORT = process.env.PORT || 3000; 
 
 
 // Use bodyparser
