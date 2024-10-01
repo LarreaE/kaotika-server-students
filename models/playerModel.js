@@ -53,7 +53,8 @@ const playerSchema = new Schema({
   tasks: [{ classroomId: String, 
             courseWorkName: String,
             grade: Number,
-            selectedAssignment: String}],
+            selectedAssignment: String,
+            maxPoints: Number}],
   created_date: { type: Date, default: Date.now },
   gold: {type: Number, default:50}
 }, { versionKey: false });
