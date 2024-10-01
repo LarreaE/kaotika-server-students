@@ -115,8 +115,7 @@ const populatePlayer = async (createdPlayer) => {
     await playerPopulated.equipment.populate('helmet', {'profiles': 0});
     await playerPopulated.equipment.populate('shield', {'profiles': 0});
     await playerPopulated.equipment.populate('boot', {'profiles': 0});
-
-    
+ 
     //Poblamos el inventario
     await playerPopulated.inventory.populate('helmets', {'profiles': 0});
     await playerPopulated.inventory.populate('shields', {'profiles': 0});
@@ -129,27 +128,16 @@ const populatePlayer = async (createdPlayer) => {
     await playerPopulated.equipment.populate('antidote_potions', {'profiles': 0});
     await playerPopulated.equipment.populate('enhancer_potions', {'profiles': 0});
 
-    
-    
-
-
-    
-
-    
-    //console.log(playerCreated);
-    //console.log("PLAYER DATA AFTER ARMOR POPULATION")
-    //console.log(playerPopulated);
-
-    return playerPopulated;
-    
+    return playerPopulated; 
 }
 
 
 const updateOnePlayer = async (playerId, changes) => {
     try 
     {
-        let updatedPlayer = await Player.findByIdAndUpdate(playerId,{$set:changes},{new:true});
-        return updatedPlayer;       
+        const updatedPlayer = await Player.findByIdAndUpdate(playerId,{$set:changes},{new:true});
+        const populatedDataPlayer = await populatePlayer(updatedPlayer);
+        return populatedDataPlayer;       
     } 
     catch (error) 
     {
