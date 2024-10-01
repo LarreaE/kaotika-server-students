@@ -5,6 +5,13 @@ const {Roll} = require('./../classes/roll');
 const {PercentileBar} = require('../classes/percentileBar');
 const {GoldManager} = require('../classes/goldManager');
 const {EXPERIENCE_TO_NEXT_LEVEL, EXPERIENCE_PER_GRADE} = require('../classes/constants');
+const Armor = require('../models/armorModel');
+const Weapon = require('../models/weaponModel');
+const Artifact = require('../models/artifactModel');
+const Helmet = require('../models/helmetModel');
+const Boot = require('../models/bootModel');
+const Shield = require('../models/shieldModel');
+const Ring = require('../models/ringModel');
 
 
 
@@ -214,19 +221,53 @@ const checkIfLevelUpAndUpdatePlayer = async (player, task) => {
         {
             let newGold = player.gold;
 
+            //const randomPieces = [];
+            
+            let inventory = player.inventory;
+
             //Actualizamos el oro un número de veces igual a los niveles añadidos.
             for (let i = 0; i < numOfLevelsToAdd; ++i)
             {
                 const levelToUpdate = player.level + i + 1;
                 console.log("Update Gold in level " + levelToUpdate);
                 newGold += updateGoldInLevel(player, levelToUpdate);
+
+                //Seleccionamos una pieza del equipamiento aleatoria por nivel
+
+
+                const randomPiece = await getRandomEquipment(player, levelToUpdate);
+                //randomPieces.push(randomPiece);
+                
+
+                 //Añadimos la pieza a BD
+                const inventoryType = randomPiece.type + "s";
+                //console.log(inventoryType);
+                //const inventoryType = "helmets";
+                const availablePiecesFromType = inventory[inventoryType];
+
+                console.log("Available pieces");
+                console.log(availablePiecesFromType);
+
+
+                inventory = {...inventory, [inventoryType]:[...availablePiecesFromType, randomPiece._id]};
+
             }
 
+            
+            //Actualizamos el inventario en BD
+            await Player.updateOne({classroom_Id: player.classroom_Id}, {inventory});
+                
+
+            console.log(inventory);
+
+            
             //Guardamos el oro en DB
             await Player.updateOne({classroom_Id: player.classroom_Id}, {gold: newGold});
 
             //Actualizamos nivel
             await Player.updateOne({classroom_Id: player.classroom_Id}, {level: newLevel});
+
+            
 
         }
 
@@ -301,6 +342,76 @@ const updateGoldInLevel = (player, level) => {
 
 
 }
+
+const getRandomEquipment = async(player, levelToUpdate) => {
+
+    const allEquipment = await getAllEquipment();
+
+    console.log("All Equipment recovered");
+
+    const nonUniqueEquipment = allEquipment.filter(item => item.isUnique === false);
+
+    const minlevelToFilter = Math.max(1, levelToUpdate - 2);
+    const maxlevelToFilter = levelToUpdate + 2;
+
+    console.log("Level To Update");
+    console.log(levelToUpdate);
+
+
+
+    console.log(minlevelToFilter);
+    console.log(maxlevelToFilter);
+    
+    const probability = [20, 80]; //20% prob [1, item.min_lvl-3]
+                                  //80% prob [item.min_lvl-2, item.min_lvl+2]
+    
+    //Tiramos un dado de 100 caras
+    const d100 = new Roll(100, 1, 0);
+    const d100roll = d100.execute();
+
+    console.log("D100");
+    console.log(d100roll);
+    let availableEquipment;
+    if (d100roll <= probability[0])
+    {
+        availableEquipment = nonUniqueEquipment.filter(item => item.min_lvl <= minlevelToFilter);
+    }
+    else
+    {
+        availableEquipment = nonUniqueEquipment.filter(item => item.min_lvl > minlevelToFilter &&  item.min_lvl <= maxlevelToFilter);
+    }
+
+    
+    const numPiece = Math.floor(Math.random()*availableEquipment.length);
+    const randomPiece = availableEquipment[numPiece];
+
+    console.log(randomPiece);
+
+    
+    
+
+
+    return randomPiece;
+    
+
+
+}
+
+const getAllEquipment = async() => {
+    const allWeapons = await Weapon.find().exec();
+    const allArmors = await Armor.find().exec();
+    const allArtifacts = await Artifact.find().exec();
+    const allHelmets = await Helmet.find().exec();
+    const allBoots = await Boot.find().exec();
+    const allRings = await Ring.find().exec();
+    const allShields = await Shield.find().exec();
+
+    return [...allWeapons, ...allArmors, ...allHelmets, ...allArtifacts, ...allBoots, ...allRings, ...allShields];
+  
+    
+}
+
+
 
 
 module.exports = {
