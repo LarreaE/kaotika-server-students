@@ -113,27 +113,27 @@ const createNewPlayer = async (req, res) => {
 const updateOnePlayer = async (req, res) => {
   const {
     body,
-    params: { playerId },
+    params: { id },
   } = req;
 
-  if (!playerId) {
+  if (!id) {
     res
       .status(400)
       .send({
         status: "FAILED",
-        data: { error: "Parameter ':playerId' can not be empty" },
+        data: { error: "Parameter ':_id' can not be empty" },
       });
   }
 
   try {
-    const updatedPlayer = await playerService.updateOnePlayer(playerId, body);
 
+    const updatedPlayer = await playerService.updateOnePlayer(id, body);
 
     if (!updatedPlayer) {
       return res
       .status(404)
       .send({ status: "FAILED", 
-              data: { error:  `Can't find player with the id '${playerId}'`} });
+              data: { error:  `Can't find player with the id '${id}'`} });
     }
 
     res.send({ status: "OK", data: updatedPlayer });
@@ -142,7 +142,7 @@ const updateOnePlayer = async (req, res) => {
     res
       .status(error?.status || 500)
       .send({ status: "FAILED", 
-              message: "Error al realizar la petición:",
+              message: "Request failed:",
               data: { error: error?.message || error } });
   }
 };
