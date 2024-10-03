@@ -163,7 +163,7 @@ const updateGoldOrExperienceForOnePlayer = async (classroom_Id, changes) => {
         console.log(`classroom_Id: ${classroom_Id}`);
         console.log(`Gold: ${changes.gold} Experience: ${changes.experience}`);
 
-        const updatedPlayer = await Player.updateOne({},{classroom_Id: classroom_Id},{$inc:{changes}},{new:true});
+        const updatedPlayer = await Player.updateOne({classroom_Id: classroom_Id},{$inc:{gold:changes.gold, experience:changes.experience}},{new:true});
         console.log("UPDATED PLAYER SERVICE");
         console.log(updatedPlayer);
         return updatedPlayer;       
