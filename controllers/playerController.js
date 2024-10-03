@@ -177,6 +177,43 @@ const updateTasks = async (req, res) => {
 
 };
 
+const updateGoldOrExperienceForOnePlayer = async (req, res) => {
+  const {
+    body,
+    params: { classroom_Id },
+  } = req;
+
+  if (!classroom_Id) {
+    res
+      .status(400)
+      .send({
+        status: "FAILED",
+        data: { error: "Parameter ':classroom_Id' can not be empty" },
+      });
+  }
+
+  try {
+
+    const updatedPlayer = await playerService.updateGoldOrExperienceForOnePlayer(classroom_Id, body);
+
+    if (!updatedPlayer) {
+      return res
+      .status(404)
+      .send({ status: "FAILED", 
+              data: { error:  `Can't find player with the id '${classroom_Id}'`} });
+    }
+
+    res.send({ status: "OK", data: updatedPlayer });
+
+  } catch (error) {
+    res
+      .status(error?.status || 500)
+      .send({ status: "FAILED", 
+              message: "Request failed:",
+              data: { error: error?.message || error } });
+  }
+};
+
 
 
 module.exports = {
@@ -185,5 +222,6 @@ module.exports = {
   getPlayerByEmail,
   createNewPlayer,
   updateOnePlayer,
-  updateTasks
+  updateTasks,
+  updateGoldOrExperienceForOnePlayer
 };

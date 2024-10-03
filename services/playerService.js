@@ -157,6 +157,17 @@ const updateOnePlayer = async (playerId, changes) => {
     }
 };
 
+const updateGoldOrExperienceForOnePlayer = async (playerId, changes) => {
+    try 
+    {
+        const updatedPlayer = await Player.updateOne({},{classroom_Id: classroom_Id},{$inc:{changes}},{new:true});
+        return updatedPlayer;       
+    } 
+    catch (error) 
+    {
+        throw error;
+    }
+};
 
 const updateTask = async (tasks) => {
     try 
@@ -410,5 +421,6 @@ module.exports = {
   getOnePlayer,
   createNewPlayer,
   updateOnePlayer,
-  updateTask
+  updateTask,
+  updateGoldOrExperienceForOnePlayer
 };

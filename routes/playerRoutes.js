@@ -9,6 +9,7 @@ router.get("/email/:email", playerController.getPlayerByEmail);
 
 router.post("/", playerController.createNewPlayer);
 router.patch("/equipment/:id", playerController.updateOnePlayer);
+router.patch("/bonification/:classroom_Id", playerController.updateGoldOrExperienceForOnePlayer);
 
 router.post("/tasks/", playerController.updateTasks);
 
