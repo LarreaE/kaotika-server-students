@@ -157,7 +157,7 @@ const updateOnePlayer = async (playerId, changes) => {
     }
 };
 
-const updateGoldOrExperienceForOnePlayer = async (playerId, changes) => {
+const updateGoldOrExperienceForOnePlayer = async (classroom_Id, changes) => {
     try 
     {
         const updatedPlayer = await Player.updateOne({},{classroom_Id: classroom_Id},{$inc:{changes}},{new:true});
