@@ -158,13 +158,16 @@ const updateOnePlayer = async (playerId, changes) => {
 };
 
 const updateGoldOrExperienceForOnePlayer = async (classroom_Id, changes) => {
-    try 
-    {
+    try {
+        console.log("UPDATE GOLD | EXPERIENCE SERVICE");
+        console.log(`classroom_Id: ${classroom_Id}`);
+        console.log(`Gold: ${changes.gold} Experience: ${changes.experience}`);
+
         const updatedPlayer = await Player.updateOne({},{classroom_Id: classroom_Id},{$inc:{changes}},{new:true});
+        console.log("UPDATED PLAYER SERVICE");
+        console.log(updatedPlayer);
         return updatedPlayer;       
-    } 
-    catch (error) 
-    {
+    } catch (error) {
         throw error;
     }
 };

@@ -193,9 +193,12 @@ const updateGoldOrExperienceForOnePlayer = async (req, res) => {
   }
 
   try {
-
+    console.log("UPDATE GOLD | EXPERIENCE CONTROLLER");
+    console.log(`classroom_Id: ${classroom_Id}`);
+    console.log(`Gold: ${body.gold} Experience: ${body.experience}`);
     const updatedPlayer = await playerService.updateGoldOrExperienceForOnePlayer(classroom_Id, body);
-
+    console.log("UPDATED PLAYER CONTROLLER");
+    console.log(updatedPlayer)
     if (!updatedPlayer) {
       return res
       .status(404)
