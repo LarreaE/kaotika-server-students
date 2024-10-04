@@ -1,5 +1,3 @@
-
-
 [{
   "_id": {
     "$oid": "6693fd5846527d0df5f0efe7"
@@ -7,8 +5,7 @@
   "name": "Shadowblight",
   "description": "A disease that causes the afflicted to be consumed by darkness, their skin turning black as shadows envelop their body.",
   "type": "curse",
-  "modifiers":
-  {
+  "modifiers": {
     "hit_points": -50,
     "intelligence": 0,
     "dexterity": 0,
@@ -18,7 +15,6 @@
     "strength": 0
   }
 },
-  
 {
   "_id": {
     "$oid": "6693fd5846527d0df5f0efe8"
@@ -26,8 +22,7 @@
   "name": "Frostbane Fever",
   "description": "A chilling illness that lowers the body temperature drastically, causing frost to form on the skin and organs to freeze.",
   "type": "illness",
-  "modifiers":
-  {
+  "modifiers": {
     "hit_points": 0,
     "intelligence": 0,
     "dexterity": 0,
@@ -36,7 +31,6 @@
     "constitution": -12,
     "strength": 0
   }
-  
 },
 {
   "_id": {
@@ -45,8 +39,7 @@
   "name": "Wailing Plague",
   "description": "An infectious disease that causes the afflicted to uncontrollably wail in pain, spreading misery and despair.",
   "type": "illness",
-  "modifiers":
-  {
+  "modifiers": {
     "hit_points": 0,
     "intelligence": 0,
     "dexterity": 0,
@@ -55,7 +48,6 @@
     "constitution": 0,
     "strength": 0
   }
-  
 },
 {
   "_id": {
@@ -64,8 +56,7 @@
   "name": "Cursed Blood",
   "description": "A curse that turns the blood into a dark, viscous liquid that poisons the body from within, causing severe pain and eventual death.",
   "type": "curse",
-  "modifiers":
-  {
+  "modifiers": {
     "hit_points": -60,
     "intelligence": 0,
     "dexterity": 0,
@@ -82,8 +73,7 @@
   "name": "Ethereal Consumption",
   "description": "A spectral illness that causes the afflicted to slowly fade into the ethereal plane, losing touch with reality.",
   "type": "illness",
-  "modifiers":
-  {
+  "modifiers": {
     "hit_points": 0,
     "intelligence": -10,
     "dexterity": 0,
@@ -100,8 +90,7 @@
   "name": "Mindfire",
   "description": "A curse that inflames the mind, causing intense migraines and hallucinations.",
   "type": "curse",
-  "modifiers":
-  {
+  "modifiers": {
     "hit_points": -35,
     "intelligence": -8,
     "dexterity": 0,
@@ -118,8 +107,7 @@
   "name": "Boneshiver",
   "description": "An illness that causes the bones to become brittle and cold, making movement agonizing.",
   "type": "illness",
-  "modifiers":
-  {
+  "modifiers": {
     "hit_points": 0,
     "intelligence": 0,
     "dexterity": 0,
@@ -136,8 +124,7 @@
   "name": "Soulrot",
   "description": "A necrotic curse that slowly decays the soul, causing profound weakness and despair.",
   "type": "curse",
-  "modifiers":
-  {
+  "modifiers": {
     "hit_points": -70,
     "intelligence": 0,
     "dexterity": 0,
@@ -154,8 +141,7 @@
   "name": "Fleshweaver's Malady",
   "description": "A grotesque illness that warps the flesh, causing it to grow uncontrollably and painfully.",
   "type": "illness",
-  "modifiers":
-  {
+  "modifiers": {
     "hit_points": 0,
     "intelligence": 0,
     "dexterity": -13,
@@ -172,8 +158,7 @@
   "name": "Eldritch Pox",
   "description": "A curse that marks the skin with arcane runes, draining the life force of the afflicted.",
   "type": "curse",
-  "modifiers":
-  {
+  "modifiers": {
     "hit_points": -40,
     "intelligence": 0,
     "dexterity": 0,
@@ -190,8 +175,7 @@
   "name": "Lich's Breath",
   "description": "An illness that causes the breath of the afflicted to become toxic, slowly killing them and those around them.",
   "type": "illness",
-  "modifiers":
-  {
+  "modifiers": {
     "hit_points": -15,
     "intelligence": 0,
     "dexterity": 0,
@@ -208,8 +192,7 @@
   "name": "Cursed Tongue",
   "description": "A curse that renders the afflicted unable to speak without causing harm to themselves and others.",
   "type": "curse",
-  "modifiers":
-  {
+  "modifiers": {
     "hit_points": -35,
     "intelligence": 0,
     "dexterity": 0,
@@ -226,8 +209,7 @@
   "name": "Plague of Eyes",
   "description": "An illness that causes extra eyes to form all over the body, driving the afflicted mad.",
   "type": "illness",
-  "modifiers":
-  {
+  "modifiers": {
     "hit_points": 0,
     "intelligence": 0,
     "dexterity": -7,
@@ -244,8 +226,7 @@
   "name": "Bloodfire",
   "description": "A curse that ignites the blood of the afflicted, causing intense internal burning sensations.",
   "type": "curse",
-  "modifiers":
-  {
+  "modifiers": {
     "hit_points": -55,
     "intelligence": 0,
     "dexterity": 0,
@@ -262,8 +243,7 @@
   "name": "Mindfray",
   "description": "An illness that frays the mind's connections, causing memory loss and cognitive decline.",
   "type": "illness",
-  "modifiers":
-  {
+  "modifiers": {
     "hit_points": 0,
     "intelligence": -12,
     "dexterity": 0,
@@ -280,8 +260,7 @@
   "name": "Veilrot",
   "description": "A curse that causes the skin to become transparent, making the afflicted's muscles and bones visible.",
   "type": "curse",
-  "modifiers":
-  {
+  "modifiers": {
     "hit_points": -45,
     "intelligence": 0,
     "dexterity": 0,
@@ -298,8 +277,7 @@
   "name": "Souldrain",
   "description": "An illness that saps the very soul of the afflicted, leaving them weak and lethargic.",
   "type": "illness",
-  "modifiers":
-  {
+  "modifiers": {
     "hit_points": 0,
     "intelligence": 0,
     "dexterity": 0,
@@ -316,8 +294,7 @@
   "name": "Warped Spine",
   "description": "A curse that twists the spine into unnatural shapes, causing immense pain and difficulty in movement.",
   "type": "curse",
-  "modifiers":
-  {
+  "modifiers": {
     "hit_points": -50,
     "intelligence": 0,
     "dexterity": -9,
@@ -334,8 +311,7 @@
   "name": "Dream Eater",
   "description": "An illness that causes the afflicted to be plagued by nightmares, leaving them exhausted and paranoid.",
   "type": "illness",
-  "modifiers":
-  {
+  "modifiers": {
     "hit_points": 0,
     "intelligence": -6,
     "dexterity": 0,
@@ -352,8 +328,7 @@
   "name": "Gloomshade",
   "description": "A curse that envelops the afflicted in a perpetual shadow, making them invisible but draining their vitality.",
   "type": "curse",
-  "modifiers":
-  {
+  "modifiers": {
     "hit_points": -40,
     "intelligence": 0,
     "dexterity": 0,
@@ -370,8 +345,7 @@
   "name": "Crimson Fever",
   "description": "An illness that causes a high fever and severe weakness, making the afflicted bedridden.",
   "type": "illness",
-  "modifiers":
-  {
+  "modifiers": {
     "hit_points": 0,
     "intelligence": 0,
     "dexterity": 0,
@@ -388,8 +362,7 @@
   "name": "Gravechill",
   "description": "A curse that causes the afflicted to feel constant cold, as if they were buried alive.",
   "type": "curse",
-  "modifiers":
-  {
+  "modifiers": {
     "hit_points": -60,
     "intelligence": 0,
     "dexterity": 0,
@@ -406,8 +379,7 @@
   "name": "Bonebreaker Plague",
   "description": "An illness that weakens the bones, making them prone to fractures.",
   "type": "illness",
-  "modifiers":
-  {
+  "modifiers": {
     "hit_points": 0,
     "intelligence": 0,
     "dexterity": 0,
@@ -424,8 +396,7 @@
   "name": "Specter's Grip",
   "description": "A curse that causes the afflicted to be haunted by malevolent spirits, draining their will to live.",
   "type": "curse",
-  "modifiers":
-  {
+  "modifiers": {
     "hit_points": -50,
     "intelligence": 0,
     "dexterity": 0,
@@ -442,8 +413,7 @@
   "name": "Mirelung",
   "description": "An illness that fills the lungs with a thick, tar-like substance, making breathing difficult.",
   "type": "illness",
-  "modifiers":
-  {
+  "modifiers": {
     "hit_points": 0,
     "intelligence": 0,
     "dexterity": 0,
@@ -460,8 +430,7 @@
   "name": "Blight of Ages",
   "description": "A curse that accelerates aging, causing rapid deterioration of the body and mind.",
   "type": "curse",
-  "modifiers":
-  {
+  "modifiers": {
     "hit_points": -45,
     "intelligence": -12,
     "dexterity": -8,
@@ -478,8 +447,7 @@
   "name": "Veinrot",
   "description": "An illness that causes the veins to decay, leading to severe pain and weakness.",
   "type": "illness",
-  "modifiers":
-  {
+  "modifiers": {
     "hit_points": -15,
     "intelligence": 0,
     "dexterity": 0,
@@ -496,8 +464,7 @@
   "name": "Curse of the Forgotten",
   "description": "A curse that erases the afflicted's existence from the memories of others, leading to profound loneliness.",
   "type": "curse",
-  "modifiers":
-  {
+  "modifiers": {
     "hit_points": -35,
     "intelligence": 0,
     "dexterity": 0,
@@ -514,8 +481,7 @@
   "name": "Wormwood Plague",
   "description": "An illness that causes a severe allergic reaction to sunlight, making the skin blister and burn.",
   "type": "illness",
-  "modifiers":
-  {
+  "modifiers": {
     "hit_points": 0,
     "intelligence": 0,
     "dexterity": -7,
@@ -532,8 +498,7 @@
   "name": "Serpent's Curse",
   "description": "A curse that causes the afflicted to grow scales and fangs, but weakens their overall health.",
   "type": "curse",
-  "modifiers":
-  {
+  "modifiers": {
     "hit_points": -55,
     "intelligence": 0,
     "dexterity": 0,
