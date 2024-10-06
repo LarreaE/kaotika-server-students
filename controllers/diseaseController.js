@@ -1,13 +1,13 @@
 
-const profileService = require("../services/profileService");
+const diseaseService = require("../services/diseaseService");
 
-const getAllProfiles = async (req, res) => {
+const getAlldiseases = async (req, res) => {
   try {
-    const allProfiles = await profileService.getAllProfiles();
-    if (!allProfiles) {
+    const alldiseases = await diseaseService.getAllDiseases();
+    if (!alldiseases) {
         res.status(404).send({message: 'No existen clases'});
     }
-    res.send({ status: "OK", data: allProfiles });
+    res.send({ status: "OK", data: alldiseases });
   } catch (error) {
     res
       .status(error?.status || 500)
@@ -18,6 +18,7 @@ const getAllProfiles = async (req, res) => {
 };
 
 
+
 module.exports = {
-    getAllProfiles
+    getAlldiseases
 }

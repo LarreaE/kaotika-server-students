@@ -3,6 +3,8 @@ const express = require("express");
 const bodyParser = require("body-parser");
 const playerRouter = require("./routes/playerRoutes");
 const profileRouter = require("./routes/profileRoutes");
+const ingredientRouter = require("./routes/ingredientRoute");
+const diseaseRouter = require("./routes/diseaseRoute");
 
 const mongoose =  require ('mongoose');
 const mongodbRoute = process.env.MONGODB_ROUTE;
@@ -18,6 +20,9 @@ app.use(bodyParser.json());
 //Load router into /api/v1
 app.use("/players", playerRouter);
 app.use("/profiles", profileRouter);
+app.use("/ingredients", ingredientRouter);
+app.use("/diseases", diseaseRouter);
+
 
 
 async function start() {

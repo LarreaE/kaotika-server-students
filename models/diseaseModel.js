@@ -17,7 +17,10 @@ const diseaseSchema = new Schema({
       insanity: Number,
       charisma: Number,
       strength: Number
-  }
+  },
+  antidote_effects: [String],
+  poison_effects: [String]
+  
    
 
 });
