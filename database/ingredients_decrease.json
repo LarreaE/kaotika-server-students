@@ -1,0 +1,35 @@
+[
+    {
+      "name": "Witherleaf",
+      "description": "A cursed leaf that permanently saps the life force of anyone who consumes it.",
+      "value": 260,
+      "effects": ["greater_decrease_hit_points"],
+      "image": "./images/equipment/ingredients/decrease_1",
+      "type": "ingredient"
+    },
+    {
+      "name": "Venomroot",
+      "description": "A dark root that slowly diminishes the user's hit points over time.",
+      "value": 105,
+      "effects": ["decrease_hit_points"],
+      "image": "./images/equipment/ingredients/decrease_2",
+      "type": "ingredient"
+    },
+    {
+      "name": "Bloodthorn Berry",
+      "description": "A poisonous berry that slightly decreases one's overall health.",
+      "value": 35,
+      "effects": ["lesser_decrease_hit_points"],
+      "image": "./images/equipment/ingredients/decrease_3",
+      "type": "ingredient"
+    },
+    {
+      "name": "Ashen Petal",
+      "description": "A petal from a forbidden flower that barely reduces hit points.",
+      "value": 6,
+      "effects": ["least_decrease_hit_points"],
+      "image": "./images/equipment/ingredients/decrease_4",
+      "type": "ingredient"
+    }
+  ]
+  

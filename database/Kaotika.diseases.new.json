@@ -41,15 +41,20 @@
           "intelligence": 0,
           "dexterity": 0,
           "insanity": 0,
-          "charisma": 0,
+          "charisma": -8,
           "constitution": -12,
           "strength": 0
         },
         "antidote_effects": [
-          "restore_constitution"
+          "restore_constitution",
+          "lesser_restore_charisma"
+
         ],
         "poison_effects": [
-          "damage_constitution"
+          "damage_constitution",
+          "lesser_damage_charisma"
+
+
         ]
       },
       {

@@ -1,0 +1,163 @@
+[
+    {
+      "name": "Dragonroot",
+      "description": "A rare root that grants immense strength when consumed.",
+      "value": 275,
+      "effects": ["greater_boost_strength"],
+      "image": "./images/equipment/ingredients/boost_1",
+      "type": "ingredient"
+    },
+    {
+      "name": "Sageleaf",
+      "description": "A leaf that sharpens the mind and boosts intelligence.",
+      "value": 34,
+      "effects": ["lesser_boost_intelligence"],
+      "image": "./images/equipment/ingredients/boost_2",
+      "type": "ingredient"
+    },
+    {
+      "name": "Golden Ginseng",
+      "description": "A golden root that enhances physical vitality.",
+      "value": 85,
+      "effects": ["boost_constitution"],
+      "image": "./images/equipment/ingredients/boost_3",
+      "type": "ingredient"
+    },
+    {
+      "name": "Moonshade Petal",
+      "description": "A petal that enhances charisma under the light of the moon.",
+      "value": 38,
+      "effects": ["lesser_boost_charisma"],
+      "image": "./images/equipment/ingredients/boost_5",
+      "type": "ingredient"
+    },
+    {
+      "name": "Elven Vine",
+      "description": "A magical vine that grants increased agility.",
+      "value": 95,
+      "effects": ["boost_dexterity"],
+      "image": "./images/equipment/ingredients/boost_6",
+      "type": "ingredient"
+    },
+    {
+      "name": "Astral Herb",
+      "description": "A mystical herb that enhances intelligence during spells.",
+      "value": 210,
+      "effects": ["greater_boost_intelligence"],
+      "image": "./images/equipment/ingredients/boost_7",
+      "type": "ingredient"
+    },
+    {
+      "name": "Dwarven Pepper",
+      "description": "A spicy pepper that boosts constitution and endurance.",
+      "value": 55,
+      "effects": ["boost_constitution"],
+      "image": "./images/equipment/ingredients/boost_8",
+      "type": "ingredient"
+    },
+    {
+      "name": "Silverthorn",
+      "description": "A thorn that grants greater strength to those who wield it.",
+      "value": 180,
+      "effects": ["greater_boost_strength"],
+      "image": "./images/equipment/ingredients/boost_10",
+      "type": "ingredient"
+    },
+    {
+      "name": "Frostmoss",
+      "description": "A cold moss that increases agility and dexterity.",
+      "value": 35,
+      "effects": ["lesser_boost_dexterity"],
+      "image": "./images/equipment/ingredients/boost_11",
+      "type": "ingredient"
+    },
+    {
+      "name": "Starfall Blossom",
+      "description": "A rare blossom that boosts intelligence when night falls.",
+      "value": 68,
+      "effects": ["boost_intelligence"],
+      "image": "./images/equipment/ingredients/boost_12",
+      "type": "ingredient"
+    },
+    {
+      "name": "Titan Vine",
+      "description": "A sturdy vine that grants the strength of a titan.",
+      "value": 230,
+      "effects": ["greater_boost_strength"],
+      "image": "./images/equipment/ingredients/boost_13",
+      "type": "ingredient"
+    },
+    {
+      "name": "Willow Spark",
+      "description": "A crackling herb that boosts constitution.",
+      "value": 45,
+      "effects": ["boost_constitution"],
+      "image": "./images/equipment/ingredients/boost_14",
+      "type": "ingredient"
+    },
+    {
+      "name": "Radiant Petal",
+      "description": "A petal that enhances charisma with its ethereal glow.",
+      "value": 9,
+      "effects": ["least_boost_charisma"],
+      "image": "./images/equipment/ingredients/boost_15",
+      "type": "ingredient"
+    },
+    {
+      "name": "Thunderleaf",
+      "description": "A leaf that enhances strength with each thunderstorm.",
+      "value": 105,
+      "effects": ["boost_strength"],
+      "image": "./images/equipment/ingredients/boost_16",
+      "type": "ingredient"
+    },
+    {
+      "name": "Celestial Orchid",
+      "description": "An orchid that grants enhanced charisma during rituals.",
+      "value": 160,
+      "effects": ["greater_boost_charisma"],
+      "image": "./images/equipment/ingredients/boost_18",
+      "type": "ingredient"
+    },
+    {
+      "name": "Amber Bloom",
+      "description": "A glowing bloom that enhances dexterity.",
+      "value": 50,
+      "effects": ["boost_dexterity"],
+      "image": "./images/equipment/ingredients/boost_19",
+      "type": "ingredient"
+    },
+    {
+      "name": "Firepetal",
+      "description": "A fiery petal that enhances strength when consumed.",
+      "value": 44,
+      "effects": ["boost_strength"],
+      "image": "./images/equipment/ingredients/boost_21",
+      "type": "ingredient"
+    },
+    {
+      "name": "Mosscap",
+      "description": "A mushroom that enhances constitution when brewed into tea.",
+      "value": 32,
+      "effects": ["lesser_boost_constitution"],
+      "image": "./images/equipment/ingredients/boost_22",
+      "type": "ingredient"
+    },
+    {
+      "name": "Dreamer's Dew",
+      "description": "A dewdrop that enhances charisma and inspires dreams.",
+      "value": 72,
+      "effects": ["boost_charisma"],
+      "image": "./images/equipment/ingredients/boost_23",
+      "type": "ingredient"
+    },
+    {
+      "name": "Lion's Mane Fern",
+      "description": "A fern that grants greater agility and dexterity.",
+      "value": 165,
+      "effects": ["greater_boost_dexterity"],
+      "image": "./images/equipment/ingredients/boost_24",
+      "type": "ingredient"
+    }
+  ]
+  

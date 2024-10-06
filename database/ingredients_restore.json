@@ -1,0 +1,230 @@
+[
+    {
+      "name": "Elixir of Vitality",
+      "description": "A powerful potion ingredient that restores hit points significantly.",
+      "value": 210,
+      "effects": ["greater_restore_hit_points"],
+      "image": "./images/equipment/ingredients/restore_1",
+      "type": "ingredient"
+    },
+    {
+      "name": "Wisdom's Nectar",
+      "description": "A golden liquid that enhances intelligence and sharpens the mind.",
+      "value": 85,
+      "effects": ["restore_intelligence"],
+      "image": "./images/equipment/ingredients/restore_2",
+      "type": "ingredient"
+    },
+    {
+      "name": "Swifthorn",
+      "description": "A thorny plant that boosts dexterity and agility in its users.",
+      "value": 55,
+      "effects": ["restore_dexterity"],
+      "image": "./images/equipment/ingredients/restore_3",
+      "type": "ingredient"
+    },
+    {
+      "name": "Fortitude Root",
+      "description": "A potent root that strengthens the constitution and fortifies the body.",
+      "value": 270,
+      "effects": ["greater_restore_constitution"],
+      "image": "./images/equipment/ingredients/restore_4",
+      "type": "ingredient"
+    },
+    {
+      "name": "Calming Herb",
+      "description": "An herb that alleviates insanity and restores peace of mind.",
+      "value": 20,
+      "effects": ["lesser_restore_insanity"],
+      "image": "./images/equipment/ingredients/restore_5",
+      "type": "ingredient"
+    },
+    {
+      "name": "Charmflower",
+      "description": "A beautiful flower that enhances charisma and charm in social situations.",
+      "value": 160,
+      "effects": ["greater_restore_charisma"],
+      "image": "./images/equipment/ingredients/restore_6",
+      "type": "ingredient"
+    },
+    {
+      "name": "Titan's Blood",
+      "description": "A rare blood known for its ability to enhance strength tremendously.",
+      "value": 75,
+      "effects": ["restore_strength"],
+      "image": "./images/equipment/ingredients/restore_7",
+      "type": "ingredient"
+    },
+    {
+      "name": "Sage Essence",
+      "description": "An essence derived from sage that revitalizes intelligence and creativity.",
+      "value": 35,
+      "effects": ["lesser_restore_intelligence"],
+      "image": "./images/equipment/ingredients/restore_8",
+      "type": "ingredient"
+    },
+    {
+      "name": "Nimble Leaf",
+      "description": "A leaf that enhances dexterity and promotes agile movements.",
+      "value": 28,
+      "effects": ["lesser_restore_dexterity"],
+      "image": "./images/equipment/ingredients/restore_9",
+      "type": "ingredient"
+    },
+    {
+      "name": "Healing Ointment",
+      "description": "A soothing ointment that effectively restores hit points.",
+      "value": 65,
+      "effects": ["restore_hit_points"],
+      "image": "./images/equipment/ingredients/restore_10",
+      "type": "ingredient"
+    },
+    {
+      "name": "Rejuvenating Sap",
+      "description": "A sap that restores constitution and revitalizes the weary.",
+      "value": 9,
+      "effects": ["least_restore_constitution"],
+      "image": "./images/equipment/ingredients/restore_11",
+      "type": "ingredient"
+    },
+    {
+      "name": "Tranquility Flower",
+      "description": "A tranquil flower that helps to alleviate insanity and calm the mind.",
+      "value": 5,
+      "effects": ["least_restore_insanity"],
+      "image": "./images/equipment/ingredients/restore_12",
+      "type": "ingredient"
+    },
+    {
+      "name": "Mightroot",
+      "description": "A root that enhances strength, giving the user a bit more power.",
+      "value": 9,
+      "effects": ["least_restore_strength"],
+      "image": "./images/equipment/ingredients/restore_13",
+      "type": "ingredient"
+    },
+    
+    {
+      "name": "Fleeting Breeze",
+      "description": "A light herb that aids in restoring dexterity and grace.",
+      "value": 140,
+      "effects": ["greater_restore_dexterity"],
+      "image": "./images/equipment/ingredients/restore_15",
+      "type": "ingredient"
+    },
+    {
+      "name": "Guardian's Essence",
+      "description": "A mystical essence that restores hit points to its user.",
+      "value": 30,
+      "effects": ["lesser_restore_hit_points"],
+      "image": "./images/equipment/ingredients/restore_16",
+      "type": "ingredient"
+    },
+    {
+      "name": "Courageous Bloom",
+      "description": "A bloom that invigorates the constitution and instills bravery.",
+      "value": 105,
+      "effects": ["restore_constitution"],
+      "image": "./images/equipment/ingredients/restore_17",
+      "type": "ingredient"
+    },
+    {
+      "name": "Silver Petal",
+      "description": "A delicate petal that enhances charisma, making interactions smoother.",
+      "value": 30,
+      "effects": ["lesser_restore_charisma"],
+      "image": "./images/equipment/ingredients/restore_18",
+      "type": "ingredient"
+    },
+    {
+      "name": "Giant's Tear",
+      "description": "A tear known for its ability to enhance strength and fortitude.",
+      "value": 250,
+      "effects": ["greater_restore_strength"],
+      "image": "./images/equipment/ingredients/restore_19",
+      "type": "ingredient"
+    },
+    {
+      "name": "Clarity Root",
+      "description": "A root that restores clarity and intelligence to the mind.",
+      "value": 8,
+      "effects": ["least_restore_intelligence"],
+      "image": "./images/equipment/ingredients/restore_20",
+      "type": "ingredient"
+    },
+    {
+      "name": "Breeze Blossom",
+      "description": "A light flower that gently restores dexterity and movement.",
+      "value": 6,
+      "effects": ["least_restore_dexterity"],
+      "image": "./images/equipment/ingredients/restore_21",
+      "type": "ingredient"
+    },
+    
+    {
+      "name": "Enduring Root",
+      "description": "A robust root that fortifies the constitution and endurance.",
+      "value": 20,
+      "effects": ["lesser_restore_constitution"],
+      "image": "./images/equipment/ingredients/restore_23",
+      "type": "ingredient"
+    },
+    {
+      "name": "Charming Vine",
+      "description": "A vine that enhances charisma and captivates those around it.",
+      "value": 8,
+      "effects": ["least_restore_charisma"],
+      "image": "./images/equipment/ingredients/restore_24",
+      "type": "ingredient"
+    },
+    {
+      "name": "Titan's Essence",
+      "description": "An essence that boosts strength and physical power.",
+      "value": 40,
+      "effects": ["lesser_restore_strength"],
+      "image": "./images/equipment/ingredients/restore_25",
+      "type": "ingredient"
+    },
+    {
+      "name": "Elysian Flower",
+      "description": "A mythical flower that restores both sanity and intelligence.",
+      "value": 235,
+      "effects": ["greater_restore_intelligence"],
+      "image": "./images/equipment/ingredients/restore_26",
+      "type": "ingredient"
+    }, 
+    {
+      "name": "Vitalis Root",
+      "description": "A root that enhances hit points and restores vitality to the weary.",
+      "value": 7,
+      "effects": ["least_restore_hit_points"],
+      "image": "./images/equipment/ingredients/restore_28",
+      "type": "ingredient"
+    },
+    {
+        "name": "Calm Blossom",
+        "description": "A delicate flower that soothes the mind and restores sanity.",
+        "value": 6,
+        "effects": ["restore_insanity"],
+        "image": "./images/equipment/ingredients/restore_27",
+        "type": "ingredient"
+      },
+      {
+        "name": "Elixir of Charisma",
+        "description": "A shimmering potion that boosts the charm of those who drink it.",
+        "value": 85,
+        "effects": ["restore_charisma"],
+        "image": "./images/equipment/ingredients/restore_22",
+        "type": "ingredient"
+      },
+      {
+        "name": "Essence of Clarity",
+        "description": "A potent extract that enhances mental clarity and boosts sanity.",
+        "value": 240,
+        "effects": ["greater_restore_insanity"],
+        "image": "./images/equipment/ingredients/restore_14",
+        "type": "ingredient"
+      }
+  ]
+
+

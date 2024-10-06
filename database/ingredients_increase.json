@@ -1,0 +1,35 @@
+[
+    {
+      "name": "Heartroot",
+      "description": "A rare root known to strengthen the body's vitality permanently.",
+      "value": 275,
+      "effects": ["greater_increase_hit_points"],
+      "image": "./images/equipment/ingredients/increase_1",
+      "type": "ingredient"
+    },
+    {
+      "name": "Crimson Lotus",
+      "description": "A sacred flower that boosts one's health noticeably.",
+      "value": 110,
+      "effects": ["increase_hit_points"],
+      "image": "./images/equipment/ingredients/increase_2",
+      "type": "ingredient"
+    },
+    {
+      "name": "Ironbark Berry",
+      "description": "A hard berry that enhances hit points by a small amount.",
+      "value": 25,
+      "effects": ["lesser_increase_hit_points"],
+      "image": "./images/equipment/ingredients/increase_3",
+      "type": "ingredient"
+    },
+    {
+      "name": "Moonleaf",
+      "description": "A mystical leaf that offers a slight increase in hit points.",
+      "value": 8,
+      "effects": ["least_increase_hit_points"],
+      "image": "./images/equipment/ingredients/increase_4",
+      "type": "ingredient"
+    }
+  ]
+  

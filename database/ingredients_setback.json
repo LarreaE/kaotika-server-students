@@ -1,0 +1,163 @@
+[
+    {
+      "name": "Nightshade Root",
+      "description": "A deadly root that drains strength for a short time.",
+      "value": 270,
+      "effects": ["greater_setback_strength"],
+      "image": "./images/equipment/ingredients/setback_1",
+      "type": "ingredient"
+    },
+    {
+      "name": "Dusk Fern",
+      "description": "A shadowy fern that clouds the mind, lowering intelligence.",
+      "value": 35,
+      "effects": ["lesser_setback_intelligence"],
+      "image": "./images/equipment/ingredients/setback_2",
+      "type": "ingredient"
+    },
+    {
+      "name": "Crimson Ivy",
+      "description": "A vine that weakens constitution when consumed.",
+      "value": 85,
+      "effects": ["setback_constitution"],
+      "image": "./images/equipment/ingredients/setback_3",
+      "type": "ingredient"
+    },
+    {
+      "name": "Banshee’s Breath",
+      "description": "A spectral herb that saps charisma.",
+      "value": 250,
+      "effects": ["greater_setback_charisma"],
+      "image": "./images/equipment/ingredients/setback_4",
+      "type": "ingredient"
+    },
+    {
+      "name": "Spider Silk",
+      "description": "A thin, sticky silk that reduces dexterity.",
+      "value": 29,
+      "effects": ["lesser_setback_dexterity"],
+      "image": "./images/equipment/ingredients/setback_5",
+      "type": "ingredient"
+    },
+    {
+      "name": "Pale Belladonna",
+      "description": "A toxic flower that decreases strength rapidly.",
+      "value": 65,
+      "effects": ["setback_strength"],
+      "image": "./images/equipment/ingredients/setback_6",
+      "type": "ingredient"
+    },
+    {
+      "name": "Sorrow Bloom",
+      "description": "A melancholic bloom that dulls intelligence.",
+      "value": 8,
+      "effects": ["least_setback_intelligence"],
+      "image": "./images/equipment/ingredients/setback_7",
+      "type": "ingredient"
+    },
+    {
+      "name": "Twilight Thorn",
+      "description": "A thorn that saps constitution when pricked.",
+      "value": 210,
+      "effects": ["greater_setback_constitution"],
+      "image": "./images/equipment/ingredients/setback_8",
+      "type": "ingredient"
+    },
+    {
+      "name": "Whisper Grass",
+      "description": "A soft grass that lowers charisma under its spell.",
+      "value": 30,
+      "effects": ["lesser_setback_charisma"],
+      "image": "./images/equipment/ingredients/setback_9",
+      "type": "ingredient"
+    },
+    {
+      "name": "Stonefruit",
+      "description": "A hard fruit that temporarily weakens strength.",
+      "value": 55,
+      "effects": ["setback_strength"],
+      "image": "./images/equipment/ingredients/setback_10",
+      "type": "ingredient"
+    },
+    {
+      "name": "Frostvine",
+      "description": "A vine that numbs the body and reduces dexterity.",
+      "value": 17,
+      "effects": ["least_setback_dexterity"],
+      "image": "./images/equipment/ingredients/setback_11",
+      "type": "ingredient"
+    },
+    {
+      "name": "Dreadbloom",
+      "description": "A dark flower that drains charisma upon sight.",
+      "value": 190,
+      "effects": ["greater_setback_charisma"],
+      "image": "./images/equipment/ingredients/setback_12",
+      "type": "ingredient"
+    },
+    {
+      "name": "Ghost Pepper",
+      "description": "A pepper that weakens constitution when eaten.",
+      "value": 105,
+      "effects": ["setback_constitution"],
+      "image": "./images/equipment/ingredients/setback_13",
+      "type": "ingredient"
+    },
+    {
+      "name": "Dewberry",
+      "description": "A berry that dims the mind, lowering intelligence.",
+      "value": 38,
+      "effects": ["lesser_setback_intelligence"],
+      "image": "./images/equipment/ingredients/setback_14",
+      "type": "ingredient"
+    },
+    {
+      "name": "Bitter Oak",
+      "description": "An acorn that temporarily reduces strength.",
+      "value": 4,
+      "effects": ["least_setback_strength"],
+      "image": "./images/equipment/ingredients/setback_15",
+      "type": "ingredient"
+    },
+    {
+      "name": "Rotting Ivy",
+      "description": "A toxic ivy that drastically lowers constitution.",
+      "value": 250,
+      "effects": ["greater_setback_constitution"],
+      "image": "./images/equipment/ingredients/setback_16",
+      "type": "ingredient"
+    },
+    {
+      "name": "Cloudcap Mushroom",
+      "description": "A rare mushroom that reduces dexterity.",
+      "value": 72,
+      "effects": ["setback_dexterity"],
+      "image": "./images/equipment/ingredients/setback_17",
+      "type": "ingredient"
+    },
+    {
+      "name": "Gloomshade",
+      "description": "A poisonous herb that dims charisma in its presence.",
+      "value": 22,
+      "effects": ["lesser_setback_charisma"],
+      "image": "./images/equipment/ingredients/setback_18",
+      "type": "ingredient"
+    },
+    {
+      "name": "Voidleaf",
+      "description": "A leaf that weakens intelligence upon touch.",
+      "value": 5,
+      "effects": ["least_setback_intelligence"],
+      "image": "./images/equipment/ingredients/setback_19",
+      "type": "ingredient"
+    },
+    {
+      "name": "Shadowroot",
+      "description": "A sinister root that saps dexterity for a short time.",
+      "value": 95,
+      "effects": ["setback_dexterity"],
+      "image": "./images/equipment/ingredients/setback_20",
+      "type": "ingredient"
+    }
+  ]
+  

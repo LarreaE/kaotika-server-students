@@ -1,0 +1,228 @@
+[
+    {
+      "name": "Wraith's Essence",
+      "description": "An essence that corrupts hit points and drains life force.",
+      "value": 220,
+      "effects": ["greater_damage_hit_points"],
+      "image": "./images/equipment/ingredients/damage_1",
+      "type": "ingredient"
+    },
+    {
+      "name": "Cursed Blossom",
+      "description": "A flower that sows doubt, reducing intelligence in its victims.",
+      "value": 50,
+      "effects": ["damage_intelligence"],
+      "image": "./images/equipment/ingredients/damage_2",
+      "type": "ingredient"
+    },
+    {
+      "name": "Tainted Thorn",
+      "description": "A thorn that inflicts pain and weakens dexterity.",
+      "value": 5,
+      "effects": ["least_damage_dexterity"],
+      "image": "./images/equipment/ingredients/damage_3",
+      "type": "ingredient"
+    },
+    {
+      "name": "Doomroot",
+      "description": "A deadly root that drains the constitution of those who consume it.",
+      "value": 270,
+      "effects": ["greater_damage_constitution"],
+      "image": "./images/equipment/ingredients/damage_4",
+      "type": "ingredient"
+    },
+    {
+      "name": "Madness Vine",
+      "description": "A vine that induces insanity, twisting the mind of its victims.",
+      "value": 10,
+      "effects": ["least_damage_insanity"],
+      "image": "./images/equipment/ingredients/damage_5",
+      "type": "ingredient"
+    },
+    {
+      "name": "Foul Nectar",
+      "description": "A sickly nectar that erodes charisma and social grace.",
+      "value": 55,
+      "effects": ["damage_charisma"],
+      "image": "./images/equipment/ingredients/damage_6",
+      "type": "ingredient"
+    },
+    {
+      "name": "Brute's Bane",
+      "description": "A potent toxin that saps strength from even the mightiest foes.",
+      "value": 80,
+      "effects": ["damage_strength"],
+      "image": "./images/equipment/ingredients/damage_7",
+      "type": "ingredient"
+    },
+    {
+      "name": "Distraction Herb",
+      "description": "A herb that confuses the mind, causing intelligence to falter.",
+      "value": 35,
+      "effects": ["lesser_damage_intelligence"],
+      "image": "./images/equipment/ingredients/damage_8",
+      "type": "ingredient"
+    },
+    {
+      "name": "Sickly Sap",
+      "description": "A viscous sap that slows movement and reduces dexterity.",
+      "value": 175,
+      "effects": ["greater_damage_dexterity"],
+      "image": "./images/equipment/ingredients/damage_9",
+      "type": "ingredient"
+    },
+    {
+        "name": "Crimson Toxin",
+        "description": "A potent poison derived from rare red flowers that can weaken even the strongest warriors.",
+        "value": 30,
+        "effects": ["lesser_damage_strength"],
+        "image": "./images/equipment/ingredients/damage_10",
+        "type": "ingredient"
+    },
+    {
+      "name": "Crippling Bloom",
+      "description": "A flower that weakens constitution and breaks the will of its user.",
+      "value": 60,
+      "effects": ["damage_constitution"],
+      "image": "./images/equipment/ingredients/damage_11",
+      "type": "ingredient"
+    },
+    {
+      "name": "Elixir of Despair",
+      "description": "An elixir that heightens feelings of insanity, shattering sanity.",
+      "value": 40,
+      "effects": ["lesser_damage_insanity"],
+      "image": "./images/equipment/ingredients/damage_12",
+      "type": "ingredient"
+    },
+    {
+      "name": "Charm's Demise",
+      "description": "An ingredient that diminishes charisma, making one less appealing.",
+      "value": 40,
+      "effects": ["lesser_damage_charisma"],
+      "image": "./images/equipment/ingredients/damage_13",
+      "type": "ingredient"
+    },
+    {
+        "name": "Shadowbane Essence",
+        "description": "An extract from dark fruits that lowers vitality and leaves a bitter aftertaste.",
+        "value": 90,
+        "effects": ["lesser_damage_hit_points"],
+        "image": "./images/equipment/ingredients/damage_14",
+        "type": "ingredient"
+    },
+    {
+        "name": "Wraith's Thorn",
+        "description": "A sinister plant with barbed thorns that can sap the strength of its victims upon contact.",
+        "value": 5,
+        "effects": ["least_damage_strength"],
+        "image": "./images/equipment/ingredients/damage_15",
+        "type": "ingredient"
+    },
+    {
+      "name": "Slowpoke Leaf",
+      "description": "A leaf that impedes movement and reduces dexterity.",
+      "value": 38,
+      "effects": ["lesser_damage_dexterity"],
+      "image": "./images/equipment/ingredients/damage_16",
+      "type": "ingredient"
+    },
+    {
+      "name": "Constitution Siphon",
+      "description": "An ingredient that drains constitution, leaving the user feeble.",
+      "value": 35,
+      "effects": ["lesser_constitution"],
+      "image": "./images/equipment/ingredients/damage_17",
+      "type": "ingredient"
+    },
+    {
+      "name": "Anxiety Herb",
+      "description": "A herb that increases feelings of insanity and paranoia.",
+      "value": 225,
+      "effects": ["greater_damage_insanity"],
+      "image": "./images/equipment/ingredients/damage_18",
+      "type": "ingredient"
+    },
+    {
+      "name": "Gloom Petal",
+      "description": "A petal that shrouds charisma in shadows, making one unlikable.",
+      "value": 160,
+      "effects": ["greater_damage_charisma"],
+      "image": "./images/equipment/ingredients/damage_19",
+      "type": "ingredient"
+    },
+    {
+      "name": "Enfeebling Essence",
+      "description": "A dark essence that weakens strength, rendering users helpless.",
+      "value": 230,
+      "effects": ["greater_damage_strength"],
+      "image": "./images/equipment/ingredients/damage_20",
+      "type": "ingredient"
+    },
+    {
+      "name": "Brain Rot",
+      "description": "A toxin that slowly erodes intelligence, leaving a dull mind.",
+      "value": 12,
+      "effects": ["least_damage_intelligence"],
+      "image": "./images/equipment/ingredients/damage_21",
+      "type": "ingredient"
+    },
+    {
+      "name": "Twisted Vine",
+      "description": "A vine that weakens dexterity and disrupts graceful movements.",
+      "value": 55,
+      "effects": ["damage_dexterity"],
+      "image": "./images/equipment/ingredients/damage_22",
+      "type": "ingredient"
+    },
+    {
+      "name": "Vitality Drain",
+      "description": "An extract that drains hit points steadily from its target.",
+      "value": 85,
+      "effects": ["damage_hit_points"],
+      "image": "./images/equipment/ingredients/damage_23",
+      "type": "ingredient"
+    },
+    {
+        "name": "Vile Nightshade",
+        "description": "A dark herb known for its ability to sap the life force of those who consume it.",
+        "value": 8,
+        "effects": ["least_damage_hit_points"],
+        "image": "./images/equipment/ingredients/damage_24",
+        "type": "ingredient"
+    },
+    {
+      "name": "Charmbreaker Herb",
+      "description": "An herb that disrupts charm, making the user less appealing.",
+      "value": 10,
+      "effects": ["least_damage_charisma"],
+      "image": "./images/equipment/ingredients/damage_25",
+      "type": "ingredient"
+    },
+    {
+      "name": "The Sorrowful Bloom",
+      "description": "A flower that enhances insanity and breaks the spirit.",
+      "value": 65,
+      "effects": ["damage_insanity"],
+      "image": "./images/equipment/ingredients/damage_26",
+      "type": "ingredient"
+    },
+    {
+      "name": "Wretched Extract",
+      "description": "An extract that plagues the mind, causing loss of intelligence.",
+      "value": 275,
+      "effects": ["greater_damage_intelligence"],
+      "image": "./images/equipment/ingredients/damage_27",
+      "type": "ingredient"
+    },
+    {
+      "name": "Defenseless Herb",
+      "description": "A herb that leaves the user vulnerable by reducing constitution.",
+      "value": 12,
+      "effects": ["least_damage_constitution"],
+      "image": "./images/equipment/ingredients/damage_28",
+      "type": "ingredient"
+    }
+        
+  ]
+  

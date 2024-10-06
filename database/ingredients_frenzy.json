@@ -1,0 +1,35 @@
+[
+    {
+      "name": "Madcap Mushroom",
+      "description": "A twisted mushroom that drives the consumer to the edge of madness.",
+      "value": 285,
+      "effects": ["greater_frenzy"],
+      "image": "./images/equipment/ingredients/frenzy_1",
+      "type": "ingredient"
+    },
+    {
+      "name": "Chaos Bloom",
+      "description": "A flower with erratic patterns that induces a deep sense of insanity.",
+      "value": 95,
+      "effects": ["frenzy"],
+      "image": "./images/equipment/ingredients/frenzy_2",
+      "type": "ingredient"
+    },
+    {
+      "name": "Whispering Fern",
+      "description": "A fern that whispers strange voices, causing mild frenzy in the user.",
+      "value": 28,
+      "effects": ["lesser_frenzy"],
+      "image": "./images/equipment/ingredients/frenzy_3",
+      "type": "ingredient"
+    },
+    {
+      "name": "Lunatic's Thorn",
+      "description": "A thorny herb that induces a subtle but lasting sense of insanity.",
+      "value": 7,
+      "effects": ["least_frenzy"],
+      "image": "./images/equipment/ingredients/frenzy_4",
+      "type": "ingredient"
+    }
+  ]
+  

@@ -1,0 +1,35 @@
+[
+    {
+      "name": "Serenity Blossom",
+      "description": "A rare flower that soothes the mind and banishes feelings of insanity.",
+      "value": 250,
+      "effects": ["greater_calm"],
+      "image": "./images/equipment/ingredients/calm_1",
+      "type": "ingredient"
+    },
+    {
+      "name": "Tranquil Leaf",
+      "description": "A calming leaf that restores clarity and reduces madness.",
+      "value": 78,
+      "effects": ["calm"],
+      "image": "./images/equipment/ingredients/calm_2",
+      "type": "ingredient"
+    },
+    {
+      "name": "Peaceful Herb",
+      "description": "An herb known for its ability to alleviate stress and minor insanity.",
+      "value": 32,
+      "effects": ["lesser_calm"],
+      "image": "./images/equipment/ingredients/calm_3",
+      "type": "ingredient"
+    },
+    {
+      "name": "Quieting Root",
+      "description": "A root that brings about a gentle peace of mind with every consumption.",
+      "value": 6,
+      "effects": ["least_calm"],
+      "image": "./images/equipment/ingredients/calm_4",
+      "type": "ingredient"
+    }
+  ]
+  
