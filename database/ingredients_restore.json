@@ -103,7 +103,14 @@
       "image": "./images/equipment/ingredients/restore_13",
       "type": "ingredient"
     },
-    
+    {
+        "name": "Essence of Clarity",
+        "description": "A potent extract that enhances mental clarity and boosts sanity.",
+        "value": 240,
+        "effects": ["greater_restore_insanity"],
+        "image": "./images/equipment/ingredients/restore_14",
+        "type": "ingredient"
+    },
     {
       "name": "Fleeting Breeze",
       "description": "A light herb that aids in restoring dexterity and grace.",
@@ -160,7 +167,14 @@
       "image": "./images/equipment/ingredients/restore_21",
       "type": "ingredient"
     },
-    
+    {
+        "name": "Elixir of Charisma",
+        "description": "A shimmering potion that boosts the charm of those who drink it.",
+        "value": 85,
+        "effects": ["restore_charisma"],
+        "image": "./images/equipment/ingredients/restore_22",
+        "type": "ingredient"
+    },  
     {
       "name": "Enduring Root",
       "description": "A robust root that fortifies the constitution and endurance.",
@@ -194,37 +208,22 @@
       "type": "ingredient"
     }, 
     {
-      "name": "Vitalis Root",
-      "description": "A root that enhances hit points and restores vitality to the weary.",
-      "value": 7,
-      "effects": ["least_restore_hit_points"],
-      "image": "./images/equipment/ingredients/restore_28",
-      "type": "ingredient"
-    },
-    {
         "name": "Calm Blossom",
         "description": "A delicate flower that soothes the mind and restores sanity.",
         "value": 6,
         "effects": ["restore_insanity"],
         "image": "./images/equipment/ingredients/restore_27",
         "type": "ingredient"
-      },
-      {
-        "name": "Elixir of Charisma",
-        "description": "A shimmering potion that boosts the charm of those who drink it.",
-        "value": 85,
-        "effects": ["restore_charisma"],
-        "image": "./images/equipment/ingredients/restore_22",
-        "type": "ingredient"
-      },
-      {
-        "name": "Essence of Clarity",
-        "description": "A potent extract that enhances mental clarity and boosts sanity.",
-        "value": 240,
-        "effects": ["greater_restore_insanity"],
-        "image": "./images/equipment/ingredients/restore_14",
-        "type": "ingredient"
-      }
+    },
+    {
+      "name": "Vitalis Root",
+      "description": "A root that enhances hit points and restores vitality to the weary.",
+      "value": 7,
+      "effects": ["least_restore_hit_points"],
+      "image": "./images/equipment/ingredients/restore_28",
+      "type": "ingredient"
+    }
+     
   ]
 
 

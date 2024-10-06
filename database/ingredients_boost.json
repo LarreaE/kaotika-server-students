@@ -28,7 +28,7 @@
       "description": "A petal that enhances charisma under the light of the moon.",
       "value": 38,
       "effects": ["lesser_boost_charisma"],
-      "image": "./images/equipment/ingredients/boost_5",
+      "image": "./images/equipment/ingredients/boost_4",
       "type": "ingredient"
     },
     {
@@ -36,7 +36,7 @@
       "description": "A magical vine that grants increased agility.",
       "value": 95,
       "effects": ["boost_dexterity"],
-      "image": "./images/equipment/ingredients/boost_6",
+      "image": "./images/equipment/ingredients/boost_5",
       "type": "ingredient"
     },
     {
@@ -44,7 +44,7 @@
       "description": "A mystical herb that enhances intelligence during spells.",
       "value": 210,
       "effects": ["greater_boost_intelligence"],
-      "image": "./images/equipment/ingredients/boost_7",
+      "image": "./images/equipment/ingredients/boost_6",
       "type": "ingredient"
     },
     {
@@ -52,7 +52,7 @@
       "description": "A spicy pepper that boosts constitution and endurance.",
       "value": 55,
       "effects": ["boost_constitution"],
-      "image": "./images/equipment/ingredients/boost_8",
+      "image": "./images/equipment/ingredients/boost_7",
       "type": "ingredient"
     },
     {
@@ -60,7 +60,7 @@
       "description": "A thorn that grants greater strength to those who wield it.",
       "value": 180,
       "effects": ["greater_boost_strength"],
-      "image": "./images/equipment/ingredients/boost_10",
+      "image": "./images/equipment/ingredients/boost_8",
       "type": "ingredient"
     },
     {
@@ -68,7 +68,7 @@
       "description": "A cold moss that increases agility and dexterity.",
       "value": 35,
       "effects": ["lesser_boost_dexterity"],
-      "image": "./images/equipment/ingredients/boost_11",
+      "image": "./images/equipment/ingredients/boost_9",
       "type": "ingredient"
     },
     {
@@ -76,7 +76,7 @@
       "description": "A rare blossom that boosts intelligence when night falls.",
       "value": 68,
       "effects": ["boost_intelligence"],
-      "image": "./images/equipment/ingredients/boost_12",
+      "image": "./images/equipment/ingredients/boost_10",
       "type": "ingredient"
     },
     {
@@ -84,7 +84,7 @@
       "description": "A sturdy vine that grants the strength of a titan.",
       "value": 230,
       "effects": ["greater_boost_strength"],
-      "image": "./images/equipment/ingredients/boost_13",
+      "image": "./images/equipment/ingredients/boost_11",
       "type": "ingredient"
     },
     {
@@ -92,7 +92,7 @@
       "description": "A crackling herb that boosts constitution.",
       "value": 45,
       "effects": ["boost_constitution"],
-      "image": "./images/equipment/ingredients/boost_14",
+      "image": "./images/equipment/ingredients/boost_12",
       "type": "ingredient"
     },
     {
@@ -100,7 +100,7 @@
       "description": "A petal that enhances charisma with its ethereal glow.",
       "value": 9,
       "effects": ["least_boost_charisma"],
-      "image": "./images/equipment/ingredients/boost_15",
+      "image": "./images/equipment/ingredients/boost_13",
       "type": "ingredient"
     },
     {
@@ -108,7 +108,7 @@
       "description": "A leaf that enhances strength with each thunderstorm.",
       "value": 105,
       "effects": ["boost_strength"],
-      "image": "./images/equipment/ingredients/boost_16",
+      "image": "./images/equipment/ingredients/boost_14",
       "type": "ingredient"
     },
     {
@@ -116,7 +116,7 @@
       "description": "An orchid that grants enhanced charisma during rituals.",
       "value": 160,
       "effects": ["greater_boost_charisma"],
-      "image": "./images/equipment/ingredients/boost_18",
+      "image": "./images/equipment/ingredients/boost_15",
       "type": "ingredient"
     },
     {
@@ -124,7 +124,7 @@
       "description": "A glowing bloom that enhances dexterity.",
       "value": 50,
       "effects": ["boost_dexterity"],
-      "image": "./images/equipment/ingredients/boost_19",
+      "image": "./images/equipment/ingredients/boost_16",
       "type": "ingredient"
     },
     {
@@ -132,7 +132,7 @@
       "description": "A fiery petal that enhances strength when consumed.",
       "value": 44,
       "effects": ["boost_strength"],
-      "image": "./images/equipment/ingredients/boost_21",
+      "image": "./images/equipment/ingredients/boost_17",
       "type": "ingredient"
     },
     {
@@ -140,7 +140,7 @@
       "description": "A mushroom that enhances constitution when brewed into tea.",
       "value": 32,
       "effects": ["lesser_boost_constitution"],
-      "image": "./images/equipment/ingredients/boost_22",
+      "image": "./images/equipment/ingredients/boost_18",
       "type": "ingredient"
     },
     {
@@ -148,7 +148,7 @@
       "description": "A dewdrop that enhances charisma and inspires dreams.",
       "value": 72,
       "effects": ["boost_charisma"],
-      "image": "./images/equipment/ingredients/boost_23",
+      "image": "./images/equipment/ingredients/boost_19",
       "type": "ingredient"
     },
     {
@@ -156,7 +156,7 @@
       "description": "A fern that grants greater agility and dexterity.",
       "value": 165,
       "effects": ["greater_boost_dexterity"],
-      "image": "./images/equipment/ingredients/boost_24",
+      "image": "./images/equipment/ingredients/boost_20",
       "type": "ingredient"
     }
   ]
