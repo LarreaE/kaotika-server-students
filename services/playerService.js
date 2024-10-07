@@ -4,7 +4,7 @@ const profileService = require("./profileService");
 const {Roll} = require('./../classes/roll');
 const {PercentileBar} = require('../classes/percentileBar');
 const {GoldManager} = require('../classes/goldManager');
-const {EXPERIENCE_TO_NEXT_LEVEL, EXPERIENCE_PER_GRADE} = require('../classes/constants');
+const {EXPERIENCE_TO_NEXT_LEVEL, EXPERIENCE_PER_GRADE, LevelUpAttributes, ProfilesAttributes} = require('../classes/constants');
 const Armor = require('../models/armorModel');
 const Weapon = require('../models/weaponModel');
 const Artifact = require('../models/artifactModel');
@@ -122,7 +122,7 @@ const populatePlayer = async (playerId) => {
     const playerPopulated = await Player.findById(playerId).populate('profile').exec();
 
 
-    //Poblamos el equipo
+    // Poblamos el equipo
     await playerPopulated.equipment.populate('armor', {'profiles': 0});
     await playerPopulated.equipment.populate('weapon', {'profiles': 0});
     await playerPopulated.equipment.populate('artifact', {'profiles': 0});
@@ -136,7 +136,7 @@ const populatePlayer = async (playerId) => {
     await playerPopulated.equipment.populate('boot', {'profiles': 0});
 
  
-    // //Poblamos el inventario
+    // Poblamos el inventario
     await playerPopulated.inventory.populate('helmets', {'profiles': 0});
     await playerPopulated.inventory.populate('shields', {'profiles': 0});
     await playerPopulated.inventory.populate('weapons', {'profiles': 0});
@@ -205,12 +205,7 @@ const updateTask = async (tasks) => {
 
 
                 await checkIfLevelUpAndUpdatePlayer(player, tasksToUpdate[0]);
-
-
-                
-                // }).catch(error => {
-                //     console.error(error);
-                // });    
+  
             }       
         }
 
@@ -246,6 +241,7 @@ const checkIfLevelUpAndUpdatePlayer = async (player, task) => {
         {
             let newGold = player.gold;
             let inventory = player.inventory;
+            let modifiers = player.modifiers;
 
             //Actualizamos el oro un número de veces igual a los niveles añadidos.
             for (let i = 0; i < numOfLevelsToAdd; ++i)
@@ -256,6 +252,9 @@ const checkIfLevelUpAndUpdatePlayer = async (player, task) => {
 
                 //Seleccionamos una pieza del equipamiento aleatoria por nivel
                 const randomPiece = await getRandomEquipment(player, levelToUpdate);
+
+                //Actualizamos los tributos del player
+                await updateModifiers(player);
                 
                 const inventoryType = randomPiece.type + "s";
                 const availablePiecesFromType = inventory[inventoryType];
@@ -303,6 +302,91 @@ const checkIfLevelUpAndUpdatePlayer = async (player, task) => {
     
 
 }
+
+const updateModifiers = async (player) => {
+    
+    const playerWithProfile = await Player.findById(player._id).populate('profile').exec();
+
+    //console.log(playerWithProfile);
+    //Calculamos los pesos según el perfil del player
+    const majorAndMinorAttributes = ProfilesAttributes.find(profile => profile.name === playerWithProfile.profile.name);
+    const majorAttributes = majorAndMinorAttributes.major_attributes;
+    const minorAttributes = majorAndMinorAttributes.minor_attributes;
+    const normalAttributes = majorAndMinorAttributes.normal_attributes;
+
+    const modifierChances = assignChanceToAttributes(majorAttributes, minorAttributes, normalAttributes);
+
+
+    
+    console.log(majorAttributes);
+    console.log(minorAttributes);
+    
+
+    
+
+}
+
+const assignChanceToAttributes = (majorAttributes, minorAttributes, normalAttributes) =>
+{
+    const attributeWeights = new Array(LevelUpAttributes.TOTAL);
+    
+    //Los atributos MAJOR tendrán un peso total de 40/100
+    //Sólo hay uno.
+    const numMajorAttributes = majorAttributes.length;
+    const percentPerMajorAttr = Math.ceil(40 / numMajorAttributes);
+
+    //Asignamos pesos a atributos major
+    assignAttributeChance(attributeWeights, majorAttributes, percentPerMajorAttr);
+
+    //Los atributos MINOR tendrán un peso total de 24/100
+    const numMinorAttributes = minorAttributes.length;
+    const percentPerMinorAttr = Math.ceil(24 / numMinorAttributes);
+
+    //Asignamos pesos a atributos minor
+    assignAttributeChance(attributeWeights, minorAttributes, percentPerMinorAttr);
+
+    //Los atributos NORMAL tendrán un peso total de 36/100
+    const numNormalAttributes = normalAttributes.length;
+    const percentPerNormalAttr = Math.ceil(36 / numNormalAttributes);
+
+    //Asignamos pesos a atributos minor
+    assignAttributeChance(attributeWeights, normalAttributes, percentPerNormalAttr);
+
+    console.log(attributeWeights);
+
+
+}
+
+const assignAttributeChance = (attributeWeights, attributesToAssign, percent) =>
+{
+
+    for (let i = 0; i < attributesToAssign.length; ++i)
+    {
+        switch (attributesToAssign[i])
+        {
+            case "Intelligence":
+                attributeWeights[LevelUpAttributes.INTELLIGENCE] = percent;
+                break;
+            case "Dexterity":
+                attributeWeights[LevelUpAttributes.DEXTERITY] = percent;
+                break;
+            case "Charisma":
+                attributeWeights[LevelUpAttributes.CHARISMA] = percent;
+                break;
+            case "Constitution":
+                attributeWeights[LevelUpAttributes.CONSTITUTION] = percent;
+                break;
+            case "Strength":
+                attributeWeights[LevelUpAttributes.STRENGTH] = percent;
+                break;
+
+            default:
+                throw new Error ("Attribute not valid");
+
+        }
+    }
+}
+
 
 const updateGoldInLevel = (player, level) => {
 
