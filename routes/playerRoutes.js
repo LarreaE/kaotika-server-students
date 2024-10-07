@@ -6,6 +6,7 @@ const playerController = require("../controllers/playerController");
 
 router.get("/", playerController.getAllPlayers);
 router.get("/email/:email", playerController.getPlayerByEmail);
+router.get("/hall", playerController.getHallOfFame);
 
 router.post("/", playerController.createNewPlayer);
 router.patch("/equipment/:id", playerController.updateOnePlayer);

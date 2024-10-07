@@ -29,7 +29,15 @@ const getAllPlayers = async () => {
     }
 };
 
-
+const getHallOfFame = async () => {  
+    try {   
+        const players = await Player.find().sort({experience: -1}).exec();
+        console.table(players)
+        return players;
+    } catch (error) {
+        throw error;
+    }
+};
 
 const getPlayerByEmail = async (email) => { 
     try
@@ -420,6 +428,7 @@ const getAllEquipment = async() => {
 
 module.exports = {
   getAllPlayers,
+  getHallOfFame,
   getPlayerByEmail,
   getOnePlayer,
   createNewPlayer,
