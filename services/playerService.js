@@ -305,58 +305,66 @@ const checkIfLevelUpAndUpdatePlayer = async (player, task) => {
 }
 
 const updateAttributes = async (id, {intelligence, dexterity, charisma, insanity, constitution, strength}) => {
+    try{
+
     
-    const playerWithProfile = await Player.findById(id).populate('profile').exec();
+        const playerWithProfile = await Player.findById(id).populate('profile').exec();
 
-    //console.log(playerWithProfile);
-    //Calculamos los pesos según el perfil del player
-    const majorAndMinorAttributes = ProfilesAttributes.find(profile => profile.name === playerWithProfile.profile.name);
-    const majorAttributes = majorAndMinorAttributes.major_attributes;
-    const minorAttributes = majorAndMinorAttributes.minor_attributes;
-    const normalAttributes = majorAndMinorAttributes.normal_attributes;
+        //console.log(playerWithProfile);
+        //Calculamos los pesos según el perfil del player
+        const majorAndMinorAttributes = ProfilesAttributes.find(profile => profile.name === playerWithProfile.profile.name);
+        const majorAttributes = majorAndMinorAttributes.major_attributes;
+        const minorAttributes = majorAndMinorAttributes.minor_attributes;
+        const normalAttributes = majorAndMinorAttributes.normal_attributes;
 
-    //Asignamos probabilidades a los atributos y devolvemos un array con las mismas
-    const attributeChances = assignChanceToAttributes(majorAttributes, minorAttributes, normalAttributes);
-    console.log(attributeChances);
+        //Asignamos probabilidades a los atributos y devolvemos un array con las mismas
+        const attributeChances = assignChanceToAttributes(majorAttributes, minorAttributes, normalAttributes);
+        console.log(attributeChances);
 
-    //Creamos un array con las probabilidades acumuladas, comenzando en 0
-    //Ej: Dado el array de probabilidades [ 12, 40, 18, 18, 12 ]
-    //    Obtendríamos el siguiente:     [ 12, 52, 70, 88, 100 ]
-    const chancesAccumulated = attributeChances.map((item, index) => {
-        const currentChanceArray = attributeChances.slice(0, index+1);
-        return currentChanceArray.reduce((accumulator, current) => accumulator + current, 0);
+        //Creamos un array con las probabilidades acumuladas, comenzando en 0
+        //Ej: Dado el array de probabilidades [ 12, 40, 18, 18, 12 ]
+        //    Obtendríamos el siguiente:     [ 12, 52, 70, 88, 100 ]
+        const chancesAccumulated = attributeChances.map((item, index) => {
+            const currentChanceArray = attributeChances.slice(0, index+1);
+            return currentChanceArray.reduce((accumulator, current) => accumulator + current, 0);
 
-    });
+        });
 
-    console.log(chancesAccumulated);
-    console.log(majorAttributes);
-    console.log(minorAttributes);
+        console.log(chancesAccumulated);
+        console.log(majorAttributes);
+        console.log(minorAttributes);
 
-    let accumulatedAttributes = {
-        intelligence,
-        dexterity,
-        charisma,
-        constitution,
-        strength
+        let accumulatedAttributes = {
+            intelligence,
+            dexterity,
+            charisma,
+            constitution,
+            strength
+        }
+
+        console.log(accumulatedAttributes);
+
+        //Realizamos un número de tiradas de dado por nivel y asignamos 1 punto al modificador correspondiente
+        for (let i = 0; i < ATTRIBUTES_INCREASE_PER_LEVEL; ++i)
+        {
+            //Tiramos un dado de 100 caras
+            const d100 = new Roll(100, 1, 0);
+            const d100roll = d100.execute();
+            accumulatedAttributes = calculateAttributesForOneRoll(d100roll, chancesAccumulated, accumulatedAttributes);
+        }
+
+        accumulatedAttributes = {...accumulatedAttributes, insanity};
+
+        console.log(accumulatedAttributes);
+        
+        
+        return accumulatedAttributes;
+
     }
-
-    console.log(accumulatedAttributes);
-
-    //Realizamos un número de tiradas de dado por nivel y asignamos 1 punto al modificador correspondiente
-    for (let i = 0; i < ATTRIBUTES_INCREASE_PER_LEVEL; ++i)
+    catch (error) 
     {
-        //Tiramos un dado de 100 caras
-        const d100 = new Roll(100, 1, 0);
-        const d100roll = d100.execute();
-        accumulatedAttributes = calculateAttributesForOneRoll(d100roll, chancesAccumulated, accumulatedAttributes);
+        throw error;
     }
-
-    accumulatedAttributes = {...accumulatedAttributes, insanity};
-
-    console.log(accumulatedAttributes);
-    
-    
-    return accumulatedAttributes;
     
 
 }
@@ -464,10 +472,8 @@ const assignAttributeChance = (attributeWeights, attributesToAssign, percent) =>
 
 const updateGoldInLevel = (player, level) => {
 
-   
     //Calculate gold quantity when level ups one unit
     console.log("Enters updateGold with level: " + level)
-
 
     //Create percentileBar with Charisma prob
     const charisma = player.attributes.charisma;
@@ -515,53 +521,58 @@ const updateGoldInLevel = (player, level) => {
 
 const getRandomEquipment = async(player, levelToUpdate) => {
 
-    const allEquipment = await getAllEquipment();
+    try {
 
-    console.log("All Equipment recovered");
+        const allEquipment = await getAllEquipment();
 
-    const nonUniqueEquipment = allEquipment.filter(item => item.isUnique === false);
+        console.log("All Equipment recovered");
 
-    const minlevelToFilter = Math.max(1, levelToUpdate - 2);
-    const maxlevelToFilter = levelToUpdate + 2;
+        const nonUniqueEquipment = allEquipment.filter(item => item.isUnique === false);
 
-    console.log("Level To Update");
-    console.log(levelToUpdate);
+        const minlevelToFilter = Math.max(1, levelToUpdate - 2);
+        const maxlevelToFilter = levelToUpdate + 2;
+
+        console.log("Level To Update");
+        console.log(levelToUpdate);
 
 
 
-    console.log(minlevelToFilter);
-    console.log(maxlevelToFilter);
-    
-    const probability = [20, 80]; //20% prob [1, item.min_lvl-3]
-                                  //80% prob [item.min_lvl-2, item.min_lvl+2]
-    
-    //Tiramos un dado de 100 caras
-    const d100 = new Roll(100, 1, 0);
-    const d100roll = d100.execute();
+        console.log(minlevelToFilter);
+        console.log(maxlevelToFilter);
+        
+        const probability = [20, 80]; //20% prob [1, item.min_lvl-3]
+                                    //80% prob [item.min_lvl-2, item.min_lvl+2]
+        
+        //Tiramos un dado de 100 caras
+        const d100 = new Roll(100, 1, 0);
+        const d100roll = d100.execute();
 
-    console.log("D100");
-    console.log(d100roll);
-    let availableEquipment;
-    if (d100roll <= probability[0])
-    {
-        availableEquipment = nonUniqueEquipment.filter(item => item.min_lvl <= minlevelToFilter);
+        console.log("D100");
+        console.log(d100roll);
+        let availableEquipment;
+        if (d100roll <= probability[0])
+        {
+            availableEquipment = nonUniqueEquipment.filter(item => item.min_lvl <= minlevelToFilter);
+        }
+        else
+        {
+            availableEquipment = nonUniqueEquipment.filter(item => item.min_lvl > minlevelToFilter &&  item.min_lvl <= maxlevelToFilter);
+        }
+
+        
+        const numPiece = Math.floor(Math.random() * availableEquipment.length);
+        const randomPiece = availableEquipment[numPiece];
+
+        console.log(randomPiece);
+
+        return randomPiece;
+
     }
-    else
+    catch (error) 
     {
-        availableEquipment = nonUniqueEquipment.filter(item => item.min_lvl > minlevelToFilter &&  item.min_lvl <= maxlevelToFilter);
+        throw error;
     }
-
     
-    const numPiece = Math.floor(Math.random() * availableEquipment.length);
-    const randomPiece = availableEquipment[numPiece];
-
-    console.log(randomPiece);
-
-    
-    
-
-
-    return randomPiece;
     
 
 
