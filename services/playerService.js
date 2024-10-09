@@ -4,7 +4,7 @@ const profileService = require("./profileService");
 const {Roll} = require('./../classes/roll');
 const {PercentileBar} = require('../classes/percentileBar');
 const {GoldManager} = require('../classes/goldManager');
-const {EXPERIENCE_TO_NEXT_LEVEL, EXPERIENCE_PER_GRADE, LevelUpAttributes, ProfilesAttributes} = require('../classes/constants');
+const {EXPERIENCE_TO_NEXT_LEVEL, EXPERIENCE_PER_GRADE, ATTRIBUTES_INCREASE_PER_LEVEL, LevelUpAttributes, ProfilesAttributes} = require('../classes/constants');
 const Armor = require('../models/armorModel');
 const Weapon = require('../models/weaponModel');
 const Artifact = require('../models/artifactModel');
@@ -241,11 +241,12 @@ const checkIfLevelUpAndUpdatePlayer = async (player, task) => {
         {
             let newGold = player.gold;
             let inventory = player.inventory;
-            let modifiers = player.modifiers;
+            let attributes = player.attributes;
 
             //Actualizamos el oro un número de veces igual a los niveles añadidos.
             for (let i = 0; i < numOfLevelsToAdd; ++i)
             {
+        
                 const levelToUpdate = player.level + i + 1;
                 console.log("Update Gold in level " + levelToUpdate);
                 newGold += updateGoldInLevel(player, levelToUpdate);
@@ -253,8 +254,8 @@ const checkIfLevelUpAndUpdatePlayer = async (player, task) => {
                 //Seleccionamos una pieza del equipamiento aleatoria por nivel
                 const randomPiece = await getRandomEquipment(player, levelToUpdate);
 
-                //Actualizamos los tributos del player
-                await updateModifiers(player);
+                //Actualizamos los atributos del player
+                attributes = await updateAttributes(player._id, attributes);
                 
                 const inventoryType = randomPiece.type + "s";
                 const availablePiecesFromType = inventory[inventoryType];
@@ -303,9 +304,9 @@ const checkIfLevelUpAndUpdatePlayer = async (player, task) => {
 
 }
 
-const updateModifiers = async (player) => {
+const updateAttributes = async (id, {intelligence, dexterity, charisma, insanity, constitution, strength}) => {
     
-    const playerWithProfile = await Player.findById(player._id).populate('profile').exec();
+    const playerWithProfile = await Player.findById(id).populate('profile').exec();
 
     //console.log(playerWithProfile);
     //Calculamos los pesos según el perfil del player
@@ -314,23 +315,97 @@ const updateModifiers = async (player) => {
     const minorAttributes = majorAndMinorAttributes.minor_attributes;
     const normalAttributes = majorAndMinorAttributes.normal_attributes;
 
-    const modifierChances = assignChanceToAttributes(majorAttributes, minorAttributes, normalAttributes);
+    //Asignamos probabilidades a los atributos y devolvemos un array con las mismas
+    const attributeChances = assignChanceToAttributes(majorAttributes, minorAttributes, normalAttributes);
+    console.log(attributeChances);
 
+    //Creamos un array con las probabilidades acumuladas, comenzando en 0
+    //Ej: Dado el array de probabilidades [ 12, 40, 18, 18, 12 ]
+    //    Obtendríamos el siguiente:     [ 12, 52, 70, 88, 100 ]
+    const chancesAccumulated = attributeChances.map((item, index) => {
+        const currentChanceArray = attributeChances.slice(0, index+1);
+        return currentChanceArray.reduce((accumulator, current) => accumulator + current, 0);
 
-    
+    });
+
+    console.log(chancesAccumulated);
     console.log(majorAttributes);
     console.log(minorAttributes);
+
+    let accumulatedAttributes = {
+        intelligence,
+        dexterity,
+        charisma,
+        constitution,
+        strength
+    }
+
+    console.log(accumulatedAttributes);
+
+    //Realizamos un número de tiradas de dado por nivel y asignamos 1 punto al modificador correspondiente
+    for (let i = 0; i < ATTRIBUTES_INCREASE_PER_LEVEL; ++i)
+    {
+        //Tiramos un dado de 100 caras
+        const d100 = new Roll(100, 1, 0);
+        const d100roll = d100.execute();
+        accumulatedAttributes = calculateAttributesForOneRoll(d100roll, chancesAccumulated, accumulatedAttributes);
+    }
+
+    accumulatedAttributes = {...accumulatedAttributes, insanity};
+
+    console.log(accumulatedAttributes);
+    
+    
+    return accumulatedAttributes;
     
 
-    
+}
 
+const calculateAttributesForOneRoll = (roll, chances, {intelligence, dexterity, charisma, constitution, strength}) =>
+{
+    console.log(roll);
+    const attributeChance = Math.min(...chances.filter(chance => roll <= chance));
+    const attributeId = chances.indexOf(attributeChance);
+
+    const returnAttributes = {
+        intelligence,
+        dexterity,
+        charisma,
+        constitution,
+        strength
+    }
+
+    switch (attributeId)
+    {
+        case LevelUpAttributes.INTELLIGENCE:
+            returnAttributes.intelligence++;
+            break;
+        case LevelUpAttributes.DEXTERITY:
+            returnAttributes.dexterity++;
+            break;
+        case LevelUpAttributes.CHARISMA:
+            returnAttributes.charisma++;
+            break;
+        case LevelUpAttributes.CONSTITUTION:
+            returnAttributes.constitution++;
+            break;
+        case LevelUpAttributes.STRENGTH:
+            returnAttributes.strength++;
+            break;
+
+        default:
+            throw new Error ("Attribute not valid");
+
+    }
+
+    return returnAttributes;
 }
 
 const assignChanceToAttributes = (majorAttributes, minorAttributes, normalAttributes) =>
 {
     const attributeWeights = new Array(LevelUpAttributes.TOTAL);
     
-    //Los atributos MAJOR tendrán un peso total de 40/100
+    //Los atributos MAJOR tendrán un peso total de 40/100 (Será 1)
     //Sólo hay uno.
     const numMajorAttributes = majorAttributes.length;
     const percentPerMajorAttr = Math.ceil(40 / numMajorAttributes);
@@ -338,22 +413,21 @@ const assignChanceToAttributes = (majorAttributes, minorAttributes, normalAttrib
     //Asignamos pesos a atributos major
     assignAttributeChance(attributeWeights, majorAttributes, percentPerMajorAttr);
 
-    //Los atributos MINOR tendrán un peso total de 24/100
+    //Los atributos MINOR tendrán un peso total de 24/100 (serán 2-3)
     const numMinorAttributes = minorAttributes.length;
     const percentPerMinorAttr = Math.ceil(24 / numMinorAttributes);
 
     //Asignamos pesos a atributos minor
     assignAttributeChance(attributeWeights, minorAttributes, percentPerMinorAttr);
 
-    //Los atributos NORMAL tendrán un peso total de 36/100
+    //Los atributos NORMAL tendrán un peso total de 36/100 (serán 1-2)
     const numNormalAttributes = normalAttributes.length;
     const percentPerNormalAttr = Math.ceil(36 / numNormalAttributes);
 
     //Asignamos pesos a atributos minor
     assignAttributeChance(attributeWeights, normalAttributes, percentPerNormalAttr);
 
-    console.log(attributeWeights);
-
+    return attributeWeights;
 
 }
 
