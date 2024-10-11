@@ -129,12 +129,12 @@
     {
       "name": "Intelligence",
       "description": "The intelligence controls the chance of success when using a potion",
-      "value": 15
+      "value": 10
     },
     {
       "name": "Dexterity",
       "description": "Manages the chance of success when using a melee weapon and the damage a missile weapon does",
-      "value": 5
+      "value": 10
     },
     {
       "name": "Insanity",

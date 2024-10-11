@@ -1,332 +1,1416 @@
-[
-  {
-      "name": "Amulet of the Serpent's Eye",
-      "description": "This mystical amulet, adorned with a serpent-shaped gem, grants its wearer heightened perception and insight, allowing them to see through illusions and detect hidden truths.",
-      "type": "artifact",
-      "image": "/images/equipment/artifacts/artifact_1.png",
-      "value": 10000,
-      "modifiers": {
-          "intelligence": 8,
-          "dexterity": 0,
-          "constitution": 0,
-          "insanity": 7,
-          "charisma": 0,
-          "strength": 0
-      },
-      "min_lvl": 15,
-      "profiles": [
-      {
-        "$oid": "6687c31b7a5ce485a0eed476"
-      },
-      {
-        "$oid": "6687c31b7a5ce485a0eed477"
-      },
-      {
-        "$oid": "6687c31b7a5ce485a0eed478"
-      },
-      {
-        "$oid": "6687c31b7a5ce485a0eed479"
-      },
-      {
-        "$oid": "6687c31b7a5ce485a0eed47a"
-      },
-      {
-        "$oid": "6687c31b7a5ce485a0eed47b"
-      },
-      {
-        "$oid": "6687c31b7a5ce485a0eed47c"
-      },
-      {
-        "$oid": "6687c31b7a5ce485a0eed47d"
-      }
-    ]
+[{
+  "_id": {
+    "$oid": "66a902e1b5831810990551d1"
   },
-  {
-      "name": "Crown of Eternal Wisdom",
-      "description": "This golden crown enhances the wearer's intellect and wisdom, providing unparalleled insight and mental clarity.",
-      "type": "artifact",
-      "image": "/images/equipment/artifacts/artifact_2.png",
-      "value": 12000,
-      "modifiers": {
-          "intelligence": 15,
-          "dexterity": 0,
-          "constitution": 0,
-          "insanity": 5,
-          "charisma": 10,
-          "strength": 0
-      },
-      "min_lvl": 20,
-      "profiles": [
-      {
-        "$oid": "6687c31b7a5ce485a0eed476"
-      },
-      {
-        "$oid": "6687c31b7a5ce485a0eed477"
-      },
-      {
-        "$oid": "6687c31b7a5ce485a0eed478"
-      },
-      {
-        "$oid": "6687c31b7a5ce485a0eed479"
-      },
-      {
-        "$oid": "6687c31b7a5ce485a0eed47a"
-      },
-      {
-        "$oid": "6687c31b7a5ce485a0eed47b"
-      },
-      {
-        "$oid": "6687c31b7a5ce485a0eed47c"
-      },
-      {
-        "$oid": "6687c31b7a5ce485a0eed47d"
-      }
-    ]
+  "name": "Amulet of the Serpent's Eye",
+  "description": "This mystical amulet detect hidden truths.",
+  "type": "artifact",
+  "image": "/images/equipment/artifacts/artifact_1.png",
+  "value": 5,
+  "modifiers": {
+    "intelligence": 8,
+    "dexterity": 0,
+    "constitution": 0,
+    "insanity": 0,
+    "charisma": 0,
+    "strength": 0
   },
-  {
-      "name": "Amulet of the Phoenix's Rebirth",
-      "description": "An amulet imbued with the essence of a phoenix, offering rejuvenation and resistance to fire.",
-      "type": "artifact",
-      "image": "/images/equipment/artifacts/artifact_3.png",
-      "value": 15000,
-      "modifiers": {
-          "intelligence": 5,
-          "dexterity": 10,
-          "constitution": 15,
-          "insanity": 5,
-          "charisma": 10,
-          "strength": 0
-      },
-      "min_lvl": 25,
-      "profiles": [
-      {
-        "$oid": "6687c31b7a5ce485a0eed476"
-      },
-      {
-        "$oid": "6687c31b7a5ce485a0eed477"
-      },
-      {
-        "$oid": "6687c31b7a5ce485a0eed478"
-      },
-      {
-        "$oid": "6687c31b7a5ce485a0eed479"
-      },
-      {
-        "$oid": "6687c31b7a5ce485a0eed47a"
-      },
-      {
-        "$oid": "6687c31b7a5ce485a0eed47b"
-      },
-      {
-        "$oid": "6687c31b7a5ce485a0eed47c"
-      },
-      {
-        "$oid": "6687c31b7a5ce485a0eed47d"
-      }
-    ]
-  },
-  {
-      "name": "Heart of the Abyss",
-      "description": "A dark amulet that channels the power of the abyss, increasing the wearer's strength and resilience.",
-      "type": "artifact",
-      "image": "/images/equipment/artifacts/artifact_4.png",
-      "value": 18000,
-      "modifiers": {
-          "intelligence": 0,
-          "dexterity": 5,
-          "constitution": 20,
-          "insanity": 20,
-          "charisma": -10,
-          "strength": 20
-      },
-      "min_lvl": 30,
-      "profiles": []
-  },
-  {
-      "name": "Amulet of Celestial Harmony",
-      "description": "A beautiful amulet that grants its wearer harmony with celestial forces, enhancing their charisma and wisdom.",
-      "type": "artifact",
-      "image": "/images/equipment/artifacts/artifact_5.png",
-      "value": 20000,
-      "modifiers": {
-          "intelligence": 10,
-          "dexterity": 0,
-          "constitution": 10,
-          "insanity": 0,
-          "charisma": 20,
-          "strength": 0
-      },
-      "min_lvl": 35,
-      "profiles": []
-  },
-  {
-      "name": "Eclipse Pendant",
-      "description": "An amulet that harnesses the power of eclipses, providing increased stealth and critical strike chance.",
-      "type": "artifact",
-      "image": "/images/equipment/artifacts/artifact_6.png",
-      "value": 22000,
-      "modifiers": {
-          "intelligence": 5,
-          "dexterity": 20,
-          "constitution": 5,
-          "insanity": 10,
-          "charisma": 0,
-          "strength": 10
-      },
-      "min_lvl": 40,
-      "profiles": []
-  },
-  {
-      "name": "Amulet of the Stormlord",
-      "description": "A powerful amulet that grants the wearer control over storms, enhancing their dexterity and intelligence.",
-      "type": "artifact",
-      "image": "/images/equipment/artifacts/artifact_7.png",
-      "value": 24000,
-      "modifiers": {
-          "intelligence": 15,
-          "dexterity": 15,
-          "constitution": 0,
-          "insanity": 5,
-          "charisma": 5,
-          "strength": 0
-      },
-      "min_lvl": 45,
-      "profiles": []
-  },
-  {
-      "name": "Talisman of the Earthshaker",
-      "description": "This amulet grants its wearer the power of the earth, increasing strength and resilience to physical attacks.",
-      "type": "artifact",
-      "image": "/images/equipment/artifacts/artifact_8.png",
-      "value": 26000,
-      "modifiers": {
-          "intelligence": 0,
-          "dexterity": 5,
-          "constitution": 20,
-          "insanity": 0,
-          "charisma": 0,
-          "strength": 25
-      },
-      "min_lvl": 50,
-      "profiles": []
-  },
-  {
-      "name": "Amulet of Temporal Foresight",
-      "description": "A mystical amulet that allows the wearer to foresee future events, improving their decision-making abilities.",
-      "type": "artifact",
-      "image": "/images/equipment/artifacts/artifact_9.png",
-      "value": 28000,
-      "modifiers": {
-          "intelligence": 20,
-          "dexterity": 10,
-          "constitution": 0,
-          "insanity": 0,
-          "charisma": 15,
-          "strength": 0
-      },
-      "min_lvl": 55,
-      "profiles": []
-  },
-  {
-      "name": "Amulet of the Voidwalker",
-      "description": "An amulet infused with void energy, offering increased stealth and agility while in shadow.",
-      "type": "artifact",
-      "image": "/images/equipment/artifacts/artifact_10.png",
-      "value": 30000,
-      "modifiers": {
-          "intelligence": 10,
-          "dexterity": 25,
-          "constitution": 5,
-          "insanity": 10,
-          "charisma": -5,
-          "strength": 10
-      },
-      "min_lvl": 60,
-      "profiles": []
-  },
-  {
-      "name": "Amulet of the Eternal Flame",
-      "description": "This amulet burns with an eternal flame, increasing the wearer's fire resistance and attack power.",
-      "type": "artifact",
-      "image": "/images/equipment/artifacts/artifact_11.png",
-      "value": 32000,
-      "modifiers": {
-          "intelligence": 5,
-          "dexterity": 10,
-          "constitution": 15,
-          "insanity": 5,
-          "charisma": 5,
-          "strength": 20
-      },
-      "min_lvl": 65,
-      "profiles": []
-  },
-  {
-      "name": "Amulet of the Phoenix's Flight",
-      "description": "An amulet that grants the wearer the ability to move swiftly and evade attacks, inspired by the phoenix's grace.",
-      "type": "artifact",
-      "image": "/images/equipment/artifacts/artifact_12.png",
-      "value": 34000,
-      "modifiers": {
-          "intelligence": 10,
-          "dexterity": 20,
-          "constitution": 10,
-          "insanity": 0,
-          "charisma": 5,
-          "strength": 15
-      },
-      "min_lvl": 70,
-      "profiles": []
-  },
-  {
-      "name": "Amulet of the Iron Heart",
-      "description": "This amulet fortifies the wearer's heart, boosting their resistance to physical and magical attacks.",
-      "type": "artifact",
-      "image": "/images/equipment/artifacts/artifact_13.png",
-      "value": 36000,
-      "modifiers": {
-          "intelligence": 5,
-          "dexterity": 5,
-          "constitution": 25,
-          "insanity": 0,
-          "charisma": 10,
-          "strength": 10
-      },
-      "min_lvl": 75,
-      "profiles": []
-  },
-  {
-      "name": "Amulet of the Astral Traveler",
-      "description": "An amulet that allows the wearer to traverse between realms, increasing their overall resilience and insight.",
-      "type": "artifact",
-      "image": "/images/equipment/artifacts/artifact_14.png",
-      "value": 38000,
-      "modifiers": {
-          "intelligence": 15,
-          "dexterity": 10,
-          "constitution": 20,
-          "insanity": 10,
-          "charisma": 10,
-          "strength": 15
-      },
-      "min_lvl": 80,
-      "profiles": []
-  },
-  {
-    "name": "Amulet of the Chaotical Remains",
-    "description": "An amulet that allows the wearer to go beneath the remains.",
-    "type": "artifact",
-    "image": "/images/equipment/artifacts/artifact_15.png",
-    "value": 38000,
-    "modifiers": {
-        "intelligence": 15,
-        "dexterity": 10,
-        "constitution": 20,
-        "insanity": 30,
-        "charisma": 10,
-        "strength": 15
+  "min_lvl": 1,
+  "profiles": [
+    {
+      "$oid": "6687c31b7a5ce485a0eed476"
     },
-    "min_lvl": 80,
-    "profiles": []
-  }
-]
+    {
+      "$oid": "6687c31b7a5ce485a0eed477"
+    },
+    {
+      "$oid": "6687c31b7a5ce485a0eed478"
+    },
+    {
+      "$oid": "6687c31b7a5ce485a0eed479"
+    },
+    {
+      "$oid": "6687c31b7a5ce485a0eed47a"
+    },
+    {
+      "$oid": "6687c31b7a5ce485a0eed47b"
+    },
+    {
+      "$oid": "6687c31b7a5ce485a0eed47c"
+    },
+    {
+      "$oid": "6687c31b7a5ce485a0eed47d"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "66a902e1b5831810990551d2"
+  },
+  "name": "Crown of Eternal Wisdom",
+  "description": "This golden crown enhances intellect and wisdom.",
+  "type": "artifact",
+  "image": "/images/equipment/artifacts/artifact_2.png",
+  "value": 5,
+  "modifiers": {
+    "intelligence": 10,
+    "dexterity": 0,
+    "constitution": 0,
+    "insanity": 0,
+    "charisma": -2,
+    "strength": 0
+  },
+  "min_lvl": 1,
+  "profiles": [
+    {
+      "$oid": "6687c31b7a5ce485a0eed476"
+    },
+    {
+      "$oid": "6687c31b7a5ce485a0eed477"
+    },
+    {
+      "$oid": "6687c31b7a5ce485a0eed478"
+    },
+    {
+      "$oid": "6687c31b7a5ce485a0eed479"
+    },
+    {
+      "$oid": "6687c31b7a5ce485a0eed47a"
+    },
+    {
+      "$oid": "6687c31b7a5ce485a0eed47b"
+    },
+    {
+      "$oid": "6687c31b7a5ce485a0eed47c"
+    },
+    {
+      "$oid": "6687c31b7a5ce485a0eed47d"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "66a902e1b5831810990551d3"
+  },
+  "name": "Amulet of the Phoenix's Rebirth",
+  "description": "An amulet imbued with the essence of a phoenix.",
+  "type": "artifact",
+  "image": "/images/equipment/artifacts/artifact_3.png",
+  "value": 5,
+  "modifiers": {
+    "intelligence": -2,
+    "dexterity": 2,
+    "constitution": 0,
+    "insanity": 0,
+    "charisma": 8,
+    "strength": 0
+  },
+  "min_lvl": 1,
+  "profiles": [
+    {
+      "$oid": "6687c31b7a5ce485a0eed476"
+    },
+    {
+      "$oid": "6687c31b7a5ce485a0eed477"
+    },
+    {
+      "$oid": "6687c31b7a5ce485a0eed478"
+    },
+    {
+      "$oid": "6687c31b7a5ce485a0eed479"
+    },
+    {
+      "$oid": "6687c31b7a5ce485a0eed47a"
+    },
+    {
+      "$oid": "6687c31b7a5ce485a0eed47b"
+    },
+    {
+      "$oid": "6687c31b7a5ce485a0eed47c"
+    },
+    {
+      "$oid": "6687c31b7a5ce485a0eed47d"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "66f66acd4a8f1157dab87b58"
+  },
+  "name": "Amulet of Whispering Winds",
+  "description": "Harnesses the power of the winds.",
+  "type": "artifact",
+  "image": "/images/equipment/artifacts/artifact_4.png",
+  "value": 120,
+  "modifiers": {
+    "intelligence": 5,
+    "dexterity": 5,
+    "constitution": 3,
+    "insanity": 4,
+    "charisma": 3,
+    "strength": 2
+  },
+  "min_lvl": 6,
+  "isActive": true,
+  "isUnique": false
+},
+{
+  "_id": {
+    "$oid": "66f66acd4a8f1157dab87b59"
+  },
+  "name": "Amulet of the Abyss",
+  "description": "Glows with a dark, eerie light.",
+  "type": "artifact",
+  "image": "/images/equipment/artifacts/artifact_5.png",
+  "value": 150,
+  "modifiers": {
+    "intelligence": 7,
+    "dexterity": 2,
+    "constitution": 5,
+    "insanity": 6,
+    "charisma": 3,
+    "strength": 2
+  },
+  "min_lvl": 10,
+  "isActive": true,
+  "isUnique": false
+},
+{
+  "_id": {
+    "$oid": "66f66acd4a8f1157dab87b5a"
+  },
+  "name": "Amulet of Celestial Sight",
+  "description": "Blessed with divine vision.",
+  "type": "artifact",
+  "image": "/images/equipment/artifacts/artifact_6.png",
+  "value": 180,
+  "modifiers": {
+    "intelligence": 8,
+    "dexterity": 4,
+    "constitution": 6,
+    "insanity": 0,
+    "charisma": 6,
+    "strength": 2
+  },
+  "min_lvl": 12,
+  "isActive": true,
+  "isUnique": false
+},
+{
+  "_id": {
+    "$oid": "66f66acd4a8f1157dab87b5b"
+  },
+  "name": "Amulet of Stone's Resilience",
+  "description": "Endows the wearer with great resilience.",
+  "type": "artifact",
+  "image": "/images/equipment/artifacts/artifact_7.png",
+  "value": 170,
+  "modifiers": {
+    "intelligence": 3,
+    "dexterity": 3,
+    "constitution": 8,
+    "insanity": 2,
+    "charisma": 4,
+    "strength": 6
+  },
+  "min_lvl": 9,
+  "isActive": true,
+  "isUnique": false
+},
+{
+  "_id": {
+    "$oid": "66f66acd4a8f1157dab87b5c"
+  },
+  "name": "Amulet of Silent Shadows",
+  "description": "Perfect for moving unseen.",
+  "type": "artifact",
+  "image": "/images/equipment/artifacts/artifact_8.png",
+  "value": 140,
+  "modifiers": {
+    "intelligence": 4,
+    "dexterity": 8,
+    "constitution": 3,
+    "insanity": 1,
+    "charisma": 2,
+    "strength": 2
+  },
+  "min_lvl": 7,
+  "isActive": true,
+  "isUnique": false
+},
+{
+  "_id": {
+    "$oid": "66f66acd4a8f1157dab87b5d"
+  },
+  "name": "Amulet of Endless Echoes",
+  "description": "Carries the whispers of the void.",
+  "type": "artifact",
+  "image": "/images/equipment/artifacts/artifact_9.png",
+  "value": 130,
+  "modifiers": {
+    "intelligence": 6,
+    "dexterity": 2,
+    "constitution": 5,
+    "insanity": 4,
+    "charisma": 3,
+    "strength": 2
+  },
+  "min_lvl": 8,
+  "isActive": true,
+  "isUnique": false
+},
+{
+  "_id": {
+    "$oid": "66f66acd4a8f1157dab87b5e"
+  },
+  "name": "Amulet of Lunar Blessing",
+  "description": "Empowered by the moon's light.",
+  "type": "artifact",
+  "image": "/images/equipment/artifacts/artifact_10.png",
+  "value": 190,
+  "modifiers": {
+    "intelligence": 7,
+    "dexterity": 5,
+    "constitution": 6,
+    "insanity": 3,
+    "charisma": 4,
+    "strength": 5
+  },
+  "min_lvl": 13,
+  "isActive": true,
+  "isUnique": false
+},
+{
+  "_id": {
+    "$oid": "66f66acd4a8f1157dab87b5f"
+  },
+  "name": "Amulet of Storm's Fury",
+  "description": "Crackles with electrical energy.",
+  "type": "artifact",
+  "image": "/images/equipment/artifacts/artifact_11.png",
+  "value": 160,
+  "modifiers": {
+    "intelligence": 6,
+    "dexterity": 4,
+    "constitution": 5,
+    "insanity": 2,
+    "charisma": 3,
+    "strength": 5
+  },
+  "min_lvl": 11,
+  "isActive": true,
+  "isUnique": false
+},
+{
+  "_id": {
+    "$oid": "66f66acd4a8f1157dab87b60"
+  },
+  "name": "Amulet of Eternal Flame",
+  "description": "Burns with an unquenchable fire.",
+  "type": "artifact",
+  "image": "/images/equipment/artifacts/artifact_12.png",
+  "value": 200,
+  "modifiers": {
+    "intelligence": 8,
+    "dexterity": 5,
+    "constitution": 7,
+    "insanity": 3,
+    "charisma": 4,
+    "strength": 6
+  },
+  "min_lvl": 15,
+  "isActive": true,
+  "isUnique": false
+},
+{
+  "_id": {
+    "$oid": "66f66acd4a8f1157dab87b61"
+  },
+  "name": "Amulet of Arcane Might",
+  "description": "Filled with raw magical power.",
+  "type": "artifact",
+  "image": "/images/equipment/artifacts/artifact_13.png",
+  "value": 180,
+  "modifiers": {
+    "intelligence": 9,
+    "dexterity": 3,
+    "constitution": 5,
+    "insanity": 2,
+    "charisma": 5,
+    "strength": 4
+  },
+  "min_lvl": 14,
+  "isActive": true,
+  "isUnique": false
+},
+{
+  "_id": {
+    "$oid": "66f66ae44a8f1157dab87b63"
+  },
+  "name": "Amulet of Phantom Veil",
+  "description": "Shrouds the wearer in illusions.",
+  "type": "artifact",
+  "image": "/images/equipment/artifacts/artifact_14.png",
+  "value": 150,
+  "modifiers": {
+    "intelligence": 6,
+    "dexterity": 4,
+    "constitution": 4,
+    "insanity": 5,
+    "charisma": 2,
+    "strength": 3
+  },
+  "min_lvl": 10,
+  "isActive": true,
+  "isUnique": false
+},
+{
+  "_id": {
+    "$oid": "66f66ae44a8f1157dab87b64"
+  },
+  "name": "Amulet of the Deep Seas",
+  "description": "Empowered by the depths of the ocean.",
+  "type": "artifact",
+  "image": "/images/equipment/artifacts/artifact_15.png",
+  "value": 140,
+  "modifiers": {
+    "intelligence": 5,
+    "dexterity": 3,
+    "constitution": 6,
+    "insanity": 2,
+    "charisma": 3,
+    "strength": 3
+  },
+  "min_lvl": 9,
+  "isActive": true,
+  "isUnique": false
+},
+{
+  "_id": {
+    "$oid": "66f66ae44a8f1157dab87b65"
+  },
+  "name": "Amulet of Solar Grace",
+  "description": "Blessed by the sun's warmth.",
+  "type": "artifact",
+  "image": "/images/equipment/artifacts/artifact_16.png",
+  "value": 170,
+  "modifiers": {
+    "intelligence": 7,
+    "dexterity": 4,
+    "constitution": 5,
+    "insanity": 0,
+    "charisma": 6,
+    "strength": 4
+  },
+  "min_lvl": 11,
+  "isActive": true,
+  "isUnique": false
+},
+{
+  "_id": {
+    "$oid": "66f66ae44a8f1157dab87b66"
+  },
+  "name": "Amulet of Twilight Harmony",
+  "description": "Balances light and dark energies.",
+  "type": "artifact",
+  "image": "/images/equipment/artifacts/artifact_17.png",
+  "value": 180,
+  "modifiers": {
+    "intelligence": 6,
+    "dexterity": 5,
+    "constitution": 6,
+    "insanity": 3,
+    "charisma": 4,
+    "strength": 5
+  },
+  "min_lvl": 13,
+  "isActive": true,
+  "isUnique": false
+},
+{
+  "_id": {
+    "$oid": "66f66ae44a8f1157dab87b67"
+  },
+  "name": "Amulet of the Forgotten King",
+  "description": "Echoes of a lost dynasty.",
+  "type": "artifact",
+  "image": "/images/equipment/artifacts/artifact_18.png",
+  "value": 160,
+  "modifiers": {
+    "intelligence": 4,
+    "dexterity": 3,
+    "constitution": 5,
+    "insanity": 2,
+    "charisma": 6,
+    "strength": 4
+  },
+  "min_lvl": 10,
+  "isActive": true,
+  "isUnique": false
+},
+{
+  "_id": {
+    "$oid": "66f66ae44a8f1157dab87b68"
+  },
+  "name": "Amulet of Frostbound Echoes",
+  "description": "Chilled by ancient ice magic.",
+  "type": "artifact",
+  "image": "/images/equipment/artifacts/artifact_19.png",
+  "value": 150,
+  "modifiers": {
+    "intelligence": 5,
+    "dexterity": 3,
+    "constitution": 7,
+    "insanity": 1,
+    "charisma": 2,
+    "strength": 4
+  },
+  "min_lvl": 9,
+  "isActive": true,
+  "isUnique": false
+},
+{
+  "_id": {
+    "$oid": "66f66ae44a8f1157dab87b69"
+  },
+  "name": "Amulet of Warcry",
+  "description": "Enhances the power of battle cries.",
+  "type": "artifact",
+  "image": "/images/equipment/artifacts/artifact_20.png",
+  "value": 200,
+  "modifiers": {
+    "intelligence": 3,
+    "dexterity": 2,
+    "constitution": 8,
+    "insanity": 1,
+    "charisma": 6,
+    "strength": 6
+  },
+  "min_lvl": 15,
+  "isActive": true,
+  "isUnique": false
+},
+{
+  "_id": {
+    "$oid": "66f66ae44a8f1157dab87b6a"
+  },
+  "name": "Amulet of Searing Light",
+  "description": "Shines with an unyielding brilliance.",
+  "type": "artifact",
+  "image": "/images/equipment/artifacts/artifact_21.png",
+  "value": 190,
+  "modifiers": {
+    "intelligence": 8,
+    "dexterity": 5,
+    "constitution": 6,
+    "insanity": 0,
+    "charisma": 5,
+    "strength": 4
+  },
+  "min_lvl": 14,
+  "isActive": true,
+  "isUnique": false
+},
+{
+  "_id": {
+    "$oid": "66f66ae44a8f1157dab87b6b"
+  },
+  "name": "Amulet of the Scarlet Moon",
+  "description": "Glows with crimson moonlight.",
+  "type": "artifact",
+  "image": "/images/equipment/artifacts/artifact_22.png",
+  "value": 170,
+  "modifiers": {
+    "intelligence": 7,
+    "dexterity": 3,
+    "constitution": 5,
+    "insanity": 4,
+    "charisma": 3,
+    "strength": 5
+  },
+  "min_lvl": 12,
+  "isActive": true,
+  "isUnique": false
+},
+{
+  "_id": {
+    "$oid": "66f66ae44a8f1157dab87b6c"
+  },
+  "name": "Amulet of Soulbound Chains",
+  "description": "Linked to forgotten spirits.",
+  "type": "artifact",
+  "image": "/images/equipment/artifacts/artifact_23.png",
+  "value": 160,
+  "modifiers": {
+    "intelligence": 5,
+    "dexterity": 4,
+    "constitution": 6,
+    "insanity": 3,
+    "charisma": 4,
+    "strength": 3
+  },
+  "min_lvl": 11,
+  "isActive": true,
+  "isUnique": false
+},
+{
+  "_id": {
+    "$oid": "66f66ae44a8f1157dab87b6d"
+  },
+  "name": "Amulet of the Iron Pact",
+  "description": "Forged in unbreakable resolve.",
+  "type": "artifact",
+  "image": "/images/equipment/artifacts/artifact_24.png",
+  "value": 140,
+  "modifiers": {
+    "intelligence": 4,
+    "dexterity": 3,
+    "constitution": 7,
+    "insanity": 0,
+    "charisma": 4,
+    "strength": 6
+  },
+  "min_lvl": 9,
+  "isActive": true,
+  "isUnique": false
+},
+{
+  "_id": {
+    "$oid": "66f66ae44a8f1157dab87b6e"
+  },
+  "name": "Amulet of Verdant Dreams",
+  "description": "Infused with the power of nature.",
+  "type": "artifact",
+  "image": "/images/equipment/artifacts/artifact_25.png",
+  "value": 180,
+  "modifiers": {
+    "intelligence": 6,
+    "dexterity": 3,
+    "constitution": 5,
+    "insanity": 2,
+    "charisma": 6,
+    "strength": 4
+  },
+  "min_lvl": 12,
+  "isActive": true,
+  "isUnique": false
+},
+{
+  "_id": {
+    "$oid": "66f66ae44a8f1157dab87b6f"
+  },
+  "name": "Amulet of Dusk's Embrace",
+  "description": "Cloaked in twilight shadows.",
+  "type": "artifact",
+  "image": "/images/equipment/artifacts/artifact_26.png",
+  "value": 170,
+  "modifiers": {
+    "intelligence": 6,
+    "dexterity": 5,
+    "constitution": 4,
+    "insanity": 2,
+    "charisma": 4,
+    "strength": 5
+  },
+  "min_lvl": 11,
+  "isActive": true,
+  "isUnique": false
+},
+{
+  "_id": {
+    "$oid": "66f66ae44a8f1157dab87b70"
+  },
+  "name": "Amulet of Tempest Fury",
+  "description": "Crackling with storm energy.",
+  "type": "artifact",
+  "image": "/images/equipment/artifacts/artifact_27.png",
+  "value": 160,
+  "modifiers": {
+    "intelligence": 5,
+    "dexterity": 3,
+    "constitution": 6,
+    "insanity": 1,
+    "charisma": 2,
+    "strength": 6
+  },
+  "min_lvl": 10,
+  "isActive": true,
+  "isUnique": false
+},
+{
+  "_id": {
+    "$oid": "66f66ae44a8f1157dab87b71"
+  },
+  "name": "Amulet of Infernal Chains",
+  "description": "Bound by infernal power.",
+  "type": "artifact",
+  "image": "/images/equipment/artifacts/artifact_28.png",
+  "value": 190,
+  "modifiers": {
+    "intelligence": 7,
+    "dexterity": 4,
+    "constitution": 5,
+    "insanity": 3,
+    "charisma": 3,
+    "strength": 5
+  },
+  "min_lvl": 13,
+  "isActive": true,
+  "isUnique": false
+},
+{
+  "_id": {
+    "$oid": "66f66ae44a8f1157dab87b72"
+  },
+  "name": "Amulet of Starry Night",
+  "description": "Radiates the mystery of the night sky.",
+  "type": "artifact",
+  "image": "/images/equipment/artifacts/artifact_29.png",
+  "value": 150,
+  "modifiers": {
+    "intelligence": 6,
+    "dexterity": 3,
+    "constitution": 5,
+    "insanity": 1,
+    "charisma": 4,
+    "strength": 3
+  },
+  "min_lvl": 10,
+  "isActive": true,
+  "isUnique": false
+},
+{
+  "_id": {
+    "$oid": "66f66ae44a8f1157dab87b73"
+  },
+  "name": "Amulet of Void's Whisper",
+  "description": "Whispers from the edge of existence.",
+  "type": "artifact",
+  "image": "/images/equipment/artifacts/artifact_30.png",
+  "value": 200,
+  "modifiers": {
+    "intelligence": 9,
+    "dexterity": 4,
+    "constitution": 7,
+    "insanity": 5,
+    "charisma": 2,
+    "strength": 3
+  },
+  "min_lvl": 15,
+  "isActive": true,
+  "isUnique": false
+},
+{
+  "_id": {
+    "$oid": "66f66b084a8f1157dab87b75"
+  },
+  "name": "Amulet of the Crimson Flame",
+  "description": "Burns with an eternal fire.",
+  "type": "artifact",
+  "image": "/images/equipment/artifacts/artifact_31.png",
+  "value": 700,
+  "modifiers": {
+    "intelligence": 10,
+    "dexterity": 6,
+    "constitution": 9,
+    "insanity": 5,
+    "charisma": 6,
+    "strength": 8
+  },
+  "min_lvl": 18,
+  "isActive": true,
+  "isUnique": true
+},
+{
+  "_id": {
+    "$oid": "66f66b084a8f1157dab87b76"
+  },
+  "name": "Amulet of the Astral Voice",
+  "description": "Speaks in the language of stars.",
+  "type": "artifact",
+  "image": "/images/equipment/artifacts/artifact_32.png",
+  "value": 850,
+  "modifiers": {
+    "intelligence": 12,
+    "dexterity": 7,
+    "constitution": 8,
+    "insanity": 6,
+    "charisma": 9,
+    "strength": 4
+  },
+  "min_lvl": 18,
+  "isActive": true,
+  "isUnique": true
+},
+{
+  "_id": {
+    "$oid": "66f66b084a8f1157dab87b77"
+  },
+  "name": "Amulet of Forgotten Shadows",
+  "description": "A relic lost to the dark.",
+  "type": "artifact",
+  "image": "/images/equipment/artifacts/artifact_33.png",
+  "value": 600,
+  "modifiers": {
+    "intelligence": 8,
+    "dexterity": 9,
+    "constitution": 7,
+    "insanity": 4,
+    "charisma": 5,
+    "strength": 8
+  },
+  "min_lvl": 17,
+  "isActive": true,
+  "isUnique": true
+},
+{
+  "_id": {
+    "$oid": "66f66b084a8f1157dab87b78"
+  },
+  "name": "Amulet of Eternal Frost",
+  "description": "Cold as the void itself.",
+  "type": "artifact",
+  "image": "/images/equipment/artifacts/artifact_34.png",
+  "value": 950,
+  "modifiers": {
+    "intelligence": 9,
+    "dexterity": 6,
+    "constitution": 10,
+    "insanity": 7,
+    "charisma": 6,
+    "strength": 8
+  },
+  "min_lvl": 18,
+  "isActive": true,
+  "isUnique": true
+},
+{
+  "_id": {
+    "$oid": "66f66b084a8f1157dab87b79"
+  },
+  "name": "Amulet of the Bound Phoenix",
+  "description": "Holds the essence of rebirth.",
+  "type": "artifact",
+  "image": "/images/equipment/artifacts/artifact_35.png",
+  "value": 900,
+  "modifiers": {
+    "intelligence": 10,
+    "dexterity": 5,
+    "constitution": 8,
+    "insanity": 5,
+    "charisma": 8,
+    "strength": 9
+  },
+  "min_lvl": 18,
+  "isActive": true,
+  "isUnique": true
+},
+{
+  "_id": {
+    "$oid": "66f66b084a8f1157dab87b7a"
+  },
+  "name": "Amulet of War's Fury",
+  "description": "Thrums with battle energy.",
+  "type": "artifact",
+  "image": "/images/equipment/artifacts/artifact_36.png",
+  "value": 800,
+  "modifiers": {
+    "intelligence": 7,
+    "dexterity": 8,
+    "constitution": 10,
+    "insanity": 6,
+    "charisma": 4,
+    "strength": 9
+  },
+  "min_lvl": 17,
+  "isActive": true,
+  "isUnique": true
+},
+{
+  "_id": {
+    "$oid": "66f66b084a8f1157dab87b7b"
+  },
+  "name": "Amulet of the Void Walker",
+  "description": "Echoes from the edge of reality.",
+  "type": "artifact",
+  "image": "/images/equipment/artifacts/artifact_37.png",
+  "value": 750,
+  "modifiers": {
+    "intelligence": 9,
+    "dexterity": 7,
+    "constitution": 8,
+    "insanity": 5,
+    "charisma": 6,
+    "strength": 7
+  },
+  "min_lvl": 16,
+  "isActive": true,
+  "isUnique": true
+},
+{
+  "_id": {
+    "$oid": "66f66b084a8f1157dab87b7c"
+  },
+  "name": "Amulet of the Cursed Abyss",
+  "description": "Dark powers from the deep.",
+  "type": "artifact",
+  "image": "/images/equipment/artifacts/artifact_38.png",
+  "value": 680,
+  "modifiers": {
+    "intelligence": 7,
+    "dexterity": 9,
+    "constitution": 7,
+    "insanity": 8,
+    "charisma": 5,
+    "strength": 6
+  },
+  "min_lvl": 16,
+  "isActive": true,
+  "isUnique": true
+},
+{
+  "_id": {
+    "$oid": "66f66b084a8f1157dab87b7d"
+  },
+  "name": "Amulet of Arcane Resonance",
+  "description": "Vibrates with arcane energy.",
+  "type": "artifact",
+  "image": "/images/equipment/artifacts/artifact_39.png",
+  "value": 920,
+  "modifiers": {
+    "intelligence": 11,
+    "dexterity": 6,
+    "constitution": 8,
+    "insanity": 6,
+    "charisma": 7,
+    "strength": 5
+  },
+  "min_lvl": 18,
+  "isActive": true,
+  "isUnique": true
+},
+{
+  "_id": {
+    "$oid": "66f66b084a8f1157dab87b7e"
+  },
+  "name": "Amulet of the Starlit Path",
+  "description": "Guided by distant stars.",
+  "type": "artifact",
+  "image": "/images/equipment/artifacts/artifact_40.png",
+  "value": 980,
+  "modifiers": {
+    "intelligence": 12,
+    "dexterity": 7,
+    "constitution": 9,
+    "insanity": 5,
+    "charisma": 8,
+    "strength": 6
+  },
+  "min_lvl": 18,
+  "isActive": true,
+  "isUnique": true
+},
+{
+  "_id": {
+    "$oid": "66f66b084a8f1157dab87b7f"
+  },
+  "name": "Amulet of the Dragon's Heart",
+  "description": "Beats with the power of dragons.",
+  "type": "artifact",
+  "image": "/images/equipment/artifacts/artifact_41.png",
+  "value": 1000,
+  "modifiers": {
+    "intelligence": 11,
+    "dexterity": 6,
+    "constitution": 10,
+    "insanity": 6,
+    "charisma": 7,
+    "strength": 10
+  },
+  "min_lvl": 18,
+  "isActive": true,
+  "isUnique": true
+},
+{
+  "_id": {
+    "$oid": "66f66b084a8f1157dab87b80"
+  },
+  "name": "Amulet of Shadow's Whisper",
+  "description": "Hides you within the shadows.",
+  "type": "artifact",
+  "image": "/images/equipment/artifacts/artifact_42.png",
+  "value": 780,
+  "modifiers": {
+    "intelligence": 8,
+    "dexterity": 9,
+    "constitution": 7,
+    "insanity": 4,
+    "charisma": 6,
+    "strength": 5
+  },
+  "min_lvl": 17,
+  "isActive": true,
+  "isUnique": true
+},
+{
+  "_id": {
+    "$oid": "66f66b084a8f1157dab87b81"
+  },
+  "name": "Amulet of the Fallen Star",
+  "description": "Grants a piece of a fallen star's power.",
+  "type": "artifact",
+  "image": "/images/equipment/artifacts/artifact_43.png",
+  "value": 860,
+  "modifiers": {
+    "intelligence": 10,
+    "dexterity": 7,
+    "constitution": 8,
+    "insanity": 6,
+    "charisma": 5,
+    "strength": 7
+  },
+  "min_lvl": 18,
+  "isActive": true,
+  "isUnique": true
+},
+{
+  "_id": {
+    "$oid": "66f66b084a8f1157dab87b82"
+  },
+  "name": "Amulet of Eternal Night",
+  "description": "Engulfs you in darkness.",
+  "type": "artifact",
+  "image": "/images/equipment/artifacts/artifact_44.png",
+  "value": 900,
+  "modifiers": {
+    "intelligence": 11,
+    "dexterity": 6,
+    "constitution": 9,
+    "insanity": 7,
+    "charisma": 4,
+    "strength": 8
+  },
+  "min_lvl": 18,
+  "isActive": true,
+  "isUnique": true
+},
+{
+  "_id": {
+    "$oid": "66f66b084a8f1157dab87b83"
+  },
+  "name": "Amulet of the Mystic Tides",
+  "description": "Binds the power of the ocean.",
+  "type": "artifact",
+  "image": "/images/equipment/artifacts/artifact_45.png",
+  "value": 890,
+  "modifiers": {
+    "intelligence": 10,
+    "dexterity": 5,
+    "constitution": 9,
+    "insanity": 6,
+    "charisma": 7,
+    "strength": 6
+  },
+  "min_lvl": 17,
+  "isActive": true,
+  "isUnique": true
+},
+{
+  "_id": {
+    "$oid": "66f66b084a8f1157dab87b84"
+  },
+  "name": "Amulet of the Soulbinder",
+  "description": "Links you to ancient souls.",
+  "type": "artifact",
+  "image": "/images/equipment/artifacts/artifact_46.png",
+  "value": 940,
+  "modifiers": {
+    "intelligence": 12,
+    "dexterity": 7,
+    "constitution": 10,
+    "insanity": 5,
+    "charisma": 8,
+    "strength": 5
+  },
+  "min_lvl": 18,
+  "isActive": true,
+  "isUnique": true
+},
+{
+  "_id": {
+    "$oid": "66f66b084a8f1157dab87b85"
+  },
+  "name": "Amulet of the Windspeaker",
+  "description": "Whispers from the storm.",
+  "type": "artifact",
+  "image": "/images/equipment/artifacts/artifact_47.png",
+  "value": 880,
+  "modifiers": {
+    "intelligence": 9,
+    "dexterity": 6,
+    "constitution": 8,
+    "insanity": 7,
+    "charisma": 5,
+    "strength": 6
+  },
+  "min_lvl": 17,
+  "isActive": true,
+  "isUnique": true
+},
+{
+  "_id": {
+    "$oid": "66f66b084a8f1157dab87b86"
+  },
+  "name": "Amulet of Blazing Dawn",
+  "description": "Shines with the light of dawn.",
+  "type": "artifact",
+  "image": "/images/equipment/artifacts/artifact_48.png",
+  "value": 960,
+  "modifiers": {
+    "intelligence": 11,
+    "dexterity": 8,
+    "constitution": 9,
+    "insanity": 5,
+    "charisma": 6,
+    "strength": 7
+  },
+  "min_lvl": 18,
+  "isActive": true,
+  "isUnique": true
+},
+{
+  "_id": {
+    "$oid": "66f66b084a8f1157dab87b87"
+  },
+  "name": "Amulet of Echoing Worlds",
+  "description": "Resonates across dimensions.",
+  "type": "artifact",
+  "image": "/images/equipment/artifacts/artifact_49.png",
+  "value": 1000,
+  "modifiers": {
+    "intelligence": 12,
+    "dexterity": 7,
+    "constitution": 10,
+    "insanity": 6,
+    "charisma": 9,
+    "strength": 6
+  },
+  "min_lvl": 18,
+  "isActive": true,
+  "isUnique": true
+},
+{
+  "_id": {
+    "$oid": "66f66b084a8f1157dab87b88"
+  },
+  "name": "Amulet of the Inferno",
+  "description": "Burns with an unquenchable fire.",
+  "type": "artifact",
+  "image": "/images/equipment/artifacts/artifact_50.png",
+  "value": 990,
+  "modifiers": {
+    "intelligence": 11,
+    "dexterity": 6,
+    "constitution": 9,
+    "insanity": 5,
+    "charisma": 6,
+    "strength": 8
+  },
+  "min_lvl": 18,
+  "isActive": true,
+  "isUnique": true
+},
+{
+  "_id": {
+    "$oid": "66f66bb44a8f1157dab87b8a"
+  },
+  "name": "Amulet of the Eternal Flame",
+  "description": "Burns with an otherworldly fire.",
+  "type": "artifact",
+  "image": "/images/equipment/artifacts/artifact_51.png",
+  "value": 2500,
+  "modifiers": {
+    "intelligence": 15,
+    "dexterity": 12,
+    "constitution": 18,
+    "insanity": 10,
+    "charisma": 14,
+    "strength": 16
+  },
+  "min_lvl": 25,
+  "isActive": true,
+  "isUnique": true
+},
+{
+  "_id": {
+    "$oid": "66f66bb44a8f1157dab87b8b"
+  },
+  "name": "Amulet of the Cosmic Heart",
+  "description": "Beats with the pulse of the universe.",
+  "type": "artifact",
+  "image": "/images/equipment/artifacts/artifact_52.png",
+  "value": 3000,
+  "modifiers": {
+    "intelligence": 18,
+    "dexterity": 14,
+    "constitution": 16,
+    "insanity": 12,
+    "charisma": 17,
+    "strength": 19
+  },
+  "min_lvl": 25,
+  "isActive": true,
+  "isUnique": true
+},
+{
+  "_id": {
+    "$oid": "66f66bb44a8f1157dab87b8c"
+  },
+  "name": "Amulet of the Abyssal Depths",
+  "description": "Channels power from the deepest realms.",
+  "type": "artifact",
+  "image": "/images/equipment/artifacts/artifact_53.png",
+  "value": 2700,
+  "modifiers": {
+    "intelligence": 16,
+    "dexterity": 12,
+    "constitution": 20,
+    "insanity": 15,
+    "charisma": 13,
+    "strength": 17
+  },
+  "min_lvl": 24,
+  "isActive": true,
+  "isUnique": true
+},
+{
+  "_id": {
+    "$oid": "66f66bb44a8f1157dab87b8d"
+  },
+  "name": "Amulet of Celestial Harmony",
+  "description": "Balances the forces of the cosmos.",
+  "type": "artifact",
+  "image": "/images/equipment/artifacts/artifact_54.png",
+  "value": 2400,
+  "modifiers": {
+    "intelligence": 14,
+    "dexterity": 10,
+    "constitution": 18,
+    "insanity": 12,
+    "charisma": 15,
+    "strength": 16
+  },
+  "min_lvl": 23,
+  "isActive": true,
+  "isUnique": true
+},
+{
+  "_id": {
+    "$oid": "66f66bb44a8f1157dab87b8e"
+  },
+  "name": "Amulet of the Sunken Temple",
+  "description": "Holds the secrets of a forgotten civilization.",
+  "type": "artifact",
+  "image": "/images/equipment/artifacts/artifact_55.png",
+  "value": 2200,
+  "modifiers": {
+    "intelligence": 12,
+    "dexterity": 15,
+    "constitution": 17,
+    "insanity": 14,
+    "charisma": 10,
+    "strength": 15
+  },
+  "min_lvl": 22,
+  "isActive": true,
+  "isUnique": true
+},
+{
+  "_id": {
+    "$oid": "66f66bb44a8f1157dab87b8f"
+  },
+  "name": "Amulet of the Infinite Skies",
+  "description": "Holds the power of limitless heavens.",
+  "type": "artifact",
+  "image": "/images/equipment/artifacts/artifact_56.png",
+  "value": 2800,
+  "modifiers": {
+    "intelligence": 17,
+    "dexterity": 16,
+    "constitution": 19,
+    "insanity": 13,
+    "charisma": 14,
+    "strength": 18
+  },
+  "min_lvl": 25,
+  "isActive": true,
+  "isUnique": true
+},
+{
+  "_id": {
+    "$oid": "66f66bb44a8f1157dab87b90"
+  },
+  "name": "Amulet of the Phantom Lord",
+  "description": "Echoes with the voices of the dead.",
+  "type": "artifact",
+  "image": "/images/equipment/artifacts/artifact_57.png",
+  "value": 2600,
+  "modifiers": {
+    "intelligence": 15,
+    "dexterity": 13,
+    "constitution": 16,
+    "insanity": 18,
+    "charisma": 12,
+    "strength": 17
+  },
+  "min_lvl": 24,
+  "isActive": true,
+  "isUnique": true
+},
+{
+  "_id": {
+    "$oid": "66f66bb44a8f1157dab87b91"
+  },
+  "name": "Amulet of the Void Herald",
+  "description": "Calls upon the vastness of the void.",
+  "type": "artifact",
+  "image": "/images/equipment/artifacts/artifact_58.png",
+  "value": 2900,
+  "modifiers": {
+    "intelligence": 18,
+    "dexterity": 14,
+    "constitution": 20,
+    "insanity": 12,
+    "charisma": 13,
+    "strength": 19
+  },
+  "min_lvl": 25,
+  "isActive": true,
+  "isUnique": true
+},
+{
+  "_id": {
+    "$oid": "66f66bb44a8f1157dab87b92"
+  },
+  "name": "Amulet of the Stormrider",
+  "description": "Channels the power of the storms.",
+  "type": "artifact",
+  "image": "/images/equipment/artifacts/artifact_59.png",
+  "value": 2300,
+  "modifiers": {
+    "intelligence": 14,
+    "dexterity": 16,
+    "constitution": 17,
+    "insanity": 15,
+    "charisma": 12,
+    "strength": 15
+  },
+  "min_lvl": 23,
+  "isActive": true,
+  "isUnique": true
+},
+{
+  "_id": {
+    "$oid": "66f66bb44a8f1157dab87b93"
+  },
+  "name": "Amulet of the Arcane Nexus",
+  "description": "Focuses the most powerful magic.",
+  "type": "artifact",
+  "image": "/images/equipment/artifacts/artifact_60.png",
+  "value": 3000,
+  "modifiers": {
+    "intelligence": 19,
+    "dexterity": 15,
+    "constitution": 18,
+    "insanity": 14,
+    "charisma": 16,
+    "strength": 18
+  },
+  "min_lvl": 25,
+  "isActive": true,
+  "isUnique": true
+},
+{
+  "_id": {
+    "$oid": "66f66bb44a8f1157dab87b94"
+  },
+  "name": "Amulet of the Ancient Spirit",
+  "description": "Resonates with ancient wisdom.",
+  "type": "artifact",
+  "image": "/images/equipment/artifacts/artifact_61.png",
+  "value": 2100,
+  "modifiers": {
+    "intelligence": 13,
+    "dexterity": 14,
+    "constitution": 15,
+    "insanity": 10,
+    "charisma": 16,
+    "strength": 14
+  },
+  "min_lvl": 22,
+  "isActive": true,
+  "isUnique": true
+},
+{
+  "_id": {
+    "$oid": "66f66bb44a8f1157dab87b95"
+  },
+  "name": "Amulet of the Celestial Forge",
+  "description": "Forged in the stars.",
+  "type": "artifact",
+  "image": "/images/equipment/artifacts/artifact_62.png",
+  "value": 2700,
+  "modifiers": {
+    "intelligence": 16,
+    "dexterity": 17,
+    "constitution": 18,
+    "insanity": 13,
+    "charisma": 14,
+    "strength": 19
+  },
+  "min_lvl": 24,
+  "isActive": true,
+  "isUnique": true
+},
+{
+  "_id": {
+    "$oid": "66f66bb44a8f1157dab87b96"
+  },
+  "name": "Amulet of the Shadow King",
+  "description": "Wreathed in darkness.",
+  "type": "artifact",
+  "image": "/images/equipment/artifacts/artifact_63.png",
+  "value": 2500,
+  "modifiers": {
+    "intelligence": 15,
+    "dexterity": 12,
+    "constitution": 17,
+    "insanity": 16,
+    "charisma": 11,
+    "strength": 18
+  },
+  "min_lvl": 24,
+  "isActive": true,
+  "isUnique": true
+},
+{
+  "_id": {
+    "$oid": "66f66bb44a8f1157dab87b97"
+  },
+  "name": "Amulet of the Infinite Star",
+  "description": "Shines with endless light.",
+  "type": "artifact",
+  "image": "/images/equipment/artifacts/artifact_64.png",
+  "value": 2800,
+  "modifiers": {
+    "intelligence": 17,
+    "dexterity": 15,
+    "constitution": 19,
+    "insanity": 14,
+    "charisma": 13,
+    "strength": 20
+  },
+  "min_lvl": 25,
+  "isActive": true,
+  "isUnique": true
+}]

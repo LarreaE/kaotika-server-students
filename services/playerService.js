@@ -268,6 +268,8 @@ const checkIfLevelUpAndUpdatePlayer = async (player, task) => {
 
             }
 
+            //Actualizamos los atributos en DB
+            await Player.updateOne({classroom_Id: player.classroom_Id}, {attributes});
             
             //Actualizamos el inventario en BD 
             await Player.updateOne({classroom_Id: player.classroom_Id}, {inventory});
@@ -279,7 +281,7 @@ const checkIfLevelUpAndUpdatePlayer = async (player, task) => {
             //Guardamos el oro en DB
             await Player.updateOne({classroom_Id: player.classroom_Id}, {gold: newGold});
 
-            //Actualizamos nivel
+            //Actualizamos nivel en DB
             await Player.updateOne({classroom_Id: player.classroom_Id}, {level: newLevel});
 
             
@@ -560,6 +562,8 @@ const getRandomEquipment = async(player, levelToUpdate) => {
         }
 
         
+        // OZAR: TODO Corregir para casos de equipo no existente.
+        // En ese caso, cogeríamos equipo desde nivel 1 a nivel item.min_lvl-3
         const numPiece = Math.floor(Math.random() * availableEquipment.length);
         const randomPiece = availableEquipment[numPiece];
 
