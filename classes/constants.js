@@ -34,8 +34,8 @@ const ProfilesAttributes = [
     {
         "name": "Blasphemer",
         "major_attributes": [ "Charisma"],
-        "minor_attributes": [ "Dexterity", "Strength"],
-        "normal_attributes":[ "Intelligence", "Constitution"]
+        "minor_attributes": [ "Intelligence", "Constitution"],
+        "normal_attributes":[ "Strength", "Dexterity"]
     },
     {
         "name": "Embalmer",
